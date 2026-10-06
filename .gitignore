@@ -13,3 +13,6 @@ docs/aggregate/book-reading-copy*.md
 
 # Private working material, not published
 docs/aggregate/book-compare/
+
+# Local Claude Code settings and hooks (personal workflow, not published)
+.claude/
