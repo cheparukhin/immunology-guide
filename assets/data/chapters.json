@@ -1,0 +1,171 @@
+{
+  "site": {
+    "title": "Self & Other",
+    "tagline": "An illustrated guide to the immune system and the new science of cancer immunotherapy",
+    "url": "",
+    "shareImage": "assets/img/share-card.jpg",
+    "shareImageAlt": "Self & Other: glowing immune cells under the microscope. An illustrated guide to the immune system and cancer immunotherapy."
+  },
+  "parts": [
+    {
+      "id": "I",
+      "title": "The Immune System",
+      "subtitle": "The cells and molecules of immunity, and how they distinguish the body’s own cells from everything else"
+    },
+    {
+      "id": "II",
+      "title": "Cancer and the Immune System",
+      "subtitle": "What cancer is, why it is hard for the immune system to detect, and how tumors escape"
+    },
+    {
+      "id": "III",
+      "title": "Immunotherapy",
+      "subtitle": "What each kind of treatment does, whom it helps, what it costs and where it falls short"
+    }
+  ],
+  "pages": [
+    {
+      "id": "01-cells",
+      "file": "01-cells.html",
+      "number": 1,
+      "label": "Chapter 1",
+      "part": "I",
+      "title": "Cells, Proteins and Molecular Recognition",
+      "description": "Cells, genes, proteins and molecular binding: the basic biology behind every act of immune recognition."
+    },
+    {
+      "id": "02-innate",
+      "file": "02-innate.html",
+      "number": 2,
+      "label": "Chapter 2",
+      "part": "I",
+      "title": "Innate Immunity",
+      "description": "Within minutes of a splinter, your body mounts a defense against bacteria it has never encountered and never needs to identify."
+    },
+    {
+      "id": "03-adaptive",
+      "file": "03-adaptive.html",
+      "number": 3,
+      "label": "Chapter 3",
+      "part": "I",
+      "title": "Adaptive Immunity",
+      "description": "The body makes millions of random receptors in advance, then multiplies the cells whose receptors bind a new pathogen."
+    },
+    {
+      "id": "04-presentation",
+      "file": "04-presentation.html",
+      "number": 4,
+      "label": "Chapter 4",
+      "part": "I",
+      "title": "Antigen Presentation",
+      "description": "Nearly every cell displays samples of the proteins it makes inside, which is how T cells tell healthy cells from infected or mutated ones."
+    },
+    {
+      "id": "05-t-cells",
+      "file": "05-t-cells.html",
+      "number": 5,
+      "label": "Chapter 5",
+      "part": "I",
+      "title": "T Cells: Selection, Killing and Regulation",
+      "description": "How the body builds T cells that can recognize almost anything, and keeps them from attacking its own tissues."
+    },
+    {
+      "id": "06-cancer",
+      "file": "06-cancer.html",
+      "number": 6,
+      "label": "Chapter 6",
+      "part": "II",
+      "title": "Cancer Cells and Tumor Antigens",
+      "description": "Cancer is evolution within one body. Its cells are almost entirely self, so the immune system must detect the few things about them that are new."
+    },
+    {
+      "id": "07-escape",
+      "file": "07-escape.html",
+      "number": 7,
+      "label": "Chapter 7",
+      "part": "II",
+      "title": "Immune Surveillance and Tumor Escape",
+      "description": "The tumors that reach a doctor are the ones that survived the immune system, and they carry the marks of that selection."
+    },
+    {
+      "id": "interlude-history",
+      "file": "interlude-history.html",
+      "number": null,
+      "label": "Interlude",
+      "part": null,
+      "title": "130 Years of Immunotherapy",
+      "description": "A century of inconsistent results, from Coley’s bacterial toxins onward, then rapid progress after 2010."
+    },
+    {
+      "id": "08-checkpoints",
+      "file": "08-checkpoints.html",
+      "number": 8,
+      "label": "Chapter 8",
+      "part": "III",
+      "title": "Checkpoint Inhibitors",
+      "description": "Checkpoint inhibitors do not attack cancer cells; they release brakes on T cells. For a minority of patients, the benefit lasts for years."
+    },
+    {
+      "id": "09-antibodies",
+      "file": "09-antibodies.html",
+      "number": 9,
+      "label": "Chapter 9",
+      "part": "III",
+      "title": "Therapeutic Antibodies",
+      "description": "An antibody can only bind. Medicine has turned that one property into five ways to treat cancer."
+    },
+    {
+      "id": "10-cell-therapy",
+      "file": "10-cell-therapy.html",
+      "number": 10,
+      "label": "Chapter 10",
+      "part": "III",
+      "title": "Cell Therapies",
+      "description": "Medicines that are cells rather than molecules: they multiply inside the patient, kill on contact, and can still be present a decade later."
+    },
+    {
+      "id": "11-vaccines",
+      "file": "11-vaccines.html",
+      "number": 11,
+      "label": "Chapter 11",
+      "part": "III",
+      "title": "Cancer Vaccines and Oncolytic Viruses",
+      "description": "The most successful cancer vaccines never show the immune system a cancer cell. The newest are made from the mutations in one patient’s tumor."
+    },
+    {
+      "id": "12-frontier",
+      "file": "12-frontier.html",
+      "number": 12,
+      "label": "Chapter 12",
+      "part": "III",
+      "title": "Resistance and New Directions",
+      "description": "Why immunotherapy cures some people and does nothing for others, and what researchers are trying next."
+    }
+  ],
+  "extras": [
+    {
+      "id": "index",
+      "file": "index.html",
+      "title": "Home",
+      "description": "Start here."
+    },
+    {
+      "id": "glossary",
+      "file": "glossary.html",
+      "title": "Glossary",
+      "description": "Every term, defined in plain words."
+    },
+    {
+      "id": "sources",
+      "file": "sources.html",
+      "title": "Sources",
+      "description": "The papers and reviews behind every chapter."
+    },
+    {
+      "id": "about",
+      "file": "about.html",
+      "title": "About",
+      "description": "Who this is for, how it was made, and a medical disclaimer."
+    }
+  ]
+}

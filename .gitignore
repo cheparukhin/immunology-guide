@@ -1,0 +1,15 @@
+# OS and editor files
+.DS_Store
+.env
+
+# Dev tooling: dependencies and scratch output
+tools/node_modules/
+tools/out/
+_preview-*.html
+dist/
+
+# Regenerable from content/drafts via tools/reading-copy.py
+docs/aggregate/book-reading-copy*.md
+
+# Private working material, not published
+docs/aggregate/book-compare/

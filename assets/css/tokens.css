@@ -1,0 +1,292 @@
+/* =====================================================================
+   Self & Other — design tokens
+   Every color, size, duration used by the site lives here.
+   Light theme on :root; dark theme redefined (1) under prefers-color-scheme
+   unless the reader forced light, and (2) when the reader forced dark.
+   Documented in docs/DESIGN.md.
+   ===================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* ---- Page palette ------------------------------------------------ */
+  --paper: #FAF7F2;          /* page background: warm paper */
+  --paper-2: #F3EEE5;        /* sunken panels: deep dives, code, quiz */
+  --paper-3: #ECE5DA;        /* hover on sunken panels */
+  --surface: #FFFFFF;        /* raised cards, popovers, light stage */
+  --ink: #1B1F2A;            /* primary text            15.4:1 on paper */
+  --ink-2: #4A5163;          /* secondary text           7.4:1 */
+  --ink-3: #666C80;          /* muted text / meta        4.9:1 */
+  --rule: #E6E0D6;           /* hairlines */
+  --rule-strong: #D3CBBE;    /* control borders */
+
+  --accent: #3348E0;         /* links, UI, focus         6.3:1 on paper */
+  --accent-strong: #2638C4;  /* hover/pressed */
+  --accent-ink: #FFFFFF;     /* text on accent fill */
+  --accent-soft: rgb(51 72 224 / 0.09);
+  --accent-line: rgb(51 72 224 / 0.32);
+
+  --focus-ring: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent);
+
+  --success: #1D7A52;
+  --success-soft: rgb(29 122 82 / 0.10);
+  --danger: #C2373D;
+  --danger-soft: rgb(194 55 61 / 0.09);
+  --mark: #FBE7A1;           /* <mark> highlight */
+  /* Outcome vocabulary ✓ ≈ ✕ ~ (badges; FIGURE-AUDIT §4 rule 10) */
+  --yes: #1D7A52;
+  --partial: #A35F12;
+  --no: #C2373D;
+  --varies: #666C80;
+  --hero-glow-1: rgb(76 141 255 / 0.09);   /* the "microscope lamp" behind chapter titles */
+  --hero-glow-2: rgb(182 95 216 / 0.07);
+  --hero-glow-3: rgb(233 201 161 / 0.15);
+  --lens-feather: 94%;                       /* hero lens: where its edge starts to fade */
+  --lens-shadow: 0 34px 70px -34px rgb(11 16 36 / 0.55), 0 0 0 1px rgb(11 16 36 / 0.06);
+
+  /* Callout identities (tints are backgrounds, *-ink for labels/rules) */
+  --key: #3348E0;   --key-ink: #2638C4;   --key-tint: rgb(51 72 224 / 0.06);
+  --clinic: #18807A; --clinic-ink: #0F6A65; --clinic-tint: rgb(24 128 122 / 0.07);
+  --note: #9A7B4F;  --note-ink: #7A5F38;  --note-tint: rgb(154 123 79 / 0.08);
+
+  /* ---- Typography ---------------------------------------------------- */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Source Serif 4", "Iowan Old Style", "Charter", Georgia, serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* Fluid type scale (phone → desktop) */
+  --text-2xs: 0.75rem;                                       /* 12  UI micro labels (caps) */
+  --text-xs: 0.8125rem;                                      /* 13  UI small, figure labels */
+  --text-ui: 0.9375rem;                                      /* 15  buttons, controls */
+  --text-sm: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);       /* 16–17  captions, notes */
+  --text-body: clamp(1.125rem, 1.06rem + 0.32vw, 1.25rem);   /* 18–20  reading text */
+  --text-lead: clamp(1.25rem, 1.12rem + 0.6vw, 1.5rem);      /* 20–24  first paragraph */
+  --text-h3: clamp(1.3rem, 1.2rem + 0.45vw, 1.5rem);
+  --text-h2: clamp(1.75rem, 1.4rem + 1.55vw, 2.5rem);
+  --text-h1: clamp(2.6rem, 1.7rem + 4.4vw, 5.25rem);
+  --text-display-num: clamp(5rem, 3rem + 10vw, 11rem);       /* big chapter numeral */
+
+  --leading-body: 1.65;
+  --leading-snug: 1.35;
+  --leading-tight: 1.08;
+  --tracking-caps: 0.08em;   /* letter-spacing for uppercase UI labels */
+
+  /* Fraunces character (applied with font-variation-settings) */
+  --fraunces-soft: "SOFT" 50, "WONK" 0;
+  --fraunces-display: "SOFT" 100, "WONK" 0;
+
+  /* ---- Layout ------------------------------------------------------ */
+  --measure: 42rem;          /* ≈ 68 characters of body text */
+  --wide: 72rem;             /* wide figures break out to this */
+  --gutter: clamp(1rem, 4vw - 0.25rem, 3rem);   /* 16px on phones */
+  --header-h: 3.5rem;
+  --toc-w: 13.5rem;
+
+  /* Spacing scale */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --flow: 1.15em;            /* space between paragraphs */
+  --flow-lg: 2.75rem;        /* around figures, callouts */
+
+  /* ---- Shape & depth ----------------------------------------------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-xl: 22px;
+  --r-pill: 999px;
+
+  --shadow-1: 0 1px 2px rgb(27 31 42 / 0.05), 0 1px 1px rgb(27 31 42 / 0.03);
+  --shadow-2: 0 1px 2px rgb(27 31 42 / 0.05), 0 6px 18px -6px rgb(27 31 42 / 0.14);
+  --shadow-3: 0 2px 4px rgb(27 31 42 / 0.05), 0 18px 48px -12px rgb(27 31 42 / 0.24);
+  --shadow-stage: 0 1px 1px rgb(11 16 36 / 0.10), 0 20px 50px -24px rgb(11 16 36 / 0.45);
+
+  /* ---- Motion ------------------------------------------------------ */
+  --dur-1: 120ms;            /* hovers, presses */
+  --dur-2: 220ms;            /* small UI transitions */
+  --dur-3: 420ms;            /* panels, drawers */
+  --dur-4: 800ms;            /* figure-level transitions */
+  --ease-out: cubic-bezier(0.16, 0.84, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-in: cubic-bezier(0.55, 0, 0.85, 0.4);
+  --ease-spring: cubic-bezier(0.34, 1.32, 0.64, 1);  /* very gentle overshoot */
+
+  /* ---- Layers ------------------------------------------------------ */
+  --z-figure-ui: 5;
+  --z-toc: 20;
+  --z-header: 50;
+  --z-progress: 60;
+  --z-popover: 80;
+
+  /* ---- Figure stages ----------------------------------------------- */
+  /* Dark "luminous microscope" stage — identical in both page themes. */
+  --stage-dark-a: #0B1024;   /* outer */
+  --stage-dark-b: #131B36;   /* center glow */
+  --stage-dark-ink: #E9ECF6;     /* labels on dark stage  16:1 */
+  --stage-dark-ink-2: #A9B1CC;   /* secondary labels       8.8:1 */
+  --stage-dark-ink-3: #7F89AB;   /* faint annotations */
+  --stage-dark-line: rgb(169 177 204 / 0.42);
+  --stage-dark-grid: rgb(169 177 204 / 0.08);
+  --stage-dark-border: rgb(140 160 255 / 0.12);
+
+  /* ---- Cell & molecule palette (PLAN §4) — same in both themes ------ */
+  /* Base colors glow on the dark stage. On light stages use the *-deep
+     variants for strokes and text (≥4.6:1 on paper) and the base color
+     for fills. Never encode meaning by color alone. */
+  --c-healthy: #E9C9A1;      --c-healthy-deep: #7D6D5A;
+  --c-cancer: #B65FD8;       --c-cancer-deep: #9951B7;
+  --c-cd8: #4C8DFF;          --c-cd8-deep: #3C6EC5;
+  --c-cd4: #2EC4C9;          --c-cd4-deep: #207C80;
+  --c-treg: #8C95C9;         --c-treg-deep: #686F95;
+  --c-bcell: #F2B33D;        --c-bcell-deep: #8D6A29;
+  --c-antibody: #F2B33D;     --c-antibody-deep: #8D6A29;
+  --c-nk: #FF8A3D;           --c-nk-deep: #A65C2C;
+  --c-macrophage: #FF7A6B;   --c-macrophage-deep: #AE554C;
+  --c-m2: #B7727E;           --c-m2-deep: #99606B;
+  --c-dc: #4FD18B;           --c-dc-deep: #327E56;
+  --c-neutrophil: #F4A6C8;   --c-neutrophil-deep: #906378;
+  --c-mast: #C9C2D6;         --c-mast-deep: #6E6680;    /* mast cell (art palette `mast`) */
+  --c-mast-granule: #5B5FA8; /* histamine granules (art palette `mastGranule`) */
+  --c-mdsc: #A7A35A;         --c-mdsc-deep: #747241;
+  --c-fibroblast: #9C8F80;   --c-fibroblast-deep: #786E64;
+  --c-bacteria: #B5D94A;     --c-bacteria-deep: #64772E;
+  --c-virus: #FF4D5E;        --c-virus-deep: #C83E4C;
+  --c-mhc: #D9DEEA;          --c-mhc-deep: #6D7078;
+  --c-self-peptide: #E9C9A1; --c-self-peptide-deep: #7D6D5A;
+  --c-neo-peptide: #FF3D7F;  --c-neo-peptide-deep: #CD3368;
+  --c-inhibit: #E5484D;      --c-inhibit-deep: #C74044;
+  --c-activate: #3DDC97;     --c-activate-deep: #267E59;
+  --c-drug: #F2B33D;         --c-drug-deep: #8D6A29;
+  --c-drug-outline: #FFFFFF;
+
+  /* Neutral data-viz ramp for charts on light stages */
+  --chart-1: #3348E0;
+  --chart-2: #18807A;
+  --chart-3: #B8742A;
+  --chart-4: #9951B7;
+  --chart-5: #C2373D;
+  --chart-muted: #A39C91;
+  --chart-grid: rgb(27 31 42 / 0.08);
+  --chart-axis: rgb(27 31 42 / 0.45);
+}
+
+/* ---------------------------------------------------------------------
+   Dark theme. Two copies (system preference + explicit choice) because
+   CSS cannot share a declaration block across those two selectors
+   without duplicating it. Keep them in sync.
+   --------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #0E121B;
+    --paper-2: #151A26;
+    --paper-3: #1B2131;
+    --surface: #171D2A;
+    --ink: #E8E5DF;
+    --ink-2: #B4B8C5;
+    --ink-3: #9097A9;
+    --rule: #242B3A;
+    --rule-strong: #343C4F;
+    --accent: #8EA2FF;
+    --accent-strong: #AAB9FF;
+    --accent-ink: #0E121B;
+    --accent-soft: rgb(142 162 255 / 0.12);
+    --accent-line: rgb(142 162 255 / 0.38);
+    --focus-ring: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent);
+    --success: #4FCF95;
+    --success-soft: rgb(79 207 149 / 0.12);
+    --danger: #FF7C80;
+    --danger-soft: rgb(255 124 128 / 0.11);
+    --mark: #5B4A17;
+    --yes: #4FCF95;
+    --partial: #E8A65A;
+    --no: #FF7C80;
+    --varies: #9097A9;
+    --hero-glow-1: rgb(76 141 255 / 0.10);
+    --hero-glow-2: rgb(182 95 216 / 0.08);
+    --hero-glow-3: rgb(46 196 201 / 0.04);
+    --lens-feather: 66%;
+    --lens-shadow: none;
+    --key: #8EA2FF;   --key-ink: #AAB9FF;   --key-tint: rgb(142 162 255 / 0.07);
+    --clinic: #4CC9C0; --clinic-ink: #7AD9D2; --clinic-tint: rgb(76 201 192 / 0.07);
+    --note: #CDAE7E;  --note-ink: #DDC296;  --note-tint: rgb(205 174 126 / 0.07);
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-2: 0 1px 2px rgb(0 0 0 / 0.35), 0 8px 22px -8px rgb(0 0 0 / 0.55);
+    --shadow-3: 0 2px 4px rgb(0 0 0 / 0.35), 0 22px 56px -14px rgb(0 0 0 / 0.7);
+    --shadow-stage: 0 1px 1px rgb(0 0 0 / 0.3), 0 22px 54px -26px rgb(0 0 0 / 0.8);
+    --chart-1: #8EA2FF;
+    --chart-2: #4CC9C0;
+    --chart-3: #E8A65A;
+    --chart-4: #C78BE6;
+    --chart-5: #FF7C80;
+    --chart-muted: #6C7385;
+    --chart-grid: rgb(232 229 223 / 0.08);
+    --chart-axis: rgb(232 229 223 / 0.45);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #0E121B;
+  --paper-2: #151A26;
+  --paper-3: #1B2131;
+  --surface: #171D2A;
+  --ink: #E8E5DF;
+  --ink-2: #B4B8C5;
+  --ink-3: #9097A9;
+  --rule: #242B3A;
+  --rule-strong: #343C4F;
+  --accent: #8EA2FF;
+  --accent-strong: #AAB9FF;
+  --accent-ink: #0E121B;
+  --accent-soft: rgb(142 162 255 / 0.12);
+  --accent-line: rgb(142 162 255 / 0.38);
+  --focus-ring: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent);
+  --success: #4FCF95;
+  --success-soft: rgb(79 207 149 / 0.12);
+  --danger: #FF7C80;
+  --danger-soft: rgb(255 124 128 / 0.11);
+  --mark: #5B4A17;
+  --yes: #4FCF95;
+  --partial: #E8A65A;
+  --no: #FF7C80;
+  --varies: #9097A9;
+  --hero-glow-1: rgb(76 141 255 / 0.10);
+  --hero-glow-2: rgb(182 95 216 / 0.08);
+  --hero-glow-3: rgb(46 196 201 / 0.04);
+  --lens-feather: 66%;
+  --lens-shadow: none;
+  --key: #8EA2FF;   --key-ink: #AAB9FF;   --key-tint: rgb(142 162 255 / 0.07);
+  --clinic: #4CC9C0; --clinic-ink: #7AD9D2; --clinic-tint: rgb(76 201 192 / 0.07);
+  --note: #CDAE7E;  --note-ink: #DDC296;  --note-tint: rgb(205 174 126 / 0.07);
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-2: 0 1px 2px rgb(0 0 0 / 0.35), 0 8px 22px -8px rgb(0 0 0 / 0.55);
+  --shadow-3: 0 2px 4px rgb(0 0 0 / 0.35), 0 22px 56px -14px rgb(0 0 0 / 0.7);
+  --shadow-stage: 0 1px 1px rgb(0 0 0 / 0.3), 0 22px 54px -26px rgb(0 0 0 / 0.8);
+  --chart-1: #8EA2FF;
+  --chart-2: #4CC9C0;
+  --chart-3: #E8A65A;
+  --chart-4: #C78BE6;
+  --chart-5: #FF7C80;
+  --chart-muted: #6C7385;
+  --chart-grid: rgb(232 229 223 / 0.08);
+  --chart-axis: rgb(232 229 223 / 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-1: 0ms;
+    --dur-2: 0ms;
+    --dur-3: 0ms;
+    --dur-4: 0ms;
+  }
+}

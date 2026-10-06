@@ -1,0 +1,3 @@
+GSAP 3.15.0 — Copyright (c) 2008-2026, GreenSock. All rights reserved.
+Free for all uses under GreenSock's standard "no charge" license: https://gsap.com/standard-license
+Vendored (ES-module build, minified per file) by tools/vendor.mjs from the npm package "gsap".

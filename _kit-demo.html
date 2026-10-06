@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cell kit demo (dev) · Self &amp; Other</title>
+  <meta name="robots" content="noindex">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/figures.css">
+  <style>
+    body { max-width: 1240px; margin: 0 auto; padding: 24px 20px 80px; font-family: var(--font-ui); color: var(--ink); background: var(--paper); }
+    h1 { font-family: var(--font-display); font-weight: 520; font-size: 1.8rem; margin: 0 0 4px; }
+    .lede { color: var(--ink-2); margin: 0 0 18px; max-width: 70ch; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 22px; }
+    .demo { margin: 0; }
+    .demo h2 { font-size: 0.95rem; font-weight: 650; margin: 0 0 6px; display: flex; gap: 8px; align-items: baseline; }
+    .demo h2 code { font-size: 0.78rem; color: var(--ink-3); font-weight: 500; }
+    .demo .fig__stage { --fig-aspect: 16 / 9; }
+    .demo .bar { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+    .demo input[type=range] { flex: 1; }
+    .demo .res { font-size: 0.75rem; font-variant-numeric: tabular-nums; min-width: 6.5em; text-align: right; color: var(--ink-3); }
+    .demo .res.ok { color: var(--success); }
+    .demo .res.bad { color: var(--danger); font-weight: 650; }
+    .demo button { font: inherit; font-size: 0.8rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); cursor: pointer; }
+    #summary { margin: 0 0 18px; font-weight: 600; }
+    .demo.wide { grid-column: 1 / -1; }
+  </style>
+</head>
+<body>
+  <h1>Cell kit · dev sandbox</h1>
+  <p class="lede">Every builder of <code>shared/cell-actions.js</code>, <code>synapse.js</code>, <code>activity-meter.js</code> and <code>agents.js</code> in isolation. Each card owns one paused GSAP timeline: drag to scrub, ▶ to play. The <b>seek test</b> records the DOM at 24 times in order, then jumps around (backward, forward, scrambled) and checks every attribute matches. Docs: <code>docs/shared/*.md</code>.</p>
+  <p id="summary">Seek test: running…</p>
+  <div class="grid" id="grid"></div>
+  <script type="module" src="assets/js/figures/shared/_kit-demo.js"></script>
+</body>
+</html>

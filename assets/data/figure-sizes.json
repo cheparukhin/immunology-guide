@@ -1,0 +1,603 @@
+{
+  "ch01-binding": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 81
+    },
+    "mobile": {
+      "aspect": 0.8,
+      "extra": 513
+    }
+  },
+  "ch01-census": {
+    "desktop": {
+      "aspect": 1.4098,
+      "extra": 129
+    },
+    "mobile": {
+      "aspect": 0.2707,
+      "extra": 198
+    }
+  },
+  "ch01-gene-to-protein": {
+    "desktop": {
+      "aspect": 1.6939,
+      "extra": 84
+    },
+    "mobile": {
+      "aspect": 0.4691,
+      "extra": 81
+    }
+  },
+  "ch01-scale": {
+    "desktop": {
+      "aspect": 1.5,
+      "extra": 267
+    },
+    "mobile": {
+      "aspect": 0.8,
+      "extra": 404
+    }
+  },
+  "ch02-inflammation": {
+    "desktop": {
+      "aspect": 1.7857,
+      "extra": 64
+    },
+    "mobile": {
+      "aspect": 0.7,
+      "extra": 81
+    }
+  },
+  "ch02-macrophage-spectrum": {
+    "desktop": {
+      "aspect": 1.7857,
+      "extra": 275
+    },
+    "mobile": {
+      "aspect": 0.7,
+      "extra": 332
+    }
+  },
+  "ch02-nk-missing-self": {
+    "desktop": {
+      "aspect": 1.6667,
+      "extra": 242
+    },
+    "mobile": {
+      "aspect": 0.6563,
+      "extra": 562
+    }
+  },
+  "ch02-pattern-recognition": {
+    "desktop": {
+      "aspect": 1.6129,
+      "extra": 260
+    },
+    "mobile": {
+      "aspect": 0.75,
+      "extra": 737
+    }
+  },
+  "ch03-antibody": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 189,
+      "side": 304
+    },
+    "mobile": {
+      "aspect": 0.8,
+      "extra": 326
+    }
+  },
+  "ch03-clonal-selection": {
+    "desktop": {
+      "aspect": 1.8182,
+      "extra": 51
+    },
+    "mobile": {
+      "aspect": 0.4709,
+      "extra": 219
+    }
+  },
+  "ch03-numbers": {
+    "desktop": {
+      "aspect": 1.5154,
+      "extra": 12
+    },
+    "mobile": {
+      "aspect": 0.6037,
+      "extra": 12
+    }
+  },
+  "ch03-vdj": {
+    "desktop": {
+      "aspect": 1.7143,
+      "extra": 68
+    },
+    "mobile": {
+      "aspect": 0.4819,
+      "extra": 72
+    }
+  },
+  "ch04-cross-presentation": {
+    "desktop": {
+      "aspect": 1.7857,
+      "extra": 55
+    },
+    "mobile": {
+      "aspect": 0.4667,
+      "extra": 53
+    }
+  },
+  "ch04-lymph-node-search": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 395
+    },
+    "mobile": {
+      "aspect": 0.6667,
+      "extra": 652
+    }
+  },
+  "ch04-mhc1-pathway": {
+    "desktop": {
+      "aspect": 1.5625,
+      "extra": 65
+    },
+    "mobile": {
+      "aspect": 0.5455,
+      "extra": 267
+    }
+  },
+  "ch04-peptide-plus-groove": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 70
+    },
+    "mobile": {
+      "aspect": 0.8936,
+      "extra": 76
+    }
+  },
+  "ch04-three-signals": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 276,
+      "side": 320
+    },
+    "mobile": {
+      "aspect": 0.625,
+      "extra": 866
+    }
+  },
+  "ch05-brakes": {
+    "desktop": {
+      "aspect": 1.6,
+      "extra": 140
+    },
+    "mobile": {
+      "aspect": 0.5208,
+      "extra": 305
+    }
+  },
+  "ch05-exhaustion": {
+    "desktop": {
+      "aspect": 1.5894,
+      "extra": 130
+    },
+    "mobile": {
+      "aspect": 0.5141,
+      "extra": 149
+    }
+  },
+  "ch05-kill": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 96
+    },
+    "mobile": {
+      "aspect": 0.7143,
+      "extra": 128
+    }
+  },
+  "ch05-thymus": {
+    "desktop": {
+      "aspect": 1.5484,
+      "extra": 55
+    },
+    "mobile": {
+      "aspect": 0.5618,
+      "extra": 28
+    }
+  },
+  "ch05-whole-team": {
+    "desktop": {
+      "aspect": 1.6,
+      "extra": 95
+    },
+    "mobile": {
+      "aspect": 0.5063,
+      "extra": 118
+    }
+  },
+  "ch06-antigen-kinds": {
+    "desktop": {
+      "aspect": 1.1915,
+      "extra": 62,
+      "side": 384
+    },
+    "mobile": {
+      "aspect": 0.4562,
+      "extra": 106
+    }
+  },
+  "ch06-clonal-evolution": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 28
+    },
+    "mobile": {
+      "aspect": 0.4742,
+      "extra": 28
+    }
+  },
+  "ch06-tmb": {
+    "desktop": {
+      "aspect": 1.0365,
+      "extra": 12,
+      "side": 304
+    },
+    "mobile": {
+      "aspect": 0.4379,
+      "extra": 302
+    }
+  },
+  "ch06-typo-to-target": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 95
+    },
+    "mobile": {
+      "aspect": 0.4878,
+      "extra": 122
+    }
+  },
+  "ch07-cycle": {
+    "desktop": {
+      "aspect": 1.3089,
+      "extra": 79,
+      "side": 352
+    },
+    "mobile": {
+      "aspect": 0.6873,
+      "extra": 297
+    }
+  },
+  "ch07-evidence": {
+    "desktop": {
+      "aspect": 1.0528,
+      "extra": 12,
+      "side": 304
+    },
+    "mobile": {
+      "aspect": 0.4959,
+      "extra": 225
+    }
+  },
+  "ch07-immunoediting": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 126
+    },
+    "mobile": {
+      "aspect": 0.5774,
+      "extra": 387
+    }
+  },
+  "ch07-tme": {
+    "desktop": {
+      "aspect": 1.7143,
+      "extra": 286,
+      "side": 280
+    },
+    "mobile": {
+      "aspect": 0.7143,
+      "extra": 401
+    }
+  },
+  "ch08-blockade": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 124
+    },
+    "mobile": {
+      "aspect": 0.7143,
+      "extra": 256
+    }
+  },
+  "ch08-side-effects": {
+    "desktop": {
+      "aspect": 0.9462,
+      "extra": 68,
+      "side": 320
+    },
+    "mobile": {
+      "aspect": 0.4482,
+      "extra": 176
+    }
+  },
+  "ch08-tail": {
+    "desktop": {
+      "aspect": 1.693,
+      "extra": 12
+    },
+    "mobile": {
+      "aspect": 0.8041,
+      "extra": 550
+    }
+  },
+  "ch08-two-brakes": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 28
+    },
+    "mobile": {
+      "aspect": 0.8421,
+      "extra": 28
+    }
+  },
+  "ch09-adc": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 48
+    },
+    "mobile": {
+      "aspect": 0.7143,
+      "extra": 69
+    }
+  },
+  "ch09-bridge": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 280
+    },
+    "mobile": {
+      "aspect": 0.8572,
+      "extra": 632
+    }
+  },
+  "ch09-humanization": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 295,
+      "side": 304
+    },
+    "mobile": {
+      "aspect": 0.6667,
+      "extra": 436
+    }
+  },
+  "ch09-wiring": {
+    "desktop": {
+      "aspect": 1.8,
+      "extra": 149
+    },
+    "mobile": {
+      "aspect": 0.6667,
+      "extra": 191
+    }
+  },
+  "ch10-build-a-car": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 54
+    },
+    "mobile": {
+      "aspect": 0.625,
+      "extra": 144
+    }
+  },
+  "ch10-crs": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 139
+    },
+    "mobile": {
+      "aspect": 0.5797,
+      "extra": 334
+    }
+  },
+  "ch10-journey": {
+    "desktop": {
+      "aspect": 1.7518,
+      "extra": 164
+    },
+    "mobile": {
+      "aspect": 0.5333,
+      "extra": 203
+    }
+  },
+  "ch10-logic-gates": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 142
+    },
+    "mobile": {
+      "aspect": 0.5181,
+      "extra": 311
+    }
+  },
+  "ch11-four-fixes": {
+    "desktop": {
+      "aspect": 1.8653,
+      "extra": 377
+    },
+    "mobile": {
+      "aspect": 0.5593,
+      "extra": 666
+    }
+  },
+  "ch11-hpv": {
+    "desktop": {
+      "aspect": 1.8483,
+      "extra": 0
+    },
+    "mobile": {
+      "aspect": 0.3804,
+      "extra": 0
+    }
+  },
+  "ch11-oncolytic": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 57
+    },
+    "mobile": {
+      "aspect": 0.6061,
+      "extra": 276
+    }
+  },
+  "ch11-personal-vaccine": {
+    "desktop": {
+      "aspect": 1.3919,
+      "extra": 12
+    },
+    "mobile": {
+      "aspect": 0.5774,
+      "extra": 1156
+    }
+  },
+  "ch12-combinations": {
+    "desktop": {
+      "aspect": 1.6415,
+      "extra": 264
+    },
+    "mobile": {
+      "aspect": 0.3359,
+      "extra": 489
+    }
+  },
+  "ch12-ctdna": {
+    "desktop": {
+      "aspect": 1.256,
+      "extra": 245
+    },
+    "mobile": {
+      "aspect": 0.2182,
+      "extra": 382
+    }
+  },
+  "ch12-neoadjuvant": {
+    "desktop": {
+      "aspect": 1.5336,
+      "extra": 35
+    },
+    "mobile": {
+      "aspect": 0.6006,
+      "extra": 28
+    }
+  },
+  "ch12-resistance": {
+    "desktop": {
+      "aspect": 1.7849,
+      "extra": 244
+    },
+    "mobile": {
+      "aspect": 0.7304,
+      "extra": 193
+    }
+  },
+  "demo-chart": {
+    "desktop": {
+      "aspect": 2.1818,
+      "extra": 54
+    },
+    "mobile": {
+      "aspect": 0.9524,
+      "extra": 88
+    }
+  },
+  "demo-kit": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 193,
+      "side": 304
+    },
+    "mobile": {
+      "aspect": 0.8,
+      "extra": 316
+    }
+  },
+  "demo-sim": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 94
+    },
+    "mobile": {
+      "aspect": 0.8,
+      "extra": 227
+    }
+  },
+  "demo-stepper": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 18
+    },
+    "mobile": {
+      "aspect": 0.7143,
+      "extra": 12
+    }
+  },
+  "home-big-idea": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 52
+    },
+    "mobile": {
+      "aspect": 0.9091,
+      "extra": 323
+    }
+  },
+  "home-hero": {
+    "desktop": {
+      "aspect": 1.7011,
+      "extra": 0
+    },
+    "mobile": {
+      "aspect": 0.4795,
+      "extra": 0
+    }
+  },
+  "home-vignette": {
+    "desktop": {
+      "aspect": 1,
+      "extra": 0
+    },
+    "mobile": {
+      "aspect": 1,
+      "extra": 0
+    }
+  },
+  "home-window": {
+    "desktop": {
+      "aspect": 1.7778,
+      "extra": 122
+    },
+    "mobile": {
+      "aspect": 1,
+      "extra": 151
+    }
+  },
+  "int-timeline": {
+    "desktop": {
+      "aspect": 1.1535,
+      "extra": 0,
+      "side": 328
+    },
+    "mobile": {
+      "aspect": 0.1651,
+      "extra": 0
+    }
+  }
+}

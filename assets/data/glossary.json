@@ -1,0 +1,2850 @@
+{
+  "accelerated-approval": {
+    "term": "Accelerated approval",
+    "def": "A US FDA pathway that approves a drug on early evidence, such as tumor shrinkage, on condition that later trials confirm a clinical benefit to patients. If they do not, the approval can be withdrawn.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "acquired-resistance": {
+    "term": "Acquired resistance",
+    "def": "When a cancer that first responded to a treatment later grows back despite it.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "adaptive-immunity": {
+    "term": "Adaptive immunity",
+    "def": "The slower, highly specific branch of the immune system, made up of T cells, B cells and the antibodies B cells secrete. It generates millions of different receptors in advance, expands the cells whose receptors bind a particular antigen (clonal expansion), and keeps memory cells that recognize that antigen for years.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "adaptive-resistance": {
+    "term": "Adaptive resistance",
+    "def": "A tumor’s response to immune attack, in which signals from T cells (especially IFN-γ) cause the tumor to raise brakes such as PD-L1. “Adaptive” refers to the tumor adapting, not to adaptive immunity.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "adc": {
+    "term": "Antibody–drug conjugate (ADC)",
+    "def": "An antibody joined by a chemical linker to a potent cytotoxic (cell-killing) drug, the payload. The antibody delivers the payload to cells that express its target; these usually internalize the conjugate and release the drug inside.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "adcc": {
+    "term": "ADCC (antibody-dependent cellular cytotoxicity)",
+    "def": "Killing of an antibody-coated cell by an immune cell, usually a natural killer (NK) cell, that binds the antibodies’ Fc regions with its Fc receptors.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "adcp": {
+    "term": "ADCP (antibody-dependent cellular phagocytosis)",
+    "def": "Engulfment of an antibody-coated cell by a macrophage or other phagocyte that binds the antibodies’ Fc regions with its Fc receptors.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "adenosine": {
+    "term": "Adenosine",
+    "def": "A small molecule produced outside cells from ATP; in tumors it binds receptors on T cells and suppresses their activity.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "adhesion-molecule": {
+    "term": "Adhesion molecule",
+    "def": "A surface protein that binds a ligand on another cell or in the surrounding tissue, holding cells together or in place. Selectins, integrins and the ligands they bind are the adhesion molecules that let white blood cells leave the blood.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "adjuvant": {
+    "term": "Adjuvant",
+    "def": "An ingredient added to a vaccine that activates innate danger sensors, such as pattern-recognition receptors, so that antigen-presenting cells mature and the adaptive response to the vaccine’s antigen is strong. Not to be confused with adjuvant therapy, which is treatment after surgery.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "adjuvant-therapy": {
+    "term": "Adjuvant therapy",
+    "def": "Treatment given after surgery to destroy any undetected cancer cells left behind and lower the risk of relapse. Not to be confused with a vaccine adjuvant.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html",
+    "canonical": true
+  },
+  "affinity": {
+    "term": "Affinity",
+    "def": "The strength of binding between two molecules at a single binding site, usually measured as a dissociation constant (K<sub>D</sub>). It reflects the balance between binding and dissociation; for most immune molecules, mainly how long partners stay bound.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "affinity-maturation": {
+    "term": "Affinity maturation",
+    "def": "The gradual improvement in how tightly antibodies bind their target during an immune response, through rounds of mutation and selection.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "aire": {
+    "term": "AIRE (autoimmune regulator)",
+    "def": "A protein in specialized epithelial cells of the thymic medulla that activates genes otherwise expressed only in other organs, so developing T cells can be tested against those proteins.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "allele": {
+    "term": "Allele",
+    "def": "One of the different versions of a gene that exist across a population. More than 45,000 HLA alleles were known by mid-2026.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "allogeneic": {
+    "term": "Allogeneic",
+    "def": "Coming from a donor rather than the patient. Allogeneic (“off-the-shelf”) products could be made in batches in advance, but risk attacking the recipient or being rejected by them.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "amino-acid": {
+    "term": "Amino acid",
+    "def": "One of 20 small molecules that link into chains to make proteins. They differ in size, in charge and in how hydrophobic they are, which governs how a chain folds.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "amplification": {
+    "term": "Gene amplification",
+    "def": "The presence of extra copies of a gene, sometimes dozens, so that a cell makes far more of its protein than normal.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "anchor-residue": {
+    "term": "Anchor residue",
+    "def": "One of the few amino acids in a peptide (for MHC class I, often the second and the last) that must fit pockets in the floor of the peptide-binding groove for the peptide to stay bound. Different HLA versions have differently shaped pockets.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "anergy": {
+    "term": "Anergy",
+    "def": "A lasting unresponsive state that a T cell enters when it recognizes its target without receiving the confirming (costimulatory) signal. The cell stays alive but no longer responds; this protects against autoimmunity but can also silence T cells able to attack a tumor.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "anti-drug-antibody": {
+    "term": "Anti-drug antibodies",
+    "def": "Antibodies a patient makes against a protein drug. They can neutralize the drug, speed its removal or cause allergic reactions.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "antibody": {
+    "term": "Antibody",
+    "def": "A Y-shaped protein secreted by B cells; it is the secreted form of the B-cell receptor. Its two identical arms (Fab arms) bind one specific molecular feature, the epitope, and its stem (the Fc region) is bound by receptors on immune cells and by complement proteins. An antibody can neutralize its target or mark it for destruction.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "antibody-class": {
+    "term": "Antibody class (isotype)",
+    "def": "One of five antibody types (IgG, IgA, IgM, IgE, IgD), set by the heavy chain’s constant region. Classes share the same kind of variable regions but have different Fc regions and therefore different jobs.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "antigen": {
+    "term": "Antigen",
+    "def": "Anything that the immune system’s specific receptors (on T cells, on B cells, or antibodies) can recognize, such as part of a virus, a toxin or a protein from a cancer cell. It is often a protein or a fragment of one.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "antigen-escape": {
+    "term": "Antigen escape",
+    "def": "Relapse of a cancer whose cells no longer carry a therapy’s target in a form the therapy recognizes, because treatment selected for cells that lacked the target, lost it or changed it.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html",
+    "canonical": true
+  },
+  "antigen-presentation": {
+    "term": "Antigen presentation",
+    "def": "The process by which a cell degrades proteins into short peptides and displays them on its surface in MHC molecules, so that T cells can detect what the cell is making or has taken up.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "antigen-presenting-cell": {
+    "term": "Professional antigen-presenting cell",
+    "def": "A cell equipped with MHC class II and costimulatory molecules. Dendritic cells, macrophages and B cells are the main ones, but in practice only dendritic cells reliably activate a naive T cell; macrophages and B cells mostly interact with T cells that are already activated.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "antigen-spreading": {
+    "term": "Antigen spreading",
+    "def": "The broadening of an immune response to new targets, as killing releases additional antigens that activate new T cells.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "apheresis": {
+    "term": "Leukapheresis",
+    "def": "A procedure lasting a few hours in which blood is drawn, passed through a machine that skims off white blood cells, and returned. It collects the starting material for a cell therapy.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "apoptosis": {
+    "term": "Apoptosis",
+    "def": "Programmed cell death, in which a cell dismantles itself into membrane-wrapped fragments that phagocytes engulf, without spilling its contents or causing inflammation.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "armored-car": {
+    "term": "Armored CAR",
+    "def": "A CAR-T cell carrying an extra gene, usually for a cytokine, that it releases on engaging its target, intended to help immune cells survive and work inside a suppressive tumor. Experimental.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "autoimmunity": {
+    "term": "Autoimmunity",
+    "def": "An immune attack on the body’s own healthy tissues, caused by a failure of tolerance, as in type 1 diabetes, multiple sclerosis or rheumatoid arthritis.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "autologous": {
+    "term": "Autologous",
+    "def": "Coming from the patient’s own body. Every approved CAR-T, TIL and TCR-T product is autologous.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "avidity": {
+    "term": "Avidity",
+    "def": "The overall binding strength of a molecule that binds its target at several sites at once, such as a two-armed antibody. It can be far greater than the affinity of any single site.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "b-cell": {
+    "term": "B cell",
+    "def": "A lymphocyte that carries one kind of antibody on its surface as its receptor and, when activated, can differentiate into a plasma cell that secretes that antibody. B cells mature in the bone marrow; the “B” comes from the bursa of Fabricius, the bird organ where they were discovered.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "b2m": {
+    "term": "Beta-2-microglobulin (B2M)",
+    "def": "A small protein subunit of every MHC class I molecule; without it, class I molecules cannot fold properly or reach the cell surface. Cells that lose B2M cannot present peptides to killer T cells.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "b7": {
+    "term": "B7 (CD80 and CD86)",
+    "def": "Two related proteins on dendritic cells and other antigen-presenting cells, whose expression rises sharply when danger signals make those cells mature. They deliver costimulation (signal 2) by binding the activating receptor CD28 on T cells, but the inhibitory receptor CTLA-4 binds them with higher affinity and competes with CD28 for them.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "bcg": {
+    "term": "BCG (bacillus Calmette–Guérin)",
+    "def": "A weakened relative of the tuberculosis bacterium, used as a TB vaccine and, instilled into the bladder, as a treatment for early bladder cancer.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "bcma": {
+    "term": "BCMA (B-cell maturation antigen)",
+    "def": "A surface protein on antibody-producing plasma cells and on the cancerous plasma cells of multiple myeloma. It is the target of several CAR-T therapies and T-cell engagers for myeloma.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html",
+    "canonical": true
+  },
+  "bcr": {
+    "term": "B-cell receptor (BCR)",
+    "def": "An antibody anchored in a B cell’s membrane; each B cell carries many copies of one kind.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "benign": {
+    "term": "Benign",
+    "def": "Describes a tumor that grows but stays within its boundaries, without invading nearby tissue or spreading.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "biomarker": {
+    "term": "Biomarker",
+    "def": "A measurable feature, such as a protein, a gene change or a blood level, that indicates something about a disease or predicts how it will behave or respond to treatment.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "biopsy": {
+    "term": "Biopsy",
+    "def": "A small sample of tissue removed for examination, for example to confirm a cancer or to see which immune cells are inside it.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "biosimilar": {
+    "term": "Biosimilar",
+    "def": "A near-identical, usually cheaper, copy of an antibody or other biological drug, sold after the original’s patents expire.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "bispecific-antibody": {
+    "term": "Bispecific antibody",
+    "def": "An engineered antibody with two different antigen-binding sites, so it can bind two different targets at once, for example a protein on a tumor cell and CD3 on a T cell.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "blood-cancer": {
+    "term": "Blood cancer",
+    "def": "A cancer of blood-forming or immune cells (leukemia, lymphoma or myeloma), growing mainly in the bone marrow, blood and lymph nodes.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "bone-marrow": {
+    "term": "Bone marrow",
+    "def": "The soft tissue inside bones where blood cells are made, including the ancestors of all immune cells. B cells mature there, and it holds about 40% of the body’s immune cells.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "bystander-effect": {
+    "term": "Bystander effect",
+    "def": "Killing of neighboring cells by an ADC payload that leaks out of the targeted cell, which can reach cancer cells lacking the target.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "cancer": {
+    "term": "Cancer",
+    "def": "A disease in which the body’s own cells, altered by accumulated mutations, multiply out of control and can invade other tissues.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "cancer-associated-fibroblast": {
+    "term": "Cancer-associated fibroblast (CAF)",
+    "def": "A connective-tissue cell recruited and reprogrammed by a tumor; CAFs deposit dense collagen and secrete signals that can keep T cells out.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "cancer-immunity-cycle": {
+    "term": "Cancer-immunity cycle",
+    "def": "A framework (Chen and Mellman, 2013) describing the seven steps of an immune attack on a tumor: antigen release, presentation by dendritic cells, priming in lymph nodes, trafficking, infiltration, recognition and killing. Killing releases more antigen, which can start the cycle again.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "cancer-testis-antigen": {
+    "term": "Cancer-testis antigen",
+    "def": "A protein made almost nowhere in a healthy adult except in developing sperm cells — which carry no MHC class I and so never show it to T cells — but re-expressed in many cancers. Examples include NY-ESO-1 and MAGE-A4.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "car-nk": {
+    "term": "CAR-NK cell",
+    "def": "A natural killer cell given a chimeric antigen receptor. Early studies suggest less cytokine release syndrome and less risk from donor cells, at the cost of persisting for a shorter time.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "car-t": {
+    "term": "CAR-T cell",
+    "def": "A T cell, usually the patient’s own, genetically engineered to express a chimeric antigen receptor (CAR), a synthetic receptor that joins an antibody’s antigen-binding variable regions to T-cell signaling domains. Because the cells expand in the patient and can persist for years, they are called a “living drug”.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "carcinogen": {
+    "term": "Carcinogen",
+    "def": "Any substance or exposure that can cause cancer, usually by damaging DNA — such as tobacco smoke, UV light or certain chemicals.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "carcinoma": {
+    "term": "Carcinoma",
+    "def": "A cancer that starts in epithelial cells, which line the skin and the surfaces of organs. Most common cancers, such as lung, breast, colon and prostate cancer, are carcinomas.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "cd19": {
+    "term": "CD19",
+    "def": "A protein on the surface of nearly every B cell, healthy or cancerous, including most B-cell leukemias and lymphomas. It is the target of blinatumomab and of the first successful CAR-T cells, chosen partly because people can live without B cells if given antibodies from donors.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html",
+    "canonical": true
+  },
+  "cd20": {
+    "term": "CD20",
+    "def": "A protein on the surface of nearly all B cells, but not on the blood-forming cells that make them or on plasma cells. It is the target of rituximab and several engagers.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "cd28": {
+    "term": "CD28",
+    "def": "The main costimulatory (activating) receptor on T cells, the counterpart of inhibitory receptors such as CTLA-4. When it binds B7 on a mature dendritic cell while the T-cell receptor recognizes its target, it delivers signal 2, which lets a naive T cell activate instead of becoming anergic.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cd3": {
+    "term": "CD3",
+    "def": "The cluster of signaling chains bound to every T-cell receptor, together forming the TCR–CD3 complex. The receptor’s antigen-binding chains cannot signal on their own; CD3 relays the activating signal into the cell. T-cell engagers (Chapter 9) bind CD3 to activate T cells.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cd3-zeta": {
+    "term": "CD3ζ (CD3 zeta)",
+    "def": "A signaling chain of the T-cell receptor’s CD3 complex that carries signal 1 into the cell when the receptor binds its target. Its intracellular domain is the activating part of every approved chimeric antigen receptor.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "cd4-t-cell": {
+    "term": "Helper T cell (CD4 T cell)",
+    "def": "A T cell whose CD4 co-receptor binds MHC class II, so it recognizes peptides presented by antigen-presenting cells. It coordinates immune responses, using cytokines and contact signals to help killer T cells, B cells and macrophages.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cd40": {
+    "term": "CD40 and CD40 ligand",
+    "def": "A receptor on dendritic cells, B cells and macrophages (CD40) and its partner on activated helper T cells (CD40 ligand). Their binding lets helpers “license” these cells.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "cd47": {
+    "term": "CD47",
+    "def": "A “don’t eat me” signal on the surface of cells that inhibits their phagocytosis by macrophages. Many cancers overexpress it; red blood cells depend on it too.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "cd8-t-cell": {
+    "term": "Killer T cell (CD8 T cell)",
+    "def": "A T cell whose CD8 co-receptor binds MHC class I, so it can inspect the peptides presented by nearly any cell in the body and, once activated, kill cells that present its target, such as infected or cancerous cells. Also called a cytotoxic T cell.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cdc": {
+    "term": "CDC (complement-dependent cytotoxicity)",
+    "def": "Killing of an antibody-coated cell by complement: proteins activated by the antibodies’ clustered Fc regions assemble pores in the cell’s membrane.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "cdr": {
+    "term": "Complementarity-determining regions (CDRs)",
+    "def": "The six short loops at the end of each antibody arm, three from the heavy chain’s variable region and three from the light chain’s, that contact the target. They differ most from one antibody to the next; a humanized antibody keeps only the mouse CDRs.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "cdr3": {
+    "term": "CDR3",
+    "def": "The most variable loop of an antibody or T-cell receptor, created at the V(D)J junctions and sitting at the center of the antigen-binding site.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "cell": {
+    "term": "Cell",
+    "def": "The basic unit of life: a microscopic compartment wrapped in a membrane that uses energy, responds to its surroundings and, usually, can divide. An adult human has roughly 30 trillion.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "cell-membrane": {
+    "term": "Cell membrane",
+    "def": "The lipid bilayer that surrounds every cell, separating inside from outside. Proteins embedded in it act as channels, sensors and identity markers.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "checkpoint": {
+    "term": "Immune checkpoint",
+    "def": "An inhibitory receptor (a “brake”) on immune cells, such as CTLA-4 or PD-1, that limits the strength and length of a response and protects healthy tissue from attack. Checkpoint inhibitor drugs block these receptors or their ligands, such as PD-L1.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "checkpoint-inhibitor": {
+    "term": "Checkpoint inhibitor",
+    "def": "A drug, usually a monoclonal antibody, that blocks an immune checkpoint such as PD-1, its ligand PD-L1, or CTLA-4, releasing a brake on T cells so they can keep attacking.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html",
+    "canonical": true
+  },
+  "chemokine": {
+    "term": "Chemokine",
+    "def": "A type of cytokine that attracts cells. Immune cells migrate along its concentration gradient toward the cells secreting it.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "chemotherapy": {
+    "term": "Chemotherapy",
+    "def": "Drugs that kill rapidly dividing cells, usually by damaging DNA or blocking the process of cell division. They hit cancer cells but also harm healthy dividing cells, such as those in the bone marrow, gut lining and hair follicles.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html",
+    "canonical": true
+  },
+  "chimeric-antibody": {
+    "term": "Chimeric antibody",
+    "def": "An engineered antibody in which a mouse antibody’s variable regions, which bind the target, are joined to human constant regions. Classic names contain -xi-, as in rituximab. The name refers to the Chimera, a creature of Greek myth made from parts of different animals.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html",
+    "canonical": true
+  },
+  "chimeric-antigen-receptor": {
+    "term": "Chimeric antigen receptor (CAR)",
+    "def": "A laboratory-made receptor that combines an antibody’s antigen-binding variable regions (an scFv), outside the cell, with T-cell signaling domains (CD3ζ plus, in approved products, one costimulatory domain), inside it, joined by a hinge and a transmembrane domain. “Chimeric” because it is assembled from parts of different molecules, after the Chimera of Greek myth, a creature made from parts of different animals.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html",
+    "canonical": true
+  },
+  "chromosome": {
+    "term": "Chromosome",
+    "def": "One of the long DNA molecules, wrapped around packaging proteins, into which a genome is divided. Most human cells carry 46, half from each parent.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "class-switching": {
+    "term": "Class switching",
+    "def": "A DNA change in an activated B cell that joins its variable-region gene to a different heavy-chain constant-region gene, changing the antibody’s class (for example from IgM to IgG) and its Fc region without changing what it binds.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "clinical-complete-response": {
+    "term": "Clinical complete response",
+    "def": "No sign of cancer on any examination, scan or biopsy after treatment, without surgery to confirm it under the microscope.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "clinical-trial": {
+    "term": "Clinical trial",
+    "def": "A study that tests a treatment in people, usually in phases: phase 1 tests safety and dose, phase 2 looks for early signs of benefit, and phase 3 compares the new treatment with the standard one in large, usually randomized groups.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "clonal-evolution": {
+    "term": "Clonal evolution",
+    "def": "The process, set out for cancer by Peter Nowell in 1976, by which random mutation and selection let ever-fitter clones take over a tumor.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "clonal-expansion": {
+    "term": "Clonal expansion",
+    "def": "The rapid, repeated division of the rare lymphocytes whose receptors recognize a target, producing thousands to millions of identical cells (a clone).",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "clonal-neoantigen": {
+    "term": "Clonal (vs subclonal) neoantigen",
+    "def": "A clonal neoantigen comes from a mutation present in every cancer cell, the trunk of the tumor’s family tree; a subclonal one is found only in some branches.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "clonal-replacement": {
+    "term": "Clonal replacement",
+    "def": "The observation that many T-cell clones expanding in a tumor after PD-1 blockade are new arrivals rather than clones that were there before treatment.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "clonal-selection": {
+    "term": "Clonal selection",
+    "def": "The principle that an antigen activates only the pre-existing lymphocytes whose receptors already fit it, which then multiply.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "clone": {
+    "term": "Clone",
+    "def": "A family of cells descended from a single ancestor cell. In immunology, all the lymphocytes that share the same receptor (B-cell clones later diversify slightly by mutation).",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "co-receptor": {
+    "term": "Co-receptor",
+    "def": "CD8 or CD4: a molecule on a T cell that binds the same MHC molecule as the T-cell receptor, at a site away from the peptide-binding groove, stabilizing the contact and helping to start signaling. CD8 binds MHC class I and CD4 binds class II, which ties killer T cells to class I and helper T cells to class II.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html"
+  },
+  "codon": {
+    "term": "Codon",
+    "def": "A group of three bases in DNA or RNA that specifies one amino acid, or the start or end of a protein.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "cold-tumor": {
+    "term": "Cold tumor",
+    "def": "Informal term for a tumor with few or no T cells inside. Strictly a “desert”, though often also used for “excluded” tumors whose T cells are stuck at the edges.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "collagen": {
+    "term": "Collagen",
+    "def": "The body’s main structural protein: tough fibers that give skin, tendons and scar tissue their strength.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "complement": {
+    "term": "Complement",
+    "def": "A set of dozens of blood proteins that, once triggered on a target’s surface (by a microbe, or by antibodies clustered on a cell), set off a cascade of reactions that opsonizes the target for phagocytes, attracts immune cells and can form pores in its membrane.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "constant-region": {
+    "term": "Constant region",
+    "def": "The part of an antibody chain that comes in only a few standard versions and does not bind the target. The heavy chain’s constant region sets the antibody’s class (IgG, IgA and so on), and the lower parts of the two heavy chains’ constant regions form the Fc region.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "corticosteroid": {
+    "term": "Corticosteroid",
+    "def": "A drug related to the body’s stress hormone cortisol, such as prednisone, that strongly suppresses inflammation and immune activity.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "cortisol": {
+    "term": "Cortisol",
+    "def": "The body’s main stress hormone, made by the adrenal glands on instructions from the pituitary. It is essential for life; if the glands are damaged, it must be replaced with pills.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "costimulation": {
+    "term": "Costimulation (signal 2)",
+    "def": "The confirming second signal a T cell needs, in addition to recognizing its target (signal 1), to become fully activated: the second factor in two-factor authentication. It is classically delivered when CD28 on the T cell binds B7 on a mature dendritic cell; recognition without it can leave the T cell anergic (lastingly unresponsive).",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cross-presentation": {
+    "term": "Cross-presentation",
+    "def": "The ability of certain dendritic cells to present peptides from material they have taken up from outside, for example from a dead tumor cell, on their own MHC class I molecules, so that killer T cells can be primed against it.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cross-reactivity": {
+    "term": "Cross-reactivity",
+    "def": "The ability of a receptor or antibody to bind molecules that resemble its intended target, usually more weakly.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "crs": {
+    "term": "Cytokine release syndrome (CRS)",
+    "def": "A body-wide inflammatory reaction, with fever, low blood pressure and sometimes low oxygen or organ damage, set off when a therapy such as CAR-T cells or a T-cell engager activates large numbers of immune cells at once. Much of the main cytokine involved, IL-6, is secreted by the patient’s own macrophages and related cells rather than by the T cells. Popularly called a “cytokine storm”.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "ctdna": {
+    "term": "Circulating tumor DNA (ctDNA)",
+    "def": "Fragments of DNA released into the blood by cancer cells, identifiable by the tumor’s own mutations.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "ctla-4": {
+    "term": "CTLA-4",
+    "def": "An inhibitory receptor (a “brake”) that T cells express after activation and regulatory T cells express constantly. A close relative of CD28, it binds the same B7 molecules with higher affinity, outcompetes CD28 for them and can remove them from antigen-presenting cells, so it acts mainly while T cells are being primed in lymph nodes; ipilimumab blocks it.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "cytokine": {
+    "term": "Cytokine",
+    "def": "A small signaling protein that cells, especially immune cells, secrete to change the behavior of other cells, for example to make them divide, migrate, attack or suppress a response. Interferons and interleukins are examples.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "damp": {
+    "term": "DAMP (damage-associated molecular pattern)",
+    "def": "A molecule that normally stays inside cells, such as ATP, DNA or uric acid (which crystallizes once outside the cell), and signals danger when it spills out of damaged or dying cells.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "dendritic-cell": {
+    "term": "Dendritic cell",
+    "def": "A star-shaped immune cell that takes up antigens in tissues and carries them to a lymph node, where it presents peptides from them on MHC molecules to T cells. Once it has sensed danger, it also expresses the costimulatory molecules needed to activate naive T cells.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "dissociation-constant": {
+    "term": "Dissociation constant (K<sub>D</sub>)",
+    "def": "The usual measure of affinity: the concentration of ligand at which half the receptors are occupied at any moment. The smaller the K<sub>D</sub>, the tighter the binding. It equals the off-rate (how quickly bound partners separate) divided by the on-rate (how quickly they bind).",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "dll3": {
+    "term": "DLL3",
+    "def": "A protein displayed on the surface of many small-cell lung cancers. It is the target of tarlatamab.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "dna": {
+    "term": "DNA",
+    "def": "The long, double-stranded molecule that stores genetic information as a sequence of four bases, written A, C, G and T. Each strand is a chain of nucleotides, and the bases of the two strands pair up, A with T and C with G.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "driver-mutation": {
+    "term": "Driver mutation",
+    "def": "A mutation that gives a cell a growth or survival advantage, pushing it toward cancer. A typical tumor carries roughly two to eight.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "drug-to-antibody-ratio": {
+    "term": "Drug-to-antibody ratio (DAR)",
+    "def": "The average number of payload molecules attached to each antibody in an ADC.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "effector-cell": {
+    "term": "Effector cell",
+    "def": "An activated lymphocyte that does the immune work, such as a killer T cell or an antibody-secreting plasma cell.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "effector-t-cell": {
+    "term": "Effector T cell",
+    "def": "An activated T cell ready to act, usually after leaving the lymph node; for a CD8 T cell, ready to kill.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "egfr": {
+    "term": "EGFR (epidermal growth factor receptor)",
+    "def": "A growth-signal receptor related to HER2. It is the target of cetuximab and panitumumab.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "endoplasmic-reticulum": {
+    "term": "Endoplasmic reticulum (ER)",
+    "def": "A folded internal membrane compartment where a cell assembles proteins destined for its surface. MHC class I molecules are loaded with their peptides there.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "endosome": {
+    "term": "Endosome",
+    "def": "A membrane-bound compartment inside a cell that receives material taken up from outside. Endosomes become more acidic as they mature and pass their contents to lysosomes for degradation; MHC class II molecules are loaded with peptides in these compartments.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html"
+  },
+  "endothelium": {
+    "term": "Endothelium",
+    "def": "The single layer of cells lining the inside of every blood vessel.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "enzyme": {
+    "term": "Enzyme",
+    "def": "A protein that speeds up a specific chemical reaction, such as cutting or joining other molecules.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "epigenetic": {
+    "term": "Epigenetic",
+    "def": "Describes chemical and structural marks on DNA and its packaging that control which genes a cell can use, without changing the DNA sequence. They can make a cell’s identity stable.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "epithelium": {
+    "term": "Epithelium",
+    "def": "A sheet of tightly joined cells that covers the skin and lines the surfaces of organs and body cavities. Carcinomas, the most common cancers, arise from epithelial cells.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "epitope": {
+    "term": "Epitope",
+    "def": "The exact small patch on an antigen that a particular antibody or receptor binds. For a T cell, it is the peptide held in an MHC molecule.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "epstein-barr-virus": {
+    "term": "Epstein–Barr virus (EBV)",
+    "def": "A very common herpesvirus — the cause of mononucleosis — that stays in the body for life. Kept in check by T cells, it can drive some lymphomas when immunity is weak.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "event-free-survival": {
+    "term": "Event-free survival",
+    "def": "Whether, or for how long, patients stay alive without any defined setback — such as cancer growth, relapse, or being unable to have planned surgery.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "excluded-tumor": {
+    "term": "Immune-excluded tumor",
+    "def": "A tumor where T cells have arrived but are trapped in the surrounding stroma, unable to reach the cancer cells.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "exhaustion": {
+    "term": "T-cell exhaustion",
+    "def": "A stable state of reduced function that T cells enter under long, unrelenting stimulation, as in chronic infections and tumors. Exhausted cells express many inhibitory receptors such as PD-1, divide little and kill poorly.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "extravasation": {
+    "term": "Extravasation",
+    "def": "The process by which a white blood cell leaves the bloodstream: it rolls along the vessel wall as selectins engage their ligands, arrests when its integrins bind adhesion molecules on the vessel lining, and then migrates out between the lining cells.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "fab": {
+    "term": "Fab arm",
+    "def": "Either of the two identical arms of an antibody’s Y (Fab stands for “fragment, antigen-binding”). Each is made of one light chain and part of one heavy chain, and carries one antigen-binding site, formed by their variable regions, at its end.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "fas": {
+    "term": "Fas and Fas ligand",
+    "def": "A “death receptor” (Fas) found on many cells, and its ligand (Fas ligand), which killer T cells and some tumor blood vessels express; their binding triggers apoptosis in the Fas-bearing cell.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "fc-receptor": {
+    "term": "Fc receptor",
+    "def": "A receptor on immune cells such as macrophages, neutrophils and NK cells that binds the Fc region of antibodies bound to a target, so those cells can attack antibody-coated targets.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "fc-region": {
+    "term": "Fc region",
+    "def": "The stem of an antibody’s Y, formed by the lower parts of its two heavy chains’ constant regions (Fc stands for “fragment, crystallizable”). It does not bind the target; Fc receptors on immune cells and complement proteins bind it, and its binding to the recycling receptor FcRn determines how long the antibody lasts in the blood.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "fecal-microbiota-transplant": {
+    "term": "Fecal microbiota transplant (FMT)",
+    "def": "Transfer of stool from a screened donor into a patient’s gut, to replace their gut bacterial community.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "foxp3": {
+    "term": "FOXP3",
+    "def": "The transcription factor that gives regulatory T cells their identity. Mutations in its gene cause the scurfy disease in mice and IPEX in humans.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "frameshift": {
+    "term": "Frameshift mutation",
+    "def": "An insertion or deletion of DNA bases (not in a multiple of three) that shifts how the sequence is read in three-base codons, changing every amino acid after it.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "gamma-delta-t-cell": {
+    "term": "γδ (gamma-delta) T cell",
+    "def": "A minority family of T cells whose receptors are built from different chains (gamma and delta) than ordinary T cells’. They recognize signs of stress and do not need MHC class I, so they can attack cells that have lost it.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html"
+  },
+  "gene": {
+    "term": "Gene",
+    "def": "A stretch of DNA whose sequence encodes a protein (or, for some genes, a functional RNA molecule).",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "gene-expression": {
+    "term": "Gene expression",
+    "def": "The use of a gene to make its product: the gene is copied into RNA and, for a protein-coding gene, the RNA is read to build the protein. A cell is said to express the proteins it makes.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "gene-segment": {
+    "term": "Gene segment",
+    "def": "One of many alternative pieces of DNA (V, D or J) that lymphocytes cut and join to build a complete receptor gene.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "genome": {
+    "term": "Genome",
+    "def": "The complete set of an organism’s DNA. In humans it is about 3 billion base pairs, present in two copies in nearly every cell that has a nucleus.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "germinal-center": {
+    "term": "Germinal center",
+    "def": "A temporary structure that forms in lymph nodes and the spleen during an immune response, where B cells mutate their antibody genes and compete to be selected.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "gm-csf": {
+    "term": "GM-CSF",
+    "def": "Granulocyte-macrophage colony-stimulating factor, a cytokine that recruits and matures dendritic cells; some vaccines and oncolytic viruses carry its gene.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "gprc5d": {
+    "term": "GPRC5D",
+    "def": "A surface protein on myeloma cells that is also found in a few healthy tissues, such as hair follicles. It is the target of talquetamab.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "granzyme": {
+    "term": "Granzyme",
+    "def": "A protease (an enzyme that cleaves proteins), released by killer T cells and NK cells, that enters a target cell through perforin pores and triggers apoptosis.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "gvhd": {
+    "term": "Graft-versus-host disease",
+    "def": "The reaction in which transplanted donor immune cells attack the recipient’s own tissues. It is the main danger of using someone else’s T cells.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "half-life": {
+    "term": "Half-life",
+    "def": "The time it takes for the amount of a drug in the body to fall by half.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "hallmarks-of-cancer": {
+    "term": "Hallmarks of cancer",
+    "def": "A framework introduced by Douglas Hanahan and Robert Weinberg in 2000, and expanded in 2011 and 2022, listing the capabilities a cell lineage acquires on its way to becoming a dangerous cancer — including avoiding immune destruction.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "hazard-ratio": {
+    "term": "Hazard ratio",
+    "def": "A comparison of the rate at which events such as relapse or death happen in two groups at any given moment. 1.0 means no difference; 0.5 means the event happens at half the rate in the first group.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html",
+    "canonical": true
+  },
+  "hbv": {
+    "term": "Hepatitis B virus (HBV)",
+    "def": "A virus that infects the liver. Lifelong infection, often acquired at birth, can lead to scarring (cirrhosis) and liver cancer.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "heavy-chain": {
+    "term": "Heavy chain",
+    "def": "The longer of the two kinds of protein chain in an antibody. Each antibody has two identical heavy chains; their variable regions are assembled from V, D and J segments, and their constant regions set the antibody’s class, with their lower parts forming the Fc region.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "hematopoietic-stem-cell": {
+    "term": "Hematopoietic (blood-forming) stem cell",
+    "def": "A rare cell in the bone marrow that can produce every type of blood cell throughout life: red cells, platelets and the ancestors of all immune cells.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "hemoglobin": {
+    "term": "Hemoglobin",
+    "def": "The oxygen-carrying protein that fills red blood cells. In adults, it is made of two alpha and two beta chains.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "her2": {
+    "term": "HER2",
+    "def": "A growth-signal receptor on cell surfaces. Its gene is amplified in about 15–20% of breast cancers (“HER2-positive”); many more carry low levels (“HER2-low”).",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "high-endothelial-venule": {
+    "term": "High endothelial venule",
+    "def": "A specialized small blood vessel in lymph nodes (and some other lymphoid tissue), named for its unusually tall lining cells, where naive lymphocytes leave the blood. Its wall carries the ligands for L-selectin and the chemokines that bind CCR7 on naive T cells.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "histamine": {
+    "term": "Histamine",
+    "def": "A small molecule released by mast cells that widens blood vessels and makes them leaky within minutes.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "hla": {
+    "term": "HLA (human leukocyte antigen)",
+    "def": "The human name for MHC molecules and the genes that encode them. HLA genes are the most variable in the human genome, and each person inherits one set from each parent, so people differ in which peptides their cells can present; this is why transplants must be matched.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "hot-tumor": {
+    "term": "Hot (inflamed) tumor",
+    "def": "A tumor with many T cells among its cancer cells, often alongside brakes such as PD-L1; the type most likely to respond to checkpoint inhibitors.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "hpv": {
+    "term": "HPV (human papillomavirus)",
+    "def": "A very common virus spread by intimate skin contact. Most infections clear on their own, but persistent infection with high-risk types can cause cervical, anal, throat and other cancers.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "humanized-antibody": {
+    "term": "Humanized antibody",
+    "def": "An engineered antibody in which only the mouse’s six target-contacting loops (the CDRs), plus a few supporting amino acids, are grafted onto a human antibody. Classic names contain -zu-, as in trastuzumab.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "hybridoma": {
+    "term": "Hybridoma",
+    "def": "A hybrid cell made by fusing an antibody-producing B cell with an immortal myeloma cell. It makes one antibody and keeps dividing indefinitely.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html"
+  },
+  "hydrophobic": {
+    "term": "Hydrophobic and hydrophilic",
+    "def": "Hydrophobic (water-repelling) molecules, or parts of molecules, mix poorly with water and cluster together in it. Hydrophilic (water-attracting) ones are charged or polar (carrying slight positive and negative charges) and mix readily with water. The difference shapes cell membranes and drives protein folding.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "hyperprogression": {
+    "term": "Hyperprogression",
+    "def": "A sudden acceleration of tumor growth after starting immunotherapy. How often it happens, how to define it and whether the drugs cause it are all debated.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "hypophysitis": {
+    "term": "Hypophysitis",
+    "def": "Inflammation of the pituitary gland, the “master” hormone gland at the base of the brain. It can permanently reduce hormones such as cortisol.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "hypoxia": {
+    "term": "Hypoxia",
+    "def": "A shortage of oxygen in a tissue. Large tumors often outgrow their blood supply and become hypoxic in places.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "icans": {
+    "term": "ICANS (neurotoxicity)",
+    "def": "Immune effector cell-associated neurotoxicity syndrome: confusion, difficulty speaking or writing, tremor and, rarely, seizures or brain swelling, appearing days after a cell infusion. Usually reversible.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "ido": {
+    "term": "IDO (indoleamine 2,3-dioxygenase)",
+    "def": "An enzyme that converts the amino acid tryptophan into kynurenine; both the tryptophan shortage and the kynurenine suppress T cells.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "ifn-gamma": {
+    "term": "Interferon-gamma (IFN-γ)",
+    "def": "A cytokine secreted mainly by activated T cells and natural killer cells. It makes nearby cells express more MHC molecules, activates macrophages, can halt the growth of some tumor cells and induces PD-L1, the ligand of the inhibitory receptor PD-1.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "il-2": {
+    "term": "IL-2 (interleukin-2)",
+    "def": "A cytokine that drives T cells to divide; it is used to expand T cells in the laboratory and, at very high doses, can shrink some melanomas and kidney cancers, with severe side effects. Regulatory T cells bind and consume it, which restrains other T cells.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "il-6": {
+    "term": "IL-6 (interleukin-6)",
+    "def": "An inflammatory cytokine, made largely by macrophages, that drives fever and other body-wide signs of inflammation. It is the central cytokine in cytokine release syndrome (Chapter 10).",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "immune-related-adverse-event": {
+    "term": "Immune-related adverse event (irAE)",
+    "def": "A side effect of immunotherapy caused by the immune system attacking healthy tissue, such as colitis, thyroiditis or pneumonitis.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "immune-system": {
+    "term": "Immune system",
+    "def": "The body’s network of cells, molecules, tissues and organs that detects and responds to infection, damage and abnormal cells while sparing healthy tissue. It comprises about 1.8 trillion cells in an adult man.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "immunoediting": {
+    "term": "Cancer immunoediting",
+    "def": "The process by which the immune system both destroys cancer cells and, by removing the most visible ones, shapes the tumor that eventually escapes. Its phases are elimination, equilibrium and escape.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "immunogenic-cell-death": {
+    "term": "Immunogenic cell death",
+    "def": "A way of dying in which a cell releases antigens along with danger signals, alerting the immune system, unlike the quiet, orderly death of most cells.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "immunohistochemistry": {
+    "term": "Immunohistochemistry",
+    "def": "A laboratory technique that stains a thin slice of tissue with labeled antibodies, revealing which cells carry a particular protein.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "immunological-synapse": {
+    "term": "Immunological synapse",
+    "def": "The tight, organized contact zone between a T cell and the cell it recognizes, through which signals pass and the contents of cytotoxic granules are released.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "immunoscore": {
+    "term": "Immunoscore",
+    "def": "A standardized test that counts T cells in a tumor’s center and at its invasive margin to estimate the risk that colon cancer will return after surgery.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "immunosuppression": {
+    "term": "Immunosuppression",
+    "def": "A weakening of the immune system — deliberately, with drugs (as after an organ transplant), or through disease (as in untreated HIV).",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "immunosurveillance": {
+    "term": "Immunosurveillance",
+    "def": "The idea that the immune system continually detects and destroys many newly arising cancer cells before they form tumors. It is well supported in mice, and indirectly in people.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "immunotherapy": {
+    "term": "Immunotherapy",
+    "def": "Treatment that works through the immune system, by strengthening it, releasing its brakes or redirecting it against a disease such as cancer, rather than attacking the disease directly.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "in-situ-vaccination": {
+    "term": "In situ vaccination",
+    "def": "Turning a tumor into its own vaccine by killing cancer cells in place in an inflammatory way, so the immune system learns from whatever antigens the tumor contains.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "in-vivo-car-t": {
+    "term": "In vivo CAR-T",
+    "def": "An experimental approach that delivers the CAR gene to a patient’s T cells inside the body, using a targeted viral vector or a lipid nanoparticle, instead of manufacturing cells outside it.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "inflammation": {
+    "term": "Inflammation",
+    "def": "The body’s coordinated emergency response to infection or injury: blood vessels widen and leak and white blood cells arrive, producing redness, heat, swelling and pain.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "innate-immunity": {
+    "term": "Innate immunity",
+    "def": "The fast, built-in branch of the immune system: barriers, sentinel cells and blood proteins that respond within minutes to hours to broad signs of infection or damage, using receptors inherited in the genome. It does not adapt to a specific invader or form specific memory.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "integrin": {
+    "term": "Integrin",
+    "def": "An adhesion molecule on white blood cells (and many other cells) that can be shifted into a high-affinity state. Activated by chemokines, integrins bind the vessel wall firmly and stop a rolling white blood cell; they also hold T cells against the cells they inspect.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "interferon": {
+    "term": "Interferon",
+    "def": "A family of cytokines named for their ability to interfere with viruses. Type I interferons, secreted by infected cells and some sentinel cells, put neighboring cells into an antiviral state and activate immune cells; interferon-gamma (IFN-γ), made by T cells and NK cells, is a different member.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "internalization": {
+    "term": "Internalization",
+    "def": "A cell’s uptake of part of its own surface membrane, along with anything bound to it, into a vesicle inside the cell.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "interstitial-lung-disease": {
+    "term": "Interstitial lung disease (pneumonitis)",
+    "def": "Inflammation and scarring of the lung tissue around the air sacs. It is a known, sometimes serious side effect of trastuzumab deruxtecan.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "invasive-margin": {
+    "term": "Invasive margin",
+    "def": "The edge of a tumor, where it pushes into the surrounding healthy tissue.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "jak": {
+    "term": "JAK1 and JAK2",
+    "def": "Enzymes attached to the inner side of interferon receptors that relay the interferon signal into the cell. Cancer cells that lose them stop responding to interferon-gamma.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "junctional-diversity": {
+    "term": "Junctional diversity",
+    "def": "Extra variety created at the junctions of V(D)J recombination, where a few nucleotides are trimmed away and random nucleotides are added.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "kaplan-meier-curve": {
+    "term": "Kaplan–Meier curve",
+    "def": "The standard survival graph in medicine, showing the fraction of patients still alive (or free of an event) over time, while accounting for patients followed for different lengths of time.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "kaposi-sarcoma": {
+    "term": "Kaposi sarcoma",
+    "def": "A rare cancer of the cells lining blood and lymph vessels, caused by human herpesvirus 8. It appears mostly in people whose immune systems are weakened.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "kras": {
+    "term": "KRAS",
+    "def": "A relay protein just inside the cell membrane that passes growth signals from receptors like EGFR toward the nucleus. Mutations can lock it in its active state, so it signals without input from the receptor.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "lag-3": {
+    "term": "LAG-3",
+    "def": "An inhibitory receptor on activated and exhausted T cells, distinct from PD-1. The antibody relatlimab blocks it.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "lentiviral-vector": {
+    "term": "Lentiviral vector",
+    "def": "A gene-delivery tool built from a disabled HIV that cannot copy itself or cause disease. It integrates a new gene permanently into a cell’s chromosomes.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "leukemia": {
+    "term": "Leukemia",
+    "def": "A cancer of blood-forming cells that fills the bone marrow and blood. Acute lymphoblastic leukemia (ALL) arises from immature lymphocytes, often B-cell precursors.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "ligand": {
+    "term": "Ligand",
+    "def": "Any molecule that binds to a specific receptor.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "light-chain": {
+    "term": "Light chain",
+    "def": "The shorter of the two kinds of protein chain in an antibody. Each antibody has two identical light chains, whose variable regions are assembled from V and J segments.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "linker": {
+    "term": "Linker",
+    "def": "The chemical tether that attaches an ADC’s payload to its antibody. It is designed to hold in the blood and release the drug inside target cells.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "lipid-bilayer": {
+    "term": "Lipid bilayer",
+    "def": "The double layer of fatty molecules, mostly phospholipids, that forms cell membranes. Each phospholipid has a hydrophilic head and two hydrophobic tails; in water they line up in two sheets with the tails facing inward and the heads facing the water on either side.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "lipid-nanoparticle": {
+    "term": "Lipid nanoparticle (LNP)",
+    "def": "A tiny particle made of lipids that encloses and protects mRNA and helps it enter cells; it also triggers innate danger signals.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "liquid-biopsy": {
+    "term": "Liquid biopsy",
+    "def": "A blood test (or other body-fluid test) that detects signs of cancer, such as ctDNA, without cutting out tissue.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "lps": {
+    "term": "LPS (lipopolysaccharide)",
+    "def": "A molecule built from a lipid anchor and a chain of sugars that coats the outer wall of many bacteria, such as <em>E. coli</em>. Human cells never make it, so its conserved lipid anchor (lipid A) is a classic danger signature.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "lymph": {
+    "term": "Lymph",
+    "def": "The clear fluid that drains from tissues through lymphatic vessels and lymph nodes back into the blood.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "lymph-node": {
+    "term": "Lymph node",
+    "def": "A bean-sized organ, one of hundreds along the lymphatic vessels, to which lymph and dendritic cells carry antigens from nearby tissues, so that the rare T and B cells that recognize them can find them. Most adaptive immune responses begin in lymph nodes.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "lymphocyte": {
+    "term": "Lymphocyte",
+    "def": "A small, round white blood cell. T cells and B cells are the lymphocytes of adaptive immunity; natural killer (NK) cells are innate lymphocytes.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "lymphodepletion": {
+    "term": "Lymphodepletion",
+    "def": "A short course of chemotherapy, usually fludarabine and cyclophosphamide, given before a cell infusion. It clears existing lymphocytes so the infused cells face less competition for space and survival signals.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "lymphoma": {
+    "term": "Lymphoma",
+    "def": "A cancer of lymphocytes (most often B cells, sometimes T cells) that usually grows in lymph nodes and other lymphoid tissue. Hodgkin lymphoma is one type.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
+    "canonical": true
+  },
+  "lynch-syndrome": {
+    "term": "Lynch syndrome",
+    "def": "An inherited condition caused by a faulty copy of a mismatch-repair gene. It sharply raises the risk of colorectal, endometrial and several other cancers.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "lysosome": {
+    "term": "Lysosome",
+    "def": "A membrane-enclosed compartment inside a cell, filled with acid and digestive enzymes, where engulfed or internalized material and worn-out cell components are degraded.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "macrophage": {
+    "term": "Macrophage",
+    "def": "A large immune cell (“big eater”) found in nearly every tissue. It engulfs (phagocytoses) microbes, debris, dying cells and antibody-coated cells and secretes cytokines that recruit other immune cells; it can promote or suppress inflammation, and in tumors many macrophages are reprogrammed to suppress immunity.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "malignant": {
+    "term": "Malignant",
+    "def": "Describes a tumor that invades neighboring tissue and can spread to other organs; another word for cancerous.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "mast-cell": {
+    "term": "Mast cell",
+    "def": "A tissue-resident immune cell packed with granules of histamine and other chemicals that it releases within minutes of injury or infection.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "mdsc": {
+    "term": "Myeloid-derived suppressor cell (MDSC)",
+    "def": "An immature myeloid cell, related to neutrophils and monocytes, that accumulates in cancer and suppresses T cells, for example by depleting nutrients they need.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "median": {
+    "term": "Median",
+    "def": "The middle value: half of the patients are below it and half above. A median survival of 20 months means half of the patients had died by 20 months and half were still alive.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "melanoma": {
+    "term": "Melanoma",
+    "def": "A cancer of melanocytes, the pigment-producing cells of the skin (and, more rarely, of the eye and mucous membranes). Because sunlight damages DNA, skin melanomas often carry very many mutations.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "memory-cell": {
+    "term": "Memory cell",
+    "def": "A long-lived B or T cell left behind after an immune response, ready to respond faster and more strongly if the same target returns.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "metastasis": {
+    "term": "Metastasis",
+    "def": "The spread of cancer cells from where the tumor began to distant organs, where they form new tumors (metastases). A “metastatic” cancer is one that has spread.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "mhc": {
+    "term": "MHC (major histocompatibility complex) molecule",
+    "def": "A cell-surface molecule that binds protein fragments (peptides) and presents them to T cells. Class I, on nearly every cell with a nucleus, presents peptides from proteins made inside the cell; class II, on antigen-presenting cells, presents peptides from material taken up from outside. In humans, MHC molecules are called HLA.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "mhc-class-i": {
+    "term": "MHC class I",
+    "def": "The MHC molecules on nearly every cell with a nucleus, which present short peptides (usually 8–10 amino acids) from the proteins the cell is making inside, including any viral or mutated ones. They are recognized by killer (CD8) T cells, and their display is nicknamed the cell’s “shop window”.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "mhc-class-ii": {
+    "term": "MHC class II",
+    "def": "The MHC molecules of professional antigen-presenting cells such as dendritic cells, macrophages and B cells. They present longer peptides (roughly 13–25 amino acids) from whatever reaches the cell’s endosomes and lysosomes: material taken up from outside, alongside much of the cell’s own protein. They are recognized by helper (CD4) T cells.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "mhc-restriction": {
+    "term": "MHC restriction",
+    "def": "The rule that a T cell recognizes its target fragment only when it is held by a particular MHC molecule, usually one of its owner’s own HLA types.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html"
+  },
+  "microbe": {
+    "term": "Microbe",
+    "def": "A microscopic agent of infection or a tiny organism, such as a bacterium, virus, fungus or single-celled parasite. Most are harmless; a few cause disease.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "microbiome": {
+    "term": "Microbiome",
+    "def": "The community of microbes — mostly bacteria — living in and on the body, especially in the gut.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "micrometastasis": {
+    "term": "Micrometastasis",
+    "def": "A small cluster of cancer cells that has spread to another site but is too small to detect on scans.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "microsatellite": {
+    "term": "Microsatellite",
+    "def": "A short stretch of DNA in which a few bases repeat many times, such as CACACACA. DNA polymerase, the enzyme that copies DNA, slips easily on these repeats.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "minimal-residual-disease": {
+    "term": "Minimal residual disease (MRD)",
+    "def": "Cancer cells that remain after treatment in numbers too small to see on scans, which can later cause relapse.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "mismatch-repair": {
+    "term": "Mismatch repair",
+    "def": "The cell’s system for finding and fixing mismatched bases and small slips left behind when DNA is copied.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "missing-self": {
+    "term": "Missing self",
+    "def": "The principle, proposed by Klas Kärre, that NK cells attack cells lacking normal levels of MHC class I.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "monoclonal-antibody": {
+    "term": "Monoclonal antibody",
+    "def": "Many identical copies of a single antibody, made in the laboratory by a population of cells descended from one cell, so every molecule binds the same target. Antibody drug names have traditionally ended in -mab.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "monocyte": {
+    "term": "Monocyte",
+    "def": "A white blood cell that circulates in the blood and can leave it to become a macrophage or dendritic cell.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "mrna": {
+    "term": "Messenger RNA (mRNA)",
+    "def": "A short-lived RNA copy of a single gene, which travels from the nucleus to the ribosomes and is translated there into a protein. mRNA vaccines deliver such copies so that the body’s own cells make the target protein.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "msi-high": {
+    "term": "Mismatch-repair deficient (MSI-high)",
+    "def": "The state of a tumor whose system for correcting DNA copying errors (mismatch repair) is broken, so uncorrected slips pile up in short repeated stretches of DNA (microsatellites) and throughout its genome. Such tumors carry many mutations, including many frameshifts. Also abbreviated dMMR.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "mutation": {
+    "term": "Mutation",
+    "def": "A change in the DNA sequence, from a single changed base to large rearrangements. Most have no effect, but some alter a protein, and an accumulation of certain mutations can turn a normal cell cancerous.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "mutational-signature": {
+    "term": "Mutational signature",
+    "def": "The characteristic pattern of DNA changes left by a particular cause of mutation, such as sunlight, tobacco smoke, aging or a broken repair system.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "myeloid-cell": {
+    "term": "Myeloid cell",
+    "def": "A white blood cell of the myeloid branch, which includes monocytes, macrophages, neutrophils and most dendritic cells. The other branch, the lymphoid cells, comprises T cells, B cells and NK cells.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "myeloma": {
+    "term": "Myeloma (multiple myeloma)",
+    "def": "A cancer of plasma cells, the cells that secrete antibodies, that grows mainly in the bone marrow.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "myocarditis": {
+    "term": "Myocarditis",
+    "def": "Inflammation of the heart muscle. As a side effect of checkpoint inhibitors it is rare but can be fatal.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "naive-lymphocyte": {
+    "term": "Naive lymphocyte",
+    "def": "A B or T cell that has never yet encountered the antigen its receptor fits.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "naive-t-cell": {
+    "term": "Naive T cell",
+    "def": "A mature T cell that has not yet met its target. Naive T cells circulate between blood and lymph nodes, sampling dendritic cells as they go.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "naked-antibody": {
+    "term": "Naked antibody",
+    "def": "An antibody drug with nothing attached. It works by blocking its target, marking cells for immune attack through its Fc region, or binding and neutralizing a signaling molecule.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "negative-selection": {
+    "term": "Negative selection",
+    "def": "The test in the thymus that removes developing T cells (thymocytes) whose receptors bind self-peptide–MHC complexes with high affinity: the strong signal triggers their apoptosis. Also called clonal deletion.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "neoadjuvant-therapy": {
+    "term": "Neoadjuvant therapy",
+    "def": "Treatment given before surgery, while the tumor is still in place.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html"
+  },
+  "neoantigen": {
+    "term": "Neoantigen",
+    "def": "A peptide produced by a mutated protein in a cancer cell, to which the immune system has never become tolerant. Presented on MHC, it can mark the cell as abnormal to T cells.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "neutralization": {
+    "term": "Neutralization",
+    "def": "Blocking a pathogen or toxin directly, by covering the parts it needs to attach to or damage cells.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "neutrophil": {
+    "term": "Neutrophil",
+    "def": "The most abundant type of immune cell: short-lived, fast-moving and the first to leave the blood for infected tissue, where it engulfs bacteria.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "nk-cell": {
+    "term": "Natural killer (NK) cell",
+    "def": "An innate lymphocyte that kills stressed, infected or cancerous cells without earlier exposure to them, especially cells that have lost MHC class I (“missing self”). It can also kill antibody-coated cells by binding the antibodies’ Fc regions with its Fc receptors (ADCC).",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "nucleotide": {
+    "term": "Nucleotide",
+    "def": "One of the units that link into chains to form DNA and RNA. Each carries one of four bases, written as letters: adenine (A), cytosine (C), guanine (G) and thymine (T) in DNA, with uracil (U) in place of thymine in RNA. The order of the bases encodes genetic information.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "nucleus": {
+    "term": "Nucleus",
+    "def": "The compartment inside a cell that holds its DNA.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "objective-response-rate": {
+    "term": "Response rate (objective response rate)",
+    "def": "The share of patients whose tumors shrink substantially (by at least 30% by standard measuring rules) or disappear.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html"
+  },
+  "on-target-off-tumor": {
+    "term": "On-target, off-tumor toxicity",
+    "def": "Damage caused by a therapy working exactly as designed, on healthy cells that carry the same target as the tumor. The loss of normal B cells after CD19 CAR-T is the classic example.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html",
+    "canonical": true
+  },
+  "oncogene": {
+    "term": "Oncogene",
+    "def": "A gene whose mutated or overactive form drives cancer by keeping the cell’s growth signaling permanently active. Examples include KRAS and HER2.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "oncolytic-virus": {
+    "term": "Oncolytic virus",
+    "def": "A virus, often genetically engineered, that preferentially infects and lyses (bursts) cancer cells, releasing tumor antigens and danger signals that can stimulate an immune response against the tumor.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html",
+    "canonical": true
+  },
+  "opsonization": {
+    "term": "Opsonization",
+    "def": "Coating a microbe or cell with proteins such as antibodies or complement fragments, which receptors on phagocytes bind, so that phagocytes engulf it more readily.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "overall-survival": {
+    "term": "Overall survival",
+    "def": "How long patients live after starting a trial or treatment, counting deaths from any cause. Often reported as a median: the time by which half the patients have died.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html"
+  },
+  "pamp": {
+    "term": "PAMP (pathogen-associated molecular pattern)",
+    "def": "A molecular feature shared by whole classes of microbes and absent from healthy human cells, such as LPS, flagellin or viral double-stranded RNA, that innate sensors recognize.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "passenger-mutation": {
+    "term": "Passenger mutation",
+    "def": "A mutation that gives a cell no advantage and is simply carried along as its descendants multiply. Most mutations in a tumor are passengers.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "pathogen": {
+    "term": "Pathogen",
+    "def": "Any microbe (bacterium, virus, fungus or parasite) that can cause disease.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "pathologic-response": {
+    "term": "Pathologic response",
+    "def": "How much viable (live) cancer a pathologist finds in tissue removed at surgery after treatment. A complete response means none; a major response means 10% or less.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "pattern-recognition-receptor": {
+    "term": "Pattern-recognition receptor",
+    "def": "An inherited innate sensor that recognizes PAMPs or DAMPs and triggers an inflammatory or antiviral response. Toll-like receptors are the best-known family.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "payload": {
+    "term": "Payload",
+    "def": "The cytotoxic drug carried by an ADC, usually too potent to be given on its own.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "pd-1": {
+    "term": "PD-1",
+    "def": "An inhibitory receptor (a “brake”) on activated T cells that stays at high levels when stimulation is prolonged; when it binds its ligands, PD-L1 or PD-L2, on another cell, it inhibits the T cell’s activity. It acts mainly in tissues such as tumors, and also in the lymph nodes that drain them; pembrolizumab and nivolumab block it.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "pd-l1": {
+    "term": "PD-L1",
+    "def": "The main ligand of PD-1. Many cells express it, especially in response to inflammation and interferon-gamma, and many tumors use it to inhibit the T cells attacking them.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "peptide": {
+    "term": "Peptide",
+    "def": "A short chain of amino acids, such as a fragment cleaved from a larger protein. T cells recognize peptides presented on MHC molecules, not whole proteins.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "peptide-binding-groove": {
+    "term": "Peptide-binding groove",
+    "def": "The cleft along the outer face of an MHC molecule in which a peptide is held for T cells to inspect; pockets in its floor accept the peptide’s anchor residues. The class I groove is closed at both ends and holds peptides of 8–10 amino acids, while the class II groove is open at both ends and holds longer ones. Most of the variation between HLA types lies in and around the groove.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "perforin": {
+    "term": "Perforin",
+    "def": "A protein released by killer T cells and natural killer cells that assembles into pores in the target cell’s membrane, letting granzymes in.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "phage-display": {
+    "term": "Phage display",
+    "def": "A technique that displays huge libraries of antibody fragments on viruses that infect bacteria (phages), so binders to a target can be fished out and their genes recovered. Its pioneers, George Smith and Greg Winter, shared in the 2018 Nobel Prize in Chemistry.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "phagocytosis": {
+    "term": "Phagocytosis",
+    "def": "“Cell eating”: a cell engulfs a microbe or other large particle, enclosing it in a compartment of its own membrane (a phagosome), which then fuses with lysosomes that digest the contents.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "phagosome": {
+    "term": "Phagosome",
+    "def": "The membrane-enclosed compartment that forms around a microbe or particle when a cell engulfs it. It fuses with lysosomes, whose acid and enzymes degrade its contents.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "plasma-cell": {
+    "term": "Plasma cell",
+    "def": "A fully differentiated B cell that secretes large amounts of a single antibody; some live for decades in the bone marrow.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "positive-selection": {
+    "term": "Positive selection",
+    "def": "The thymic test that keeps only thymocytes whose receptors can bind the body’s own peptide–MHC complexes at least weakly; the rest get no survival signal and die of neglect.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "preventive-vaccine": {
+    "term": "Preventive vaccine",
+    "def": "A vaccine given before exposure to stop an infection or disease from starting. Against cancer, these target cancer-causing viruses such as HPV and hepatitis B.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "primary-resistance": {
+    "term": "Primary resistance",
+    "def": "When a cancer does not respond to a treatment from the start.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "primary-response": {
+    "term": "Primary response",
+    "def": "The first adaptive response to an antigen; slow, because rare matching cells must be found and multiplied, typically taking one to two weeks.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "priming": {
+    "term": "Priming",
+    "def": "The first activation of a naive T cell, usually in a lymph node, when a dendritic cell presents the T cell’s target together with the confirming signals. Primed T cells multiply and become effector cells.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "progression-free-survival": {
+    "term": "Progression-free survival",
+    "def": "How long patients live without their cancer growing or spreading; it ends at the first sign of progression or at death.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "prostaglandin": {
+    "term": "Prostaglandin",
+    "def": "A fat-derived signaling molecule that contributes to pain, fever and vessel widening; drugs such as aspirin and ibuprofen block its production.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "proteasome": {
+    "term": "Proteasome",
+    "def": "A barrel-shaped enzyme complex inside every cell that degrades unwanted or faulty proteins by cleaving them into short peptides. Most of these are broken down further to amino acids and recycled; a few are carried into the endoplasmic reticulum by TAP and presented on MHC class I.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html",
+    "canonical": true
+  },
+  "protein": {
+    "term": "Protein",
+    "def": "A chain of amino acids folded into a specific three-dimensional shape. Proteins do most of the work in cells, and their shape determines what they do and what they bind.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "pseudoprogression": {
+    "term": "Pseudoprogression",
+    "def": "Apparent growth of tumors on scans early in immunotherapy, from an influx of immune cells or a delayed response, followed by shrinkage.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "rag": {
+    "term": "RAG1 and RAG2",
+    "def": "The pair of enzymes, active only in developing lymphocytes, that cut DNA so that V, D and J gene segments can be joined.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "rag-genes": {
+    "term": "RAG genes",
+    "def": "Genes encoding the pair of enzymes that cut DNA so that receptor genes can be assembled from segments (V(D)J recombination) in developing T and B cells; without them, an animal has no T or B cells.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "randomized-trial": {
+    "term": "Randomized trial",
+    "def": "A study in which chance decides which treatment each patient receives, so the groups are alike and differences in outcome can be credited to the treatment.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "receptor": {
+    "term": "Receptor",
+    "def": "A protein, often spanning the cell membrane, that binds a specific molecule (its ligand) and relays a signal into the cell.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "receptor-occupancy": {
+    "term": "Receptor occupancy",
+    "def": "The share of a drug’s target molecules that have drug bound at a given moment. For PD-1 blockers it is often measured on blood T cells; it shows how completely, and for how long, the drug blocks its target.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "recurrence-free-survival": {
+    "term": "Recurrence-free survival",
+    "def": "The time from the start of treatment until the cancer comes back or the patient dies, whichever comes first.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "refractory": {
+    "term": "Refractory",
+    "def": "Describes a cancer that does not respond to treatment, or has stopped responding. “Relapsed” means it came back after a response.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "regulatory-t-cell": {
+    "term": "Regulatory T cell (Treg)",
+    "def": "A type of CD4 T cell, defined by the protein FOXP3, that suppresses other immune cells to prevent autoimmunity. Tumors often recruit them.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "repertoire": {
+    "term": "Repertoire",
+    "def": "The full set of different receptors carried by one person’s B cells or T cells.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "ribosome": {
+    "term": "Ribosome",
+    "def": "The cell’s protein-building machine. It reads messenger RNA one codon (three bases) at a time and links the matching amino acids into a chain.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "rna": {
+    "term": "RNA",
+    "def": "A single-stranded chemical cousin of DNA that uses the base uracil (U) in place of thymine (T). Cells use it mainly as working copies of genes and in building proteins, for example as part of ribosomes.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "sarcoma": {
+    "term": "Sarcoma",
+    "def": "A cancer that starts in connective tissue such as bone, muscle, fat or cartilage.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "scfv": {
+    "term": "scFv (single-chain variable fragment)",
+    "def": "The target-binding part of an antibody: the variable regions of its heavy and light chains joined by a short flexible linker into one protein chain. It determines what a CAR binds.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "secondary-response": {
+    "term": "Secondary response",
+    "def": "A repeat response to an antigen seen before; faster and larger, with higher-affinity antibodies, because memory cells give it a head start.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "selectin": {
+    "term": "Selectin",
+    "def": "An adhesion molecule whose bonds with its ligands form and break quickly, so that a white blood cell held by selectins rolls along a vessel wall instead of stopping. E- and P-selectin appear on the lining of inflamed vessels and slow passing white blood cells; L-selectin sits on white blood cells, notably naive lymphocytes, which use it to enter lymph nodes through high endothelial venules.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "self": {
+    "term": "Self",
+    "def": "To the immune system, the molecules made by your own body that it has learned to tolerate. “Non-self” is everything else.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "sepsis": {
+    "term": "Sepsis",
+    "def": "A life-threatening condition in which the body’s response to an infection runs out of control and damages its own organs, causing widespread vessel leakage and low blood pressure. The infection itself need not be in the blood.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "sequencing": {
+    "term": "Sequencing",
+    "def": "Reading the order of nucleotides (the “letters”, or bases) in DNA or RNA. Comparing a tumor’s sequence with a normal sample reveals the tumor’s mutations.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "solid-tumor": {
+    "term": "Solid tumor",
+    "def": "A cancer that grows as a mass in an organ or tissue, such as most cancers of the lung, breast, colon or skin; contrasted with blood cancers.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "somatic-hypermutation": {
+    "term": "Somatic hypermutation",
+    "def": "Targeted mutation of the DNA encoding antibody variable regions in activated B cells, creating variants that are then selected for higher affinity.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "spleen": {
+    "term": "Spleen",
+    "def": "An organ in the upper left abdomen that filters the blood and hosts large numbers of lymphocytes; it does for the blood what lymph nodes do for the tissues.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "stem-like-t-cell": {
+    "term": "Stem-like T cell (progenitor exhausted T cell)",
+    "def": "A T cell found in chronic infections and tumors, marked by the transcription factor TCF1, that renews itself while giving rise to descendants that kill but become exhausted. It is the main source of new T cells after the PD-1 brake is released.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "step-up-dosing": {
+    "term": "Step-up dosing",
+    "def": "Starting a drug at small doses and increasing in steps, which reduces the risk of cytokine release syndrome.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html"
+  },
+  "sting": {
+    "term": "STING",
+    "def": "“Stimulator of interferon genes”: a signaling protein inside cells that is activated when its partner sensor, cGAS, detects DNA free in the cytoplasm (a sign of infection or damage), triggering type I interferon production.",
+    "chapter": "12",
+    "chapterLabel": "Chapter 12",
+    "chapterTitle": "Resistance and New Directions",
+    "page": "12-frontier.html"
+  },
+  "stress-ligand": {
+    "term": "Stress ligand",
+    "def": "A molecule, such as MICA or MICB, that cells display when infected, damaged or turning cancerous, and that activates NK cells.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "stroma": {
+    "term": "Stroma",
+    "def": "The supportive tissue of an organ or tumor — fibroblasts, blood vessels and the fibrous scaffolding between cells.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "synnotch": {
+    "term": "SynNotch",
+    "def": "A synthetic receptor that, on binding one antigen, induces expression of a gene — for example the gene for a CAR against a second antigen. It is how a two-marker “AND” rule is built into a cell.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "t-cell": {
+    "term": "T cell",
+    "def": "A lymphocyte that matures in the thymus (hence “T”) and uses its T-cell receptor to recognize peptides presented on MHC molecules. Killer (CD8) T cells destroy infected or cancerous cells; helper (CD4) T cells coordinate the response.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "t-cell-engager": {
+    "term": "T-cell engager",
+    "def": "A two-armed molecule, usually a bispecific antibody, that binds CD3 on a T cell with one arm and a target on a cancer cell with the other, physically bridging the two cells so that the T cell kills the cancer cell.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "tap-transporter": {
+    "term": "TAP (transporter associated with antigen processing)",
+    "def": "A pump in the membrane of the endoplasmic reticulum that carries peptides produced by the proteasome into the ER, where they can be loaded onto MHC class I molecules.",
+    "chapter": "04",
+    "chapterLabel": "Chapter 4",
+    "chapterTitle": "Antigen Presentation",
+    "page": "04-presentation.html"
+  },
+  "tcr": {
+    "term": "T-cell receptor (TCR)",
+    "def": "The recognition molecule on a T cell, assembled by the same gene rearrangement as antibodies (V(D)J recombination) and unique to each T cell and its clone. It recognizes a specific peptide held in a specific MHC (HLA) molecule and, unlike an antibody, is never secreted.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "tcr-t": {
+    "term": "TCR-T cell",
+    "def": "A T cell engineered to express a T-cell receptor cloned from a person whose immune system recognized a particular tumor peptide, often with its affinity increased in the laboratory. Unlike a CAR, it can recognize peptides from proteins made inside the cell, but only in patients with a matching HLA type.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "tertiary-lymphoid-structure": {
+    "term": "Tertiary lymphoid structure (TLS)",
+    "def": "An organized cluster of B cells, T cells and dendritic cells that forms inside inflamed tissue, including some tumors — a miniature lymph node.",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html"
+  },
+  "tgf-beta": {
+    "term": "TGF-β (transforming growth factor beta)",
+    "def": "A cytokine that promotes scarring (fibrosis) and tissue repair and suppresses immune responses. Tumors use it to build fibrous barriers that keep T cells out, and to suppress T cells directly.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "th1": {
+    "term": "Th1 (T helper 1) cell",
+    "def": "A type of helper T cell that makes IFN-γ, activates macrophages and supports killer T cells; important against viruses and tumors.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "therapeutic-vaccine": {
+    "term": "Therapeutic vaccine",
+    "def": "A vaccine given to someone who already has a disease, to strengthen the immune attack on it, for example on an existing tumor.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "thymocyte": {
+    "term": "Thymocyte",
+    "def": "A developing T cell inside the thymus, before it has passed selection.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "thymus": {
+    "term": "Thymus",
+    "def": "A small organ behind the breastbone, in front of the heart, where T cells develop and are tested so that most self-reactive ones are removed. It is most active early in life and gradually shrinks with age.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "tigit": {
+    "term": "TIGIT",
+    "def": "An inhibitory receptor on T cells and NK cells. Antibodies against it looked promising in early trials but failed in large ones.",
+    "chapter": "08",
+    "chapterLabel": "Chapter 8",
+    "chapterTitle": "Checkpoint Inhibitors",
+    "page": "08-checkpoints.html"
+  },
+  "til": {
+    "term": "Tumor-infiltrating lymphocytes (TIL)",
+    "def": "T cells harvested from inside a patient’s own tumor, grown to billions in the laboratory and infused back as a treatment. Their receptors are the patient’s own and are not engineered.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "tissue": {
+    "term": "Tissue",
+    "def": "A group of similar cells working together, such as muscle, skin or the lining of the gut.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  },
+  "tissue-agnostic": {
+    "term": "Tissue-agnostic approval",
+    "def": "Approval of a drug for tumors with a particular molecular feature, such as MSI-high status, regardless of the organ where the cancer began.",
+    "chapter": "interlude",
+    "chapterLabel": "Interlude",
+    "chapterTitle": "130 Years of Immunotherapy",
+    "page": "interlude-history.html",
+    "canonical": true
+  },
+  "tnf": {
+    "term": "Tumor necrosis factor (TNF)",
+    "def": "An inflammatory cytokine released by T cells and macrophages that activates blood vessels and immune cells and can kill some tumor cells.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "tolerance": {
+    "term": "Tolerance",
+    "def": "The immune system’s learned restraint toward the body’s own molecules (and some harmless foreign ones, such as food). It is maintained by deleting or silencing self-reactive lymphocytes, both where they develop (central tolerance) and throughout the body (peripheral tolerance).",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
+    "canonical": true
+  },
+  "toll-like-receptor": {
+    "term": "Toll-like receptor (TLR)",
+    "def": "A family of ten pattern-recognition receptors in humans, located on the cell surface or inside endosomes. Each recognizes a different microbial signature, such as LPS (TLR4) or viral RNA (TLR7 and TLR8).",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "tox": {
+    "term": "TOX",
+    "def": "A transcription factor induced by strong, persistent T-cell receptor signaling that sets up the exhausted state and is needed for exhausted T cells, including the stem-like reserve, to persist.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "trained-immunity": {
+    "term": "Trained immunity",
+    "def": "A temporary, non-specific heightened state of innate immune cells after certain infections or vaccines, produced by epigenetic and metabolic reprogramming.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html"
+  },
+  "transcription-factor": {
+    "term": "Transcription factor",
+    "def": "A protein that binds DNA and controls which genes a cell expresses. Some set a cell’s type and keep it stable, such as FOXP3 in regulatory T cells, T-bet in Th1 cells and TOX in exhausted T cells.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html"
+  },
+  "transduction": {
+    "term": "Transduction",
+    "def": "Delivery of a gene into a cell by a viral vector. In CAR-T manufacturing, the CAR gene is transduced into the patient’s T cells, where it integrates into their DNA.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "tumor": {
+    "term": "Tumor",
+    "def": "An abnormal mass of cells growing beyond the body’s normal controls. Benign tumors stay put; malignant ones (cancers) can invade surrounding tissue and spread.",
+    "chapter": "05",
+    "chapterLabel": "Chapter 5",
+    "chapterTitle": "T Cells: Selection, Killing and Regulation",
+    "page": "05-t-cells.html",
+    "canonical": true
+  },
+  "tumor-antigen": {
+    "term": "Tumor antigen",
+    "def": "Any molecule that lets the immune system tell a tumor cell from a healthy one, such as a neoantigen, a viral protein, a cancer-testis antigen or an overexpressed self protein.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "tumor-associated-antigen": {
+    "term": "Tumor-associated antigen",
+    "def": "A normal self protein that tumor cells make in excess, or that belongs to their tissue of origin, such as HER2 or pigment-cell proteins. Healthy cells carry it too.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "tumor-associated-macrophage": {
+    "term": "Tumor-associated macrophage (TAM)",
+    "def": "A macrophage living in a tumor, often pushed into a wound-healing (“M2-like”) state in which it helps the tumor build blood vessels and suppresses T cells.",
+    "chapter": "02",
+    "chapterLabel": "Chapter 2",
+    "chapterTitle": "Innate Immunity",
+    "page": "02-innate.html",
+    "canonical": true
+  },
+  "tumor-heterogeneity": {
+    "term": "Tumor heterogeneity",
+    "def": "Differences between the cells of one tumor, which arise as different branches of its family tree pick up different mutations.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "tumor-microenvironment": {
+    "term": "Tumor microenvironment",
+    "def": "Everything in and around a tumor that is not a cancer cell: blood vessels, fibroblasts, immune cells, signaling molecules and the fibers between cells, often arranged in ways that suppress immunity.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "tumor-mutational-burden": {
+    "term": "Tumor mutational burden (TMB)",
+    "def": "The number of mutations in a tumor’s DNA, usually counted per million DNA bases (a megabase) sequenced. A high count often, but not always, means more neoantigens, and numbers from different tests are not directly comparable.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "tumor-suppressor": {
+    "term": "Tumor suppressor",
+    "def": "A gene whose normal job is to restrain cell division, repair DNA or trigger apoptosis: a growth brake inside the cell, such as TP53 or RB1. Not to be confused with immune checkpoints, which are brakes on T cells.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html",
+    "canonical": true
+  },
+  "vaccine": {
+    "term": "Vaccine",
+    "def": "A preparation that exposes the immune system to a target in advance, such as a harmless version or piece of a pathogen, or the mRNA to make one, so that the B and T cells that recognize it expand and leave memory cells behind. Cancer vaccines can prevent virus-caused cancers or try to treat existing tumors.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html",
+    "canonical": true
+  },
+  "variable-region": {
+    "term": "Variable region",
+    "def": "The part of an antibody or T-cell receptor chain whose amino-acid sequence differs from one receptor to the next, encoded by rearranged V, (D) and J gene segments. At the end of each antibody arm, the variable regions of one heavy and one light chain together form the antigen-binding site.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "vdj-recombination": {
+    "term": "V(D)J recombination",
+    "def": "The process by which a developing lymphocyte cuts its DNA and joins one V, (one D) and one J gene segment, creating a new receptor gene.",
+    "chapter": "03",
+    "chapterLabel": "Chapter 3",
+    "chapterTitle": "Adaptive Immunity",
+    "page": "03-adaptive.html"
+  },
+  "vegf": {
+    "term": "VEGF (vascular endothelial growth factor)",
+    "def": "A signaling protein that makes blood vessels sprout new branches. Tumors overproduce it to build their blood supply, creating leaky, disorganized vessels that also hinder immune cells.",
+    "chapter": "09",
+    "chapterLabel": "Chapter 9",
+    "chapterTitle": "Therapeutic Antibodies",
+    "page": "09-antibodies.html",
+    "canonical": true
+  },
+  "viral-vector": {
+    "term": "Viral vector",
+    "def": "A virus stripped of the genes it needs to replicate and cause disease, used to carry a chosen gene into cells. Lentiviral and retroviral vectors integrate the gene permanently into the cell’s chromosomes.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
+  "virus-like-particle": {
+    "term": "Virus-like particle (VLP)",
+    "def": "An empty viral shell (capsid) assembled from a virus’s coat protein. It looks like the virus to the immune system but contains no genetic material, so it cannot infect.",
+    "chapter": "11",
+    "chapterLabel": "Chapter 11",
+    "chapterTitle": "Cancer Vaccines and Oncolytic Viruses",
+    "page": "11-vaccines.html"
+  },
+  "vitiligo": {
+    "term": "Vitiligo",
+    "def": "Patchy loss of skin color, caused when the immune system destroys pigment-producing cells.",
+    "chapter": "06",
+    "chapterLabel": "Chapter 6",
+    "chapterTitle": "Cancer Cells and Tumor Antigens",
+    "page": "06-cancer.html"
+  },
+  "white-blood-cell": {
+    "term": "White blood cell (leukocyte)",
+    "def": "Any immune cell. The name comes from their pale color compared with red blood cells. Most white blood cells live outside the blood, in the bone marrow, the other lymphoid organs and the tissues.",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html"
+  }
+}

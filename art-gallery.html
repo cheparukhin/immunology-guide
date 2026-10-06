@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art Library Gallery — Self &amp; Other (dev)</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --paper: #FAF7F2; --surface: #FFFFFF; --ink: #1B1F2A; --ink2: #4A5163; --ink3: #7A8194; --rule: #E6E0D6;
+    --navy: #0B1024; --navy2: #131B36; --accent: #3D5AFE;
+    --ui: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin: 0; font: 15px/1.5 var(--ui); color: var(--ink); background: var(--paper); }
+  header.top { position: sticky; top: 0; z-index: 10; background: rgba(250,247,242,.94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule); padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+  header.top h1 { font-size: 16px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+  header.top h1 span { color: var(--ink3); font-weight: 450; }
+  header.top nav { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13px; }
+  header.top nav a { color: var(--ink2); text-decoration: none; }
+  header.top nav a:hover { color: var(--accent); }
+  .controls { margin-left: auto; display: flex; gap: 14px; align-items: center; font-size: 13px; color: var(--ink2); }
+  .controls label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  select, button { font: inherit; font-size: 13px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 4px 8px; cursor: pointer; }
+  button:hover { border-color: var(--ink3); }
+  button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  main { padding: 8px 24px 80px; max-width: 1480px; margin: 0 auto; }
+  section { margin-top: 44px; }
+  section > h2 { font-size: 22px; margin: 0 0 4px; letter-spacing: -.015em; font-weight: 650; }
+  section > p.lede { margin: 0 0 16px; color: var(--ink2); max-width: 80ch; }
+  h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink3); margin: 22px 0 10px; font-weight: 600; }
+  code { font-family: var(--mono); font-size: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(var(--min, 190px), 100%), 1fr)); gap: 10px; }
+  .card { margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--rule); display: flex; flex-direction: column; }
+  .card.dark { background: radial-gradient(120% 100% at 50% 40%, var(--navy2), var(--navy)); border-color: #1d2647; }
+  .card.light { background: var(--surface); }
+  .card svg { display: block; width: 100%; height: auto; }
+  .card figcaption { padding: 7px 10px 9px; font-family: var(--mono); font-size: 11.2px; line-height: 1.4; word-break: break-word; }
+  .card.dark figcaption { color: #AEB7D0; border-top: 1px solid #1d2647; }
+  .card.light figcaption { color: var(--ink2); border-top: 1px solid var(--rule); }
+  .card figcaption b { font-weight: 600; color: inherit; }
+  .card.dark figcaption b { color: #E9EDF7; }
+  .wide { grid-column: 1 / -1; }
+  .stage-dark { background: radial-gradient(120% 100% at 50% 40%, var(--navy2), var(--navy)); border-radius: 12px; }
+  .stage-light { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .sw { border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); font-size: 12px; }
+  .sw .chips { display: flex; height: 44px; }
+  .sw .chips div { flex: 1; }
+  .sw p { margin: 0; padding: 6px 8px; line-height: 1.35; }
+  .sw p code { color: var(--ink3); }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 10px 0; }
+  .demo-controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 10px 0; font-size: 13px; color: var(--ink2); }
+  .note { font-size: 13px; color: var(--ink3); }
+  pre.code { background: #11162B; color: #D8DEF0; border-radius: 10px; padding: 12px 14px; font: 12px/1.5 var(--mono); overflow-x: auto; margin: 8px 0 0; }
+  .stat { font-family: var(--mono); font-size: 12px; color: var(--ink3); }
+  @media (max-width: 640px) { header.top { padding: 8px 16px; position: static; } main { padding: 8px 16px 60px; } .controls { margin-left: 0; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- color-vision simulation filters (dev only; approximate sRGB matrices) -->
+  <filter id="cvd-protanopia"><feColorMatrix type="matrix" values="0.567 0.433 0 0 0  0.558 0.442 0 0 0  0 0.242 0.758 0 0  0 0 0 1 0"/></filter>
+  <filter id="cvd-deuteranopia"><feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.7 0.3 0 0 0  0 0.3 0.7 0 0  0 0 0 1 0"/></filter>
+  <filter id="cvd-tritanopia"><feColorMatrix type="matrix" values="0.95 0.05 0 0 0  0 0.433 0.567 0 0  0 0.475 0.525 0 0  0 0 0 1 0"/></filter>
+</svg>
+<header class="top">
+  <h1>Self &amp; Other <span>— illustration library (dev gallery)</span></h1>
+  <nav aria-label="Sections">
+    <a href="#hero">Composition</a><a href="#additions">New (P2)</a><a href="#palette">Palette</a><a href="#cells">Cells</a><a href="#cells-light">Light stage</a><a href="#sizes">Sizes</a>
+    <a href="#molecules">Molecules</a><a href="#antibodies">Antibodies</a><a href="#car">CAR</a><a href="#fit">Shape fit</a>
+    <a href="#membranes">On membranes</a><a href="#genes">Genes &amp; peptides</a><a href="#pathogens">Pathogens</a>
+    <a href="#scenes">Scenes</a><a href="#motion">Motion</a><a href="#sprites">Sprites</a>
+  </nav>
+  <div class="controls">
+    <label>Vision
+      <select id="cvd" aria-label="Simulate color vision">
+        <option value="">normal</option><option value="grayscale">grayscale</option>
+        <option value="deuteranopia">deuteranopia</option><option value="protanopia">protanopia</option><option value="tritanopia">tritanopia</option>
+      </select>
+    </label>
+    <label><input type="checkbox" id="rm"> Reduced motion</label>
+  </div>
+</header>
+<main id="main">
+  <section id="intro">
+    <p class="lede" style="margin-top:18px">Every entity on the site comes from <code>assets/js/art/</code>. Each caption shows the exact call that produced the drawing.
+      API reference: <code>docs/ART.md</code>. Use the <b>Vision</b> menu to check that cell types stay distinguishable by silhouette and texture, not just hue.</p>
+  </section>
+
+  <section id="hero"><h2>Composition test</h2>
+    <p class="lede">How the pieces combine in a hero shot: tissue field, two defocused background cells (<code>blurFilter</code>), an activated killer T cell engaging a cancer cell, cytokines, labels.</p>
+    <div class="stage-dark" id="hero-dark"></div>
+    <div style="height:10px"></div>
+    <div class="stage-light" id="hero-light"></div>
+  </section>
+
+  <section id="additions"><h2>Platform additions (P2)</h2>
+    <p class="lede">FIGURE-AUDIT §3 art additions. Seekable states (dying, degranulation, polarization) are pure functions of a number: drag the sliders.</p>
+
+    <h3>① setDying(cell, p) — seekable apoptosis</h3>
+    <div class="demo-controls"><label>p <input type="range" id="dying-p" min="0" max="1" step="0.01" value="0.55"></label> <code id="dying-val">setDying(cell, 0.55)</code></div>
+    <div class="stage-dark" id="dying-dark"></div><div style="height:8px"></div><div class="stage-light" id="dying-light"></div>
+
+    <h3>② interferon · ③ dangerSpark (vs. cytokine)</h3>
+    <div class="grid" id="signals-grid" style="--min: 170px"></div>
+
+    <h3>④ Clone keys — tcrKey / epitopeKey</h3>
+    <div class="stage-dark" id="keys-dark"></div><div style="height:8px"></div><div class="stage-light" id="keys-light"></div>
+
+    <h3>⑤ lymphNodeField</h3>
+    <div class="grid" id="lnf-grid" style="--min: 440px"></div>
+
+    <h3>⑥ Pockets, anchors and the groove — the ch04 truth table</h3>
+    <div class="stage-dark" id="groove-dark"></div><div style="height:8px"></div><div class="grid" id="groove-grid" style="--min: 200px"></div>
+
+    <h3>⑦ Compartments</h3>
+    <div class="grid" id="org-grid" style="--min: 170px"></div>
+
+    <h3>⑧ mastCell — degranulation</h3>
+    <div class="demo-controls"><label>release <input type="range" id="mast-p" min="0" max="1" step="0.01" value="0"></label> <code id="mast-val">setDegranulation(mast, 0.00)</code></div>
+    <div class="stage-dark" id="mast-dark"></div>
+
+    <h3>⑨ macrophage({ polarization })</h3>
+    <div class="demo-controls"><label>polarization <input type="range" id="mac-p" min="0" max="1" step="0.01" value="0.3"></label> <code id="mac-val">0.30</code> <span class="note">0 = fight end · 1 = repair end · ≥ 0.8 = tumor-associated macrophage</span></div>
+    <div class="stage-dark" id="mac-dark"></div>
+
+    <h3>⑩ bodyMap + organIcon</h3>
+    <div class="grid" id="body-grid" style="--min: 340px"></div>
+
+    <h3>Task H: necrosis vs apoptosis, pattern tokens, adhesion, crawling neutrophil, DC maturity</h3>
+    <div class="demo-controls"><label>p <input type="range" id="necro-p" min="0" max="1" step="0.01" value="0.6"></label> <code id="necro-val">setNecrotic(cell, 0.60)</code></div>
+    <div class="stage-dark" id="h-dark"></div><div style="height:8px"></div><div class="stage-light" id="h-light"></div>
+  </section>
+
+  <section id="palette"><h2>Palette</h2>
+    <p class="lede">Canonical colors (PLAN §4). Each swatch: base · dark-stage body · dark-stage rim · light-stage fill · light-stage stroke.</p>
+    <div class="swatches" id="swatches"></div>
+  </section>
+
+  <section id="cells"><h2>Cells — dark stage</h2>
+    <p class="lede">The luminous microscope: translucent bodies, bright membrane rims, dense nuclei, soft halos. No faces, ever.</p>
+    <div class="grid" id="cells-dark" style="--min: 200px"></div>
+  </section>
+
+  <section id="cells-light"><h2>Cells — light stage</h2>
+    <p class="lede">The same factories with <code>stage: 'light'</code>: crisp illustrations with defined strokes and no glow.</p>
+    <div class="grid" id="cells-lightgrid" style="--min: 200px"></div>
+  </section>
+
+  <section id="sizes"><h2>Sizes &amp; detail</h2>
+    <p class="lede">Drawn at 1:1. <code>detail: 'auto'</code> switches to a light 3–5-node version below r ≈ 18 for crowds; hero cells add texture.</p>
+    <div class="stage-dark" id="sizes-dark"></div>
+    <div style="height:10px"></div>
+    <div class="stage-light" id="sizes-light"></div>
+    <h3>Crowd test — 60 cells on a tissue field</h3>
+    <div class="stage-dark" id="crowd"></div>
+    <p class="stat" id="crowd-stat"></p>
+  </section>
+
+  <section id="molecules"><h2>Molecules</h2>
+    <p class="lede">Schematic glyphs. Anchor (0,0) sits on the membrane; the extracellular part points up; intracellular tails and signal icons hang below.</p>
+    <div class="grid" id="mol-dark" style="--min: 150px"></div>
+    <div style="height:10px"></div>
+    <div class="grid" id="mol-light" style="--min: 150px"></div>
+    <h3>Legibility at 12 px (detail 'low')</h3>
+    <div class="stage-dark" id="mol-small-dark"></div>
+    <div style="height:8px"></div>
+    <div class="stage-light" id="mol-small-light"></div>
+  </section>
+
+  <section id="antibodies"><h2>Antibodies</h2>
+    <p class="lede">Gold Ys. Drugs get a white outline. Humanization: mouse-derived parts are slate-blue <i>and</i> hatched.</p>
+    <div class="grid" id="ab-dark" style="--min: 170px"></div>
+    <div style="height:10px"></div>
+    <div class="grid" id="ab-light" style="--min: 170px"></div>
+  </section>
+
+  <section id="car"><h2>CAR (chimeric antigen receptor)</h2>
+    <p class="lede">Modular: every segment is a named part (<code>binder, hinge, transmembrane, costim-1, costim-2, cd3z</code>).</p>
+    <div class="grid" id="car-grid" style="--min: 170px"></div>
+  </section>
+
+  <section id="fit"><h2>Shape fit (receptor + ligand)</h2>
+    <p class="lede">For the binding/affinity figure: <code>fit</code> 1 = snug complement, 0 = wrong shape. Dock the ligand at the receptor's <code>data-dock-y</code>.</p>
+    <div class="demo-controls"><label>fit <input type="range" id="fit-slider" min="0" max="1" step="0.05" value="0.6"></label> <code id="fit-val">0.60</code></div>
+    <div class="grid" id="fit-grid" style="--min: 170px"></div>
+  </section>
+
+  <section id="membranes"><h2>Molecules on membranes</h2>
+    <p class="lede"><code>placeOnMembrane()</code> seats glyphs along a cell's true outline, facing outward; <code>placeAlong()</code> lines them up on flat membranes.</p>
+    <div class="grid" id="mem-grid" style="--min: 280px"></div>
+    <h3>Immune synapse close-up</h3>
+    <div class="stage-dark" id="synapse-dark"></div>
+    <div style="height:10px"></div>
+    <div class="stage-light" id="synapse-light"></div>
+  </section>
+
+  <section id="genes"><h2>Genes, peptides, proteasome</h2>
+    <div class="demo-controls"><label>peptideChain fold <input type="range" id="fold" min="0" max="1" step="0.02" value="0.5"></label> <code id="fold-val">0.50</code></div>
+    <div class="grid" id="genes-grid" style="--min: 300px"></div>
+  </section>
+
+  <section id="pathogens"><h2>Pathogens</h2>
+    <div class="grid" id="path-dark" style="--min: 170px"></div>
+    <div style="height:10px"></div>
+    <div class="grid" id="path-light" style="--min: 170px"></div>
+  </section>
+
+  <section id="scenes"><h2>Scenes</h2>
+    <p class="lede">Area pieces fill a box from (x, y); object pieces are centred at (0,0) like cells.</p>
+    <div class="grid" id="scenes-grid" style="--min: 440px"></div>
+  </section>
+
+  <section id="motion"><h2>Motion</h2>
+    <p class="lede">Dependency-free helpers. Loops pause off-screen and in hidden tabs. With reduced motion, loops don't start and one-shots jump to their end state (toggle it in the header).</p>
+    <div class="demo-controls">
+      <button id="btn-kill">apoptosis(cancer)</button>
+      <button id="btn-pulse">glowPulse(tCell)</button>
+      <button id="btn-reset">Reset scene</button>
+      <span class="note" id="motion-note"></span>
+    </div>
+    <div class="stage-dark" id="motion-stage"></div>
+    <pre class="code" id="motion-code"></pre>
+  </section>
+
+  <section id="sprites"><h2>Canvas sprites</h2>
+    <p class="lede"><code>await sprite('tCell', { variant: 'cd8', r: 9 })</code> → cached bitmap; <code>drawSprite(ctx, img, x, y)</code>. 300 cells, 8 distinct bitmaps.</p>
+    <div class="stage-dark" style="overflow:hidden"><canvas id="sprite-canvas" style="width:100%;height:360px;display:block"></canvas></div>
+    <p class="stat" id="sprite-stat"></p>
+  </section>
+</main>
+
+<script type="module">
+import * as A from './assets/js/art/index.js';
+
+// ------------------------------------------------------------------ helpers
+const $ = (s) => document.querySelector(s);
+const fmtVal = (v) => {
+  if (typeof v === 'string') return `'${v}'`;
+  if (Array.isArray(v)) return `[${v.map(fmtVal).join(', ')}]`;
+  if (v && typeof v === 'object') return `{ ${Object.entries(v).map(([k, x]) => `${/^[a-z_$][\w$]*$/i.test(k) ? k : `'${k}'`}: ${fmtVal(x)}`).join(', ')} }`;
+  return String(v);
+};
+const call = (name, opts) => `${name}(${opts && Object.keys(opts).length ? fmtVal(opts) : ''})`;
+
+function makeSvg(w, h, viewBox) {
+  const svg = A.svgRoot({ viewBox: viewBox || `0 0 ${w} ${h}` });
+  svg.setAttribute('width', w);
+  svg.setAttribute('height', h);
+  svg.style.maxWidth = '100%';
+  return svg;
+}
+
+/** Card with an auto-fitted viewBox. build() returns an SVG node; caption shows the code. */
+function card(host, { code, build, stage = 'dark', size = 190, pad = 10, aspect = 1, html }) {
+  const fig = document.createElement('figure');
+  fig.className = `card ${stage}`;
+  const w = size, h = Math.round(size / aspect);
+  const svg = makeSvg(w, h, `0 0 ${w} ${h}`);
+  svg.style.width = '100%';
+  svg.style.height = 'auto';
+  fig.appendChild(svg);
+  const cap = document.createElement('figcaption');
+  cap.innerHTML = html || escapeHtml(code);
+  fig.appendChild(cap);
+  host.appendChild(fig);
+  let node;
+  try { node = build(); } catch (e) { console.error(code, e); cap.textContent = 'ERROR ' + code; return fig; }
+  svg.appendChild(node);
+  fitView(svg, node, pad, w / h);
+  return fig;
+}
+function fitView(svg, node, pad, ratio) {
+  const b = node.getBBox();
+  let x = b.x - pad, y = b.y - pad, w = b.width + 2 * pad, h = b.height + 2 * pad;
+  if (w / h > ratio) { const nh = w / ratio; y -= (nh - h) / 2; h = nh; } else { const nw = h * ratio; x -= (nw - w) / 2; w = nw; }
+  svg.setAttribute('viewBox', `${x.toFixed(1)} ${y.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)}`);
+}
+function escapeHtml(s) { return s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c])); }
+const bold = (code) => { const i = code.indexOf('('); return `<b>${escapeHtml(code.slice(0, i))}</b>${escapeHtml(code.slice(i))}`; };
+
+// ------------------------------------------------------------------ controls
+$('#cvd').addEventListener('change', (e) => {
+  const v = e.target.value;
+  $('#main').style.filter = !v ? '' : v === 'grayscale' ? 'grayscale(1)' : `url(#cvd-${v})`;
+});
+$('#rm').checked = A.prefersReducedMotion();
+$('#rm').addEventListener('change', (e) => { A.setReducedMotion(e.target.checked); buildMotion(); });
+
+// ------------------------------------------------------------------ hero composition
+function hero(host, stage) {
+  const W = 1400, H = 560;
+  const svg = makeSvg(W, H);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  host.appendChild(svg);
+  svg.appendChild(A.tissueField({ width: W, height: H, seed: 21, stage, density: 0.8 }));
+  // defocused background cells (depth of field)
+  const bg1 = A.dendriticCell({ r: 120, seed: 9, stage, receptors: false, detail: 'low' });
+  bg1.setAttribute('transform', 'translate(1230 120)'); bg1.setAttribute('opacity', 0.45);
+  if (stage === 'dark') bg1.setAttribute('filter', A.blurFilter(3));
+  const bg2 = A.healthyCell({ r: 70, seed: 4, stage, receptors: false, detail: 'low' });
+  bg2.setAttribute('transform', 'translate(130 450)'); bg2.setAttribute('opacity', 0.45);
+  if (stage === 'dark') bg2.setAttribute('filter', A.blurFilter(2.5));
+  svg.append(bg1, bg2);
+  const tumor = A.cancerCell({ r: 150, seed: 12, stage, pdl1: 4 });
+  tumor.setAttribute('transform', 'translate(860 300)');
+  const killer = A.tCell({ variant: 'cd8', r: 92, state: 'activated', polarity: 0, seed: 5, stage });
+  killer.setAttribute('transform', 'translate(560 290)');
+  const helper = A.tCell({ variant: 'cd4', r: 34, seed: 8, stage });
+  helper.setAttribute('transform', 'translate(300 140)');
+  const cyt = A.cytokineCloud({ count: 12, radius: 70, color: 'cd4', seed: 3, stage, size: 5 });
+  cyt.setAttribute('transform', 'translate(390 210)');
+  const ab = A.antibody({ variant: 'therapeutic', size: 40, anchor: 'center', stage });
+  ab.setAttribute('transform', 'translate(1140 470) rotate(-30)');
+  const v = A.virus({ r: 9, seed: 2, stage }); v.setAttribute('transform', 'translate(200 330)');
+  svg.append(helper, cyt, tumor, killer, ab, v);
+  const L = (o) => svg.appendChild(A.label({ stage, size: 14, ...o }));
+  L({ x: 470, y: 470, text: 'Killer T cell', anchor: 'end', leader: [520, 410] });
+  L({ x: 1010, y: 510, text: 'Cancer cell', leader: [960, 440] });
+  L({ x: 260, y: 82, text: 'Helper T cell', leader: [290, 112] });
+  L({ x: 1180, y: 520, text: 'Drug antibody', leader: [1150, 485] });
+  if (stage === 'dark') A.breathe(killer); 
+}
+hero($('#hero-dark'), 'dark');
+hero($('#hero-light'), 'light');
+
+
+// ------------------------------------------------------------------ P2 additions
+function wideSvg(host, W, H) {
+  const svg = makeSvg(W, H);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  host.appendChild(svg);
+  return svg;
+}
+const at = (node, x, y) => { node.setAttribute('transform', `translate(${x} ${y})`); return node; };
+
+// ① dying
+const dyingLive = [];
+for (const stage of ['dark', 'light']) {
+  const svg = wideSvg($(`#dying-${stage}`), 1400, 250);
+  [0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1].forEach((p, i) => {
+    const c = at(A.cancerCell({ r: 52, seed: 4, pdl1: 2, stage }), 80 + i * 145, 115);
+    svg.append(c);
+    A.setDying(c, p);
+    svg.append(A.label({ x: 80 + i * 145, y: 228, text: `p = ${p}`, anchor: 'middle', stage, size: 12 }));
+  });
+  const live = at(A.tCell({ r: 30, seed: 2, stage }), 1330, 115);
+  svg.append(live, A.label({ x: 1330, y: 228, text: 'slider →', anchor: 'middle', stage, size: 12 }));
+  dyingLive.push(live);
+}
+const onDying = () => { const p = +$('#dying-p').value; $('#dying-val').textContent = `setDying(cell, ${p.toFixed(2)})`; dyingLive.forEach((c) => A.setDying(c, p)); };
+$('#dying-p').addEventListener('input', onDying); onDying();
+
+// ②③ signals
+for (const stage of ['dark', 'light']) {
+  const items = [
+    [`cytokine({ size: 12, color: 'm1' })`, () => A.cytokine({ size: 12, color: 'm1', stage })],
+    [`interferon({ size: 14, color: 'cd8' })`, () => A.interferon({ size: 14, color: 'cd8', stage })],
+    [`interferon({ size: 14, color: 'm1' })`, () => A.interferon({ size: 14, color: 'm1', stage })],
+    [`dangerSpark({ size: 18 })`, () => A.dangerSpark({ size: 18, stage })],
+    [`cytokineCloud({ kind: 'interferon', color: 'cd8' })`, () => A.cytokineCloud({ kind: 'interferon', color: 'cd8', count: 12, radius: 40, size: 7, stage })],
+    [`cytokineCloud({ kind: 'danger' })`, () => A.cytokineCloud({ kind: 'danger', count: 10, radius: 40, size: 9, stage })],
+  ];
+  for (const [code, build] of items) card($('#signals-grid'), { code: stage === 'light' ? code.replace(/ }\)$/, ", stage: 'light' })") : code, stage, size: 170, pad: 16, build });
+}
+
+// ④ keys
+for (const stage of ['dark', 'light']) {
+  const svg = wideSvg($(`#keys-${stage}`), 1400, 330);
+  for (let k = 0; k < A.KEY_COUNT; k++) svg.append(at(A.tcrKey({ key: k, size: 30, stage }), 28 + (k % 23) * 38, 52 + Math.floor(k / 23) * 62));
+  svg.append(A.label({ x: 16, y: 150, text: `tcrKey({ key: 0 … ${A.KEY_COUNT - 1} }) — guaranteed distinct`, stage, size: 12 }));
+  A.KEY_NAMES.forEach((nm, i) => {
+    svg.append(at(A.tcrKey({ key: nm, size: 34, stage, color: 'cd4' }), 940 + i * 56, 56));
+    svg.append(at(A.epitopeKey({ key: nm, size: 34, stage }), 940 + i * 56, 106));
+  });
+  svg.append(A.label({ x: 912, y: 150, text: "named: 'triangle' · 'star' · 'diamond'", stage, size: 12 }));
+  [5, 21, 'star', 'diamond'].forEach((k, i) => {
+    const t = at(A.tcrKey({ key: k, size: 56, stage }), 1140 + i * 66, 100);
+    const e = A.epitopeKey({ key: k, size: 56, stage }); e.setAttribute('transform', `translate(0 ${t.dataset.dockY})`); t.append(e);
+    svg.append(t);
+  });
+  svg.append(A.label({ x: 1120, y: 150, text: 'docked at data-dock-y', stage, size: 12 }));
+  for (let k = 0; k < 20; k++) svg.append(at(A.tcrKey({ key: k, size: 11, form: 'tip', stage, color: k % 2 ? 'cd4' : 'cd8' }), 30 + k * 22, 210));
+  svg.append(A.label({ x: 16, y: 240, text: "form: 'tip' at 11 px (crowd dots, sprites)", stage, size: 12 }));
+  svg.append(at(A.tCell({ r: 40, tcrKey: 'star', stage, seed: 3 }), 620, 250));
+  svg.append(A.label({ x: 620, y: 318, text: "tCell({ tcrKey: 'star' })", anchor: 'middle', stage, size: 12 }));
+  svg.append(at(A.mhc1({ peptide: 'neo', key: 'star', size: 54, stage }), 760, 290));
+  svg.append(at(A.mhc1({ peptide: 'self', key: 12, size: 54, stage }), 830, 290));
+  svg.append(A.label({ x: 795, y: 318, text: "mhc1({ peptide, key })", anchor: 'middle', stage, size: 12 }));
+  // engaged synapse pair using DOCK_GAP
+  const size = 46, gap = A.DOCK_GAP['tcrKey-mhc1Key'] * size;
+  const syn = at(A.synapse({ width: 360, gap, top: { color: 'cd8' }, bottom: { color: 'cancer' }, stage, depth: 26, thickness: 10 }), 1150, 250);
+  const { topY, bottomY } = A.cellInfo(syn);
+  A.placeAlong(syn, (o) => A.tcrKey({ ...o, key: 'star' }), { x0: -140, x1: -60, y: topY, count: 1, facing: 'down', size, stage });
+  A.placeAlong(syn, (o) => A.mhc1({ ...o, peptide: 'neo', key: 'star' }), { x0: -140, x1: -60, y: bottomY, count: 1, size, stage });
+  A.placeAlong(syn, (o) => A.tcrKey({ ...o, key: 12 }), { x0: 60, x1: 140, y: topY, count: 1, facing: 'down', size, stage });
+  A.placeAlong(syn, (o) => A.mhc1({ ...o, peptide: 'neo', key: 12 }), { x0: 60, x1: 140, y: bottomY, count: 1, size, stage });
+  svg.append(syn);
+}
+
+// ⑤ lymph node field
+for (const stage of ['dark', 'light']) {
+  const code = `lymphNodeField({ width: 600, height: 340, label: true${stage === 'light' ? ", stage: 'light'" : ''} })`;
+  const fig = card($('#lnf-grid'), { code, stage, size: 440, aspect: 600 / 340, pad: 0, build: () => {
+    const g = A.group();
+    g.append(A.lymphNodeField({ width: 600, height: 340, label: true, stage, seed: 3 }));
+    g.append(at(A.dendriticCell({ r: 56, stage, seed: 7 }), 330, 190));
+    return g;
+  } });
+  fig.querySelector('svg').setAttribute('viewBox', '0 0 600 340');
+}
+
+// ⑥ groove truth table
+(function () {
+  const people = { Ana: { pockets: ['round', 'round'], ridge: 'A' }, Ben: { pockets: ['wide', 'round'], ridge: 'B' }, Chen: { pockets: ['square', 'triangle'], ridge: 'C' } };
+  const peps = { P1: { anchors: ['circle', 'circle'], pattern: 'x' }, P2: { anchors: ['square', 'circle'], pattern: 'y' }, P3: { anchors: ['square', 'triangle'], pattern: 'z' }, 'P1*': { anchors: ['square', 'circle'], pattern: 'x' } };
+  const svg = wideSvg($('#groove-dark'), 1400, 560);
+  const names = Object.keys(people);
+  names.forEach((nm, j) => svg.append(A.label({ x: 330 + j * 380, y: 22, text: `${nm} — pockets ${people[nm].pockets.join(' / ')}, ridge ${people[nm].ridge}`, anchor: 'middle', size: 13 })));
+  Object.entries(peps).forEach(([pn, pp], i) => {
+    svg.append(A.label({ x: 30, y: 80 + i * 128, text: pn, size: 15, weight: 600 }));
+    names.forEach((nm, j) => {
+      const P = people[nm];
+      const fits = A.peptideFits(P.pockets, pp.anchors);
+      const g = at(A.mhcGroove({ view: 'side', width: 300, pockets: P.pockets, ridge: P.ridge, peptide: fits ? { kind: 'foreign', ...pp } : { kind: 'self', anchors: P.pockets.map((q) => (q === 'triangle' ? 'triangle' : q === 'square' ? 'square' : 'circle')), pattern: 'x' } }), 330 + j * 380, 84 + i * 128);
+      svg.append(g);
+      svg.append(A.label({ x: 330 + j * 380 + 160, y: 84 + i * 128 - 34, text: fits ? 'displayed' : 'not displayed (self instead)', anchor: 'end', size: 11.5, color: fits ? '#3DDC97' : '#AAB3CC' }));
+    });
+  });
+  for (const stage of ['dark', 'light']) {
+    const items = [
+      [`mhcGroove({ view: 'top', pockets: ['round','round'], ridge: 'A', peptide: { kind: 'foreign', anchors: ['circle','circle'], pattern: 'x' } })`, () => A.mhcGroove({ view: 'top', width: 300, pockets: ['round', 'round'], ridge: 'A', peptide: { kind: 'foreign', anchors: ['circle', 'circle'], pattern: 'x' }, stage })],
+      [`mhcGroove({ view: 'top', pockets: ['square','triangle'], ridge: 'C', peptide: null })`, () => A.mhcGroove({ view: 'top', width: 300, pockets: ['square', 'triangle'], ridge: 'C', peptide: null, stage })],
+      [`mhc1({ size: 64, pockets: ['wide','round'], anchors: ['square','circle'], peptide: 'self' })`, () => A.mhc1({ size: 64, pockets: ['wide', 'round'], anchors: ['square', 'circle'], peptide: 'self', stage })],
+      [`mhc1({ size: 64, pockets: ['square','triangle'], anchors: ['square','triangle'], peptide: 'neo' })`, () => A.mhc1({ size: 64, pockets: ['square', 'triangle'], anchors: ['square', 'triangle'], peptide: 'neo', stage })],
+    ];
+    for (const [code, build] of items) card($('#groove-grid'), { code, stage, size: 200, pad: 12, build });
+  }
+})();
+
+// ⑦ compartments
+for (const stage of ['dark', 'light']) {
+  const items = [
+    [`vesicle({ kind: 'endosome', r: 34, cargo: 5, tagged: 2 })`, () => A.vesicle({ kind: 'endosome', r: 34, cargo: 5, tagged: 2, stage })],
+    [`vesicle({ kind: 'lysosome', r: 16 })`, () => A.vesicle({ kind: 'lysosome', r: 16, stage, seed: 2 })],
+    [`vesicle({ kind: 'er', width: 220, height: 140 }) + tapGate + mhc1({ peptide: 'none', pockets }) ×3`, () => { const g = A.group(); g.append(A.vesicle({ kind: 'er', width: 220, height: 140, stage, seed: 3 })); [-60, 0, 60].forEach((x, i) => g.append(at(A.mhc1({ size: 34, peptide: 'none', pockets: ['round', 'round'], stage }), x, 38 + (i % 2) * 8))); g.append(at(A.tapGate({ size: 30, stage, peptide: true }), 10, -68)); return g; }],
+    [`tapGate({ size: 40, peptide: true })`, () => A.tapGate({ size: 40, peptide: true, stage })],
+    [`tapGate({ size: 40, state: 'closed' })`, () => A.tapGate({ size: 40, state: 'closed', stage })],
+    [`tapGate({ size: 40, state: 'blocked' })`, () => A.tapGate({ size: 40, state: 'blocked', stage })],
+  ];
+  for (const [code, build] of items) card($('#org-grid'), { code, stage, size: 170, pad: 14, build });
+}
+
+// ⑧ mast cell
+const mastLive = [];
+(function () {
+  const svg = wideSvg($('#mast-dark'), 1400, 230);
+  const live = at(A.mastCell({ r: 56, seed: 2 }), 160, 115); svg.append(live); mastLive.push(live);
+  svg.append(A.label({ x: 160, y: 218, text: 'mastCell({ r: 56 }) + slider', anchor: 'middle', size: 12 }));
+  [0, 0.4, 1].forEach((p, i) => { svg.append(at(A.mastCell({ r: 44, seed: 5, release: p }), 470 + i * 170, 115)); svg.append(A.label({ x: 470 + i * 170, y: 218, text: `release: ${p}`, anchor: 'middle', size: 12 })); });
+  svg.append(at(A.neutrophil({ r: 44, seed: 3 }), 1030, 115)); svg.append(A.label({ x: 1030, y: 218, text: 'neutrophil (for contrast)', anchor: 'middle', size: 12 }));
+  svg.append(at(A.nkCell({ r: 40, seed: 3 }), 1220, 115)); svg.append(A.label({ x: 1220, y: 218, text: 'nkCell (for contrast)', anchor: 'middle', size: 12 }));
+})();
+const onMast = () => { const p = +$('#mast-p').value; $('#mast-val').textContent = `setDegranulation(mast, ${p.toFixed(2)})`; mastLive.forEach((c) => A.setDegranulation(c, p)); };
+$('#mast-p').addEventListener('input', onMast); onMast();
+
+// ⑨ macrophage polarization
+(function () {
+  const svg = wideSvg($('#mac-dark'), 1400, 300);
+  const slot = A.group(); svg.append(slot);
+  [0, 0.25, 0.5, 0.75, 1].forEach((p, i) => { svg.append(at(A.macrophage({ r: 62, polarization: p, seed: 6 }), 480 + i * 190, 140)); svg.append(A.label({ x: 480 + i * 190, y: 280, text: `polarization: ${p}`, anchor: 'middle', size: 12 })); });
+  const draw = () => {
+    const p = +$('#mac-p').value; $('#mac-val').textContent = `macrophage({ polarization: ${p.toFixed(2)} })`;
+    slot.replaceChildren(at(A.macrophage({ r: 100, polarization: p, seed: 11 }), 170, 145));
+    slot.append(A.label({ x: 170, y: 285, text: p >= 0.8 ? 'tumor-associated macrophage' : p <= 0.33 ? 'fight mode' : p >= 0.66 ? 'repair mode' : 'in between', anchor: 'middle', size: 13, weight: 600 }));
+  };
+  $('#mac-p').addEventListener('input', draw); draw();
+})();
+
+// ⑩ body map
+for (const stage of ['dark', 'light']) {
+  card($('#body-grid'), { code: `bodyMap({ height: 460, organs: 'all'${stage === 'light' ? ", stage: 'light'" : ''} }) + anchors`, stage, size: 340, aspect: 0.75, pad: 14, build: () => {
+    const g = A.group();
+    const b = A.bodyMap({ height: 460, organs: 'all', stage });
+    g.append(b);
+    const { anchors } = A.cellInfo(b);
+    for (const k of ['pituitary', 'thyroid', 'lungs', 'liver', 'gut', 'skin', 'joints']) {
+      const a = anchors[k];
+      g.append(A.el('circle', { cx: a.x, cy: a.y, r: a.r, fill: 'none', stroke: '#E5484D', 'stroke-width': 1.6, 'stroke-opacity': 0.9 }));
+    }
+    return g;
+  } });
+  card($('#body-grid'), { code: `bodyMap({ organs: ['thymus','marrow','lymphNodes','spleen'] })`, stage, size: 340, aspect: 0.75, pad: 14, build: () => A.bodyMap({ height: 460, organs: ['thymus', 'marrow', 'lymphNodes', 'spleen'], stage }) });
+  card($('#body-grid'), { code: `organIcon(name, { size: 34 }) — pancreas, eye, stomach, salivary, thyroid, kidneys, heart, lungs, brain, liver`, stage, size: 340, aspect: 0.75, pad: 14, build: () => {
+    const g = A.group();
+    ['pancreas', 'eye', 'stomach', 'salivary', 'thyroid', 'kidneys', 'heart', 'lungs', 'brain', 'liver'].forEach((nm, i) => {
+      g.append(at(A.organIcon(nm, { size: 40, stage }), (i % 3) * 70, Math.floor(i / 3) * 70));
+      g.append(A.label({ x: (i % 3) * 70, y: Math.floor(i / 3) * 70 + 30, text: nm, anchor: 'middle', size: 10, stage }));
+    });
+    return g;
+  } });
+}
+
+
+// ------------------------------------------------------------------ task H additions
+const necroLive = [];
+for (const stage of ['dark', 'light']) {
+  const svg = wideSvg($(`#h-${stage}`), 1400, 560);
+  [0, 0.25, 0.5, 0.75, 1].forEach((p, i) => { const c = at(A.healthyCell({ r: 46, seed: 3, stage, state: 'infected' }), 70 + i * 135, 90); svg.append(c); A.setNecrotic(c, p); svg.append(A.label({ x: 70 + i * 135, y: 175, text: `setNecrotic ${p}`, anchor: 'middle', stage, size: 11 })); });
+  const live = at(A.cancerCell({ r: 46, seed: 6, stage }), 760, 90); svg.append(live); necroLive.push(live);
+  svg.append(A.label({ x: 760, y: 175, text: 'slider', anchor: 'middle', stage, size: 11 }));
+  const ap = at(A.cancerCell({ r: 46, seed: 6, stage }), 900, 90); svg.append(ap); A.setDying(ap, 0.6);
+  svg.append(A.label({ x: 900, y: 175, text: 'vs setDying 0.6', anchor: 'middle', stage, size: 11 }));
+  ['lps', 'flagellin', 'dna', 'rna', 'atp', 'uricAcid'].forEach((kd, i) => { svg.append(at(A.pamp({ kind: kd, size: 42, stage }), 1010 + (i % 3) * 130, 60 + Math.floor(i / 3) * 80)); svg.append(A.label({ x: 1010 + (i % 3) * 130, y: 96 + Math.floor(i / 3) * 80, text: `pamp '${kd}'`, anchor: 'middle', stage, size: 11 })); });
+  const mem = (x, y, w) => A.el('path', { d: `M${x - w} ${y}H${x + w}`, stroke: stage === 'dark' ? '#3A4670' : '#D9D2C6', 'stroke-width': 4, 'stroke-linecap': 'round' });
+  [['lfa1', {}], ['lfa1', { state: 'bent' }], ['icam1', {}], ['cd8', {}], ['cd4', {}]].forEach(([nm, o], i) => { const x = 70 + i * 100; svg.append(mem(x, 330, 34), at(A[nm]({ size: 58, stage, ...o }), x, 330)); svg.append(A.label({ x, y: 355, text: `${nm}${o.state ? " 'bent'" : ''}`, anchor: 'middle', stage, size: 11 })); });
+  [0, 120, 230].forEach((pol, i) => svg.append(at(A.neutrophil({ r: 40, state: 'crawling', polarity: pol, stage, seed: i + 1 }), 600 + i * 110, 300)));
+  svg.append(A.label({ x: 710, y: 360, text: "neutrophil({ state: 'crawling', polarity })", anchor: 'middle', stage, size: 11 }));
+  [0, 0.35, 0.7, 1].forEach((m, i) => { svg.append(at(A.dendriticCell({ r: 58, maturity: m, seed: 8, stage }), 930 + i * 122, 300)); });
+  svg.append(A.label({ x: 1165, y: 380, text: 'dendriticCell({ maturity: 0 · 0.35 · 0.7 · 1 })', anchor: 'middle', stage, size: 11 }));
+  [3, 3, 17].forEach((key, i) => svg.append(at(A.bCell({ r: 34, key, seed: i + 2, stage }), 90 + i * 110, 470)));
+  svg.append(A.label({ x: 200, y: 540, text: 'bCell({ key: 3 }) ×2 · bCell({ key: 17 })', anchor: 'middle', stage, size: 11 }));
+}
+const onNecro = () => { const p = +$('#necro-p').value; $('#necro-val').textContent = `setNecrotic(cell, ${p.toFixed(2)})`; necroLive.forEach((c) => A.setNecrotic(c, p)); };
+$('#necro-p').addEventListener('input', onNecro); onNecro();
+
+// ------------------------------------------------------------------ palette
+const swatchKeys = ['healthy', 'cancer', 'cd8', 'cd4', 'treg', 'bCell', 'nk', 'm1', 'm2', 'mast', 'dendritic', 'neutrophil', 'mdsc', 'fibroblast', 'bacteria', 'virus', 'mhc', 'selfPeptide', 'foreignPeptide', 'inhibitory', 'activating', 'rbc', 'platelet', 'endothelium', 'lymph', 'b7', 'antigen', 'payload', 'mouse', 'danger', 'mastGranule'];
+for (const k of swatchKeys) {
+  const hex = A.PALETTE[k];
+  const td = A.tones(hex, 'dark'), tl = A.tones(hex, 'light');
+  const d = document.createElement('div');
+  d.className = 'sw';
+  d.innerHTML = `<div class="chips">${[hex, td.bodyMid, td.rim, tl.bodyMid, tl.rim].map((c) => `<div style="background:${c}" title="${c}"></div>`).join('')}</div><p><b>${k}</b><br><code>${hex}</code></p>`;
+  $('#swatches').appendChild(d);
+}
+
+// ------------------------------------------------------------------ cells
+const CELL_DEMOS = [
+  ['tCell', { variant: 'cd8', r: 34 }],
+  ['tCell', { variant: 'cd8', state: 'activated', r: 34 }],
+  ['tCell', { variant: 'cd8', state: 'exhausted', r: 34 }],
+  ['tCell', { variant: 'cd4', r: 34 }],
+  ['tCell', { variant: 'cd4', state: 'activated', r: 34 }],
+  ['tCell', { variant: 'treg', r: 34 }],
+  ['bCell', { r: 36 }],
+  ['bCell', { state: 'activated', r: 36 }],
+  ['plasmaCell', { r: 44 }],
+  ['nkCell', { r: 38 }],
+  ['nkCell', { state: 'activated', r: 38 }],
+  ['macrophage', { variant: 'm1', r: 80 }],
+  ['macrophage', { variant: 'm2', r: 80 }],
+  ['macrophage', { variant: 'm1', state: 'activated', r: 80, seed: 4 }],
+  ['macrophage', { variant: 'm1', state: 'engulfing', r: 80, seed: 2 }],
+  ['macrophage', { polarization: 0.9, r: 80, seed: 5 }],
+  ['mastCell', { r: 36 }],
+  ['mastCell', { r: 36, release: 0.7, seed: 3 }],
+  ['dendriticCell', { state: 'immature', r: 90 }],
+  ['dendriticCell', { state: 'mature', r: 90 }],
+  ['dendriticCell', { state: 'mature', r: 90, seed: 5, receptors: false }],
+  ['neutrophil', { r: 42 }],
+  ['neutrophil', { state: 'crawling', r: 42, polarity: 0 }],
+  ['mdsc', { r: 30 }],
+  ['healthyCell', { r: 52 }],
+  ['healthyCell', { state: 'infected', r: 52, seed: 2 }],
+  ['healthyCell', { state: 'stressed', r: 52, seed: 3 }],
+  ['cancerCell', { r: 58 }],
+  ['cancerCell', { state: 'hidden', r: 58, seed: 3 }],
+  ['cancerCell', { pdl1: true, r: 58, seed: 5 }],
+  ['cancerCell', { nuclei: 2, r: 58, seed: 7, antigens: { shape: 'diamond', count: 6 } }],
+  ['cancerCell', { state: 'dividing', r: 58, seed: 2 }],
+  ['cancerCell', { state: 'dying', progress: 0.4, r: 58, seed: 4 }],
+  ['cancerCell', { state: 'dying', progress: 0.9, r: 58, seed: 4 }],
+  ['fibroblast', { r: 90 }],
+  ['redBloodCell', { r: 22 }],
+  ['redBloodCell', { r: 22, view: 'tilted', angle: 25 }],
+  ['redBloodCell', { r: 22, view: 'side' }],
+  ['platelet', { r: 14 }],
+  ['platelet', { r: 14, state: 'activated' }],
+  ['genericCell', { color: 'neutrophil', r: 36, nucleus: 0.55, nucleusShape: 'kidney', granules: 6 }],
+];
+for (const stage of ['dark', 'light']) {
+  const host = stage === 'dark' ? $('#cells-dark') : $('#cells-lightgrid');
+  for (const [name, o] of CELL_DEMOS) {
+    const opts = stage === 'light' ? { ...o, stage: 'light' } : o;
+    const code = call(name, opts);
+    card(host, { code, html: bold(code), stage, build: () => A[name](opts), pad: 8 });
+  }
+}
+
+// ------------------------------------------------------------------ sizes
+function sizesRow(host, stage) {
+  const W = 1400, H = 290;
+  const svg = makeSvg(W, H);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  host.appendChild(svg);
+  let x = 20;
+  const put = (node, w, y = 150) => { node.setAttribute('transform', `translate(${x + w / 2} ${y})`); svg.appendChild(node); x += w + 14; };
+  for (const r of [6, 9, 12, 18, 28, 44, 70]) put(A.tCell({ r, stage, seed: r, state: r === 70 ? 'activated' : 'resting' }), r * 2.5);
+  for (const r of [10, 22, 48, 100]) put(A.cancerCell({ r, stage, seed: r, pdl1: r > 40 }), r * 2.3);
+  for (const r of [16, 40]) put(A.macrophage({ r, stage, seed: r }), r * 2.1);
+  const t = A.label({ x: 20, y: 22, text: 'tCell r = 6 · 9 · 12 · 18 · 28 · 44 · 70(activated)   |   cancerCell r = 10 · 22 · 48 · 100   |   macrophage r = 16 · 40', stage, size: 12, weight: 500 });
+  svg.appendChild(t);
+}
+sizesRow($('#sizes-dark'), 'dark');
+sizesRow($('#sizes-light'), 'light');
+
+(function crowd() {
+  const W = 1400, H = 420;
+  const svg = makeSvg(W, H);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  $('#crowd').appendChild(svg);
+  svg.appendChild(A.tissueField({ width: W, height: H, seed: 3 }));
+  const R = A.rng(11);
+  const kinds = [
+    () => A.tCell({ variant: R.pick(['cd8', 'cd8', 'cd4', 'treg']), r: R.range(11, 15), seed: R.int(1, 99) }),
+    () => A.cancerCell({ r: R.range(18, 26), seed: R.int(1, 99) }),
+    () => A.macrophage({ variant: R.pick(['m1', 'm2']), r: R.range(26, 34), seed: R.int(1, 99) }),
+    () => A.nkCell({ r: R.range(12, 15), seed: R.int(1, 99) }),
+    () => A.bCell({ r: R.range(11, 14), seed: R.int(1, 99) }),
+    () => A.dendriticCell({ r: R.range(30, 38), seed: R.int(1, 99) }),
+    () => A.neutrophil({ r: R.range(14, 17), seed: R.int(1, 99) }),
+    () => A.mdsc({ r: R.range(10, 13), seed: R.int(1, 99) }),
+    () => A.fibroblast({ r: R.range(40, 55), seed: R.int(1, 99) }),
+  ];
+  const weights = [16, 14, 5, 5, 5, 3, 5, 4, 3];
+  const pickKind = () => { let s = R.range(0, weights.reduce((a, b) => a + b)); for (let i = 0; i < weights.length; i++) { s -= weights[i]; if (s <= 0) return kinds[i]; } return kinds[0]; };
+  const t0 = performance.now();
+  const placed = [];
+  for (let i = 0; i < 60; i++) {
+    const node = pickKind()();
+    const info = A.cellInfo(node);
+    const ext = (info && info.extent) || 20;
+    let x, y, ok = false;
+    for (let k = 0; k < 60 && !ok; k++) {
+      x = R.range(ext, W - ext); y = R.range(ext, H - ext);
+      ok = placed.every((p) => Math.hypot(p.x - x, p.y - y) > (p.e + ext) * 0.85);
+    }
+    placed.push({ x, y, e: ext });
+    node.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)})`);
+    svg.appendChild(node);
+  }
+  const ms = performance.now() - t0;
+  requestAnimationFrame(() => {
+    $('#crowd-stat').textContent = `60 cells built in ${ms.toFixed(0)} ms · ${svg.querySelectorAll('*').length} SVG nodes total (incl. background)`;
+  });
+})();
+
+// ------------------------------------------------------------------ molecules
+const MOL_DEMOS = [
+  ['mhc1', { peptide: 'self' }], ['mhc1', { peptide: 'foreign' }], ['mhc1', { peptide: 'neo' }], ['mhc1', { peptide: 'none' }],
+  ['mhc2', { peptide: 'self' }], ['mhc2', { peptide: 'foreign' }],
+  ['tcr', {}], ['tcr', { cd3: true }], ['tcr', { color: 'cd4' }], ['cd3', {}], ['bcr', {}],
+  ['cd28', {}], ['ctla4', {}], ['b7', {}], ['pd1', {}], ['pdl1', {}],
+  ['nkActivating', {}], ['nkInhibitory', {}], ['stressLigand', {}], ['cd25', {}], ['tlr', {}],
+  ['antigen', { shape: 'circle' }], ['antigen', { shape: 'diamond' }], ['antigen', { shape: 'triangle' }], ['antigen', { shape: 'square' }], ['antigen', { shape: 'hex' }], ['antigen', { shape: 'star', color: 'cd19' === 'x' ? '' : '#9FD8FF' }],
+  ['fas', {}], ['fasL', {}],
+  ['perforin', { view: 'top' }], ['perforin', { view: 'side' }], ['granzyme', { size: 14 }], ['cytokine', { size: 10, color: 'cd4' }],
+  ['interferon', { size: 14, color: 'cd8' }], ['dangerSpark', { size: 18 }], ['tcrKey', { key: 7 }], ['epitopeKey', { key: 7 }],
+  ['signalIcon', { type: 'activating', size: 22 }], ['signalIcon', { type: 'inhibitory', size: 22 }], ['proteasome', { size: 56 }],
+];
+function membraneLine(stage, w = 80) {
+  const S = A.STAGES[stage];
+  return A.el('path', { d: `M${-w / 2} 0H${w / 2}`, stroke: stage === 'dark' ? '#3A4670' : '#D9D2C6', 'stroke-width': 4, 'stroke-linecap': 'round' });
+}
+for (const stage of ['dark', 'light']) {
+  const host = $(stage === 'dark' ? '#mol-dark' : '#mol-light');
+  for (const [name, o0] of MOL_DEMOS) {
+    const o = { size: 56, ...o0, ...(stage === 'light' ? { stage: 'light' } : {}) };
+    const code = call(name, o);
+    const free = ['granzyme', 'cytokine', 'signalIcon', 'proteasome', 'perforin', 'interferon', 'dangerSpark', 'epitopeKey'].includes(name);
+    card(host, { code, html: bold(code), stage, size: 150, pad: 12, build: () => {
+      const g = A.group();
+      if (!free) g.appendChild(membraneLine(stage));
+      g.appendChild(A[name](o));
+      return g;
+    } });
+  }
+}
+function smallStrip(host, stage) {
+  const W = 1400, H = 70;
+  const svg = makeSvg(W, H);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  host.appendChild(svg);
+  const names = ['mhc1', 'mhc1', 'mhc2', 'tcr', 'bcr', 'cd28', 'ctla4', 'b7', 'pd1', 'pdl1', 'nkActivating', 'nkInhibitory', 'stressLigand', 'cd25', 'antigen', 'antigen', 'antibody', 'antibody', 'antibody', 'tlr'];
+  const extra = [{ peptide: 'self' }, { peptide: 'neo' }, { peptide: 'foreign' }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, { shape: 'diamond' }, { shape: 'triangle' }, {}, { variant: 'therapeutic' }, { variant: 'adc' }, {}];
+  names.forEach((nm, i) => {
+    const x = 40 + i * 68;
+    const line = A.el('path', { d: `M${x - 18} 48H${x + 18}`, stroke: stage === 'dark' ? '#3A4670' : '#D9D2C6', 'stroke-width': 2.5, 'stroke-linecap': 'round' });
+    svg.appendChild(line);
+    const g = A[nm]({ size: 12, stage, ...extra[i] });
+    g.setAttribute('transform', `translate(${x} 48)`);
+    svg.appendChild(g);
+  });
+}
+smallStrip($('#mol-small-dark'), 'dark');
+smallStrip($('#mol-small-light'), 'light');
+
+// ------------------------------------------------------------------ antibodies
+const AB_DEMOS = [
+  ['antibody', { size: 90 }], ['antibody', { size: 90, variant: 'therapeutic' }],
+  ['antibody', { size: 90, origin: 'mouse' }], ['antibody', { size: 90, origin: 'chimeric' }], ['antibody', { size: 90, origin: 'humanized' }], ['antibody', { size: 90, origin: 'human', variant: 'therapeutic' }],
+  ['antibody', { size: 90, variant: 'bispecific', targets: ['cd8', 'cancer'] }],
+  ['antibody', { size: 90, variant: 'adc', dar: 4 }], ['antibody', { size: 90, variant: 'adc', dar: 8 }], ['antibody', { size: 90, variant: 'adc', dar: 4, cleaved: true }],
+  ['antibody', { size: 110, variant: 'bite', targets: ['cd8', 'cancer'] }],
+  ['antibody', { size: 22, variant: 'generic' }], ['antibody', { size: 22, variant: 'therapeutic' }], ['antibody', { size: 22, variant: 'adc' }],
+];
+for (const stage of ['dark', 'light']) {
+  const host = $(stage === 'dark' ? '#ab-dark' : '#ab-light');
+  for (const [name, o0] of AB_DEMOS) {
+    const o = stage === 'light' ? { ...o0, stage: 'light' } : o0;
+    const code = call(name, o);
+    card(host, { code, html: bold(code), stage, size: 170, pad: o0.size < 30 ? 16 : 10, build: () => A[name](o) });
+  }
+}
+
+// ------------------------------------------------------------------ CAR
+const CAR_DEMOS = [
+  { generation: 1, membrane: true }, { generation: 2, membrane: true }, { generation: 2, costim: ['4-1bb'], membrane: true },
+  { generation: 3, membrane: true }, { parts: ['binder', 'hinge'], membrane: true }, { generation: 2, membrane: true, stage: 'light' }, { generation: 3, membrane: true, stage: 'light' },
+];
+for (const o of CAR_DEMOS) {
+  const code = call('car', o);
+  card($('#car-grid'), { code, html: bold(code), stage: o.stage === 'light' ? 'light' : 'dark', size: 170, aspect: 0.8, pad: 12, build: () => A.car(o) });
+}
+
+// ------------------------------------------------------------------ shape fit
+function buildFit() {
+  const host = $('#fit-grid');
+  host.innerHTML = '';
+  const f = +$('#fit-slider').value;
+  $('#fit-val').textContent = f.toFixed(2);
+  for (const stage of ['dark', 'light']) {
+    for (const profile of ['notch', 'round', 'triangle', 'wave', 'step']) {
+      const code = `receptor({ profile: '${profile}' }) + ligand({ profile: '${profile}', fit: ${f.toFixed(2)} })`;
+      card(host, { code, stage, size: 170, pad: 12, build: () => {
+        const g = A.group();
+        g.appendChild(membraneLine(stage, 90));
+        const rec = A.receptor({ profile, size: 70, stage });
+        g.appendChild(rec);
+        const lig = A.ligand({ profile, size: 70, fit: f, stage });
+        const dock = +rec.getAttribute('data-dock-y');
+        // a poor fit doesn't seat: lift it by the mismatch
+        lig.setAttribute('transform', `translate(0 ${dock - (1 - f) * 10})`);
+        g.appendChild(lig);
+        return g;
+      } });
+    }
+  }
+}
+$('#fit-slider').addEventListener('input', buildFit);
+buildFit();
+
+// ------------------------------------------------------------------ on membranes
+const memDemos = [
+  {
+    code: `const c = healthyCell({ r: 70, receptors: false });\nplaceOnMembrane(c, (o, i) => mhc1({ ...o, peptide: i % 3 ? 'self' : 'viral' }), { count: 12, size: 18 });`,
+    build: (stage) => { const c = A.healthyCell({ r: 70, receptors: false, stage, seed: 4 }); A.placeOnMembrane(c, (o, i) => A.mhc1({ ...o, peptide: i % 3 ? 'self' : 'viral' }), { count: 12, size: 18 }); return c; },
+  },
+  {
+    code: `const t = tCell({ r: 60, receptors: false });\nplaceOnMembrane(t, 'tcr', { count: 9, arcStart: -50, arcEnd: 50, size: 16 });\nplaceOnMembrane(t, 'pd1', { count: 5, arcStart: 120, arcEnd: 240, size: 14 });`,
+    build: (stage) => { const t = A.tCell({ r: 60, receptors: false, stage }); A.placeOnMembrane(t, 'tcr', { count: 9, arcStart: -50, arcEnd: 50, size: 16 }); A.placeOnMembrane(t, 'pd1', { count: 5, arcStart: 120, arcEnd: 240, size: 14 }); return t; },
+  },
+  {
+    code: `const k = cancerCell({ r: 70, receptors: false });\nplaceOnMembrane(k, (o) => antigen({ ...o, shape: 'diamond' }), { count: 10, size: 16 });\nplaceOnMembrane(k, 'pdl1', { count: 6, size: 16, offset: 0 });`,
+    build: (stage) => { const k = A.cancerCell({ r: 70, receptors: false, stage, seed: 9 }); A.placeOnMembrane(k, (o) => A.antigen({ ...o, shape: 'diamond' }), { count: 10, size: 16 }); A.placeOnMembrane(k, 'pdl1', { count: 6, size: 16, offset: 0 }); return k; },
+  },
+  {
+    code: `const b = bCell({ r: 60, receptors: false });\nplaceOnMembrane(b, 'bcr', { count: 12, size: 26 }); // size ≥ 24 → high detail`,
+    build: (stage) => { const b = A.bCell({ r: 60, receptors: false, stage }); A.placeOnMembrane(b, 'bcr', { count: 12, size: 26 }); return b; },
+  },
+  {
+    code: `const t = tCell({ r: 54, receptors: false, variant: 'cd8' });\nplaceOnMembrane(t, (o) => car({ ...o, size: 30 }), { count: 7, size: 30 });`,
+    build: (stage) => { const t = A.tCell({ r: 54, receptors: false, stage }); A.placeOnMembrane(t, (o) => A.car({ ...o, size: 30 }), { count: 7, size: 30 }); return t; },
+  },
+  {
+    code: `bacterium({ shape: 'rod', r: 40, opsonized: true, pamps: true })`,
+    build: (stage) => A.bacterium({ shape: 'rod', r: 40, opsonized: true, pamps: true, stage, angle: -15 }),
+  },
+];
+for (const stage of ['dark', 'light']) for (const d of memDemos) {
+  card($('#mem-grid'), { code: d.code, html: `<pre style="margin:0;white-space:pre-wrap;font:inherit">${escapeHtml(d.code)}</pre>`, stage, size: 280, pad: 10, build: () => d.build(stage) });
+}
+
+function synapseDemo(host, stage) {
+  const W = 1200, H = 330;
+  const svg = makeSvg(W, H, `${-W / 2} ${-H / 2} ${W} ${H}`);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  host.appendChild(svg);
+  const syn = A.synapse({ width: W, gap: 120, top: { color: 'cd8' }, bottom: { color: 'cancer' }, stage, depth: 70, thickness: 14 });
+  svg.appendChild(syn);
+  const { topY, bottomY } = A.cellInfo(syn);
+  const pairs = [
+    [-470, (o) => A.tcr({ ...o, cd3: true }), (o) => A.mhc1({ ...o, peptide: 'neo' }), 'TCR + CD3  ·  MHC-I + neoantigen'],
+    [-235, (o) => A.cd28(o), (o) => A.b7(o), 'CD28  ·  B7'],
+    [0, (o) => A.pd1(o), (o) => A.pdl1(o), 'PD-1  ·  PD-L1'],
+    [235, (o) => A.ctla4(o), (o) => A.b7(o), 'CTLA-4  ·  B7'],
+    [470, (o) => A.car(o), (o) => A.antigen({ ...o, shape: 'diamond' }), 'CAR  ·  surface antigen'],
+  ];
+  for (const [x, top, bot, text] of pairs) {
+    A.placeAlong(syn, top, { x0: x - 20, x1: x + 20, y: topY, count: 1, facing: 'down', size: 56, stage });
+    A.placeAlong(syn, bot, { x0: x - 20, x1: x + 20, y: bottomY, count: 1, facing: 'up', size: 56, stage });
+    svg.appendChild(A.label({ x, y: H / 2 - 14, text, anchor: 'middle', stage, size: 12.5 }));
+  }
+  svg.appendChild(A.label({ x: -W / 2 + 14, y: -H / 2 + 18, text: 'KILLER T CELL', stage, size: 11, caps: true, weight: 600 }));
+  svg.appendChild(A.label({ x: -W / 2 + 14, y: H / 2 - 40, text: 'CANCER CELL', stage, size: 11, caps: true, weight: 600 }));
+}
+synapseDemo($('#synapse-dark'), 'dark');
+synapseDemo($('#synapse-light'), 'light');
+
+// ------------------------------------------------------------------ genes & peptides
+function buildGenes() {
+  const host = $('#genes-grid');
+  host.innerHTML = '';
+  const fold = +$('#fold').value;
+  $('#fold-val').textContent = fold.toFixed(2);
+  for (const stage of ['dark', 'light']) {
+    const items = [
+      [`peptideChain({ length: 14, beadR: 7, fold: ${fold.toFixed(2)}, highlight: [6] })`, () => A.peptideChain({ length: 14, beadR: 7, fold, highlight: [6], stage, seed: 3 })],
+      [`dna({ sequence: 'ATGGCTAGCAAGTTC', rise: 16, width: 40, letters: true, highlight: [7] })`, () => A.dna({ sequence: 'ATGGCTAGCAAGTTC', rise: 16, width: 40, letters: true, highlight: [7], stage })],
+      [`rna({ sequence: 'AUGGCUAGCAAG', rise: 16, letters: true })`, () => A.rna({ sequence: 'AUGGCUAGCAAG', rise: 16, letters: true, stage })],
+      [`proteasome({ size: 90 }) + peptideChain(…)`, () => { const g = A.group(); const p = A.proteasome({ size: 90, stage }); p.setAttribute('transform', 'rotate(90)'); g.appendChild(p); const c = A.peptideChain({ length: 5, beadR: 5, stage, highlight: [2] }); c.setAttribute('transform', 'translate(110 0)'); g.appendChild(c); const c2 = A.peptideChain({ length: 9, beadR: 5, stage, seed: 2 }); c2.setAttribute('transform', 'translate(-125 0)'); g.appendChild(c2); return g; }],
+    ];
+    for (const [code, build] of items) card(host, { code, html: bold(code), stage, size: 300, aspect: 2, pad: 14, build });
+  }
+}
+$('#fold').addEventListener('input', buildGenes);
+buildGenes();
+
+// ------------------------------------------------------------------ pathogens
+const PATH_DEMOS = [
+  ['bacterium', { shape: 'rod', r: 34, flagella: 2, pili: true }],
+  ['bacterium', { shape: 'rod', r: 34, pamps: true, seed: 3, angle: 30 }],
+  ['bacterium', { shape: 'coccus', r: 18 }],
+  ['bacterium', { shape: 'coccus', r: 14, arrangement: 'pair' }],
+  ['bacterium', { shape: 'coccus', r: 12, arrangement: 'chain', seed: 2 }],
+  ['bacterium', { shape: 'coccus', r: 12, arrangement: 'cluster', seed: 4 }],
+  ['virus', { r: 30 }], ['virus', { r: 12, seed: 2 }], ['virus', { r: 5, seed: 3 }],
+  ['splinter', { length: 180, angle: -20 }],
+];
+for (const stage of ['dark', 'light']) {
+  const host = $(stage === 'dark' ? '#path-dark' : '#path-light');
+  for (const [name, o0] of PATH_DEMOS) {
+    const o = stage === 'light' ? { ...o0, stage: 'light' } : o0;
+    const code = call(name, o);
+    card(host, { code, html: bold(code), stage, size: 170, pad: 10, build: () => A[name](o) });
+  }
+}
+
+// ------------------------------------------------------------------ scenes
+const sceneDemos = [
+  { code: `stageBackground({ width: 600, height: 300 }) + tissueField({ width: 600, height: 300 })`, stage: 'dark', vb: [0, 0, 600, 300],
+    build: (st) => { const g = A.group(); g.appendChild(A.stageBackground({ width: 600, height: 300, stage: st })); g.appendChild(A.tissueField({ width: 600, height: 300, stage: st, seed: 2 })); return g; } },
+  { code: `tissueField({ width: 600, height: 300, stage: 'light' })`, stage: 'light', vb: [0, 0, 600, 300],
+    build: (st) => A.tissueField({ width: 600, height: 300, stage: st, seed: 2 }) },
+  { code: `bloodVessel({ length: 600, width: 130, leaky: true, rbc: 16 }) + neutrophil({ state: 'crawling' })`, stage: 'dark', vb: [-300, -110, 600, 220],
+    build: (st) => { const g = A.group(); const v = A.bloodVessel({ length: 600, width: 130, leaky: true, rbc: 16, stage: st, seed: 3 }); g.appendChild(v); const info = A.cellInfo(v); const gap = info.gaps[0]; const nt = A.neutrophil({ r: 20, state: 'crawling', polarity: 90, stage: st, seed: 2 }); nt.setAttribute('transform', `translate(${gap ? gap.x : 0} ${info.lumenBottom - 16})`); g.appendChild(nt); return g; } },
+  { code: `bloodVessel({ length: 600, width: 130, stage: 'light' })`, stage: 'light', vb: [-300, -100, 600, 200],
+    build: (st) => A.bloodVessel({ length: 600, width: 130, stage: st, seed: 5 }) },
+  { code: `lymphNode({ r: 200 })`, stage: 'dark', vb: [-260, -170, 560, 340], build: (st) => A.lymphNode({ r: 200, stage: st }) },
+  { code: `lymphNode({ r: 200, stage: 'light' })`, stage: 'light', vb: [-260, -170, 560, 340], build: (st) => A.lymphNode({ r: 200, stage: st }) },
+  { code: `lymphaticVessel({ length: 560, width: 70, valves: 2 })`, stage: 'dark', vb: [-300, -70, 600, 140], build: (st) => A.lymphaticVessel({ length: 560, width: 70, valves: 2, stage: st }) },
+  { code: `lymphaticVessel({ length: 560, width: 70, stage: 'light' })`, stage: 'light', vb: [-300, -70, 600, 140], build: (st) => A.lymphaticVessel({ length: 560, width: 70, valves: 2, stage: st }) },
+  { code: `membraneSurface({ width: 560, color: 'cd8' }) + placeAlong(m, 'tcr', { y: 0, count: 6, size: 46 })`, stage: 'dark', vb: [-300, -90, 600, 160],
+    build: (st) => { const m = A.membraneSurface({ width: 560, color: 'cd8', stage: st, thickness: 14, depth: 50 }); A.placeAlong(m, 'tcr', { x0: -260, x1: 260, y: 0, count: 6, size: 46, stage: st }); return m; } },
+  { code: `membraneSurface({ width: 560, color: 'healthy', stage: 'light' }) + placeAlong(m, 'mhc1', …)`, stage: 'light', vb: [-300, -90, 600, 160],
+    build: (st) => { const m = A.membraneSurface({ width: 560, color: 'healthy', stage: st, thickness: 14, depth: 50 }); A.placeAlong(m, (o, i) => A.mhc1({ ...o, peptide: i === 3 ? 'viral' : 'self' }), { x0: -260, x1: 260, y: 0, count: 7, size: 46, stage: st }); return m; } },
+  { code: `ecmFibers({ width: 600, height: 240 }) + particleField({ width: 600, height: 240 })`, stage: 'dark', vb: [0, 0, 600, 240],
+    build: (st) => { const g = A.group(); g.appendChild(A.ecmFibers({ width: 600, height: 240, stage: st, count: 26 })); g.appendChild(A.particleField({ width: 600, height: 240, stage: st, count: 60 })); return g; } },
+  { code: `synapse({ width: 560, gap: 90, top: { color: 'cd4' }, bottom: { color: 'dendritic' } })`, stage: 'dark', vb: [-300, -130, 600, 260],
+    build: (st) => { const s = A.synapse({ width: 560, gap: 90, top: { color: 'cd4' }, bottom: { color: 'dendritic' }, stage: st }); const { topY, bottomY } = A.cellInfo(s); A.placeAlong(s, (o) => A.tcr({ ...o, color: 'cd4' }), { x0: -240, x1: 240, y: topY, count: 4, facing: 'down', size: 46, stage: st }); A.placeAlong(s, (o) => A.mhc2({ ...o, peptide: 'foreign' }), { x0: -240, x1: 240, y: bottomY, count: 4, size: 46, stage: st }); return s; } },
+];
+for (const d of sceneDemos) {
+  const fig = card($('#scenes-grid'), { code: d.code, html: bold(d.code), stage: d.stage, size: 440, aspect: d.vb[2] / d.vb[3], pad: 0, build: () => d.build(d.stage) });
+  fig.querySelector('svg').setAttribute('viewBox', d.vb.join(' '));
+}
+
+// ------------------------------------------------------------------ motion
+let handles = [];
+function buildMotion() {
+  handles.forEach((h) => h.stop());
+  handles = [];
+  const host = $('#motion-stage');
+  host.innerHTML = '';
+  const W = 1200, H = 380;
+  const svg = makeSvg(W, H);
+  svg.style.width = '100%'; svg.style.height = 'auto';
+  host.appendChild(svg);
+  svg.appendChild(A.tissueField({ width: W, height: H, seed: 8, density: 0.7 }));
+  const parts = A.particleField({ width: W, height: H, count: 50, seed: 4 });
+  svg.appendChild(parts);
+  const t = A.tCell({ variant: 'cd8', r: 40, state: 'activated', polarity: 0 });
+  t.setAttribute('transform', 'translate(150 190)');
+  const dc = A.dendriticCell({ r: 95, state: 'mature', seed: 3, receptors: false });
+  dc.setAttribute('transform', 'translate(380 190)');
+  const b = A.bCell({ r: 44 });
+  b.setAttribute('transform', 'translate(590 120)');
+  const ne = A.neutrophil({ r: 30, state: 'crawling', polarity: 0 });
+  ne.setAttribute('transform', 'translate(560 300)');
+  const k = A.cancerCell({ r: 62, seed: 6, pdl1: 3 });
+  k.setAttribute('transform', 'translate(860 180)');
+  const cy = A.cytokineCloud({ count: 14, radius: 70, color: 'cd4', seed: 2 });
+  cy.setAttribute('transform', 'translate(1080 270)');
+  const m = A.macrophage({ r: 70, variant: 'm2', seed: 3 });
+  m.setAttribute('transform', 'translate(1090 110)');
+  [t, dc, b, ne, k, cy, m].forEach((n) => svg.appendChild(n));
+  handles.push(A.breathe(t));
+  handles.push(A.breathe(dc, { amplitude: 1.6 }));
+  handles.push(A.breathe(b));
+  handles.push(A.jitter(b.querySelectorAll('[data-part="receptors"] > *'), { amplitude: 7 }));
+  handles.push(A.breathe(k));
+  handles.push(A.breathe(m, { amplitude: 1.4 }));
+  handles.push(A.crawl(ne, { path: [[760, 330], [700, 250], [560, 300]], speed: 26, loop: true }));
+  handles.push(A.drift(cy.children, { amplitude: 10, speed: 0.35 }));
+  handles.push(A.drift(parts.children, { amplitude: 8, speed: 0.2 }));
+  window.__motion = { t, k, svg };
+  $('#motion-note').textContent = A.prefersReducedMotion() ? 'Reduced motion: ambient loops are off; one-shots jump to the end.' : `${handles.filter((h) => h.running).length} loops running`;
+}
+$('#motion-code').textContent = `breathe(tCell)        breathe(dendriticCell, { amplitude: 1.6 })   jitter(bCell.querySelectorAll('[data-part="receptors"] > *'))
+crawl(neutrophil, { path: [[760, 330], [700, 250], [560, 300]], loop: true })   drift(cytokineCloud(...).children)
+apoptosis(cancerCell, { duration: 2800 })        glowPulse(tCell, { color: 'cd8', repeat: 1 })`;
+$('#btn-kill').addEventListener('click', () => { const { k } = window.__motion; A.apoptosis(k, { duration: 2800 }); });
+$('#btn-pulse').addEventListener('click', () => { const { t } = window.__motion; A.glowPulse(t, { color: 'cd8', repeat: 1 }); });
+$('#btn-reset').addEventListener('click', buildMotion);
+buildMotion();
+
+// ------------------------------------------------------------------ sprites
+(async function spritesDemo() {
+  const canvas = $('#sprite-canvas');
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  const resize = () => { canvas.width = canvas.clientWidth * dpr; canvas.height = canvas.clientHeight * dpr; };
+  resize();
+  window.addEventListener('resize', resize);
+  const t0 = performance.now();
+  const defs = [
+    ['tCell', { variant: 'cd8', r: 9, seed: 1 }], ['tCell', { variant: 'cd8', r: 9, seed: 2 }], ['tCell', { variant: 'cd4', r: 9, seed: 3 }],
+    ['tCell', { variant: 'treg', r: 9, seed: 4 }], ['cancerCell', { r: 15, seed: 1 }], ['cancerCell', { r: 15, seed: 2, state: 'hidden' }],
+    ['redBloodCell', { r: 7, view: 'tilted', angle: 20 }], ['nkCell', { r: 10, seed: 5 }],
+  ];
+  const imgs = await A.preloadSprites(defs);
+  const ms = performance.now() - t0;
+  const R = A.rng(5);
+  const W = () => canvas.clientWidth, H = () => canvas.clientHeight;
+  const agents = Array.from({ length: 300 }, (_, i) => ({ img: imgs[i % imgs.length], x: R.range(0, 1400), y: R.range(0, 360), vx: R.range(-12, 12), vy: R.range(-8, 8), rot: R.range(0, 6.28) }));
+  const ctx = canvas.getContext('2d');
+  let last = performance.now(), frames = 0, fpsT = last, fps = 0;
+  const draw = (now) => {
+    const dt = Math.min(0.05, (now - last) / 1000);
+    last = now;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W(), H());
+    const still = A.prefersReducedMotion();
+    for (const a of agents) {
+      if (!still) { a.x += a.vx * dt; a.y += a.vy * dt; }
+      if (a.x < -20) a.x = W() + 20; if (a.x > W() + 20) a.x = -20;
+      if (a.y < -20) a.y = H() + 20; if (a.y > H() + 20) a.y = -20;
+      A.drawSprite(ctx, a.img, a.x, a.y, { rotation: a.img === imgs[6] ? a.rot : 0 });
+    }
+    frames++;
+    if (now - fpsT > 1000) { fps = frames; frames = 0; fpsT = now; $('#sprite-stat').textContent = `8 sprites rasterized in ${ms.toFixed(0)} ms · 300 agents · ${fps} fps`; }
+    requestAnimationFrame(draw);
+  };
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
