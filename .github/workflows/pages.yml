@@ -1,0 +1,49 @@
+# Deploys the static site to GitHub Pages on every push to main.
+# Only reader-facing files are published: tools/, content/, docs/, dev pages
+# (_*.html, art-gallery.html), demo figure modules and repo metadata are excluded.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble the public site
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude '.*' \
+            --exclude '/_site/' \
+            --exclude '/tools/' --exclude '/content/' --exclude '/docs/' \
+            --exclude '/_*.html' --exclude '/art-gallery.html' \
+            --exclude '/*.md' --exclude '/LICENSE' \
+            --exclude 'figures/demo-*.js' --exclude 'figures/shared/_kit-demo.js' \
+            ./ _site/
+          ls _site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

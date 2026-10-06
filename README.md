@@ -14,7 +14,7 @@ The site is static: plain HTML, CSS and ES modules, with no build step needed to
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000. Any static host works, including GitHub Pages, and the site also runs from a subfolder because all paths are relative.
+Then open http://localhost:8000. Or read it online at https://cheparukhin.github.io/immunology-guide/. Any static host works, and the site also runs from a subfolder because all paths are relative.
 
 ## How it is organized
 
@@ -42,7 +42,7 @@ Writing follows `docs/STYLE.md`: plain, exact prose for an intelligent non-speci
 
 ## Notes
 
-- Before deploying to a public domain, set `site.url` in `assets/data/chapters.json` and rebuild, so social-share previews get absolute URLs.
+- The site is deployed to GitHub Pages (https://cheparukhin.github.io/immunology-guide/) by `.github/workflows/pages.yml` on every push to `main`; only reader-facing files are published. If the public address changes, update `site.url` in `assets/data/chapters.json` and rebuild, so canonical links, social-share previews and `sitemap.xml` use it.
 - Tested in Chromium and WebKit (Safari). Firefox has not been tested.
 - `tools/stage-artifact.sh <dir>` packages the site for publishing as a Claude Artifact.
 
