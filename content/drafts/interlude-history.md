@@ -19,27 +19,27 @@ In 1891 Coley injected live streptococci into a patient's tumor, and the tumor s
 
 Coley was not the first to try this: German doctors had deliberately infected cancer patients with erysipelas in the 1860s–80s.[^1][^2] But he pursued the idea for four decades, treating close to a thousand people, mostly with inoperable sarcomas (cancers of bone and soft tissue).[^1]
 
-The results were inconsistent. Thirteen different preparations circulated, of varying strength, and Coley's follow-up of his patients was poorly controlled and poorly documented. His most influential critic, the pathologist James Ewing, favored a more predictable treatment, radiation.[^1]
+The results were inconsistent. Thirteen different preparations circulated, of varying strength; Coley never tested them in a controlled way, and his follow-up of patients was poorly documented. His most influential critic, the pathologist James Ewing, favored a more predictable treatment, radiation.[^1]
 
 Chemotherapy arrived after World War II. By 1952 the toxins were no longer made, and in 1962 the US Food and Drug Administration (FDA) refused to recognize them as a proven drug.[^1]
 
 :::deep-dive Why Coley's toxins sometimes worked
-Coley had no way to know why his toxins worked. The likeliest explanation today is innate immunity (Chapter 2): bacterial molecules bind the body's {{pattern-recognition-receptor|pattern-recognition receptors}}, which trigger a surge of inflammatory signaling proteins (cytokines). The resulting fever, inflammation and activated dendritic cells could, in principle, help T cells respond to a tumor they had been ignoring.
+Coley had no way to know why his toxins worked. The likeliest explanation today is innate immunity ([Chapter 2](02-innate.html)): bacterial molecules bind the body's {{pattern-recognition-receptor|pattern-recognition receptors}}, which trigger a surge of inflammatory signaling proteins (cytokines). The resulting fever, inflammation and activated dendritic cells could, in principle, help T cells respond to a tumor they had been ignoring.
 
-One clue came in 1975 from Lloyd Old's lab in New York. Mice infected with BCG and then given bacterial endotoxin produced a factor in their blood, {{tnf|tumor necrosis factor (TNF)}}, that made a transplanted sarcoma bleed and die, a form of tissue death called necrosis.[^23] TNF is too toxic to give by vein, but since 1999 it has been approved in Europe for sarcomas of the arm or leg, pumped through the limb while its circulation is briefly sealed off from the rest of the body (isolated limb perfusion).[^24]
+One clue came in 1975 from Lloyd Old's lab in New York. Mice infected with BCG (a weakened bacterium used as a tuberculosis vaccine) and then given bacterial endotoxin (LPS, the outer-wall molecule of Chapter 2) produced a factor in their blood, {{tnf|tumor necrosis factor (TNF)}}, that made a transplanted sarcoma bleed and die, a form of tissue death called necrosis.[^23] TNF is too toxic to give by vein, but since 1999 it has been approved in Europe for sarcomas of the arm or leg, pumped through the limb while its circulation is briefly sealed off from the rest of the body (isolated limb perfusion).[^24]
 
-The same mechanism explains the toxins' failings. A whole-body inflammatory response is dangerous at high doses, the toxins varied from batch to batch, and nothing ensured that the T cells they activated recognized anything in the tumor. Coley's most durable descendant works locally instead: BCG washed into the bladder (below, and Chapter 11) causes inflammation right next to the cancer.
+The same mechanism explains the toxins' failings. A whole-body inflammatory response is dangerous at high doses, and nothing ensured that the T cells it helped activate recognized anything in the tumor. Coley's most durable descendant works locally instead: BCG washed into the bladder (below, and [Chapter 11](11-vaccines.html)) causes inflammation right next to the cancer.
 :::
 
 ## Immune surveillance
 
-Coley's work raised a more basic question, whether the immune system notices cancer at all. Paul Ehrlich suggested in 1909 that it does, and in the late 1950s Macfarlane Burnet and Lewis Thomas developed the suggestion into the {{immunosurveillance|immunosurveillance}} hypothesis, in which lymphocytes patrol the body for newly transformed cells.[^2][^3] A 1974 mouse experiment seemed to refute it, and the resulting doubt persisted in tumor immunology for about 25 years. Chapter 7 describes how the idea was revived.[^3][^21]
+Coley's work raised a more basic question, whether the immune system notices cancer at all. Paul Ehrlich suggested in 1909 that it does, and in the late 1950s Macfarlane Burnet and Lewis Thomas developed the suggestion into the {{immunosurveillance|immunosurveillance}} hypothesis, in which lymphocytes patrol the body for newly cancerous cells.[^2][^3] A 1974 mouse experiment seemed to refute it, and the resulting doubt persisted in tumor immunology for about 25 years, until the experiments described in [Chapter 7](07-escape.html) revived the idea.[^3][^21]
 
 ## Magic bullets
 
-Ehrlich had also imagined "magic bullets", drugs that would strike a disease and nothing else. The closest approach came in 1975, when Georges Köhler and César Milstein in Cambridge made {{hybridoma|hybridomas}}: antibody-secreting B cells fused with immortal myeloma (cancer) cells, which produce unlimited copies of one chosen antibody.[^4]
+Ehrlich had also imagined "magic bullets", drugs that would strike a disease and nothing else. The closest approach came in 1975, when Georges Köhler and César Milstein in Cambridge made {{hybridoma|hybridomas}}: antibody-secreting B cells from mice fused with immortal myeloma (cancer) cells, which produce unlimited identical copies of one chosen antibody, called a {{monoclonal-antibody|monoclonal antibody}}.[^4]
 
-The first {{monoclonal-antibody|monoclonal antibodies}} were mouse proteins, which human immune systems attacked as foreign. In 1997, after two decades of re-engineering (Chapter 9), rituximab (Rituxan) became the first monoclonal antibody approved in the US to treat cancer, for lymphoma. Trastuzumab (Herceptin) followed in 1998, for breast cancers carrying large amounts of a protein called HER2.[^8]
+These first monoclonal antibodies were mouse proteins, which human immune systems attacked as foreign. In 1997, after two decades of re-engineering ([Chapter 9](09-antibodies.html)), rituximab (Rituxan) became the first monoclonal antibody approved in the US to treat cancer, for lymphoma. Trastuzumab (Herceptin) followed in 1998, for breast cancers carrying large amounts of a growth-signal receptor called HER2.[^8]
 
 These drugs bind a molecule on cancer cells and either mark the cells for destruction or block a growth signal; they do not depend on the patient's own T cells. Engaging T cells took a different idea, though it too would arrive as a monoclonal antibody.
 
@@ -47,31 +47,31 @@ These drugs bind a molecule on cancer cells and either mark the cells for destru
 
 Others tried to stimulate the immune system directly. In 1976 Alvaro Morales and colleagues reported that washing the bladder with {{bcg|BCG}}, a weakened bacterium used as a tuberculosis vaccine, reduced the recurrence of superficial bladder tumors.[^5] It was Coley's idea applied locally and reproducibly, and it is still a mainstay of treatment.[^8]
 
-<blockquote class="pullquote" aria-hidden="true"><p>“Hope often ran ahead of the evidence.”</p></blockquote>
-
 In the 1980s attention turned to {{cytokine|cytokines}}, the signaling proteins immune cells use to communicate. {{interferon|Interferon-alpha}} was approved in 1986 for a rare leukemia.[^8] At the US National Cancer Institute, the surgeon Steven Rosenberg tried {{il-2|interleukin-2 (IL-2)}}, a cytokine that makes T cells multiply. At the low doses then available, it did not shrink a single patient's tumor.[^6]
 
-In November 1984 a 33-year-old woman with melanoma that had spread through her body received IL-2 at very high doses. Within a month a biopsy showed her tumor dying, within a few months no cancer could be detected, and almost 30 years later she was still disease-free.[^6]
+In November 1984 a 33-year-old woman with melanoma that had spread through her body received IL-2 at very high doses. Within a month a biopsy showed tumor tissue dying, within a few months no cancer could be detected, and almost 30 years later she was still disease-free.[^6]
 
-High-dose IL-2 was approved for kidney cancer in 1992 and melanoma in 1998. It was highly toxic, making blood vessels leak fluid into the lungs and other organs, and only about 15–20% of patients responded, though roughly 5–10% responded completely, often for years.[^6]
+High-dose IL-2 was approved for kidney cancer in 1992 and melanoma in 1998. It was highly toxic, making blood vessels leak fluid into the lungs and other organs, and only about 15–20% of patients responded (their tumors shrank substantially), though in roughly 5–10% all detectable cancer disappeared, often for years.[^6]
 
 Rosenberg's lab also grew T cells out of patients' melanomas, multiplied them into the billions and infused them back. In 1988 these {{til|tumor-infiltrating lymphocytes (TILs)}} shrank tumors in about half of the first 20 patients, though approval would take more than 35 years.[^6]
 
-Hope often ran ahead of the evidence. Lymphokine-activated killer (LAK) cells, blood lymphocytes stimulated with IL-2 in the lab and given alongside it in the 1980s, turned out to add nothing.[^6] Cancer vaccines fared worse: in Rosenberg's own trials of 440 patients, tumors shrank meaningfully in only 2.6%.[^7] By around 2000, much of the field had grown skeptical.[^2]
+Hope often ran ahead of the evidence. Lymphokine-activated killer (LAK) cells, blood lymphocytes stimulated with IL-2 in the lab and given alongside it in the 1980s, turned out to add nothing to IL-2 alone.[^6] Cancer vaccines fared worse: in Rosenberg's own trials of 440 patients, tumors shrank meaningfully in only 2.6%.[^7] By around 2000, much of the field had grown skeptical.[^2]
+
+<blockquote class="pullquote" aria-hidden="true"><p>“Hope often ran ahead of the evidence.”</p></blockquote>
 
 ## The brakes nobody was looking for
 
 Almost every attempt to engage T cells so far had pressed the accelerator, stimulating them with bacteria, cytokines or more T cells. The breakthrough came from asking a different question: whether the immune system was already braking.
 
+<blockquote class="pullquote" aria-hidden="true"><p>“The breakthrough came from asking whether the immune system was already braking.”</p></blockquote>
+
 In 1987 Pierre Golstein's lab in Marseille found a T-cell molecule of unknown function, CTLA-4. Most researchers assumed it was another accelerator. In 1994–95 two groups, one of them James Allison's at Berkeley, showed the opposite: {{ctla-4|CTLA-4}} is an {{checkpoint|immune checkpoint}}, an inhibitory receptor that acts as a brake on T-cell activation.[^2]
 
-Allison, a Texan whose mother had died of lymphoma when he was 11, proposed blocking the brake with an antibody. His reasoning was that T cells probably already recognized something abnormal in the tumor, such as the neoantigens of Chapter 6, but were being held back. Released, they could act on whatever they recognized, and nobody would need to know what it was.
+Allison, a Texan whose mother had died of lymphoma when he was 11, proposed blocking the brake with an antibody. His reasoning was that T cells probably already recognized something abnormal in the tumor, such as the neoantigens of [Chapter 6](06-cancer.html), but were being held back. Released, they could act on whatever they recognized, and nobody would need to know what it was.
 
-His lab ran the first experiment at the end of 1994 and repeated it, blinded, over Christmas.[^2] The 1996 paper showed that anti-CTLA-4 antibodies made mice reject established tumors and stay immune to them afterward.[^9]
+His lab ran the first experiment at the end of 1994 and repeated it over Christmas, blinded, so that whoever measured the tumors did not know which mice had received the antibody.[^2] The 1996 paper showed that anti-CTLA-4 antibodies made mice reject established tumors and stay immune to them afterward.[^9]
 
-By Allison's own account, he then spent about five years failing to interest pharmaceutical companies, because few believed a drug aimed at T cells rather than tumors could treat cancer. In 1999 a small biotech company, Medarex, finally made a fully human antibody against human CTLA-4, later named ipilimumab.[^2]
-
-<blockquote class="pullquote" aria-hidden="true"><p>“The breakthrough came from asking whether the immune system was already braking.”</p></blockquote>
+By Allison's own account, he spent about five years failing to interest pharmaceutical companies, because few believed a drug aimed at T cells rather than tumors could treat cancer. In 1999 a small biotech company, Medarex, made a fully human antibody against human CTLA-4, later named ipilimumab.[^2]
 
 In Kyoto, Tasuku Honjo's lab had found another molecule in 1992 while studying {{apoptosis|apoptosis}} (programmed cell death) and named it programmed death-1, or {{pd-1|PD-1}}. The name proved misleading: mice lacking PD-1 developed autoimmune disease, which showed that PD-1 was a second brake rather than a trigger of apoptosis.[^2]
 
@@ -80,38 +80,30 @@ In 1999 Lieping Chen's lab described a molecule it called B7-H1. In 2000 Honjo's
 In 2008 a large trial of tremelimumab, another antibody that blocks CTLA-4, was stopped after it failed to beat chemotherapy in melanoma.[^10] In hindsight the result contained a clue: tumors shrank in no more patients than with chemotherapy, but those responses lasted more than twice as long. At the time, it looked like one more immunotherapy that cured mice and failed in people.
 
 :::key-idea
-For a century, attempts to turn the immune system against cancer mostly tried to stimulate it harder, with bacteria, cytokines or more T cells. The breakthrough came from asking how the response is held back, and then using monoclonal antibodies to block the brakes that tumors exploit.
+For a century, attempts to turn the immune system against cancer mostly tried to stimulate it harder. Blocking the brakes with monoclonal antibodies worked differently: it freed T cells that already recognized the tumor, so nobody needed to know what they recognized.
 :::
 
 :::clinic
-Three terms recur below. A {{clinical-trial|phase 3 trial}} is the large, decisive test of a treatment, usually comparing it with an existing one in hundreds of patients assigned to each group by chance. {{overall-survival|Median survival}} is the time by which half the patients in a group have died; it marks a midpoint and says nothing about the few who live far longer. A {{objective-response-rate|response}} means a tumor shrank by at least a set amount, roughly a third, which is not the same as a cure.
+A {{clinical-trial|phase 3 trial}} is the large, decisive test of a treatment, usually comparing it with an existing one in hundreds of patients assigned to each group by chance. {{overall-survival|Median survival}} is the time by which half the patients in a group have died; it marks a midpoint and says nothing about the few who live far longer. A {{objective-response-rate|response}} means a tumor shrank by at least a set amount, roughly a third, or disappeared, which is not the same as a cure.
 :::
 
 ## Results at last
 
 In 2010 ipilimumab became the first drug shown to lengthen survival in advanced melanoma, in a phase 3 trial of previously treated patients. Median survival was 10 months with ipilimumab, versus 6.4 months with a comparison vaccine alone.[^11] Approval followed in 2011, making ipilimumab (Yervoy) the first approved checkpoint inhibitor.[^8]
 
-The shape of the survival curve mattered more than the median: instead of falling toward zero, it eventually flattened, leaving a minority of patients alive for years (Chapter 8).[^2] In 2012 an antibody against PD-1, nivolumab (Opdivo), shrank tumors in roughly one in five to one in four people with melanoma, lung or kidney cancer, and most of those responses lasted.[^2][^22] By 2014 PD-1 blockers were approved in the US, starting with pembrolizumab (Keytruda).[^8]
+The shape of the survival curve, the share of patients still alive plotted against time, mattered more than the median: instead of falling toward zero, it eventually flattened, leaving a minority of patients alive for years ([Chapter 8](08-checkpoints.html)).[^2] In 2012 an antibody against PD-1, nivolumab (Opdivo), shrank tumors in roughly one in five to one in four people with melanoma, lung or kidney cancer, and most of those responses lasted.[^2][^22] By 2014 PD-1 blockers were approved in the US, starting with pembrolizumab (Keytruda).[^8]
 
-Engineered T cells began to work in patients at about the same time. In 1989 Zelig Eshhar's group in Israel had given T cells a receptor that joined an antibody's binding site to parts of the T-cell receptor, one of the first chimeric antigen receptors, or CARs.[^12][^13] Over two decades several labs made such cells survive and multiply, and aimed them at CD19, a molecule on B cells. By 2010–11 these {{car-t|CAR-T cells}} were clearing leukemia in some adults.[^6][^13]
+Engineered T cells began to work in patients at about the same time. In 1989 Zelig Eshhar's group in Israel had given T cells a receptor that joined an antibody's binding site to parts of the T-cell receptor, one of the first chimeric antigen receptors, or CARs.[^12][^13] Over two decades several labs made such cells survive and multiply, and aimed them at CD19, a molecule on B cells. By 2010–11 these {{car-t|CAR-T cells}} were clearing B-cell leukemia in some adults.[^6][^13]
 
-In April 2012, six-year-old Emily Whitehead, whose leukemia had relapsed twice, became the first child to receive the Philadelphia team's CAR-T cells. She nearly died of the treatment's side effects (Chapter 10 tells how her doctors saved her); ten years later she was still cancer-free.[^14][^15]
+In April 2012, six-year-old Emily Whitehead, whose leukemia had relapsed twice, became the first child to receive CAR-T cells made by a team in Philadelphia. She nearly died of the treatment's side effects ([Chapter 10](10-cell-therapy.html) tells how her doctors saved her); ten years later she was still cancer-free.[^14][^15]
 
-*Science* named cancer immunotherapy its Breakthrough of the Year for 2013.[^16] In 2017 pembrolizumab became the FDA's first {{tissue-agnostic|tissue-agnostic}} cancer approval, for advanced solid tumors that are {{msi-high|mismatch-repair deficient (MSI-high)}}, a DNA-repair defect, wherever in the body they started. Months later the first CAR-T therapy was approved in the US.[^8] In 2018 Allison and Honjo shared the Nobel Prize.[^2]
+*Science* named cancer immunotherapy its Breakthrough of the Year for 2013.[^16] In 2017 pembrolizumab received the FDA's first {{tissue-agnostic|tissue-agnostic}} cancer approval, for advanced solid tumors wherever in the body they started, provided they are {{msi-high|mismatch-repair deficient (MSI-high)}}: unable to correct DNA copying errors, and so rich in mutations ([Chapter 6](06-cancer.html)). Months later the first CAR-T therapy was approved in the US.[^8] In 2018 Allison and Honjo shared the Nobel Prize.[^2]
 
 ## Many roads at once
 
-Since then the field has expanded in several directions, many of them built on Köhler and Milstein's monoclonal antibodies:
+Since then the field has branched out, often building on Köhler and Milstein's monoclonal antibodies. {{adc|Antibody–drug conjugates}} use an antibody to deliver a cytotoxic drug, the payload, to cancer cells ([Chapter 9](09-antibodies.html)). {{t-cell-engager|T-cell engagers}}, mostly {{bispecific-antibody|bispecific antibodies}} with one binding site for a T cell and another for a cancer cell, physically bridge the two so that the T cell kills the cancer cell (Chapter 9).[^8] In 2024 the US approved the first TIL therapy, for melanoma, and the first {{tcr-t|TCR-T}} therapy, whose T cells carry an engineered T-cell receptor, for synovial sarcoma ([Chapter 10](10-cell-therapy.html)).[^8] Checkpoint inhibitors have also moved earlier, to {{neoadjuvant-therapy|neoadjuvant}} treatment, given before surgery ([Chapter 12](12-frontier.html)).[^17] For personalized mRNA {{vaccine|vaccines}} built from each patient's own tumor mutations ({{neoantigen|neoantigens}}), the makers of one reported in August 2026 that its phase 3 trial had met its main goal; it is not yet approved ([Chapter 11](11-vaccines.html)).[^19]
 
-- **Antibodies that carry drugs.** {{adc|Antibody–drug conjugates}} deliver a potent cytotoxic drug, the payload, directly to cancer cells. One, trastuzumab deruxtecan (Enhertu), now treats breast cancers once considered out of reach of HER2 drugs.[^8]
-- **Molecules that link T cells to cancer cells.** {{t-cell-engager|T-cell engagers}}, mostly {{bispecific-antibody|bispecific antibodies}}, moved from leukemia into solid tumors, first an eye melanoma in 2022, then small-cell lung cancer in 2024.[^8]
-- **T-cell therapies for solid tumors.** In 2024 the US approved its first TIL therapy, for melanoma, and its first engineered T-cell receptor therapy ({{tcr-t|TCR-T}}), for synovial sarcoma.[^8]
-- **Treatment before surgery.** In stage III melanoma, giving ipilimumab plus nivolumab before surgery ({{neoadjuvant-therapy|neoadjuvant}} treatment) clearly beat standard treatment after it (Chapter 12).[^17]
-- **Personalized vaccines.** These mRNA {{vaccine|vaccines}} are built from each patient's own tumor mutations ({{neoantigen|neoantigens}}). Added to pembrolizumab after melanoma surgery, one looked promising in a small trial,[^18] and in August 2026 its makers reported that a large phase 3 trial had met its main goal; full results are awaited, and it is not yet approved (Chapter 11).[^19]
-
-Not every attempt has worked: in the same month BioNTech reported ending a trial of another personalized vaccine, given alone after colorectal-cancer surgery (Chapter 11).[^19]
-
-The timeline below plots these milestones. It is nearly empty until 1975, and half of the markers fall after 2010. Tap any marker for details.
+The timeline plots 28 milestones from 1891 to 2026. It is nearly empty until 1975, and half of the markers fall after 2010. Tap any marker for details.
 
 :::figure int-timeline
 title: Milestones in cancer immunotherapy, 1891–2026
@@ -321,15 +313,15 @@ Several approvals in the timeline were {{accelerated-approval|accelerated approv
 :::
 
 :::deep-dive Portraits
-**William Coley (1862–1936)** is often called the father of immunotherapy. He never tested his toxins in a controlled way, and their variable preparation undermined his own results. His daughter, Helen Coley Nauts, spent decades cataloging his cases and kept the idea alive.[^1]
+**William Coley (1862–1936)** is often called the father of immunotherapy. His daughter, Helen Coley Nauts, spent decades cataloging his cases and kept the idea alive.[^1]
 
 **Steven Rosenberg** treated many patients without success before IL-2 worked, then pioneered TIL therapy and early CAR-T trials. Lab-stimulated LAK cells were the focus of his first IL-2 reports, but a randomized trial later showed that IL-2 alone did the work.[^6]
 
 **Georges Köhler and César Milstein** made monoclonal antibodies as a tool for basic research, not as a cancer drug. Their three-page 1975 paper became the starting point for an entire class of medicines.[^4]
 
-**James Allison** grew up in small-town Texas and plays harmonica in The Checkpoints, a band of immunologists. **Tasuku Honjo** spent years on a molecule whose job nobody understood. Both brakes were first found in basic research on how T cells work. Of PD-1, the Nobel committee wrote that it came from "curiosity-driven research, not primarily oriented towards cancer." Allison's contribution was to apply that knowledge to tumors. He credits Alan Korman and Nils Lonberg at Medarex with making the antibody.[^2]
+**James Allison** grew up in small-town Texas and plays harmonica in The Checkpoints, a band of immunologists. **Tasuku Honjo** spent years on a molecule whose job nobody understood. Of PD-1, the Nobel committee wrote that it came from "curiosity-driven research, not primarily oriented towards cancer." Allison's contribution was to apply knowledge of the brakes to tumors. He credits Alan Korman and Nils Lonberg at Medarex with making the antibody.[^2]
 
-**Zelig Eshhar** built some of the first CARs (1989) and the single-chain design used today (1993).[^12][^13] Several groups, including those of Michel Sadelain, Carl June, Dario Campana and Steven Rosenberg (with James Kochenderfer), turned them into a living drug by adding costimulatory signaling domains, choosing CD19 as the target and learning to manufacture the cells at scale.[^6][^13]
+**Zelig Eshhar** built some of the first CARs (1989) and the single-chain design used today (1993), which joins the binding parts of the antibody's heavy and light chains into one chain.[^12][^13] Several groups, including those of Michel Sadelain, Carl June, Dario Campana and Steven Rosenberg (with James Kochenderfer), turned them into a living drug by adding costimulatory signaling domains, choosing CD19 as the target and learning to manufacture the cells at scale.[^6][^13]
 
 Prizes favor individuals, but the work was collective. On the brakes: Pierre Golstein, Jeffrey Bluestone, Craig Thompson, Arlene Sharpe, Tak Mak, Gordon Freeman, Clive Wood and Lieping Chen. In the clinic: Suzanne Topalian, Jedd Wolchok and Stephen Hodi. On engineered cells: Renier Brentjens, Malcolm Brenner, David Porter and Stephan Grupp. On immunosurveillance: Lloyd Old and Robert Schreiber.[^2][^3][^13] The work also depended on the patients who volunteered for early trials, most of whom did not benefit.
 :::
@@ -338,10 +330,10 @@ Prizes favor individuals, but the work was collective. On the brakes: Pierre Gol
 
 In hindsight, five things help explain why it took 120 years to get from Coley to ipilimumab.
 
-1. **The brakes were unknown.** A tumor large enough to find has usually escaped the immune system already, often by engaging its brakes (Chapter 7). Stimulating the immune system harder with nonspecific agents mostly caused side effects.
+1. **The brakes were unknown.** A tumor large enough to find has usually escaped the immune system already, often by engaging its brakes ([Chapter 7](07-escape.html)). Stimulating T cells harder achieved little while those brakes held them back.
 2. **Animal models misled.** A flawed mouse experiment wrongly "disproved" immunosurveillance (Chapter 7), and LAK cells that looked promising in mice added nothing in people.[^6]
-3. **Early agents were nonspecific.** Toxins, interferon and IL-2 stimulated immunity throughout the body without directing the response at the tumor.
-4. **The yardsticks were built for chemotherapy.** Immunotherapy often helps a few patients for years rather than everyone a little, and averages can hide that.
+3. **Early agents were nonspecific.** Toxins, interferon and IL-2 stimulated immunity throughout the body without directing the response at the tumor, causing severe side effects for rare benefit.
+4. **The yardsticks were built for chemotherapy.** Immunotherapy often helps a few patients for years rather than everyone a little, and a midpoint such as median survival can hide that.
 5. **The key insights came from elsewhere.** CTLA-4 and PD-1 were found by people studying how T cells work. Applying them to cancer was a separate step.[^2]
 
 :::deep-dive When a failed trial isn't the end
@@ -352,21 +344,11 @@ In 2022 tremelimumab (Imjudo) was approved after all, in combination with the PD
 
 Coley's toxins, LAK cells and early cancer vaccines were each expected to change cancer treatment, and each fell short. Today's immunotherapies have proven benefits: some people with once-hopeless cancers now live for many years.
 
-By one group's estimate, of every 100 people in the US with advanced or metastatic cancer in 2023, about 57 were eligible for a checkpoint inhibitor and about 20 would be expected to respond (Chapter 8 discusses who they are).[^20]
+The share of patients who benefit is still small. By one group's estimate, of every 100 people in the US with advanced or metastatic cancer in 2023, about 57 were eligible for a checkpoint inhibitor and about 20 would be expected to respond ([Chapter 8](08-checkpoints.html)).[^20]
 
 :::key-idea
 Immunotherapy is now standard treatment for many cancers, but for most patients it still doesn't work. That is why the rest of this guide spends as much time on failure and resistance as on success.
 :::
-
-## Where Part III goes next
-
-The remaining chapters of Part III:
-
-- **Chapter 8, checkpoint inhibitors:** drugs that release the brakes on T cells.
-- **Chapter 9, antibody drugs:** antibodies that mark cancer cells, deliver cytotoxic drugs or link T cells to them.
-- **Chapter 10, cell therapies:** T cells grown or engineered in the lab (TIL, CAR-T, TCR-T).
-- **Chapter 11, vaccines and viruses:** prompting the immune system to recognize a cancer.
-- **Chapter 12, resistance and new directions:** why most patients still don't respond, and what comes next (including IL-2's engineered descendants).
 
 Coley spent his career treating sarcomas with bacterial preparations whose effects he could not control. In 2024, more than 130 years after Bessie Dashiell died, the first engineered T-cell receptor therapy approved in the US was for another sarcoma.[^8] Unlike Coley's toxins, it specifies exactly what the immune system should attack.
 
@@ -377,9 +359,9 @@ Q: Why could Allison's anti-CTLA-4 antibody work without anyone knowing what the
 - [ ] It flooded the body with cytokines that make T cells multiply and attack — That was the high-dose IL-2 approach, which pressed the accelerator rather than releasing a brake.
 
 Q: A trial finds median survival only slightly better than with chemotherapy, but a few treated patients are still alive years later. What is the best reading?
-- [ ] The drug has failed by the usual yardstick and should be abandoned — Tremelimumab looked like this in 2008, yet it was later approved in combination, and the related drug ipilimumab changed melanoma treatment.
+- [ ] The drug has failed by the usual yardstick and should be abandoned — Tremelimumab looked like this in 2008, yet it was approved in combination in 2022, and the related drug ipilimumab changed melanoma treatment.
 - [ ] Median survival is the only number that decides whether a drug works — Median survival describes the midpoint and can hide a small group of patients with long-lasting benefit.
-- [x] The benefit may be concentrated in a minority worth a closer look — Immunotherapy often helps some patients for years and others not at all, and averages can obscure that.
+- [x] The benefit may be concentrated in a minority worth a closer look — Immunotherapy often helps some patients for years and others not at all, and median survival can obscure that.
 
 Q: Which statement best describes cancer immunotherapy as of 2026?
 - [x] Lasting remissions for some patients, but most still don't respond — Some patients now live for years after treatment; most still don't benefit.

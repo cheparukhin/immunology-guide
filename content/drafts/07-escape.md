@@ -11,23 +11,23 @@ In 1998, a 62-year-old woman died of a brain hemorrhage, and her kidneys were tr
 
 They were wrong. Within about two years, both recipients had melanoma in and around their new kidneys and no skin tumor of their own: the cancer had arrived with the organ.[^1]
 
-The woman who received one kidney died in 2000. For the man who received the other, doctors stopped his {{immunosuppression|immunosuppressive}} drugs — the medicines transplant patients take so the body won't reject a foreign organ — and gave him {{interferon|interferon}}, a {{cytokine|cytokine}} (an immune signaling protein) that activates immune cells. His body began rejecting the kidney, which was then removed along with the tumor: he gave up the transplant to be rid of the cancer. Two years after his melanoma was found, he was well and showed no sign of it.[^1]
+The woman who received one kidney died in 2000. For the man who received the other, doctors stopped his {{immunosuppression|immunosuppressive}} drugs — the medicines transplant patients take so the body won't reject a foreign organ — and gave him {{interferon|interferon}}, a {{cytokine|cytokine}} that activates immune cells. His body began rejecting the kidney, which was then removed along with the tumor: he gave up the transplant to be rid of the cancer. Two years after his melanoma was found, he was well and showed no sign of it.[^1]
 
 For sixteen years, living melanoma cells had persisted in the donor without forming a tumor anyone noticed; something held them in check. In bodies whose immune defenses were deliberately suppressed, they grew rapidly. (In the recipients the cells were foreign, so part of what happened there is ordinary transplant rejection; the sixteen years in the donor are what need explaining.)
 
-The likeliest explanation is her immune system. This chapter sets out the evidence, then takes up the questions the case raises: if the immune system can hold a cancer in check for sixteen years, why does anyone get cancer, and how do tumors escape?
+The likeliest explanation is her immune system, and the case raises two questions: if the immune system can hold a cancer in check for sixteen years, why does anyone get cancer, and how do tumors escape?
 
 ## A patrol for rogue cells
 
-In the late 1950s, Macfarlane Burnet (who proposed clonal selection, Chapter 3) and others suggested that one job of the immune system is to find and destroy cells that have turned cancerous, long before a tumor can be felt. Burnet called it "immunological surveillance," now usually shortened to {{immunosurveillance|immunosurveillance}}.[^2]
+In the late 1950s, Macfarlane Burnet (who proposed clonal selection, [Chapter 3](03-adaptive.html)) and others suggested that one job of the immune system is to find and destroy cells that have turned cancerous, long before a tumor can be felt. Burnet called it "immunological surveillance," now usually shortened to {{immunosurveillance|immunosurveillance}}.[^2]
 
-The idea faced the problem set out in Chapter 6: cancer cells are not invaders but the body's own cells, and most peptides on their {{mhc-class-i|MHC class I}} molecules are self peptides to which T cells were made tolerant in the thymus (Chapter 5). It was not obvious that the immune system would notice them.
+The idea faced the problem set out in [Chapter 6](06-cancer.html): cancer cells are not invaders but the body's own cells, and most peptides on their {{mhc-class-i|MHC class I}} molecules are self peptides to which T cells were made tolerant in the thymus ([Chapter 5](05-t-cells.html)). It was not obvious that the immune system would notice them.
 
 Early experiments suggested it did not. In 1974, mice born without a thymus, and so thought to lack T cells, developed no more chemically induced tumors than normal mice, and for a quarter of a century most researchers treated immunosurveillance as a dead idea.[^2] The mice, it later turned out, were not free of T cells.
 
-The idea was revived around 2000. The decisive experiment, published in 2001 by Robert Schreiber's team, used mice lacking a {{rag-genes|RAG gene}}, which encodes one of the pair of enzymes that cut DNA to assemble receptor genes from segments (V(D)J recombination, Chapter 3); without it, a mouse makes no T cells or B cells. Other mice could not respond to {{ifn-gamma|interferon-gamma (IFN-γ)}}, the cytokine that T cells and {{nk-cell|natural killer (NK) cells}} secrete when they recognize a target.[^3]
+The idea was revived around 2000. The decisive experiment, published in 2001 by Robert Schreiber's team, used mice lacking a {{rag-genes|RAG gene}}, which encodes one of the pair of enzymes that cut DNA to assemble receptor genes from segments (V(D)J recombination, Chapter 3); without it, a mouse makes no T or B cells, the {{lymphocyte|lymphocytes}} of adaptive immunity. Other mice could not respond to {{ifn-gamma|interferon-gamma (IFN-γ)}}, the cytokine that T cells and {{nk-cell|natural killer (NK) cells}} secrete when they recognize a target.[^3]
 
-The researchers injected a {{carcinogen|carcinogen}}, a cancer-causing chemical, under the skin. After 160 days, 58% of the RAG-deficient mice (30 of 52) had tumors, compared with 19% of normal mice (11 of 57); mice unresponsive to IFN-γ fared about as badly. As they aged, mice lacking these {{lymphocyte|lymphocytes}} also developed more tumors without any carcinogen, especially if they could not respond to IFN-γ either.[^3]
+The researchers injected a {{carcinogen|carcinogen}}, a cancer-causing chemical, under the skin. After 160 days, 58% of the RAG-deficient mice (30 of 52) had tumors, compared with 19% of normal mice (11 of 57); mice unresponsive to IFN-γ fared about as badly. As they aged, the RAG-deficient mice also developed more tumors without any carcinogen, especially if they could not respond to IFN-γ either.[^3]
 
 In mice, at least, the immune system acts as a tumor suppressor that works from outside the cell, a layer of defense beyond the cell's own growth controls and DNA repair (Chapter 6).
 
@@ -36,22 +36,22 @@ The physician-writer Lewis Thomas had suggested in 1959 that cellular immunity m
 
 The 1974 experiment was misleading for three reasons. Its "nude" mice lack a thymus, but they are not free of T cells: a few still develop elsewhere. They also have plenty of NK cells, which can kill tumor cells without prior exposure to them. And, as later analyses pointed out, the mouse strain carried a highly active version of the enzyme that converts the carcinogen methylcholanthrene into its cancer-causing form, so tumors may have formed too quickly for any immune effect to show.[^2]
 
-The revival began in the late 1990s, when mice that could not respond to IFN-γ, and mice lacking {{perforin|perforin}} (the pore-forming protein of killer cells, Chapter 5), turned out to develop more tumors.[^3] The 2001 experiment closed the remaining loopholes. Knocking out RAG2 removes every T cell and B cell; knocking out the IFN-γ receptor or STAT1, a protein that relays its signal inside the cell, makes tissues unresponsive to IFN-γ. Both deficiencies raised tumor rates by similar amounts, and mice lacking both developed more spontaneous cancers of {{epithelium|epithelial}} tissues (the linings of organs) as they aged.[^3]
+The revival began in the late 1990s, when mice that could not respond to IFN-γ, and mice lacking {{perforin|perforin}} (the pore-forming protein of killer cells, [Chapter 5](05-t-cells.html)), turned out to develop more tumors.[^3] The 2001 experiment closed the remaining loopholes. Knocking out RAG2 removes every T cell and B cell; knocking out the IFN-γ receptor or STAT1, a protein that relays its signal inside the cell, makes tissues unresponsive to IFN-γ. Both deficiencies raised tumor rates by similar amounts, and mice lacking both developed more spontaneous cancers of {{epithelium|epithelial}} tissues (the linings of organs) as they aged.[^3]
 
 The episode has a methodological lesson: an absent effect in a leaky model is not evidence of absence. It also broadened the concept. Burnet's idea centered on lymphocytes, but innate cells such as NK cells and adaptive cells such as T cells both contribute, linked by IFN-γ.
 :::
 
 ## The evidence from people
 
-Medicine has inadvertently run a version of that experiment in people. Transplant recipients take drugs for life that suppress their T cells. People living with HIV lose the {{cd4-t-cell|CD4 helper T cells}} that coordinate immune responses (Chapter 5), although modern treatment now largely prevents that loss. If immunosurveillance is real, both groups should get more cancer, and they do.
+Medicine has inadvertently run a version of that experiment in people. Transplant recipients take drugs for life that suppress their T cells. People living with HIV lose the {{cd4-t-cell|CD4 helper T cells}} that coordinate immune responses ([Chapter 5](05-t-cells.html)), although modern treatment now largely prevents that loss. If immunosurveillance is real, both groups should get more cancer, and they do.
 
 Among about 176,000 US organ transplants, cancer overall was about twice as common as in the general population, but the rise was uneven. {{kaposi-sarcoma|Kaposi sarcoma}}, a rare cancer driven by a herpesvirus, was about 60 times more common; non-Hodgkin {{lymphoma|lymphomas}}, often driven by the {{epstein-barr-virus|Epstein–Barr virus}}, about 7.5 times. Breast and prostate cancer were not increased.[^4] These are ratios, not personal risks: in absolute terms, transplantation added roughly 7 extra cancers per 1,000 recipients per year.[^4]
 
-This fits Part I: a virus-infected cell displays foreign peptides, and the same T cells probably also keep the viruses in check, so suppressing T cells makes virus-driven cancers far more common.[^5]
+This fits Part I. A cell infected by one of these viruses displays foreign viral peptides on MHC class I, and T cells also keep the viruses themselves in check. Suppressing T cells removes both controls at once, which probably explains why virus-driven cancers become far more common.[^5]
 
-Virus-driven cancers still arise in people whose immune systems work, because these viruses are adapted to persist. Human papillomavirus lives in the lining of the cervix without killing cells or provoking inflammation; Epstein–Barr virus stays dormant for life inside resting B cells.[^30][^31] Most people clear or contain these infections; in a small minority, cancer develops years or decades later, often from infected cells that have acquired further ways to avoid T cells (Chapter 6).
+Virus-driven cancers still arise in people whose immune systems work, because these viruses are adapted to persist. Human papillomavirus lives in the lining of the cervix without killing cells or provoking inflammation; Epstein–Barr virus stays dormant for life inside resting B cells.[^30][^31] Most people clear or contain these infections; in a small minority, cancer develops years or decades later, often from infected cells that have acquired further ways to avoid T cells ([Chapter 6](06-cancer.html)).
 
-Cancers that arise from mutated self proteins are harder for T cells to detect, so immunosuppression changes their risk less. Melanoma, for example, roughly doubles in transplant recipients but not in people with HIV, so the drugs (and closer skin checks) may explain the rise.[^4][^5] None of this means the immune system ignores breast or prostate cancer, only that any effect is too small to show in registry data. For those cancers, evidence of immune engagement comes from inside tumors; whether it prevents many of them is still debated (see the box at the end of the next section).
+Cancers that arise from mutated self proteins are harder for T cells to detect, so immunosuppression changes their risk less. Melanoma, for example, roughly doubles in transplant recipients but not in people with HIV, so the drugs (and closer skin checks) may explain the rise.[^4][^5] None of this means the immune system ignores breast or prostate cancer, only that any effect is too small to show in registry data; whether immunosurveillance prevents many such cancers is still debated (see the box at the end of the next section).
 
 :::figure ch07-evidence
 title: Which cancers rise when immunity falls
@@ -150,7 +150,7 @@ Transplant recipients and people with HIV are imperfect stand-ins for "a body wi
 
 First, some transplant drugs cause cancer directly. Azathioprine and cyclosporine are classified as human carcinogens, causing lymphoma and skin squamous-cell carcinoma. That skin cancer is about 46 times more common in transplant recipients but only about five times in people with HIV (in the one high-quality study available), which suggests that drugs and sunlight, not only weakened immunity, drive much of the transplant excess.[^5]
 
-Second, the transplanted organ and the disease that made it necessary matter. Kidney cancer is raised most in kidney recipients, and most of the apparent excess of liver cancer is probably cancer that was already present in the diseased liver removed at transplant.[^4] Screening matters too: people are checked for cancer before a transplant, which lowers the recorded rates of breast and prostate cancer, and closer medical follow-up afterwards finds more melanomas and kidney and thyroid cancers.[^4]
+Second, the transplanted organ and the disease that made it necessary matter. Kidney cancer is raised most in kidney recipients, and most of the apparent excess of liver cancer is probably cancer that was already present in the diseased liver removed at transplant and was recorded in the first months afterwards.[^4] Screening matters too: people are checked for cancer before a transplant, which lowers the recorded rates of breast and prostate cancer, and closer medical follow-up afterwards finds more melanomas and kidney and thyroid cancers.[^4]
 
 Third, a 2024 meta-analysis that pooled 113 studies — 67 in transplant recipients and 46 in people with HIV — found eight cancers raised only in transplant recipients (including melanoma, colorectal, kidney, bladder and thyroid cancers) and none raised only in people with HIV. Since both groups have weakened immunity but only one takes these drugs, the drugs probably explain some of that excess.[^5]
 
@@ -175,9 +175,9 @@ The immune system acts against cancer. Mice and people with weakened immunity de
 
 That leaves the question of why millions of people with working immune systems still develop cancer every year.
 
-Part of the answer lies in the immune system's own safeguards. Every mechanism that keeps T cells off healthy tissue — {{negative-selection|negative selection}} in the thymus, the requirement for signal 2, the brakes, regulatory T cells (Chapters 4 and 5) — also slows an attack on a cancer made of your own cells. Tolerance and tumor immunity pull against each other: releasing the brakes harms healthy tissue too (Chapter 8). The rest of the answer is the tumor's own evolution.
+Part of the answer lies in the immune system's own safeguards. Every mechanism that keeps T cells off healthy tissue — {{negative-selection|negative selection}} in the thymus, the requirement for signal 2, the brakes, regulatory T cells (Chapters 4 and 5) — also slows an attack on a cancer made of your own cells. Tolerance and tumor immunity pull against each other: releasing the brakes harms healthy tissue too ([Chapter 8](08-checkpoints.html)). The rest of the answer is the tumor's own evolution.
 
-The 2001 experiments also showed this evolution at work. The mice were inbred and genetically identical, so ordinary transplant rejection was ruled out. Even so, when the researchers moved tumors that had grown in immunodeficient mice into normal mice, about 40% were rejected; none of the tumors that had grown in normal mice were.[^3] Tumors that grew without immune pressure were easy to recognize, while tumors that grew under it had already been selected to survive it.
+The 2001 experiments also showed this evolution at work. The mice were inbred and genetically identical, so ordinary transplant rejection was ruled out. Even so, when the researchers moved tumors that had grown in the RAG-deficient mice into normal mice, about 40% were rejected; none of the tumors that had grown in normal mice were.[^3] Tumors that grew without immune pressure were easy to recognize, while tumors that grew under it had already been selected to survive it.
 
 Schreiber and his colleagues called this process {{immunoediting|cancer immunoediting}}, with three phases now known as the "three Es."[^2]
 
@@ -187,7 +187,7 @@ Schreiber and his colleagues called this process {{immunoediting|cancer immunoed
 
 In 2007, the same group demonstrated equilibrium directly. Some mice given a small dose of carcinogen looked healthy but carried small, stable masses of cancer cells. When the researchers removed the animals' T cells or blocked IFN-γ, many of those masses grew into tumors.[^9]
 
-Immunoediting is natural selection under immune pressure. A tumor is a varied population of cells (Chapter 6); the immune system removes those that display the most recognizable {{neoantigen|neoantigens}}, so over years the population that reaches a doctor is selected for low visibility.
+Immunoediting is natural selection under immune pressure. A tumor is a varied population of cells ([Chapter 6](06-cancer.html)); the immune system removes those that display the most recognizable {{neoantigen|neoantigens}}, so over years the population that reaches a doctor is selected for low visibility.
 
 Selection of this kind has been documented in a mouse tumor, in which a single mutation created a strongly recognized neoantigen; T cells eliminated the cells carrying it, and the tumor that grew out came from cells that never had it.[^10]
 
@@ -300,7 +300,7 @@ steps:
   3. Escape. Most remaining cells are now faint or hidden, and the tumor grows unchecked, made up of the cells the immune system could not see.
   4. The transplant test. This escaped tumor has been edited, so in a fresh host with a strong immune system it should grow anyway. For comparison, switch immune pressure off, grow a new tumor and transplant that one.
   5. Rejected. This tumor grew without immune pressure, so it was never edited and still had many easy-to-spot cells. In the 2001 mouse experiments, about 40% of unedited tumors were rejected like this, and none of the edited ones.
-  6. This unedited tumor grew anyway, as most did in the 2001 experiments, where only about 40% were rejected. Try again; edited tumors are almost never rejected.
+  6. This unedited tumor grew anyway, as most did in the 2001 experiments, where only about 40% were rejected. Try again; in those experiments, no edited tumor was rejected.
   7. Removing the T cells during equilibrium let the dormant tumor grow out quickly, as in the 2007 mouse experiments.
 alt: A simulation of a tumor whose cells vary in how many neoantigens they display. With immune pressure on, T cells first kill the most visible cells, the tumor then holds steady at a small size, and finally a population of faint or hidden cells grows out of control; charts show the tumor's size over time and the share of easy-to-spot, faint and hidden cells. A transplant test shows that an edited tumor grows in a new host with a strong immune system, while an unedited tumor is sometimes rejected.
 :::
@@ -316,9 +316,9 @@ Human tumors show similar evidence of selection: the {{hla|HLA}} losses describe
 :::deep-dive How much cancer does immunosurveillance prevent?
 That the immune system shapes tumors is well established. How many cancers it prevents in people is less clear, and skeptics have a serious case.
 
-**The case for caution.** The cancers that rise when human immunity fails are mostly virus-driven. An early tumor deep in a tissue gives T cells little to respond to: naive T cells circulate only through blood and lymph nodes, the tumor produces few danger signals, and tumor antigens presented in a node without signal 2 tend to make T cells {{anergy|anergic}}, or unresponsive (Chapters 4 and 5). In mice in which a single random cell turns cancerous (closer to real life than an injected carcinogen), tumors with a strong foreign antigen were neither destroyed nor edited; instead they made their T cells tolerant.[^36] In another model, T cells were already failing before the growth turned cancerous.[^37] Searches of untreated human tumors for the loss of neoantigens that editing should cause have given mixed results.[^38]
+**The case for caution.** The cancers that rise when human immunity fails are mostly virus-driven. An early tumor deep in a tissue gives T cells little to respond to: naive T cells circulate only through blood and lymph nodes, the tumor produces few danger signals, and tumor antigens presented in a node without signal 2 tend to make T cells {{anergy|anergic}}, or unresponsive (Chapters 4 and 5). In mice in which a single random cell turns cancerous (closer to real life than an injected carcinogen), tumors with a strong foreign antigen were neither destroyed nor edited; instead they made their T cells tolerant.[^36] In another model, constant exposure to the tumor's antigen made T cells dysfunctional while the growth was still precancerous.[^37] Searches of untreated human tumors for the loss of neoantigens that editing should cause have given mixed results.[^38]
 
-**The case for a larger role.** Human tumors show signs of selection. About one in four carries a genetic change that helps it evade T cells, such as losing an HLA gene, and such changes are favored as tumors evolve.[^39] In human airways, precancerous patches that later disappeared contained more immune cells than those that became cancer, and those that progressed had often acquired defects in antigen presentation.[^40] In one study of digestive-tract cancers, most tumors examined (62 of 75) contained T cells recognizing their neoantigens (Chapter 6).[^41] And in a 2025 mouse study of sarcomas started in leg muscle with fluorescently tagged neoantigens, T cells stopped about half from emerging, and every one that emerged had silenced its neoantigens.[^42]
+**The case for a larger role.** Human tumors show signs of selection. About one in four carries a genetic change that helps it evade T cells, such as losing an HLA gene, and such changes are favored as tumors evolve.[^39] In human airways, precancerous patches that later disappeared contained more immune cells than those that became cancer, and those that progressed had often acquired defects in antigen presentation.[^40] In one study of digestive-tract cancers, most tumors examined (62 of 75) contained T cells recognizing their neoantigens ([Chapter 6](06-cancer.html)).[^41] And in a 2025 mouse study of sarcomas started in leg muscle with fluorescently tagged neoantigens, T cells stopped about half from emerging, and every one that emerged had silenced its neoantigens.[^42]
 
 **Where the evidence stands.** Immunosurveillance is real but uneven, and strongest against virus-driven cancers. Against many common cancers it may do less to stop tumors from starting than to shape the ones that grow. Elimination leaves no trace, so in people it can only be inferred, and its reach is unknown. Most tumors do appear to be recognized, though, and the T cells that recognize them are the starting material for much of Part III.
 :::
@@ -328,32 +328,32 @@ That the immune system shapes tumors is well established. How many cancers it pr
 Escape is easiest to describe against what a successful anti-tumor response requires, which two researchers set out in 2013 as a seven-step {{cancer-immunity-cycle|cancer-immunity cycle}}.[^12]
 
 1. **Release.** Cancer cells die and spill their proteins, including neoantigens.
-2. **Presentation.** {{dendritic-cell|Dendritic cells}} in the tumor take up this debris (Chapter 4). If danger signals are present, they mature and carry the antigens to a nearby {{lymph-node|lymph node}}; without danger signals, they induce tolerance instead.
+2. **Presentation.** {{dendritic-cell|Dendritic cells}} in the tumor take up this debris ([Chapter 4](04-presentation.html)). If danger signals are present, they mature and carry the antigens to a nearby {{lymph-node|lymph node}}; without danger signals, they induce tolerance instead.
 3. **{{priming|Priming}}.** In the lymph node, the rare T cells with matching receptors receive signals 1 and 2 and multiply into a large clone of effector cells (Chapters 4 and 5).
 4. **Trafficking.** The new killer T cells circulate throughout the body but leave the blood only where a vessel wall displays the right {{adhesion-molecule|adhesion molecules}} (selectins and integrin ligands) and {{chemokine|chemokines}}, as vessels in inflamed tissue do (Chapters 2 and 4).
 5. **Infiltration.** They cross the vessel wall, a step called {{extravasation|extravasation}}, and follow chemokine gradients through the tissue toward the cancer cells.
 6. **Recognition.** Each T cell checks the peptides on cancer cells' MHC class I molecules for its one target.
-7. **Killing.** It kills matching cells with perforin and {{granzyme|granzymes}} (Chapter 5).
+7. **Killing.** It kills matching cells with perforin and {{granzyme|granzymes}} ([Chapter 5](05-t-cells.html)).
 
 These are the steps of the antiviral response at the end of Chapter 5, aimed at a tumor. The main difference is at the start.
 
-With no microbe involved, danger signals must come from the tumor itself. Tumors are often inflamed, but mostly in the wound-healing way that dampens immune attack (Chapter 2); the kind of signal that lets dendritic cells prime killer T cells is rarer but does occur. In mice, DNA from dying cancer cells reaches a DNA-sensing pathway inside dendritic cells (named after its key protein, STING), which triggers type I interferon; without this pathway, the T-cell responses that tumors often provoke on their own largely fail.[^13]
+With no microbe involved, danger signals must come from the tumor itself. Tumors are often inflamed, but mostly in the wound-healing way that dampens immune attack ([Chapter 2](02-innate.html)); the kind of signal that lets dendritic cells prime killer T cells is rarer but does occur. In mice, when dendritic cells take up dying cancer cells, the tumor DNA reaches a DNA-sensing pathway inside them (named after its key protein, STING), which triggers type I interferon and activates the dendritic cells so they can prime killer T cells; without this pathway, the T-cell responses that tumors often provoke on their own largely fail.[^13]
 
 Killing restarts the cycle. Cells killed by T cells die by {{apoptosis|apoptosis}}, which is fairly quiet (Chapter 5), but T cells also secrete IFN-γ and other cytokines that help keep nearby dendritic cells active. The debris can then be presented, recruiting T cells against new targets, a process called {{antigen-spreading|antigen spreading}}.[^12]
 
 The steps work in series: a strong T-cell response achieves nothing if the cells cannot enter the tumor, and a tumor full of T cells is safe if it displays nothing they recognize. The weakest step limits the whole response.
 
-Each {{immunotherapy|immunotherapy}} in Part III acts at one or more of these steps. Some repair a step: among the {{checkpoint|checkpoint}} inhibitors, anti-CTLA-4 acts mainly at priming. Anti-PD-1 acts mainly at the last steps, freeing T cells in the tumor to recognize and kill, but it also replenishes the response from a reserve of stem-like T cells in lymph nodes and blood, feeding new rounds of priming and expansion (Chapters 5 and 8).[^14] Vaccines boost presentation and priming (Chapter 11).
+Each {{immunotherapy|immunotherapy}} in Part III acts at one or more of these steps. Some repair a step: among the {{checkpoint|checkpoint}} inhibitors, anti-CTLA-4 acts mainly at priming. Anti-PD-1 acts mainly at the last steps, freeing T cells in the tumor to recognize and kill, but it also replenishes the response from a reserve of stem-like T cells in lymph nodes and blood, feeding new rounds of priming and expansion (Chapters 5 and 8).[^14] Vaccines boost presentation and priming ([Chapter 11](11-vaccines.html)).
 
-Other treatments make steps unnecessary. Engineered T cells and T-cell engagers supply ready-made killer cells, skipping the first three steps; CAR-T cells and most engagers also replace step 6, recognizing a surface protein without needing MHC class I. But all of them must still reach the tumor, get in and kill (Chapters 9 and 10).
+Other treatments make steps unnecessary. T cells engineered outside the body supply ready-made killer cells, and {{t-cell-engager|T-cell engagers}}, antibodies that bridge any T cell to a cancer cell, let T cells kill without first being primed against the tumor; both skip the first three steps. The best-known engineered T cells, {{car-t|CAR-T cells}}, carry a synthetic receptor, and they and most engagers also replace step 6: they bind a surface protein on the cancer cell without needing MHC class I. But all of them must still reach the tumor, get in and kill (Chapters 9 and 10).
 
 :::deep-dive The cycle, revised
-The wheel is a simplification, and its authors have revised it. In 2017 they added the idea of a **cancer-immune set point**: the amount of stimulation a particular tumor needs before an effective response begins. A tumor with many neoantigens that the person's HLA types can display starts close to that threshold; one with few neoantigens, or exposed to high levels of TGF-β, starts far below it. The set point is shaped by the tumor's genes, the person's own genes and environmental factors such as medications and gut microbes.[^15]
+The cycle is a simplification, and its authors have revised it. In 2017 they added the idea of a **cancer-immune set point**: the amount of stimulation a particular tumor needs before an effective response begins. A tumor with many neoantigens that the person's HLA types can display starts close to that threshold; one with few neoantigens, or exposed to high levels of TGF-β, starts far below it. The set point is shaped by the tumor's genes, the person's own genes and environmental factors such as medications and gut microbes.[^15]
 
 In 2023, the cycle itself was updated in three main ways.[^16]
 
 - **Part of the cycle runs inside the tumor.** Dendritic cells in tumors keep re-stimulating T cells there, in local "niches", rather than only through the lymph nodes. Patients whose tumors lack these niches tend to fare worse.
-- **Checkpoint blockade works partly upstream.** Much of its effect comes from the stem-like T-cell reserve described in Chapters 5 and 8, including cells in lymph nodes, which is why this chapter's wheel marks anti-PD-1 at priming as well as at killing.
+- **Checkpoint blockade works partly upstream.** The update attributes much of its effect to the stem-like T-cell reserve described in Chapters 5 and 8, including cells in lymph nodes, rather than only to T cells already inside the tumor.
 - **Context matters.** The authors argue that a tumor's immune state, which they call its "immunotype", should be read alongside its cancer type and its mutations when choosing treatment.
 
 A therapy still helps only if it fixes the step that is failing.
@@ -373,19 +373,19 @@ Some act inside the cancer cell. Others reshape the {{tumor-microenvironment|tum
 
 The most direct route is to stop displaying antigen. Every MHC class I molecule needs a small protein subunit, {{b2m|beta-2-microglobulin (B2M)}}, to reach the cell surface, so a cancer cell that loses both working copies of the B2M gene displays no class I at all.
 
-There are subtler versions. A tumor can lose one of the two inherited copies of an HLA gene (HLA loss of heterozygosity), deleting HLA types and, with them, every neoantigen that only those types could display. This happens in about 40% of non-small-cell lung cancers, the most common type of lung cancer,[^11] and in about one tumor in six across all cancer types.[^43] Or the tumor can lose the cells carrying the most visible neoantigens, as in the mouse tumor described earlier.
+There are subtler versions. A tumor can lose one parent's copy of one or more HLA genes (HLA loss of heterozygosity), deleting those HLA types and, with them, every neoantigen that only they could display. This happens in about 40% of non-small-cell lung cancers, the most common type of lung cancer,[^11] and in about one tumor in six across all cancer types.[^43] Or the tumor can lose the cells carrying the most visible neoantigens, as in the mouse tumor described earlier.
 
-Hiding has a cost: a cell without MHC class I, especially a stressed one, invites attack by NK cells ({{missing-self|missing self}}, Chapter 2), so a tumor that hides from T cells needs other routes as well.
+Hiding has a cost: a cell without MHC class I, especially a stressed one, invites attack by NK cells ({{missing-self|missing self}}, [Chapter 2](02-innate.html)), so a tumor that hides from T cells needs other routes as well.
 
 *Breaks step 6, recognition.*
 
 ### Brake
 
-One of the T-cell brakes from Chapter 5 is the inhibitory receptor {{pd-1|PD-1}}, which dampens a T cell when it binds its ligand, {{pd-l1|PD-L1}}. Many tumors express PD-L1, often as a direct result of T-cell attack.
+One of the T-cell brakes from [Chapter 5](05-t-cells.html) is the inhibitory receptor {{pd-1|PD-1}}, which dampens a T cell when it binds its ligand, {{pd-l1|PD-L1}}. Many tumors express PD-L1, often as a direct result of T-cell attack.
 
 When T cells recognize a target, they secrete IFN-γ, which among other effects makes nearby cells express more PD-L1, a response that normally protects healthy tissue from excessive inflammation. In a study of melanomas and other pigment-cell growths, T cells were nearby in 98% of samples with PD-L1 but only 28% of those without, and PD-L1 was found where T cells and IFN-γ were.[^17]
 
-This is called {{adaptive-resistance|adaptive resistance}}; "adaptive" refers to the tumor adapting to the attack, not to adaptive immunity. It also means that a tumor using this brake has already been found by the immune system; releasing the brake is what the drugs in Chapter 8 do.
+This is called {{adaptive-resistance|adaptive resistance}}; "adaptive" refers to the tumor adapting to the attack, not to adaptive immunity. It also means that a tumor using this brake has already been found by the immune system; releasing the brake is what the drugs in [Chapter 8](08-checkpoints.html) do.
 
 *Breaks step 7, killing.*
 
@@ -397,23 +397,23 @@ Tumors accumulate immune cells that suppress rather than attack.[^18]
 - {{mdsc|Myeloid-derived suppressor cells}} (MDSCs) are immature relatives of neutrophils and monocytes (the blood-borne precursors of macrophages). The bone marrow releases them in large numbers during cancer, and they disable T cells, for example by depleting arginine, an amino acid T cells need, and by producing reactive oxygen species, unstable oxygen-containing molecules that damage them.[^19]
 - {{tumor-associated-macrophage|Tumor-associated macrophages}} often shift toward the wound-healing, "M2-like" state described in Chapter 2. They clear debris, promote blood-vessel growth and secrete anti-inflammatory cytokines, which help repair a wound but also help a tumor grow. (Real tumor macrophages usually mix M1 and M2 features.)
 
-Macrophages and related cells make up a large share of the immune cells in many solid tumors, and their effects go both ways: they can also present antigen and, guided by antibody drugs, engulf cancer cells (Chapter 9).
+Macrophages and related cells make up a large share of the immune cells in many solid tumors, and their effects go both ways: they can also present antigen and, guided by antibody drugs, engulf cancer cells ([Chapter 9](09-antibodies.html)).
 
 *Weakens step 7, killing, and step 3, priming.*
 
 ### Build barriers
 
-Around many tumors, {{cancer-associated-fibroblast|cancer-associated fibroblasts}}, connective-tissue cells recruited and reprogrammed by the tumor, deposit dense {{collagen|collagen}}, the main structural protein of connective tissue. Together with abnormal blood vessels, this fibrous tissue, called {{stroma|stroma}}, forms a barrier that T cells struggle to cross.
+Around many tumors, {{cancer-associated-fibroblast|cancer-associated fibroblasts}}, connective-tissue cells recruited and reprogrammed by the tumor, deposit dense {{collagen|collagen}}, the main structural protein of connective tissue. Together with abnormal blood vessels, this fibrous tissue, called {{stroma|stroma}}, forms a barrier that T cells struggle to cross. Inside the tumor, T cells migrate along collagen fibers, and fibers that encircle a nest of cancer cells steer them around it.[^46]
 
-In a large study of advanced bladder (urothelial) cancer treated with a PD-L1-blocking drug, many non-responders had killer T cells trapped in the stroma, along with signs of {{tgf-beta|TGF-β}}, a cytokine that drives scarring (fibrosis), acting on the fibroblasts. In mice with similar tumors, blocking TGF-β along with PD-L1 let T cells enter the tumor's center, and the tumors shrank.[^20] This has proved hard to translate into people. When a drug that blocks both TGF-β and PD-L1 was compared with a standard PD-1 blocker in a large lung-cancer trial, it did worse: the cancer progressed sooner on average (though the gap could have been chance), severe side effects were three times as common, and the trial was stopped early.[^21]
+In a large study of advanced bladder (urothelial) cancer treated with a PD-L1-blocking drug, many non-responders had killer T cells trapped in the stroma, along with signs of {{tgf-beta|TGF-β}}, a cytokine that drives scarring (fibrosis), acting on the fibroblasts. In mice with similar tumors, blocking TGF-β along with PD-L1 let T cells enter the tumor's center, and the tumors shrank.[^20] This has proved hard to translate into people. When a drug that blocks both TGF-β and PD-L1 was compared with a standard PD-1 blocker in a large lung-cancer trial, it did no better. The cancer progressed somewhat sooner on average (a gap that could have been chance), severe side effects were three times as common, and the trial was stopped early.[^21]
 
-Not every barrier is made of collagen. A tumor's vessels can lack the adhesion molecules T cells need to stop, and some express {{fas|Fas ligand}}, which triggers apoptosis in cells carrying its receptor, Fas (Chapter 5); it kills arriving killer T cells but spares Tregs.[^44] Some tumors silence chemokines, such as CXCL9 and CXCL10, that help draw T cells in and keep them active.[^45] Inside the tumor, T cells migrate along collagen fibers, and fibers that encircle a nest of cancer cells steer them around it.[^46] Often the problem is access: the right T cells exist but cannot get in.
+Not every barrier is made of collagen. A tumor's vessels can lack the adhesion molecules T cells need to stop. Some tumor vessels also carry {{fas|Fas ligand}}, which triggers apoptosis in cells bearing its receptor, Fas (Chapter 5), and so kills arriving killer T cells while sparing Tregs.[^44] Other tumors silence chemokines, such as CXCL9 and CXCL10, that help draw T cells in and keep them active.[^45] Often the problem is access: the right T cells exist but cannot get in.
 
 *Breaks steps 4 and 5, trafficking and infiltration.*
 
 ### Release suppressive molecules
 
-Conditions inside a tumor impair T cells. Cells there use up nutrients, outgrow their blood supply (leaving pockets short of oxygen, a state called {{hypoxia|hypoxia}}) and secrete lactic acid, and T cells function poorly in acidic, oxygen-poor tissue. Tumors also produce molecules that inhibit T cells or starve them of nutrients, such as {{adenosine|adenosine}} and an enzyme called {{ido|IDO}} (see the box). Together with TGF-β, these weaken even the T cells that get inside.[^22]
+Conditions inside a tumor impair T cells. Cells there use up nutrients, outgrow their blood supply (leaving pockets short of oxygen, a state called {{hypoxia|hypoxia}}) and secrete lactic acid, and T cells function poorly in acidic, oxygen-poor tissue. Tumors also produce {{adenosine|adenosine}}, which binds receptors on T cells and suppresses them, and an enzyme called {{ido|IDO}}, which breaks down tryptophan, an amino acid T cells need. Together with TGF-β, these weaken even the T cells that get inside.[^22]
 
 *Weakens step 7, killing.*
 
@@ -422,11 +422,11 @@ Each of these is a normal physiological signal, produced in excess and for too l
 
 **Adenosine.** Outside cells, ATP, the cell's main energy carrier, acts as a danger signal. Two enzymes on cell surfaces, CD39 and CD73, convert it step by step into adenosine, which binds the A2A receptor on T cells and raises cyclic AMP, a small signaling molecule inside the cell that inhibits T-cell activity. Hypoxia increases the expression of both enzymes. Drugs that block CD73 or the A2A receptor are in clinical trials.
 
-**IDO and kynurenine.** Indoleamine 2,3-dioxygenase 1 (IDO1) converts the amino acid tryptophan into kynurenine. T cells sense the missing tryptophan as starvation, and kynurenine pushes them toward regulatory behavior. Despite strong laboratory data, an IDO1 inhibitor added to anti-PD-1 failed in a large melanoma trial (Chapter 8).[^23]
+**IDO and kynurenine.** Indoleamine 2,3-dioxygenase 1 (IDO1) converts tryptophan into kynurenine. T cells sense the missing tryptophan as starvation, and kynurenine pushes them toward regulatory behavior. Despite strong laboratory data, an IDO1 inhibitor added to anti-PD-1 failed in a large melanoma trial ([Chapter 8](08-checkpoints.html)).[^23]
 
-**Glucose, lactate and acidity.** Many cancer cells break down glucose rapidly even when oxygen is available, and secrete lactic acid; the acidic, lactate-rich fluid reduces T cells' production of IFN-γ. Whether T cells lose a competition for glucose is debated. When researchers traced nutrient uptake inside mouse tumors, immune cells, especially macrophages and related myeloid cells, took up more glucose than the cancer cells did; the cancer cells preferred glutamine, and glucose was not the limiting nutrient. Nutrient use seems to be set more by each cell type's own programming than by competition.[^24]
+**Glucose, lactate and acidity.** Many cancer cells break down glucose rapidly even when oxygen is available, and secrete lactic acid; the acidic, lactate-rich fluid reduces T cells' production of IFN-γ. Whether T cells lose a competition for glucose is debated. When researchers traced nutrient uptake inside mouse tumors, immune cells, especially macrophages and related myeloid cells, took up more glucose than the cancer cells did; the cancer cells preferred the amino acid glutamine, and glucose was not the limiting nutrient. Nutrient use seems to be set more by each cell type's own programming than by competition.[^24]
 
-**Prostaglandin E2.** The signaling molecule behind fever and inflammatory pain (Chapter 2) is made in large amounts by many tumors. In mice it weakens NK cells and so deprives the tumor of the cross-presenting dendritic cells those NK cells recruit (Chapter 4); blocking its production with aspirin-like drugs helped anti-PD-1 clear tumors.[^47]
+**Prostaglandin E2.** The signaling molecule behind fever and inflammatory pain ([Chapter 2](02-innate.html)) is made in large amounts by many tumors. In mice it weakens NK cells and so deprives the tumor of the cross-presenting dendritic cells those NK cells recruit ([Chapter 4](04-presentation.html)); blocking its production with aspirin-like drugs helped anti-PD-1 clear tumors.[^47]
 
 **Hypoxia.** Low oxygen activates HIF-1α, a transcription factor (a protein that controls which genes are expressed), which reshapes cell metabolism, raises adenosine production and favors suppressive myeloid cells.
 
@@ -439,7 +439,7 @@ Because these signals overlap, blocking any single one has rarely been enough on
 
 Finally, tumors can stop responding to IFN-γ. Besides raising PD-L1, IFN-γ from T cells makes cancer cells express more MHC and can halt their growth. Its signal is relayed inside the cell by enzymes called {{jak|JAK1 and JAK2}}.
 
-Researchers sequenced the regrown tumors of four melanoma patients whose cancer had first shrunk on a PD-1-blocking drug. Three of the four had a clear explanation: two had lost working JAK1 or JAK2 and no longer responded to IFN-γ, and one had lost B2M and, with it, all MHC class I display.[^25] Chapter 12 returns to these resistance mechanisms.
+Researchers sequenced the regrown tumors of four melanoma patients whose cancer had first shrunk on a PD-1-blocking drug. Three of the four had a clear explanation: two had lost working JAK1 or JAK2 and no longer responded to IFN-γ, and one had lost B2M and, with it, all MHC class I display.[^25] [Chapter 12](12-frontier.html) returns to these resistance mechanisms.
 
 *Breaks steps 6 and 7.*
 
@@ -579,7 +579,7 @@ alt: A wheel of the seven steps of the cancer-immunity cycle: release of cancer 
 
 ## Inflamed, excluded and desert tumors
 
-Under a microscope, a slice of tumor can reveal its immune history. Researchers sort tumors into three broad immune profiles.[^15]
+Under a microscope, a slice of tumor from a {{biopsy|biopsy}} or surgery can reveal its immune history. Researchers sort tumors into three broad immune profiles.[^15]
 
 - **Inflamed:** T cells are inside the tumor, among the cancer cells, often alongside PD-L1 and other brakes. The cycle ran, but the last step was blocked.
 - **Excluded:** T cells arrived but are stuck at the edges, in the stroma, held back by the barriers described above.
@@ -587,18 +587,14 @@ Under a microscope, a slice of tumor can reveal its immune history. Researchers 
 
 In the news and in many papers, {{hot-tumor|inflamed}} tumors are called "hot" and {{cold-tumor|desert}} tumors "cold", though "cold" is often stretched to cover {{excluded-tumor|excluded}} tumors too.
 
-Real tumors do not fall neatly into three categories, but the profiles help predict who will benefit from immunotherapy. Checkpoint inhibitors release brakes on T cells that already recognize the tumor, mostly those inside it plus a reserve in the lymph nodes, so responses occur most often in inflamed tumors, though not every inflamed tumor responds. Releasing the brakes does little for T cells held outside a barrier, or for T cells that don't exist.[^15] Tumors rich in B cells, especially when organized into miniature lymph nodes (see the box on tertiary lymphoid structures), also tend to respond better.[^26]
-
-That is why much of Part III, and especially Chapter 12, is about bringing T cells into excluded and desert tumors.
+Real tumors do not fall neatly into three categories, but the profiles help predict who will benefit from immunotherapy. Checkpoint inhibitors release brakes on T cells that already recognize the tumor, mostly those inside it plus a reserve in the lymph nodes, so responses occur most often in inflamed tumors, though not every inflamed tumor responds.[^15] Tumors rich in B cells, especially when organized into miniature lymph nodes (see the box on tertiary lymphoid structures), also tend to respond better.[^26] Releasing the brakes does little for T cells held outside a barrier, or for T cells that don't exist.[^15] That is why much of Part III, and especially [Chapter 12](12-frontier.html), is about bringing T cells into excluded and desert tumors.
 
 :::deep-dive Driver genes that shape the immune profile
-Some resistance comes from the same mutations that make a cell cancerous (Chapter 6). Three examples:
+Some resistance comes from the same mutations that make a cell cancerous ([Chapter 6](06-cancer.html)). Three examples:
 
 - **WNT/β-catenin.** In some melanomas, an overactive WNT/β-catenin pathway suppresses the chemokines that would recruit a key type of dendritic cell. Without those dendritic cells, T cells are never primed against the tumor, and it remains a desert.[^27]
 - **PTEN loss.** PTEN is a tumor suppressor that restrains a growth pathway called PI3K–AKT. In melanoma models, cancer cells that lose it secrete more suppressive cytokines, let in fewer T cells and resist being killed. In patients, PTEN loss went with fewer T cells in the tumor and poorer responses to anti-PD-1. In mice, blocking the pathway PTEN normally restrains made checkpoint inhibitors work better.[^28]
 - **STK11 (also called LKB1).** In lung adenocarcinomas driven by a mutated KRAS gene, a second mutation in STK11 marks tumors that rarely respond to PD-1 blockade: in one group of 174 patients, about 7% of these tumors responded, against 29–36% of other KRAS-driven tumors. Such tumors often lack PD-L1 even when they carry many mutations.[^29]
-
-This connects the two kinds of brake described in Chapter 6: the same mutations that drive a tumor's growth can also shape its immune profile.
 :::
 
 :::figure ch07-tme
@@ -713,7 +709,7 @@ alt: A cross-section of a tumor that can be switched between three immune profil
 :::
 
 :::deep-dive Tertiary lymphoid structures: a lymph node inside the tumor
-In some tumors, immune cells organize themselves into miniature lymph nodes, called {{tertiary-lymphoid-structure|tertiary lymphoid structures}} (TLS). Like a lymph node, a mature TLS has a core of B cells surrounded by T cells and dendritic cells, supplied by the same entry vessels lymph nodes use, {{high-endothelial-venule|high endothelial venules}} (Chapter 4). TLS form at sites of long-lasting inflammation, usually at a tumor's edge or in its stroma.[^26] In mice, such vessels were the main route by which T cells entered tumors, with or without checkpoint therapy, and in 93 people with metastatic melanoma, tumors that had them responded better to anti-PD-1 plus anti-CTLA-4.[^49]
+In some tumors, immune cells organize themselves into miniature lymph nodes, called {{tertiary-lymphoid-structure|tertiary lymphoid structures}} (TLS). Like a lymph node, a mature TLS has a core of B cells surrounded by T cells and dendritic cells, supplied by the same entry vessels lymph nodes use, {{high-endothelial-venule|high endothelial venules}} ([Chapter 4](04-presentation.html)). TLS form at sites of long-lasting inflammation, usually at a tumor's edge or in its stroma.[^26] In mice, such vessels were the main route by which T cells entered tumors, with or without checkpoint therapy, and in 93 people with metastatic melanoma, tumors that had them responded better to anti-PD-1 plus anti-CTLA-4.[^49]
 
 In 2020, three studies in melanoma, kidney cancer and soft-tissue sarcoma found that tumors rich in B cells and TLS were more likely to respond to checkpoint inhibitors, and their patients tended to live longer. Similar associations have since been reported across many cancer types.[^26]
 
@@ -732,7 +728,7 @@ The kidney donor's melanoma cells were in equilibrium: alive but held in check. 
 
 Modern immunotherapy works on the same principle. Rather than only removing or destroying cancer with surgery, radiation or chemotherapy, it acts on the immune response: releasing brakes, breaking down barriers, making hidden cancer cells visible again, or supplying new T cells. Each escape route is also a potential target.
 
-The immune system probably held one melanoma in check for sixteen years, yet medicine took more than a century to learn how to strengthen that kind of control; the history that follows explains why. Chapter 8 then turns to the drugs that first made the approach work for many patients: checkpoint inhibitors.
+The immune system probably held one melanoma in check for sixteen years, yet medicine took more than a century to learn how to strengthen that kind of control; the history that follows explains why. [Chapter 8](08-checkpoints.html) then turns to the drugs that first made the approach work for many patients: checkpoint inhibitors.
 
 :::quiz
 Q: Researchers moved tumors between inbred, genetically identical mice. Tumors that had grown in mice lacking T and B cells were rejected by normal mice about 40% of the time; tumors from normal mice never were. What best explains this?
@@ -741,7 +737,7 @@ Q: Researchers moved tumors between inbred, genetically identical mice. Tumors t
 - [ ] Tumors from immunodeficient mice grow more slowly in any new host — the same tumors grew well in immunodeficient hosts, so growth rate was not the difference.
 - [ ] Tumors from immunodeficient mice carry no mutations — they carry plenty; what differed was which visible variants had survived.
 
-Q: A {{biopsy|biopsy}} shows melanoma cells displaying PD-L1 mainly where they touch clusters of T cells. What is the most likely interpretation?
+Q: A biopsy shows melanoma cells displaying PD-L1 mainly where they touch clusters of T cells. What is the most likely interpretation?
 - [ ] The tumor is invisible to T cells, and the clusters are just passing through — T cells clustered against PD-L1-rich cells show the tumor has been found.
 - [x] T cells found the tumor, and their IFN-γ raised PD-L1 as a brake — a response a PD-1 blocker might release.
 - [ ] PD-L1 is a chemokine that draws more T cells into the tumor — PD-L1 dampens T cells once they arrive; chemokines are what draw them in.

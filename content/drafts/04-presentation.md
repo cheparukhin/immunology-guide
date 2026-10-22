@@ -7,13 +7,13 @@ reading_time: 26
 hero: ch04-hero
 ---
 
-From the outside, a cell infected by a virus looks much like its neighbors: the same membrane, the same size, the same proteins on its surface. Inside, the virus has redirected the cell's ribosomes and enzymes to making thousands of copies of itself, out of reach of the {{antibody|antibodies}} of Chapter 3, which can bind only what is exposed.
+In the early 1980s, Alain Townsend and colleagues were working out what killer T cells recognize on cells infected with influenza. A major share of the T cells targeted the virus's nucleoprotein,[^42] which coats the viral genetic material inside the infected cell, where the {{antibody|antibodies}} of [Chapter 3](03-adaptive.html) cannot reach it. In 1986 the group showed that these T cells would attack uninfected cells that had only been bathed in a short synthetic fragment of the nucleoprotein.[^2]
 
-Since viruses replicate inside cells, and cancer begins as a change in a protein *inside* a cell, that would be a serious gap. It is closed by an unusual arrangement: **nearly every cell in your body continuously displays samples of its own interior** — fragments of the proteins it is making, held on the outside of the membrane, where T cells can detect them by contact.
+The T cells were reading fragments of a protein made inside the cell. That was possible because **nearly every cell in your body continuously displays samples of its own interior** — fragments of the proteins it is making, held on the outside of the membrane, where T cells can detect them by contact. Viruses replicate inside cells, and cancer begins as a change in a protein *inside* a cell; without this display, both would be hidden from T cells.
 
-## Strings, not sculptures
+## Fragments, not folded proteins
 
-A {{protein|protein}} is a long chain of {{amino-acid|amino acids}} folded into a specific shape (Chapter 1). Each short piece cut from the chain is a {{peptide|peptide}}: here, a fragment roughly 8 to 25 amino acids long, with no particular folded shape of its own.
+A {{protein|protein}} is a long chain of {{amino-acid|amino acids}} folded into a specific shape ([Chapter 1](01-cells.html)). Each short piece cut from the chain is a {{peptide|peptide}}: here, a fragment roughly 8 to 25 amino acids long, with no particular folded shape of its own.
 
 Antibodies typically bind a folded surface patch, an {{epitope|epitope}} whose amino acids are often far apart along the chain and come together only when the protein folds. {{t-cell|T cells}} recognize a string of amino acids that sit next to each other in the chain, and only when that string is held on another cell's surface by a molecule called {{mhc|MHC}}, for *major histocompatibility complex*, a name from transplant biology that says nothing about what the molecule does.
 
@@ -29,9 +29,9 @@ Antibodies bind surfaces. T cells recognize fragments of a cell's *contents*: sh
 
 MHC molecules come in two classes, which display peptides from different sources.
 
-{{mhc-class-i|MHC class I}} sits on almost every cell with a nucleus. Chapter 2 introduced it as the cell's **shop window** and showed that NK cells notice when it is missing. Class I is a continuously refreshed display of samples of the proteins the cell is making, and it is read by {{cd8-t-cell|killer T cells}} (formally, CD8 T cells).
+{{mhc-class-i|MHC class I}} sits on almost every cell with a nucleus. [Chapter 2](02-innate.html) introduced it as the cell's **shop window** and showed that NK cells notice when it is missing. Class I is a continuously refreshed display of samples of the proteins the cell is making, and it is read by {{cd8-t-cell|killer T cells}} (formally, CD8 T cells).
 
-Every cell continuously feeds its worn-out, misfolded or unneeded proteins into the {{proteasome|proteasome}}, a barrel-shaped enzyme complex that cleaves them into short fragments. Most of the fragments are then broken down into amino acids and recycled; by one estimate only about **1 in 5,000** survives to be displayed.[^6]
+Every cell continuously feeds worn-out, surplus and faulty proteins into the {{proteasome|proteasome}}, a barrel-shaped enzyme complex that cleaves them into short fragments. Most of the fragments are then broken down into amino acids and recycled; by one estimate only about **1 in 5,000** survives to be displayed.[^6] Much of what is displayed seems to come from new protein that came out wrong — mistranslated, misfolded or cut short — and was degraded almost as soon as it was made.[^6]
 
 The survivors are pumped by a transporter called {{tap-transporter|TAP}} (*transporter associated with antigen processing*) into the {{endoplasmic-reticulum|endoplasmic reticulum (ER)}}, an internal membrane compartment where proteins bound for the cell surface are assembled. Empty class I molecules wait there with their grooves open, binding peptide after peptide and releasing almost all of them.[^6]
 
@@ -39,19 +39,7 @@ A peptide stays only if it meets two conditions. The first is length: a class I 
 
 Loaded molecules then travel to the surface. A lymphocyte, for example, carries about **200,000** class I molecules displaying a few thousand different peptides.[^6] The display is a sample rather than an inventory, weighted toward proteins the cell makes in large amounts or degrades quickly.
 
-:::deep-dive How class I is loaded
-**How we know T cells recognize peptides.** The decisive experiment came in 1986, when Alain Townsend and colleagues showed that killer T cells against influenza would attack uninfected cells that had only been bathed in a short synthetic peptide from a viral protein.[^2] The added peptides bound to class I molecules already on the cell surface. Laboratories use this routinely to load cells with a chosen peptide, but in the body class I almost always reaches the surface already loaded, so the display remains almost entirely a sample of the cell's own interior.[^6]
-
-**Ubiquitin.** Proteins bound for the proteasome are usually first marked by the attachment of a small protein called ubiquitin, which targets them for degradation.
-
-**The loading complex.** Around TAP sits the peptide-loading complex. One of its proteins, tapasin, working with calreticulin and ERp57, two proteins that assist folding throughout the ER, holds empty grooves open and favors peptides that bind tightly and dissociate slowly. An enzyme called ERAP1 trims peptides that arrive too long; it becomes active only when it binds a peptide longer than about eight or nine amino acids, so it tends to stop near the length class I prefers. Peptides that never find a groove are exported from the ER and degraded.[^6]
-
-**Where the fragments come from.** Much of the display seems to come not from old proteins but from faulty new ones — mistranslated, misfolded or cut short — degraded almost as soon as they were made. So a cell can display peptides from a newly arrived virus soon after it starts making viral proteins, rather than once those proteins wear out.[^6]
-
-**The immunoproteasome.** Interferons (Chapter 2), above all IFN-γ, make cells assemble an *immunoproteasome*, a variant that cleaves at somewhat different sites and so produces a partly different set of peptides. Inflammation changes what is displayed as well as how much.[^6]
-:::
-
-A virus-infected cell makes plenty of viral protein, so viral peptides appear on its class I. If a {{mutation|mutation}} has changed one amino acid in one of the cell's own proteins, the altered peptide can appear too: a {{neoantigen|neoantigen}}, a peptide never before displayed in this body. Much of Part II depends on that idea.
+A virus-infected cell makes plenty of viral protein, some of it faulty, so viral peptides appear on its class I soon after infection, without waiting for those proteins to wear out.[^6] If a {{mutation|mutation}} has changed one amino acid in one of the cell's own proteins, the altered peptide can appear too: a {{neoantigen|neoantigen}}, a peptide never before displayed in this body, which the immune system has therefore never learned to tolerate.
 
 Some viruses counter this by blocking TAP or other steps of peptide loading, or by removing class I from the surface.[^9][^6] As Chapter 2 showed, missing class I is itself a signal: {{nk-cell|NK cells}} attack cells that lack it.
 
@@ -135,19 +123,29 @@ spec: |
   button grid above the stage; the readout becomes a full-width strip under the stage,
   above the caption, with its "Illustrative" note kept. In-SVG labels ≥13px.
 steps:
-  1. Every cell continuously degrades worn-out, faulty and surplus proteins in the proteasome, a barrel-shaped enzyme complex that cleaves them into short fragments.
+  1. Proteins enter the proteasome, drawn as a barrel, and leave it as short fragments.
   2. Most fragments are broken down further and recycled. Here about 1 in 5 survive so you can follow them; in a real cell it is closer to 1 in 5,000.
-  3. The survivors are pumped by the transporter TAP into the endoplasmic reticulum (ER), the internal compartment where proteins bound for the surface are assembled.
-  4. Empty MHC class I molecules in the ER bind and release peptide after peptide. Only a peptide of the right length, usually 8 to 10 amino acids, whose anchor residues fit the pockets in the groove stays bound.
+  3. TAP pumps the survivors into the ER.
+  4. Empty class I molecules in the ER bind and release peptide after peptide until one of the right length, with anchors that fit the pockets, stays bound.
   5. Loaded molecules travel to the surface and face outward. A real cell carries a couple of hundred thousand of them; the twelve slots in the readout stand in for a few thousand different peptides.
   6. An activated killer T cell patrolling the tissue inspects the display by contact. Switch between the four scenarios to see what the window shows in each case.
 alt: A cross-section of a cell showing how it displays samples of its proteins. Proteins enter the proteasome, drawn as a barrel, and emerge as short fragments, most of which are degraded; survivors pass through the TAP transporter into the endoplasmic reticulum, bind in the grooves of MHC class I molecules (drawn as cups), and travel to the surface. A readout shows what is on display. Switching between a healthy, a virus-infected, a mutated and a display-silenced cell changes the display; a patrolling killer T cell reacts only to foreign fragments, and an NK cell attacks the cell whose display has gone dark.
 :::
 
+:::deep-dive How class I is loaded
+**Loading from outside.** In Townsend's 1986 experiment, the added peptides bound to class I molecules already on the cell surface.[^2] Laboratories use this routinely to load cells with a chosen peptide, but in the body class I almost always reaches the surface already loaded, so the display remains almost entirely a sample of the cell's own interior.[^6]
+
+**Ubiquitin.** Proteins bound for the proteasome are usually first marked by the attachment of a small protein called ubiquitin, which targets them for degradation.
+
+**The loading complex.** Around TAP sits the peptide-loading complex. One of its proteins, tapasin, working with calreticulin and ERp57, two proteins that assist folding throughout the ER, holds empty grooves open and favors peptides that bind tightly and dissociate slowly. An enzyme called ERAP1 trims peptides that arrive too long; it becomes active only when it binds a peptide longer than about eight or nine amino acids, so it tends to stop near the length class I prefers. Peptides that never find a groove are exported from the ER and degraded.[^6]
+
+**The immunoproteasome.** Interferons ([Chapter 2](02-innate.html)), above all IFN-γ, make cells assemble an *immunoproteasome*, a variant that cleaves at somewhat different sites and so produces a partly different set of peptides. Inflammation changes what is displayed as well as how much.[^6]
+:::
+
 :::deep-dive How viruses block class I
 The effort viruses spend disabling class I shows how much it matters. Herpes simplex virus, carried by most adults, makes a protein called ICP47 among its very first proteins, and ICP47 blocks TAP. Class I molecules then stay in the ER with empty grooves and never reach the surface, so the infected cell stops displaying new peptides on class I early in infection.[^9] Cytomegalovirus attacks the same pathway at other points, including by sending class I molecules to be degraded, and virologists have found nearly every step the cell can live without targeted by one virus or another.[^6]
 
-The cost, as described above, is that a cell without class I invites attack by NK cells. Tumors face the same trade-off, and their compromises — losing one HLA gene, or a component every class I molecule needs — are a theme of Chapter 7.
+The cost, as described above, is that a cell without class I invites attack by NK cells. Tumors face the same trade-off, and their compromises — losing one HLA gene, or a component every class I molecule needs — are a theme of [Chapter 7](07-escape.html).
 :::
 
 ## Peptide plus groove
@@ -158,18 +156,18 @@ The T cells were recognizing not the virus alone but the virus *together with th
 
 Molecular structures later showed why. In 1987, Pamela Bjorkman and colleagues solved the first structure of a human class I molecule and found the groove, with something unidentified already lying in it.[^3] About a decade later, a structure of a {{tcr|T-cell receptor}} bound to its target showed it lying diagonally across the top, contacting the peptide in the middle and the walls of the groove on either side.[^5]
 
-Each T cell's single receptor specificity (Chapter 3) is not for a shape but for *this peptide, in this groove*, a combination called the peptide–MHC complex; change either part and the T cell does not respond. The receptor makes this distinction through a low-affinity bond that lasts from about a second to a minute (see the box below).
+Each T cell's single receptor specificity ([Chapter 3](03-adaptive.html)) is not for a shape but for *this peptide, in this groove*, a combination called the peptide–MHC complex; change either part and the T cell does not respond. The receptor makes this distinction through a low-affinity bond that lasts from about a second to a minute (see the box below).
 
 :::deep-dive How a weak bond makes a sharp decision
-Chapter 1 left a puzzle. A T-cell receptor binds its peptide–MHC complex a thousand to a million times more weakly than a mature antibody binds its target, and each contact lasts from about a second to about a minute.[^15] Yet T cells distinguish a foreign peptide from thousands of near-identical self peptides with high precision. Three mechanisms seem to combine.
+[Chapter 1](01-cells.html) left a puzzle. A T-cell receptor binds its peptide–MHC complex a thousand to a million times more weakly than a mature antibody binds its target, and each contact lasts from about a second to about a minute.[^15] Yet T cells distinguish a foreign peptide from thousands of near-identical self peptides with high precision. Three mechanisms seem to combine.
 
-**Time as a filter.** Binding sets off a chain of biochemical steps inside the T cell, mostly phosphorylations (the attachment of phosphate groups to signaling proteins), and the signal goes through only if the receptor stays bound long enough for the chain to finish. A slightly wrong peptide that dissociates a little sooner rarely completes it, so a small difference in bond lifetime — set by the off-rate of Chapter 1 — becomes a large difference in signal. The idea is called kinetic proofreading.[^16]
+**Time as a filter.** Binding sets off a chain of biochemical steps inside the T cell, mostly phosphorylations (the attachment of phosphate groups to signaling proteins), and the signal goes through only if the receptor stays bound long enough for the chain to finish. A slightly wrong peptide that dissociates a little sooner rarely completes it, so a small difference in bond lifetime — set by the off-rate, how quickly the bound pair separates — becomes a large difference in signal. The idea is called kinetic proofreading.[^16]
 
 **Many brief contacts.** Because each bond is short-lived, one peptide–MHC complex can engage receptor after receptor; in one experiment a single complex triggered up to about 200 of them.[^17] A handful of correct complexes among thousands of self ones can therefore add up. A killer T cell can detect a single one and kill with about three.[^18]
 
-**A {{co-receptor|co-receptor}}.** CD8 or CD4 binds the side of the same MHC molecule while the T-cell receptor binds its top, stabilizing the contact and bringing signaling enzymes close to the receptor complex.
+**A co-receptor.** CD8 on killer T cells binds the side of the same MHC molecule while the T-cell receptor binds its top, stabilizing the contact and bringing signaling enzymes close to the receptor complex.
 
-The receptor's own antigen-binding chains have only very short tails inside the cell and cannot signal by themselves. The signal is relayed inward by {{cd3|CD3}}, a cluster of signaling chains bound to every T-cell receptor whatever its specificity; together they form the TCR–CD3 complex.[^29] Part III exploits this twice: the T-cell engagers of Chapter 9 bind CD3 to activate any T cell they attach to, and the CARs of Chapter 10 carry the signaling tail of one of its chains, CD3ζ.
+The receptor's own antigen-binding chains have only very short tails inside the cell and cannot signal by themselves. The signal is relayed inward by {{cd3|CD3}}, a cluster of signaling chains bound to every T-cell receptor whatever its specificity; together they form the TCR–CD3 complex.[^29] Part III exploits this twice: the T-cell engagers of [Chapter 9](09-antibodies.html) bind CD3 to activate any T cell they attach to, and the CARs of [Chapter 10](10-cell-therapy.html) carry the signaling tail of one of its chains, CD3ζ.
 
 How the three mechanisms combine is still debated. One consequence matters later: a receptor engineered to bind far more tightly can lose its discrimination and react to the wrong targets (Chapter 10).[^15]
 :::
@@ -180,13 +178,11 @@ The groove half of that combined target is encoded by highly variable genes. In 
 
 HLA genes are the most variable in the human genome, with a vast number of versions, called {{allele|alleles}}, across the population. The mid-2026 release of the reference database lists more than 45,000 HLA alleles, about 31,000 of them for class I genes, and the count keeps growing.[^10][^11] Most of the variation lies in and around the peptide-binding groove, where it changes which peptides can bind.[^4]
 
-**Two people infected with the same virus display different fragments of it.** If a virus changes an anchor in one of its peptides, the peptide may disappear from one person's display and remain in another's.[^6]
+**Two people infected with the same virus display different fragments of it.** If a virus changes an anchor in one of its peptides, the peptide may disappear from one person's display and remain in another's.[^6] As a result, no single viral variant can escape everyone's T cells at once, even if it escapes some people's.
 
-**As a result, no single viral variant can escape everyone's T cells at once**, even if it escapes some people's.
+**HLA variation also makes transplantation difficult.** A donated organ carries its donor's HLA. Across their many copies, the donor's HLA molecules hold thousands of different ordinary donor peptides, forming thousands of combined targets the recipient's T cells have never encountered, and T-cell receptors bind these much as they bind a foreign peptide in a self groove.[^43] Any single T cell is unlikely to fit any of them, but across millions of different receptors many do: around 7% of all T cells reacted in one mouse study, against roughly one in a hundred thousand for a typical viral peptide.[^12] That is why donors are matched as closely as possible, and why transplant recipients take drugs that suppress T cells.
 
-**HLA variation also makes transplantation difficult.** A donated organ carries its donor's HLA. To the recipient's T cells, those unfamiliar grooves, loaded with ordinary donor peptides, look foreign, and a large share of T cells react: around 7% of all T cells in one mouse study, against roughly one in a hundred thousand for a typical viral peptide.[^12] That is why donors are matched as closely as possible, and why transplant recipients take drugs that suppress T cells.
-
-**The same variation is why personalized cancer vaccines must be matched to each patient's HLA.** Predicting which fragment of a patient's mutated protein will be displayed requires knowing their HLA type (Chapter 11).
+**The same variation is why personalized cancer vaccines must be matched to each patient's HLA.** Predicting which fragment of a patient's mutated protein will be displayed requires knowing their HLA type ([Chapter 11](11-vaccines.html)).
 
 :::figure ch04-peptide-plus-groove
 title: Peptide plus groove
@@ -288,15 +284,11 @@ The case became a model for genetic testing. In a randomized trial of 1,956 pati
 
 Class I reports what a cell makes inside. Much of what the immune system deals with, though, was never inside a cell: bacteria in a wound, debris from a dying tumor, pollen.
 
-For these there is a second display, {{mhc-class-ii|MHC class II}}, which is not on every cell. It belongs to **{{antigen-presenting-cell|professional antigen-presenting cells}}** — {{dendritic-cell|dendritic cells}}, {{macrophage|macrophages}} and {{b-cell|B cells}} — "professional" because presenting is part of their job, and because they can provide the confirmation signals described later. Some other cells start to express class II during inflammation.[^6] Professional presenters take up material from their surroundings and degrade it in {{endosome|endosomes}}, acidic membrane-bound compartments that receive what the cell has taken in and pass it on to the {{lysosome|lysosomes}} of Chapter 2. Engulfed particles first enter phagosomes, which fuse with these compartments. Class II therefore displays fragments of what the cell has taken up from outside, along with much of its own protein.
+For these there is a second display, {{mhc-class-ii|MHC class II}}, which is not on every cell. It belongs to **{{antigen-presenting-cell|professional antigen-presenting cells}}** — {{dendritic-cell|dendritic cells}}, {{macrophage|macrophages}} and {{b-cell|B cells}} — "professional" because presenting is part of their job, and because they can provide the confirmation signals described later. Some other cells start to express class II during inflammation.[^6]
+
+Professional presenters take up material from their surroundings and degrade it in {{endosome|endosomes}}, acidic membrane-bound compartments that receive what the cell has taken in and pass it on to the {{lysosome|lysosomes}} of [Chapter 2](02-innate.html). Engulfed particles first enter phagosomes, which fuse with these compartments. Class II therefore displays fragments of what the cell has taken up from outside, along with much of its own protein: its own membrane proteins, for example, reach the same compartments and are degraded there.[^7]
 
 Class II grooves are open at both ends, so the peptides can extend past the edges and are longer, **roughly 13 to 25 amino acids, averaging around 15**.[^7] Class II is read by {{cd4-t-cell|helper T cells}} (formally, CD4 T cells).
-
-:::deep-dive How class II is loaded
-A class II molecule is assembled in the ER alongside class I and could bind the same peptides. A placeholder protein, the **invariant chain**, blocks its groove and carries a sorting signal that sends the whole complex to the endosomes instead of straight to the surface. There, the proteases (protein-cleaving enzymes) that degrade ingested material also cleave the invariant chain down to a fragment called **CLIP**, which still occupies the groove. A dedicated exchange protein, **HLA-DM**, opens the groove, releases weakly bound peptides, and keeps doing so until a tightly binding one is in place; another molecule, HLA-DO, inhibits DM and so regulates where loading happens.[^6]
-
-Class II variants are among the strongest genetic risk factors for several autoimmune diseases, often because one groove can bind a particular peptide that others cannot. Celiac disease is the clearest case, although its peptide comes from food: HLA-DQ2 can display a chemically modified fragment of dietary gluten that activates helper T cells.[^6] Children born unable to make class II suffer overwhelming infections from infancy.[^6]
-:::
 
 | | Class I | Class II |
 |---|---|---|
@@ -308,12 +300,18 @@ Class II variants are among the strongest genetic risk factors for several autoi
 
 CD8 and CD4 are {{co-receptor|co-receptors}}: molecules on the T cell's surface that bind the MHC molecule alongside the T-cell receptor, at a site on its side away from the groove. CD8 binds class I and CD4 binds class II, which is what restricts each kind of T cell to one display.
 
+:::deep-dive How class II is loaded
+A class II molecule is assembled in the ER alongside class I and could bind the same peptides. A placeholder protein, the **invariant chain**, blocks its groove and carries a sorting signal that sends the whole complex to the endosomes instead of straight to the surface. There, the proteases (protein-cleaving enzymes) that degrade ingested material also cleave the invariant chain down to a fragment called **CLIP**, which still occupies the groove. A dedicated exchange protein, **HLA-DM**, opens the groove, releases weakly bound peptides, and keeps doing so until a tightly binding one is in place; another molecule, HLA-DO, inhibits DM and so regulates where loading happens.[^6]
+
+Class II variants are among the strongest genetic risk factors for several autoimmune diseases, often because one groove can bind a particular peptide that others cannot. Celiac disease is the clearest case, although its peptide comes from food: HLA-DQ2 can display a chemically modified fragment of dietary gluten that activates helper T cells.[^6] Children born unable to make class II suffer overwhelming infections from infancy.[^6]
+:::
+
 :::deep-dive Limits of the two displays
 **Class I is not a representative sample.** Abundant and fast-turnover proteins are over-represented, peptides that TAP won't carry are missing, and a peptide that fits none of your grooves is never displayed, however abundant its protein. Much of a cell's interior is never displayed, which makes it one of cancer's best hiding places. Cells also differ in how much class I they carry: neurons, for instance, display very little. And T cells read the display only by direct contact, never from a distance.
 
-**Class II shows mostly self.** Most of what sits on class II at any moment comes from the presenter's own proteins, such as its own membrane molecules, degraded and displayed.[^7] Some even comes from inside the cell, when the cell degrades parts of its own interior in lysosomes.[^8] Foreign peptides are a minority, which is one reason the confirmation signals described later in this chapter matter so much.
+**Class II shows mostly self.** Most of what sits on class II at any moment comes from the presenter's own proteins.[^7] Some even comes from inside the cell, when the cell degrades parts of its own interior in lysosomes.[^8] Foreign peptides are a minority, which is one reason the confirmation signals described later in this chapter matter so much.
 
-**Not every T cell recognizes peptides.** Small groups of T cells recognize other things: lipids presented by MHC-like molecules called CD1, by-products of bacterial vitamin synthesis presented by one called MR1, or signs of stress, recognized without MHC at all, as many {{gamma-delta-t-cell|γδ (gamma-delta) T cells}} do (Chapter 12).[^30] Their contribution against cancer is still being worked out; this guide follows the T cells that recognize peptides.
+**Not every T cell recognizes peptides.** Small groups of T cells recognize other things: lipids presented by MHC-like molecules called CD1, by-products of bacterial vitamin synthesis presented by one called MR1, or signs of stress, recognized without MHC at all, as many {{gamma-delta-t-cell|γδ (gamma-delta) T cells}} do ([Chapter 12](12-frontier.html)).[^30] Their contribution against cancer is still being worked out; this guide follows the T cells that recognize peptides.
 :::
 
 ## Dendritic cells: from tissue to lymph node
@@ -324,16 +322,16 @@ So dendritic cells bring the samples to the T cells. These star-shaped cells wit
 
 Which node a dendritic cell goes to is set by anatomy. Each lymph node collects the lymph draining one region of the body, so it receives samples from that region first: the tender lumps under your jaw during a sore throat are nodes that drain the throat, swollen with cells that have arrived and begun to multiply. A tumor has draining lymph nodes too. They are probably the main place where T cells against it are first activated,[^23][^31] and, because tumor cells can travel along the same lymph vessels, often the first place it spreads.
 
-A steady trickle of dendritic cells travels to the draining lymph node all the time, carrying harmless samples even from healthy tissue.[^20] Danger changes both how many travel and what they present. When its {{pattern-recognition-receptor|pattern-recognition receptors}}, the danger sensors of Chapter 2, detect bacterial cell-wall components, viral genetic material or the contents of cells that burst as they died, a dendritic cell **matures**, an irreversible change that takes a day or two:[^19]
+A steady trickle of dendritic cells travels to the draining lymph node all the time, carrying harmless samples even from healthy tissue.[^20] Danger changes both how many travel and what they present. When its {{pattern-recognition-receptor|pattern-recognition receptors}}, the danger sensors of [Chapter 2](02-innate.html), detect bacterial cell-wall components, viral genetic material or the contents of cells that burst as they died, a dendritic cell **matures**, an irreversible change that takes a day or two:[^19]
 
 - it **stops taking up material**, so its class II display keeps samples from the time danger was detected;
 - it **moves its MHC molecules to the surface and keeps them there**: a mature dendritic cell can carry around two million class II molecules;[^6]
 - it **raises its confirmation signals** for T cells (see "Two-factor authentication" below);
 - and it **leaves the tissue**, crawling into the lymphatic vessels and traveling with the lymph to the node.
 
-### Cross-presentation: the loophole cancer immunity depends on
+### Cross-presentation: how killer T cells are primed against tumors
 
-Dendritic cells display what they *take up* on class II, which helper T cells read. A killer T cell must be primed (activated for the first time) before it can attack an infected or cancerous cell, but it reads class I, which reports only on what a cell makes *inside itself*. A dendritic cell that has engulfed a dead tumor cell makes none of the tumor's proteins, so by the rules so far it cannot prime a killer T cell against the tumor.
+Dendritic cells display what they *take up* on class II, which helper T cells read. A killer T cell must be primed (activated for the first time) before it can attack an infected or cancerous cell, but it reads class I, which reports only on what a cell makes *inside itself*. That suffices when a virus infects the dendritic cell directly. A dendritic cell that has engulfed a dead tumor cell makes none of the tumor's proteins, so by the rules so far it cannot prime a killer T cell against the tumor.
 
 In 1976, Michael Bevan injected mice with cells from a different mouse line and got a result the rules did not allow. The killer T cells that arose recognized the foreign proteins on the *host's* MHC molecules, which the injected cells did not carry, so host cells must have picked up the foreign material and displayed it on their own class I.[^21] This is **{{cross-presentation|cross-presentation}}**: certain dendritic cells route material they have taken up into the class I pathway, putting material from outside the cell in the shop window.[^6]
 
@@ -401,11 +399,15 @@ alt: A two-panel figure. In a tumor, a dendritic cell engulfs debris from a dyin
 Most tumors never infect dendritic cells, so cross-presentation is the main known route by which killer T cells can be primed against a tumor at all. That makes it a foundation of most cancer immunotherapy.
 :::
 
+:::deep-dive The cells that cross-present
+The specialist dendritic cells that cross-present best are called **cDC1s** (type 1 conventional dendritic cells). In mice they depend on a gene called *Batf3*, and deleting that gene is how the mice lacking them were made.[^22] Deleting a whole cell type also removes everything else it does, so a cleaner test came in 2018: mice whose cDC1s were present and still made the cytokine IL-12, but lacked WDFY4, a protein needed for cross-presentation, also failed to reject tumors.[^40] In mice there is a second route as well: dendritic cells can acquire peptide-loaded class I molecules from tumor cells and display them intact, a process called cross-dressing.[^41]
+:::
+
 ## The search
 
-Chapter 3 gave one example of how rare the matching T cell is: about 1 in 200,000. Across many peptides, the frequency runs from roughly **1 in 10,000 to 1 in a million** {{naive-t-cell|naive T cells}} (those that have never met their target), with most targets toward the rare end. In a mouse that can mean as few as 15 to about 1,100 matching cells in the entire animal, and frequencies measured in people are similar.[^24][^25] Some targets have a hundred times more matching T cells than others, which partly explains why some fragments of a virus provoke large responses and others are ignored.[^24][^25]
+[Chapter 3](03-adaptive.html) gave one example of how rare the matching T cell is: about 1 in 200,000. Across many peptides, the frequency runs from roughly **1 in 10,000 to 1 in a million** {{naive-t-cell|naive T cells}} (those that have never met their target), with most targets toward the rare end. In a mouse that can mean as few as 15 to about 1,100 matching cells in the entire animal, and frequencies measured in people are similar.[^24][^25] Some targets have a hundred times more matching T cells than others, which partly explains why some fragments of a virus provoke large responses and others are ignored.[^24][^25]
 
-The lymph node solves this by brute force. Naive T cells enter from the blood, wander through the node's dense mesh, and leave hours later for the next node, a circuit one cell can keep up for years without meeting its target.[^32] Dendritic cells stay in place and extend their branches among the passing T cells. Under the microscope, contacts last about three minutes, and at this stage the T cells are not attracted to the dendritic cells: they approach no faster than they leave. Even so, one dendritic cell contacts a few thousand T cells an hour.[^26]
+The lymph node solves this by brute force. Naive T cells enter from the blood through {{high-endothelial-venule|high endothelial venules}} (specialized small vessels in the node), wander through the node's dense mesh, and leave hours later for the next node, a circuit one cell can keep up for years without meeting its target.[^32] Dendritic cells stay in place and extend their branches among the passing T cells. Under the microscope, contacts last about three minutes, and at this stage the T cells are not attracted to the dendritic cells: they approach no faster than they leave. Even so, one dendritic cell contacts a few thousand T cells an hour.[^26]
 
 An infection also sends a stream of dendritic cells, all carrying fragments of the same invader, while new T cells keep arriving. Over hours and days, this random search finds the matching T cell. Then its behavior changes: in mice, the matching T cell slows, stays attached to dendritic cells for about half a day, and on the second day detaches and starts to divide.[^33]
 
@@ -469,26 +471,26 @@ spec: |
   the real-odds panel is full width. Canvas capped at 2× DPR; pause when off-screen.
 steps:
   1. A dendritic cell carrying fragments from an infection arrives in a lymph node and settles, its branches reaching among the passing T cells.
-  2. T cells arrive from the blood through a high endothelial venule, a specialized small vessel in the node, wander at random and leave with the lymph hours later. Each one that brushes the dendritic cell pauses for a few minutes, then moves on. Somewhere in the crowd is a single T cell whose receptor binds one of the peptides it carries.
+  2. T cells arrive from the blood through a high endothelial venule, wander at random and leave with the lymph hours later. Each one that brushes the dendritic cell pauses for a few minutes, then moves on. Somewhere in the crowd is a single T cell whose receptor binds one of the peptides the dendritic cell carries.
   3. In this demo the match is 1 in a few hundred. In your body it is closer to 1 in 100,000. Open "the real odds" to see why the search still succeeds.
 alt: A simulation of a lymph node. T cells enter from a blood vessel on one edge and leave with the lymph on the other. A dendritic cell settles among hundreds of T cells that wander at random, each pausing briefly when it touches the dendritic cell. One unmarked T cell carries a matching receptor; when it touches the dendritic cell it stays attached and begins to divide. A label contrasts the demo's odds with the real odds of roughly 1 in 100,000, and a small calculator shows how many dendritic cells sharing the work turn a search of days into one of minutes.
 :::
 
 :::deep-dive Where a T cell can leave the blood
-A T cell in the blood cannot steer. It can leave only where it can adhere to the vessel wall, by the same sequence Chapter 2 described for neutrophils: rolling, firm arrest, then migration through the wall. Each step needs a ligand on the wall for one of the T cell's {{adhesion-molecule|adhesion molecules}} or chemokine receptors, so which walls carry which ligands determines where each kind of T cell can leave the blood. This targeting is called homing.
+A T cell in the blood cannot steer. It can leave only where it can adhere to the vessel wall, by the same sequence [Chapter 2](02-innate.html) described for neutrophils: rolling, firm arrest, then migration through the wall. Each step needs a ligand on the wall for one of the T cell's {{adhesion-molecule|adhesion molecules}} or chemokine receptors, so which walls carry which ligands determines where each kind of T cell can leave the blood. This targeting is called homing.
 
-**Naive T cells** express L-selectin, an adhesion molecule of the {{selectin|selectin}} family, and CCR7, a receptor for chemokines made in lymph nodes and lymphatic vessels. Both find their ligands on {{high-endothelial-venule|high endothelial venules}}, specialized small vessels in lymph nodes named for their unusually tall lining cells. Binding by L-selectin makes the T cell roll. The chemokines displayed on the wall, acting through CCR7, then switch the T cell's {{integrin|integrins}} (the adhesion molecules for firm attachment) into a high-affinity state, so it arrests and migrates through the wall into the node.[^34] Vessels in healthy skin or muscle display neither ligand, so naive T cells seldom enter ordinary tissues, a safeguard in itself (Chapter 5). Maturing dendritic cells start to express the same CCR7, which guides them into the lymphatic vessels and on to the same nodes,[^35][^20] so one chemokine receptor brings dendritic cells and naive T cells to the same place.
+**Naive T cells** express L-selectin, an adhesion molecule of the {{selectin|selectin}} family, and CCR7, a receptor for chemokines made in lymph nodes and lymphatic vessels. Both find their ligands on high endothelial venules, named for their unusually tall lining cells. Binding by L-selectin makes the T cell roll. The chemokines displayed on the wall, acting through CCR7, then switch the T cell's {{integrin|integrins}} (the adhesion molecules for firm attachment) into a high-affinity state, so it arrests and migrates through the wall into the node.[^34] Vessels in healthy skin or muscle display neither ligand, so naive T cells seldom enter ordinary tissues, a safeguard in itself ([Chapter 5](05-t-cells.html)). Maturing dendritic cells start to express the same CCR7, which guides them into the lymphatic vessels and on to the same nodes,[^35][^20] so one chemokine receptor brings dendritic cells and naive T cells to the same place.
 
-**Leaving the node** means following a lipid signaling molecule, S1P, into the outgoing lymph and so back to the blood. A T cell that has found its match reduces the S1P receptor on its surface and stays to multiply; the multiple sclerosis drug fingolimod (Gilenya) does the same to most lymphocytes, retaining many of them in the nodes.[^36]
+**Leaving the node** means following a lipid signaling molecule, sphingosine-1-phosphate (S1P), into the outgoing lymph and so back to the blood. A T cell that has found its match lowers the number of S1P receptors on its surface and stays to multiply; the multiple sclerosis drug fingolimod (Gilenya) does the same to most lymphocytes, retaining many of them in the nodes.[^36]
 
-**Activated T cells** change their adhesion molecules. They lose most of those used for entering lymph nodes and gain ones that bind the walls of inflamed vessels, plus receptors for the chemokines inflamed tissue makes.[^37] On the vessel wall, those chemokines trigger the T cell's firm arrest; only after it has crossed the wall does it follow them along their concentration gradient. The site of priming can add a preference: dendritic cells from the gut make retinoic acid from vitamin A, which leads the T cells they prime to express the adhesion molecules and chemokine receptors for homing back to the gut.[^38] A tumor's vessels, too, must carry the right adhesion molecules and chemokines, or killer T cells pass it by (Chapter 7).
+**Activated T cells** change their adhesion molecules. They lose most of those used for entering lymph nodes and gain ones that bind the walls of inflamed vessels, plus receptors for the chemokines inflamed tissue makes.[^37] On the vessel wall, those chemokines trigger the T cell's firm arrest; only after it has crossed the wall does it follow them along their concentration gradient. The site of priming can add a preference: dendritic cells from the gut make retinoic acid from vitamin A, which leads the T cells they prime to express the adhesion molecules and chemokine receptors for homing back to the gut.[^38] A tumor's vessels, too, must carry the right adhesion molecules and chemokines, or killer T cells pass it by ([Chapter 7](07-escape.html)).
 :::
 
 ## Two-factor authentication
 
 Finding its peptide is not enough to activate a naive T cell.
 
-Recognition alone would be a dangerous trigger: your own peptides are displayed everywhere, and screening in the thymus (Chapter 5) cannot have removed every T cell that reacts to some self peptide somewhere. A naive T cell's first activation therefore needs a second factor, on the same principle as two-factor authentication for a login.
+Recognition alone would be a dangerous trigger: your own peptides are displayed everywhere, and screening in the thymus ([Chapter 5](05-t-cells.html)) cannot have removed every T cell that reacts to some self peptide somewhere. A naive T cell's first activation therefore needs a second factor, on the same principle as two-factor authentication for a login.
 
 **Signal 1 is recognition.** The T-cell receptor binds its peptide in the MHC groove, identifying *what* the target is.
 
@@ -498,19 +500,15 @@ The two factors come from two different cells, each checked in its own way. The 
 
 Unlike a login, which checks each factor separately as pass or fail, the T cell combines the two signals, and signal 2 lowers the amount of signal 1 it needs: in lab-grown human T cells, costimulation cut the number of engaged receptors needed to respond from about 8,000 to about 1,500.[^39]
 
-Signal 1 alone does more than fail to activate a T cell. In cell-culture experiments, T cells shown their peptide without a confirmation signal entered a lasting unresponsive state called **{{anergy|anergy}}**: they stayed alive but no longer responded, even to correct presentation later. An antibody that activated CD28 prevented it.[^27] In a living body the same encounter can also end with the T cell dividing briefly and then dying. Either way, recognition without confirmation removes a T cell from the response instead of activating it. This safeguard is a major part of *peripheral* {{tolerance|tolerance}}, which silences self-reactive T cells in the body as a backstop to the thymus.
+Signal 1 alone does more than fail to activate a T cell. In cell-culture experiments, T cells shown their peptide without a confirmation signal entered a lasting unresponsive state called **{{anergy|anergy}}**: they stayed alive but no longer responded, even to correct presentation later. Triggering CD28 artificially with an antibody, in place of signal 2, prevented anergy.[^27] In a living body the same encounter can also end with the T cell dividing briefly and then dying. Either way, recognition without confirmation removes a T cell from the response instead of activating it. This safeguard is a major part of *peripheral* {{tolerance|tolerance}}, which silences self-reactive T cells in the body as a backstop to the thymus.
 
 This check governs only the *first* activation of a naive T cell, in a lymph node. Once activated and multiplied, killer T cells in the tissues act on recognition alone; the cell they kill needs no B7 (Chapter 5). Two-factor authentication controls the start of a response, not every action that follows.
 
-In cancer, the same safeguard can work against the patient. Tumors are often inflamed, but mostly in a wound-healing way that does little to alarm dendritic cells (Chapter 2). The steady trickle of unalarmed dendritic cells still carries cross-presented tumor fragments to the lymph node, offering signal 1 with little signal 2, so the T cells that recognize them can become anergic or die instead of being activated. Cross-presentation makes anti-tumor immunity possible, but the right kind of alarm decides whether it produces killer T cells. As Chapter 7 shows, enough alarm gets through that many tumors do provoke T-cell responses.
+In cancer, the requirement for signal 2 can work against the patient. Tumors are often inflamed, but mostly in a wound-healing way that does little to alarm dendritic cells ([Chapter 2](02-innate.html)). The steady trickle of unalarmed dendritic cells still carries cross-presented tumor fragments to the lymph node, offering signal 1 with little signal 2, so the T cells that recognize them can become anergic or die instead of being activated. Cross-presentation makes anti-tumor immunity possible, but the right kind of alarm decides whether it produces killer T cells. As [Chapter 7](07-escape.html) shows, enough alarm gets through that many tumors do provoke T-cell responses.
+
+After activation, a T cell also starts expressing {{ctla-4|CTLA-4}}, a close relative of CD28 that binds the same B7 molecules more tightly and has the opposite effect: a brake competing with CD28 for the same ligands. Chapter 5 describes it in detail, and [Chapter 8](08-checkpoints.html) covers a drug that blocks it.
 
 **Signal 3 is instruction.** Unlike the two factors, it is not a check but information about what kind of response to mount. It arrives as {{cytokine|cytokines}}, signaling proteins secreted by the dendritic cell and its neighbors, among them the type I {{interferon|interferons}} of Chapter 2. Without them, even killer T cells that have received signals 1 and 2 multiply poorly and can drift toward tolerance.[^28] Because those cytokines depend on what the pattern-recognition receptors detected, the original threat shapes the response.
-
-Once a T cell has been activated, it also starts expressing {{ctla-4|CTLA-4}}, a close relative of CD28 that binds the same B7 molecules more tightly and has the opposite effect: a brake competing with CD28 for the same ligands. Chapter 5 describes it in detail, and Chapter 8 covers a drug that blocks it.
-
-:::deep-dive The names behind the signals
-**B7** is two related proteins, CD80 and CD86, and CD28 and CTLA-4 both bind each of them. The **signal 3** cytokines that matter most for killer T cells are IL-12 and the type I interferons; when both are missing, cells that received signals 1 and 2 still divide poorly and tend toward tolerance.[^28] The specialist dendritic cells that cross-present best are called **cDC1s** (type 1 conventional dendritic cells). In mice they depend on a gene called *Batf3*, which let researchers delete them and show that tumor rejection then fails.[^22] Deleting a whole cell type also removes everything else it does, so a cleaner test came in 2018: mice whose cDC1s were present and still made IL-12, but lacked WDFY4, a protein needed for cross-presentation, also failed to reject tumors.[^40] In mice there is a second route as well: dendritic cells can acquire peptide-loaded class I molecules from tumor cells and display them intact, a process called cross-dressing.[^41] The steady trickle of unalarmed dendritic cells has also been measured: in mouse skin-draining lymph nodes, a population of "semi-mature" dendritic cells with low CD80 and CD86 arrives even without inflammation and can start T-cell responses of the kind that end in tolerance.[^20]
-:::
 
 :::figure ch04-three-signals
 title: Two-factor authentication, plus signal 3
@@ -584,11 +582,15 @@ steps:
 alt: An interactive contact in a lymph node between a dendritic cell and a naive T cell, with three switchable signals: receptor recognition of a peptide in an MHC groove, CD28 binding B7 confirmation molecules, and instructive cytokines. Recognition alone leaves the T cell unresponsive; adding confirmation activates it; adding cytokines turns its descendants into killer T cells ready to kill. Presets compare a danger-alarmed dendritic cell with quiet ones carrying self or tumor material.
 :::
 
+:::deep-dive The names behind the signals
+**B7** is two related proteins, CD80 and CD86, and CD28 and CTLA-4 both bind each of them. The **signal 3** cytokines that matter most for killer T cells are IL-12 and the type I interferons.[^28] The steady trickle of unalarmed dendritic cells has been measured: in mouse skin-draining lymph nodes, a population of "semi-mature" dendritic cells with low CD80 and CD86 arrives even without inflammation and can start T-cell responses of the kind that end in tolerance.[^20]
+:::
+
 ## What the T cell knows now
 
 Every step in this chapter works by contact: cells display samples of their proteins, dendritic cells carry samples to a lymph node, a random search brings them to the rare T cell that can recognize them, and that cell activates only if recognition comes with confirmation.
 
-Within days, that T cell becomes thousands through {{clonal-expansion|clonal expansion}}, all carrying the same receptor. They leave the node, now able to stop at inflamed blood vessels and enter tissues. How a killer T cell destroys one infected cell without harming its neighbors, and what keeps thousands of activated T cells from attacking the body's own tissues, is the subject of Chapter 5.
+Within days, that T cell becomes thousands through {{clonal-expansion|clonal expansion}}, all carrying the same receptor. They leave the node, now able to stop at inflamed blood vessels and enter tissues. How a killer T cell destroys one infected cell without harming its neighbors, and what keeps thousands of activated T cells from attacking the body's own tissues, is the subject of [Chapter 5](05-t-cells.html).
 
 :::quiz
 Q: A skin cell is infected by a virus, and nearby a dendritic cell has engulfed a bacterium. Which pairing is right?
@@ -620,15 +622,15 @@ Q: In a lymph node, a naive T cell meets its exact peptide on a dendritic cell t
 - T cells do not recognize folded proteins. They read short peptides held in the peptide-binding groove of MHC molecules on other cells' surfaces, which is how the immune system monitors the inside of cells.
 - MHC class I, nearly every cell's shop window, displays samples of what the cell makes: the proteasome degrades proteins into fragments, TAP carries them into the ER, and 8–10-amino-acid peptides that bind a class I groove there are displayed on the surface. Viral and mutated proteins appear automatically, and a cell that loses its class I invites attack by NK cells.
 - A T-cell receptor reads the peptide and the groove together (MHC restriction), and does so precisely despite a weak, brief bond. HLA genes are the most variable in the human genome, so each person displays a different subset of any threat; this underlies transplant rejection and is the reason personalized cancer vaccines must be matched to each patient's HLA.
-- MHC class II, on professional antigen-presenting cells, is loaded in endosomes and displays longer fragments (13–25 amino acids) of what the cell has taken up from outside, along with much of its own protein. Killer (CD8) T cells read class I; helper (CD4) T cells read class II.
+- MHC class II, on professional antigen-presenting cells, is loaded in endosomes and displays longer fragments (13–25 amino acids) of what the cell has taken up from outside, along with much of its own protein. CD8 killer T cells read class I; CD4 helper T cells read class II.
 - Dendritic cells sample tissues and carry what they collect to lymph nodes, in a steady trickle or, after danger, in large numbers. There a random search finds the roughly 1-in-100,000 matching T cell. Cross-presentation by a specialized kind of dendritic cell is how killer T cells are primed against tumors.
 - A naive T cell's first activation requires two-factor authentication — recognition (signal 1) plus CD28–B7 confirmation (signal 2) — followed by instructions from cytokines (signal 3). Signal 1 alone inactivates it (anergy), which protects against autoimmunity but can silence T cells that could fight a tumor. Once activated, killer T cells act on recognition alone.
 :::
 
 ## Glossary
 - antigen-presentation | antigen presentation | The process by which a cell degrades proteins into short peptides and displays them on its surface in MHC molecules, so T cells can detect what is happening inside or around it.
-- mhc-class-i | MHC class I | The display molecules on nearly every cell with a nucleus, showing 8–10-amino-acid samples of the proteins the cell is making inside: the cell's shop window. Read by killer (CD8) T cells.
-- mhc-class-ii | MHC class II | The display molecules of professional antigen-presenting cells, showing longer fragments (roughly 13–25 amino acids) of whatever reaches the cell's endosomes: material taken in from outside, alongside much of the cell's own protein. Read by helper (CD4) T cells.
+- mhc-class-i | MHC class I | The display molecules on nearly every cell with a nucleus, showing 8–10-amino-acid samples of the proteins the cell is making inside: the cell's shop window. Read by CD8 killer T cells.
+- mhc-class-ii | MHC class II | The display molecules of professional antigen-presenting cells, showing longer fragments (roughly 13–25 amino acids) of whatever reaches the cell's endosomes: material taken in from outside, alongside much of the cell's own protein. Read by CD4 helper T cells.
 - endosome | Endosome | A membrane-bound compartment inside a cell that receives material taken up from outside. Endosomes become more acidic as they mature and pass their contents to lysosomes for degradation; MHC class II molecules are loaded with peptides in these compartments.
 - hla | HLA (human leukocyte antigen) | The human name for MHC molecules and the genes that encode them. HLA genes are the most variable in the human genome, which is why transplants must be matched and why each person displays a different subset of any threat.
 - mhc-restriction | MHC restriction | The rule that a T cell recognizes its target fragment only when it is held by a particular MHC molecule, usually one of its owner's own HLA types.
@@ -695,3 +697,5 @@ Q: In a lymph node, a naive T cell meets its exact peptide on a dendritic cell t
 39. Viola A, Lanzavecchia A. T cell activation determined by T cell receptor number and tunable thresholds. *Science* 1996;273:104–106. doi:10.1126/science.273.5271.104
 40. Theisen DJ, Davidson JT, Briseño CG, et al. WDFY4 is required for cross-presentation in response to viral and tumor antigens. *Science* 2018;362:694–699. doi:10.1126/science.aat5030
 41. MacNabb BW, Tumuluru S, Chen X, et al. Dendritic cells can prime anti-tumor CD8+ T cell responses through major histocompatibility complex cross-dressing. *Immunity* 2022;55:982–997. doi:10.1016/j.immuni.2022.04.016
+42. Townsend AR, Gotch FM, Davey J. Cytotoxic T cells recognize fragments of the influenza nucleoprotein. *Cell* 1985;42:457–467. doi:10.1016/0092-8674(85)90103-5
+43. Felix NJ, Allen PM. Specificity of T-cell alloreactivity. *Nature Reviews Immunology* 2007;7:942–953. doi:10.1038/nri2200

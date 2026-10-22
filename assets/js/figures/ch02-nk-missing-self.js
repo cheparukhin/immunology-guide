@@ -1,8 +1,8 @@
 // ch02-nk-missing-self — "The missing-self balance" (explorer, dark stage).
 //
 // An NK cell touches a target cell. Two sliders set how full the target's MHC class I
-// "shop window" is and how many stress flags it shows; a balance weighs STOP (−) against
-// GO (+) and a verdict badge reads ✓ Spared / ≈ Undecided / ✕ Killed. Presets and the
+// "shop window" is and how many stress flags it shows; a balance weighs INHIBITORY (−) against
+// ACTIVATING (+) and a verdict badge reads ✓ Spared / ≈ Undecided / ✕ Killed. Presets and the
 // "Let the NK cell decide" button run the decision with the shared kill grammar
 // (cell-actions.kill, orange, FIGURE-AUDIT §4 rule 6). The model is the writer's, verbatim:
 //   I = window · A = 0.2 + 0.8 × flags · net = A − I
@@ -321,10 +321,10 @@ export default function mount(fig, ctx) {
       S_('circle', { r: 3, fill: 'rgba(222, 228, 240, 0.9)' }, g);
       const weights = S_('g', null, g);
       const capY = s + (layoutName === 'tall' ? 30 : 34);
-      S_('text', { x: 0, y: capY, class: 't-caps t-mid', text: side < 0 ? 'Stop (−)' : 'Go (+)' }, g);
+      S_('text', { x: 0, y: capY, class: 't-caps t-mid', text: side < 0 ? 'Inhibitory (−)' : 'Activating (+)' }, g);
       return { g, weights, side };
     });
-    // "everyday activating signals" note rides with the GO pan
+    // "everyday activating signals" note rides with the ACTIVATING pan
     const noteG = S_('g', null, pans[1].g);
     return { beam, pans, noteG, px, py, half };
   }
@@ -347,7 +347,7 @@ export default function mount(fig, ctx) {
       }
       return out;
     };
-    // STOP pan: one crimson "−" weight per window display
+    // INHIBITORY pan: one crimson "−" weight per window display
     const stop = bal.pans[0].weights;
     stop.replaceChildren();
     layoutRow(m.cups).forEach(([x, y]) => stop.append(signalIcon({ type: 'inhibitory', size: wsz, x, y })));
@@ -469,8 +469,8 @@ export default function mount(fig, ctx) {
   const newBtn = ctx.ui.button({ label: 'Replay', icon: 'replay', variant: 'ghost', onClick: () => { newBtn.el.hidden = true; decide(); } });
   newBtn.el.hidden = true;
   const legendItems = () => [
-    { label: 'Stop: inhibitory receptor binds MHC class I', color: PALETTE.inhibitory, icon: 'minus' },
-    { label: 'Go: activating receptor binds a stress ligand', color: PALETTE.activating, icon: 'plus' },
+    { label: 'Inhibitory receptor binds MHC class I', color: PALETTE.inhibitory, icon: 'minus' },
+    { label: 'Activating receptor binds a stress ligand', color: PALETTE.activating, icon: 'plus' },
     ...(layoutName === 'tall' ? [{ label: 'Hollow weights: everyday activating signals', color: PALETTE.activating, shape: 'ring' }] : []),
   ];
   const legend = ctx.ui.legend(legendItems());

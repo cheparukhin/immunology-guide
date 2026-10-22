@@ -123,6 +123,12 @@
         "html": "Matzinger P. Tolerance, danger, and the extended family. <em>Annu Rev Immunol</em> 1994;12:991–1045. <a href=\"https://doi.org/10.1146/annurev.iy.12.040194.005015\">doi:10.1146/annurev.iy.12.040194.005015</a>",
         "text": "Matzinger P. Tolerance, danger, and the extended family. Annu Rev Immunol 1994;12:991–1045. doi:10.1146/annurev.iy.12.040194.005015",
         "cited": true
+      },
+      {
+        "n": 21,
+        "html": "Mort M, Ivanov D, Cooper DN, Chuzhanova NA. A meta-analysis of nonsense mutations causing human genetic disease. <em>Hum Mutat</em> 2008;29(8):1037–1047. <a href=\"https://doi.org/10.1002/humu.20763\">doi:10.1002/humu.20763</a>",
+        "text": "Mort M, Ivanov D, Cooper DN, Chuzhanova NA. A meta-analysis of nonsense mutations causing human genetic disease. Hum Mutat 2008;29(8):1037–1047. doi:10.1002/humu.20763",
+        "cited": true
       }
     ]
   },
@@ -351,6 +357,12 @@
         "n": 37,
         "html": "Flajnik MF, Kasahara M. Origin and evolution of the adaptive immune system: genetic events and selective pressures. <em>Nat Rev Genet</em> 2010;11(1):47-59. <a href=\"https://doi.org/10.1038/nrg2703\">doi:10.1038/nrg2703</a> (<a href=\"https://pubmed.ncbi.nlm.nih.gov/19997068/\">PMID 19997068</a>)",
         "text": "Flajnik MF, Kasahara M. Origin and evolution of the adaptive immune system: genetic events and selective pressures. Nat Rev Genet 2010;11(1):47-59. doi:10.1038/nrg2703 (PMID 19997068)",
+        "cited": true
+      },
+      {
+        "n": 38,
+        "html": "Krieg AM, Yi AK, Matson S, et al. CpG motifs in bacterial DNA trigger direct B-cell activation. <em>Nature</em> 1995;374(6522):546-549. <a href=\"https://doi.org/10.1038/374546a0\">doi:10.1038/374546a0</a> (<a href=\"https://pubmed.ncbi.nlm.nih.gov/7700380/\">PMID 7700380</a>)",
+        "text": "Krieg AM, Yi AK, Matson S, et al. CpG motifs in bacterial DNA trigger direct B-cell activation. Nature 1995;374(6522):546-549. doi:10.1038/374546a0 (PMID 7700380)",
         "cited": true
       }
     ]
@@ -822,6 +834,18 @@
         "html": "MacNabb BW, Tumuluru S, Chen X, et al. Dendritic cells can prime anti-tumor CD8+ T cell responses through major histocompatibility complex cross-dressing. <em>Immunity</em> 2022;55:982–997. <a href=\"https://doi.org/10.1016/j.immuni.2022.04.016\">doi:10.1016/j.immuni.2022.04.016</a>",
         "text": "MacNabb BW, Tumuluru S, Chen X, et al. Dendritic cells can prime anti-tumor CD8+ T cell responses through major histocompatibility complex cross-dressing. Immunity 2022;55:982–997. doi:10.1016/j.immuni.2022.04.016",
         "cited": true
+      },
+      {
+        "n": 42,
+        "html": "Townsend AR, Gotch FM, Davey J. Cytotoxic T cells recognize fragments of the influenza nucleoprotein. <em>Cell</em> 1985;42:457–467. <a href=\"https://doi.org/10.1016/0092-8674(85)90103-5\">doi:10.1016/0092-8674(85)90103-5</a>",
+        "text": "Townsend AR, Gotch FM, Davey J. Cytotoxic T cells recognize fragments of the influenza nucleoprotein. Cell 1985;42:457–467. doi:10.1016/0092-8674(85)90103-5",
+        "cited": true
+      },
+      {
+        "n": 43,
+        "html": "Felix NJ, Allen PM. Specificity of T-cell alloreactivity. <em>Nature Reviews Immunology</em> 2007;7:942–953. <a href=\"https://doi.org/10.1038/nri2200\">doi:10.1038/nri2200</a>",
+        "text": "Felix NJ, Allen PM. Specificity of T-cell alloreactivity. Nature Reviews Immunology 2007;7:942–953. doi:10.1038/nri2200",
+        "cited": true
       }
     ]
   },
@@ -1038,6 +1062,12 @@
         "n": 35,
         "html": "Allen RC, Armitage RJ, Conley ME, et al. CD40 ligand gene defects responsible for X-linked hyper-IgM syndrome. <em>Science</em> 1993;259(5097):990–993. <a href=\"https://doi.org/10.1126/science.7679801\">doi:10.1126/science.7679801</a>",
         "text": "Allen RC, Armitage RJ, Conley ME, et al. CD40 ligand gene defects responsible for X-linked hyper-IgM syndrome. Science 1993;259(5097):990–993. doi:10.1126/science.7679801",
+        "cited": true
+      },
+      {
+        "n": 36,
+        "html": "Singer A, Adoro S, Park JH. Lineage fate and intense debate: myths, models and mechanisms of CD4- versus CD8-lineage choice. <em>Nat Rev Immunol</em> 2008;8(10):788–801. <a href=\"https://doi.org/10.1038/nri2416\">doi:10.1038/nri2416</a>",
+        "text": "Singer A, Adoro S, Park JH. Lineage fate and intense debate: myths, models and mechanisms of CD4- versus CD8-lineage choice. Nat Rev Immunol 2008;8(10):788–801. doi:10.1038/nri2416",
         "cited": true
       }
     ]
@@ -1646,8 +1676,7 @@
       {
         "n": 18,
         "html": "Weber JS, Carlino MS, Khattak A, et al. Individualised neoantigen therapy mRNA-4157 (V940) plus pembrolizumab versus pembrolizumab monotherapy in resected melanoma (KEYNOTE-942): a randomised, phase 2b study. <em>Lancet</em> 2024;403:632–644. <a href=\"https://doi.org/10.1016/S0140-6736(23)02268-7\">doi:10.1016/S0140-6736(23)02268-7</a>",
-        "text": "Weber JS, Carlino MS, Khattak A, et al. Individualised neoantigen therapy mRNA-4157 (V940) plus pembrolizumab versus pembrolizumab monotherapy in resected melanoma (KEYNOTE-942): a randomised, phase 2b study. Lancet 2024;403:632–644. doi:10.1016/S0140-6736(23)02268-7",
-        "cited": true
+        "text": "Weber JS, Carlino MS, Khattak A, et al. Individualised neoantigen therapy mRNA-4157 (V940) plus pembrolizumab versus pembrolizumab monotherapy in resected melanoma (KEYNOTE-942): a randomised, phase 2b study. Lancet 2024;403:632–644. doi:10.1016/S0140-6736(23)02268-7"
       },
       {
         "n": 19,
@@ -1988,6 +2017,12 @@
         "html": "Schwab C, Gabrysch A, Olbrich P, et al. Phenotype, penetrance, and treatment of 133 cytotoxic T-lymphocyte antigen 4–insufficient subjects. <em>J Allergy Clin Immunol</em> 2018;142(6):1932–1946. <a href=\"https://doi.org/10.1016/j.jaci.2018.02.055\">doi:10.1016/j.jaci.2018.02.055</a>",
         "text": "Schwab C, Gabrysch A, Olbrich P, et al. Phenotype, penetrance, and treatment of 133 cytotoxic T-lymphocyte antigen 4–insufficient subjects. J Allergy Clin Immunol 2018;142(6):1932–1946. doi:10.1016/j.jaci.2018.02.055",
         "cited": true
+      },
+      {
+        "n": 51,
+        "html": "Viola A, Lanzavecchia A. T cell activation determined by T cell receptor number and tunable thresholds. <em>Science</em> 1996;273(5271):104–106. <a href=\"https://doi.org/10.1126/science.273.5271.104\">doi:10.1126/science.273.5271.104</a>",
+        "text": "Viola A, Lanzavecchia A. T cell activation determined by T cell receptor number and tunable thresholds. Science 1996;273(5271):104–106. doi:10.1126/science.273.5271.104",
+        "cited": true
       }
     ]
   },
@@ -2180,6 +2215,36 @@
         "n": 31,
         "html": "Hudis CA. Trastuzumab — mechanism of action and use in clinical practice. <em>N Engl J Med</em> 2007;357:39–51. <a href=\"https://doi.org/10.1056/NEJMra043186\">doi:10.1056/NEJMra043186</a>",
         "text": "Hudis CA. Trastuzumab — mechanism of action and use in clinical practice. N Engl J Med 2007;357:39–51. doi:10.1056/NEJMra043186",
+        "cited": true
+      },
+      {
+        "n": 32,
+        "html": "Shulman M, Wilde CD, Köhler G. A better cell line for making hybridomas secreting specific antibodies. <em>Nature</em> 1978;276:269–270. <a href=\"https://doi.org/10.1038/276269a0\">doi:10.1038/276269a0</a>",
+        "text": "Shulman M, Wilde CD, Köhler G. A better cell line for making hybridomas secreting specific antibodies. Nature 1978;276:269–270. doi:10.1038/276269a0",
+        "cited": true
+      },
+      {
+        "n": 33,
+        "html": "Dahan R, Sega E, Engelhardt J, et al. FcγRs modulate the anti-tumor activity of antibodies targeting the PD-1/PD-L1 axis. <em>Cancer Cell</em> 2015;28:285–295. <a href=\"https://doi.org/10.1016/j.ccell.2015.08.004\">doi:10.1016/j.ccell.2015.08.004</a>",
+        "text": "Dahan R, Sega E, Engelhardt J, et al. FcγRs modulate the anti-tumor activity of antibodies targeting the PD-1/PD-L1 axis. Cancer Cell 2015;28:285–295. doi:10.1016/j.ccell.2015.08.004",
+        "cited": true
+      },
+      {
+        "n": 34,
+        "html": "Hoffmann P, Hofmeister R, Brischwein K, et al. Serial killing of tumor cells by cytotoxic T cells redirected with a CD19-/CD3-bispecific single-chain antibody construct. <em>Int J Cancer</em> 2005;115:98–104. <a href=\"https://doi.org/10.1002/ijc.20908\">doi:10.1002/ijc.20908</a>",
+        "text": "Hoffmann P, Hofmeister R, Brischwein K, et al. Serial killing of tumor cells by cytotoxic T cells redirected with a CD19-/CD3-bispecific single-chain antibody construct. Int J Cancer 2005;115:98–104. doi:10.1002/ijc.20908",
+        "cited": true
+      },
+      {
+        "n": 35,
+        "html": "Saunders LR, Bankovich AJ, Anderson WC, et al. A DLL3-targeted antibody-drug conjugate eradicates high-grade pulmonary neuroendocrine tumor-initiating cells in vivo. <em>Sci Transl Med</em> 2015;7:302ra136. <a href=\"https://doi.org/10.1126/scitranslmed.aac9459\">doi:10.1126/scitranslmed.aac9459</a>",
+        "text": "Saunders LR, Bankovich AJ, Anderson WC, et al. A DLL3-targeted antibody-drug conjugate eradicates high-grade pulmonary neuroendocrine tumor-initiating cells in vivo. Sci Transl Med 2015;7:302ra136. doi:10.1126/scitranslmed.aac9459",
+        "cited": true
+      },
+      {
+        "n": 36,
+        "html": "Liddy N, Bossi G, Adams KJ, et al. Monoclonal TCR-redirected tumor cell killing. <em>Nat Med</em> 2012;18:980–987. <a href=\"https://doi.org/10.1038/nm.2764\">doi:10.1038/nm.2764</a>",
+        "text": "Liddy N, Bossi G, Adams KJ, et al. Monoclonal TCR-redirected tumor cell killing. Nat Med 2012;18:980–987. doi:10.1038/nm.2764",
         "cited": true
       }
     ]
@@ -2451,6 +2516,24 @@
         "n": 44,
         "html": "US Food and Drug Administration, prescribing information (gene-transfer vector). Retroviral: Yescarta (axicabtagene ciloleucel), <a href=\"https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/yescarta-axicabtagene-ciloleucel\">https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/yescarta-axicabtagene-ciloleucel</a> ; Tecartus (brexucabtagene autoleucel), <a href=\"https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/tecartus-brexucabtagene-autoleucel\">https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/tecartus-brexucabtagene-autoleucel</a> . Lentiviral: Kymriah (tisagenlecleucel), Breyanzi (lisocabtagene maraleucel), Abecma (idecabtagene vicleucel), Carvykti (ciltacabtagene autoleucel) and Aucatzyl (obecabtagene autoleucel), each described in section 11 of its label.",
         "text": "US Food and Drug Administration, prescribing information (gene-transfer vector). Retroviral: Yescarta (axicabtagene ciloleucel), https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/yescarta-axicabtagene-ciloleucel ; Tecartus (brexucabtagene autoleucel), https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/tecartus-brexucabtagene-autoleucel . Lentiviral: Kymriah (tisagenlecleucel), Breyanzi (lisocabtagene maraleucel), Abecma (idecabtagene vicleucel), Carvykti (ciltacabtagene autoleucel) and Aucatzyl (obecabtagene autoleucel), each described in section 11 of its label.",
+        "cited": true
+      },
+      {
+        "n": 45,
+        "html": "Berdeja JG, Madduri D, Usmani SZ, et al. Ciltacabtagene autoleucel, a B-cell maturation antigen-directed chimeric antigen receptor T-cell therapy in patients with relapsed or refractory multiple myeloma (CARTITUDE-1): a phase 1b/2 open-label study. <em>Lancet</em> 2021;398(10297):314–324. <a href=\"https://doi.org/10.1016/S0140-6736(21)00933-8\">doi:10.1016/S0140-6736(21)00933-8</a>",
+        "text": "Berdeja JG, Madduri D, Usmani SZ, et al. Ciltacabtagene autoleucel, a B-cell maturation antigen-directed chimeric antigen receptor T-cell therapy in patients with relapsed or refractory multiple myeloma (CARTITUDE-1): a phase 1b/2 open-label study. Lancet 2021;398(10297):314–324. doi:10.1016/S0140-6736(21)00933-8",
+        "cited": true
+      },
+      {
+        "n": 46,
+        "html": "Munshi NC, Anderson LD, Shah N, et al. Idecabtagene vicleucel in relapsed and refractory multiple myeloma. <em>N Engl J Med</em> 2021;384(8):705–716. <a href=\"https://doi.org/10.1056/NEJMoa2024850\">doi:10.1056/NEJMoa2024850</a>",
+        "text": "Munshi NC, Anderson LD, Shah N, et al. Idecabtagene vicleucel in relapsed and refractory multiple myeloma. N Engl J Med 2021;384(8):705–716. doi:10.1056/NEJMoa2024850",
+        "cited": true
+      },
+      {
+        "n": 47,
+        "html": "Rejeski K, Subklewe M, Aljurf M, et al. Immune effector cell-associated hematotoxicity: EHA/EBMT consensus grading and best practice recommendations. <em>Blood</em> 2023;142(10):865-877. <a href=\"https://doi.org/10.1182/blood.2023020578\">doi:10.1182/blood.2023020578</a>",
+        "text": "Rejeski K, Subklewe M, Aljurf M, et al. Immune effector cell-associated hematotoxicity: EHA/EBMT consensus grading and best practice recommendations. Blood 2023;142(10):865-877. doi:10.1182/blood.2023020578",
         "cited": true
       }
     ]
@@ -3059,6 +3142,18 @@
         "n": 51,
         "html": "Coutzac C, Jouniaux JM, Paci A, et al. Systemic short chain fatty acids limit antitumor effect of CTLA-4 blockade in hosts with cancer. <em>Nat Commun</em> 2020;11:2168. <a href=\"https://doi.org/10.1038/s41467-020-16079-x\">doi:10.1038/s41467-020-16079-x</a> (in two melanoma cohorts treated with ipilimumab, high blood butyrate and propionate were associated with shorter progression-free survival and more regulatory T cells)",
         "text": "Coutzac C, Jouniaux JM, Paci A, et al. Systemic short chain fatty acids limit antitumor effect of CTLA-4 blockade in hosts with cancer. Nat Commun 2020;11:2168. doi:10.1038/s41467-020-16079-x (in two melanoma cohorts treated with ipilimumab, high blood butyrate and propionate were associated with shorter progression-free survival and more regulatory T cells)",
+        "cited": true
+      },
+      {
+        "n": 52,
+        "html": "Shin DS, Zaretsky JM, Escuin-Ordinas H, et al. Primary resistance to PD-1 blockade mediated by JAK1/2 mutations. <em>Cancer Discov</em> 2017;7:188–201. <a href=\"https://doi.org/10.1158/2159-8290.CD-16-1223\">doi:10.1158/2159-8290.CD-16-1223</a> (JAK1/2-inactivating mutations in 1 of 23 melanomas and 1 of 16 mismatch-repair-deficient colon cancers, both with high mutational load and no response to PD-1 blockade; JAK1/2-mutant cell lines did not express PD-L1 on interferon-gamma exposure)",
+        "text": "Shin DS, Zaretsky JM, Escuin-Ordinas H, et al. Primary resistance to PD-1 blockade mediated by JAK1/2 mutations. Cancer Discov 2017;7:188–201. doi:10.1158/2159-8290.CD-16-1223 (JAK1/2-inactivating mutations in 1 of 23 melanomas and 1 of 16 mismatch-repair-deficient colon cancers, both with high mutational load and no response to PD-1 blockade; JAK1/2-mutant cell lines did not express PD-L1 on interferon-gamma exposure)",
+        "cited": true
+      },
+      {
+        "n": 53,
+        "html": "US Food and Drug Administration. OPDIVO (nivolumab) prescribing information, BLA 125554 (recommended flat dosage for most single-agent indications: 240 mg every 2 weeks or 480 mg every 4 weeks). <a href=\"https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=125554\">https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=125554</a>",
+        "text": "US Food and Drug Administration. OPDIVO (nivolumab) prescribing information, BLA 125554 (recommended flat dosage for most single-agent indications: 240 mg every 2 weeks or 480 mg every 4 weeks). https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125554",
         "cited": true
       }
     ]

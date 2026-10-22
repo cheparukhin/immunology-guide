@@ -9,13 +9,15 @@ hero: ch01-hero
 
 Somewhere between 1.5 and 2 trillion immune {{cell|cells}} are at work in your body.[^1] None of them has a brain or a list of targets, yet they leave alone the tens of trillions of cells that make up the rest of you and attack the few things that do not belong: a bacterium in a cut, a virus in your throat or, hardest to detect, one of your own cells that has turned cancerous.
 
-Cells have no eyes; they recognize things by contact. Every act of recognition in the {{immune-system|immune system}} comes down to one molecule meeting another and either fitting it or not. That holds for a {{white-blood-cell|white blood cell}} detecting a microbe, for an {{antibody|antibody}} binding a virus, and for a modern {{cancer|cancer}} drug binding its target.
+Cells have no eyes; they recognize things by contact. Every act of recognition in the {{immune-system|immune system}} comes down to one molecule meeting another and either fitting it or not. That holds for a {{white-blood-cell|white blood cell}} (the general name for any immune cell) detecting a microbe, for an {{antibody|antibody}} binding a virus, and for a modern {{cancer|cancer}} drug binding its target.
 
 The central question of this chapter is **how anything in your body can recognize anything else**. Answering it needs some background: the sizes of cells and molecules, how a cell builds proteins from its genes, what it means for two molecules to bind, and the main types of immune cell.
 
 ## Seven powers of ten
 
-The figure below starts at a hand and magnifies ten times at each step. Two steps in, the skin resolves into tightly packed cells, the smallest units of life: self-contained compartments of chemistry, each enclosed by a thin membrane.
+Cells are the smallest units of life: self-contained compartments of chemistry, each enclosed by a thin membrane. A typical human cell is 10 to 20 micrometers (µm, thousandths of a millimeter) across,[^2] and your body contains about 30 trillion of them, of many specialized kinds, organized into {{tissue|tissues}} such as muscle and skin.[^3] A resting {{lymphocyte|lymphocyte}}, the family of immune cells that includes {{t-cell|T cells}} and {{b-cell|B cells}}, is about 7 µm across;[^4] a bacterium such as *E. coli*, a complete but far simpler cell, is a rod about 2 µm long.[^2]
+
+A virus is not a cell. It is a small amount of genetic material in a coat of {{protein|protein}} (proteins are the molecules that do most of the work in cells), often wrapped in an envelope of membrane taken from the last cell it left, and it can copy itself only inside a living cell, which it uses to build new virus particles. The coronavirus behind COVID-19 is roughly 90–100 nanometers (millionths of a millimeter) wide.[^5] An antibody, the Y-shaped protein your immune system makes to bind specific targets, spans about 10–15 nm,[^6] and each of its building blocks, small molecules called {{amino-acid|amino acids}}, is well under 1 nm.
 
 :::figure ch01-scale
 title: Seven powers of ten
@@ -107,7 +109,7 @@ steps:
   5. A T cell, about 7 micrometers wide, beside a bacterium about 2 micrometers long. Bacteria are complete living cells, far smaller and simpler than ours. The faint specks are viruses.
   6. Viruses at a cell's surface. Each is about 100 nanometers across, so some seventy would fit across a T cell. A virus is not a cell but genetic material in a protein coat, here wrapped in a membrane envelope studded with spikes.
   7. Part of a single virus. Its spike proteins stand about 25 nanometers tall. Y-shaped antibodies, each about 10–15 nanometers across, have bound the spike heads with the binding sites at the tips of their arms.
-  8. The tip of one antibody arm bound to the head of one spike. Each bead is a single amino acid, less than a nanometer wide, and the beads are packed into compact folded lumps. Recognition happens in this contact patch, a few nanometers across.
+  8. The tip of one antibody arm bound to the head of one spike. Each bead is a single amino acid, less than a nanometer wide, and each protein's chain of amino acids is folded into a compact shape. Recognition happens in this contact patch, a few nanometers across.
 data: |
   Sizes used (all approximate; nature varies):
   - Typical human body cell: ~10–20 µm across [2]
@@ -128,14 +130,10 @@ data: |
 alt: An interactive zoom from a human hand down to single molecules, in eight steps of ten. It passes through fingerprint ridges, a slice of skin, individual cells about 10–20 micrometers wide, a 7-micrometer T cell beside a 2-micrometer bacterium, enveloped viruses about 100 nanometers wide with sparse spikes, Y-shaped antibodies 10–15 nanometers across bound to the spike heads, and finally the amino acids where an antibody's arm tip touches its target. A scale bar and captions give the size at each step.
 :::
 
-A typical human cell is 10 to 20 micrometers (µm, thousandths of a millimeter) across,[^2] and your body contains about 30 trillion of them, of many specialized kinds, organized into {{tissue|tissues}} such as muscle and skin.[^3] A resting {{lymphocyte|lymphocyte}}, the family of immune cells that includes {{t-cell|T cells}} and {{b-cell|B cells}}, is about 7 µm across;[^4] a bacterium such as *E. coli*, a complete but far simpler cell, is a rod about 2 µm long.[^2]
-
-A virus is not a cell. It is a small amount of genetic material in a coat of {{protein|protein}} (proteins, described below, are the molecules that do most of the work in cells), often wrapped in an envelope of membrane taken from the last cell it left, and it can copy itself only inside a living cell, which it uses to build new virus particles. The coronavirus behind COVID-19 is roughly 90–100 nanometers (millionths of a millimeter) wide.[^5] An antibody, the Y-shaped molecule your immune system makes to bind specific targets, spans about 10–15 nm,[^6] and each of its building blocks, small molecules called {{amino-acid|amino acids}}, is well under one.
-
 So an immune cell hundreds of times wider than an antibody decides whether to kill or spare another cell on the basis of contacts between molecules a few nanometers across.
 
 :::deep-dive How many cells are you?
-For decades, textbooks claimed that the bacteria living in and on you outnumber your own cells ten to one. In 2016, Ron Sender, Shai Fuchs and Ron Milo recounted both for a "reference" 70-kilogram man. They found about 30 trillion human cells and about 38 trillion bacteria, mostly in the colon: roughly one to one, with the bacteria weighing only about 0.2 kilograms in total.[^3]
+For decades, textbooks claimed that the bacteria living in and on you outnumber your own cells ten to one. In 2016, Ron Sender, Shai Fuchs and Ron Milo re-estimated both for a "reference" 70-kilogram man. They found about 30 trillion human cells and about 38 trillion bacteria, mostly in the colon: roughly one to one, with the bacteria weighing only about 0.2 kilograms in total.[^3]
 
 Most of the human cells, about 25 trillion or some 84% of the total, are red blood cells,[^3] which are among the smallest cells in the body and carry no nucleus. Dividing the same group's 2023 count of 1.8 trillion immune cells by the 30-trillion total puts immune cells at roughly 6% of all your cells, about one in seventeen.[^1][^3]
 
@@ -144,19 +142,17 @@ These are figures for a standard adult, and they scale with body size: the 2023 
 
 ## Inside a cell
 
-A cell is enclosed by its {{cell-membrane|cell membrane}}, which separates inside from outside. The membrane is a {{lipid-bilayer|lipid bilayer}}: two layers of fatty molecules, mostly phospholipids. Each phospholipid has a hydrophilic (water-attracting) head and two {{hydrophobic|hydrophobic}} (water-repelling) tails. In water, these molecules line up in a double sheet, with the tails pointing inward toward each other and the heads facing the water on either side. Proteins embedded in the membrane serve as channels, sensors and identity markers, and this surface is where the immune system does its recognizing.
+A cell is enclosed by its {{cell-membrane|cell membrane}}, which separates two watery compartments: the cell's interior and the fluid outside it. The membrane is a {{lipid-bilayer|lipid bilayer}}: two layers of fatty molecules, mostly phospholipids. Each phospholipid has a hydrophilic (water-attracting) head and two {{hydrophobic|hydrophobic}} (water-repelling) tails. In water, these molecules line up in a double sheet, with the tails pointing inward toward each other, away from the water, and the heads facing the water on either side. Proteins embedded in the membrane serve as channels, sensors and identity markers, and this surface is where the immune system does its recognizing.
 
 The {{nucleus|nucleus}} holds the cell's DNA, its genetic information, and {{ribosome|ribosomes}} outside the nucleus build proteins from copies of its genes. Proteins do nearly every job in the cell, and a typical human cell holds billions of them.[^2]
 
-Most of the molecules in a cell are not steered anywhere. Cells do move some large cargo along internal tracks, but the molecules that matter in this guide are pushed about by the constant random motion of the surrounding water. By this motion alone, a typical protein crosses the width of a human cell in about ten seconds.[^2]
-
-Every act of recognition in this guide happens the same way: molecules meet at random and bind if they fit.
+Most of the molecules in a cell are not steered anywhere. Cells do move some large cargo along internal tracks, but proteins and smaller molecules mostly move by diffusion, pushed about by the constant random motion of the surrounding water molecules. By diffusion alone, a typical protein crosses the width of a human cell in about ten seconds.[^2] Molecular recognition rests on these random encounters: molecules meet by chance and bind if they fit.
 
 ## Genes and how they are read
 
 {{dna|DNA}} is a long molecule shaped like a twisted ladder, the double helix. Each side of the ladder is a strand built from units called {{nucleotide|nucleotides}}, and each nucleotide carries one of four bases: adenine, cytosine, guanine or thymine, written A, C, G and T. The bases of the two strands pair across the middle, A with T and C with G, to form the rungs. The order of the bases along a strand encodes information, as the order of letters does in a sentence.
 
-Your full set of DNA, your {{genome|genome}}, runs to about 3 billion base pairs.[^7] Nearly every cell with a nucleus carries two copies, one from each parent. (Red blood cells, the most numerous cells of all, carry none.) Stretched out, the DNA in one such cell would be about two meters long.[^2]
+Your full set of DNA, your {{genome|genome}}, runs to about 3 billion base pairs.[^7] Nearly every cell with a nucleus carries two copies, one from each parent. (Red blood cells, the most numerous cells of all, have no nucleus and carry none.) Stretched out, the DNA in one such cell would be about two meters long.[^2]
 
 Along the DNA lie {{gene|genes}}, stretches whose sequence of bases specifies how to build a particular protein. Humans have just under 20,000 of them.[^8]
 
@@ -164,13 +160,13 @@ The DNA stays in the nucleus. To make a protein, the cell copies the relevant ge
 
 The ribosome reads the mRNA three bases at a time. Each group of three, called a {{codon|codon}}, specifies one of 20 kinds of amino acid. The ribosome links the amino acids into a chain in the order the codons dictate, until it reaches a codon that means "stop." The finished chain is a protein. This whole process is called {{gene-expression|gene expression}}, and a cell that makes a particular protein is said to express it.
 
-COVID-19 mRNA vaccines rely on this process: they deliver mRNA for a viral protein, and your own ribosomes make the protein. Chapter 11 applies the idea to cancer.
+COVID-19 mRNA vaccines rely on this process: they deliver mRNA for a viral protein, and your own ribosomes make the protein. [Chapter 11](11-vaccines.html) applies the idea to cancer.
 
 ## Machines made of shape
 
 A newly made protein is a floppy chain. Its amino acids differ in size, from small to bulky, and in their chemistry. Some are hydrophobic, like the tails of membrane lipids. Others are hydrophilic: either polar, with slight positive and negative charges on different atoms, or fully charged, positive or negative. Water molecules are themselves polar, so they surround the charged and polar amino acids and leave the hydrophobic ones to cluster together.
 
-As the chain moves about in the watery cell, its hydrophobic amino acids pack into the interior and the charged ones stay on the surface, and the chain folds into a precise three-dimensional shape. The order of the amino acids determines the shape,[^9] and the shape determines the job.
+As the chain moves about in the watery cell, its hydrophobic amino acids pack into the interior and the hydrophilic ones stay on the surface, and the chain folds into a precise three-dimensional shape. The order of the amino acids determines the shape,[^9] and the shape determines the job.
 
 **Proteins are machines made of shape.** {{enzyme|Enzymes}} have pockets that bind particular molecules and cut or join them. {{hemoglobin|Hemoglobin}}, which fills red blood cells, is shaped to pick up oxygen in the lungs and release it in the tissues. Antibodies are shaped to bind one particular target. {{receptor|Receptors}}, described below, are shaped to detect what is happening outside the cell.
 
@@ -188,13 +184,13 @@ Knowing that sequence determines shape is not the same as predicting the shape f
 
 Because shape follows sequence, and sequence follows DNA, a change in a single DNA base, one kind of {{mutation|mutation}}, can alter an amino acid, a protein's shape, a cell's behavior and sometimes a person's health.
 
-The classic example is hemoglobin, built from four protein chains: two "alpha" and two "beta." In 1957, the biochemist Vernon Ingram showed that the hemoglobin of people with sickle-cell disease differs from normal hemoglobin by a single amino acid.[^11] The difference is at position 6 of each beta chain, where glutamic acid, which carries a negative charge, is replaced by valine, which is hydrophobic. The cause is a change in a single DNA base that turns the codon GAG into GTG.
+The classic example is hemoglobin, built from four protein chains: two "alpha" and two "beta." In 1957, the biochemist Vernon Ingram showed that the hemoglobin of people with sickle-cell disease differs from normal hemoglobin by a single amino acid.[^11] The difference is at position 6 of each beta chain, where glutamic acid, which carries a negative charge, is replaced by valine, which is hydrophobic. The cause is a change in a single DNA base that turns the codon GAG into GTG (GUG in the mRNA copy).
 
 That hydrophobic patch sits on the protein's surface. When oxygen runs low, it lets hemoglobin molecules bind to their neighbors and stack into long, stiff fibers, which bend the red blood cell into a rigid crescent, or sickle.
 
 The disease develops mainly in people who inherit the change from both parents. Their sickled cells break apart early and clog small blood vessels, causing anemia, severe pain and organ damage. Hundreds of thousands of babies are born with it each year, most of them in sub-Saharan Africa.[^12]
 
-Most single-base changes have smaller effects. Some are silent, because several codons can specify the same amino acid, so the protein is unchanged. Others swap in a similar amino acid with little effect on the protein. What a base changes to matters as much as where it falls. At the sickle position itself, a different typo, GAG to AAG, puts in lysine, which is charged (positively, where glutamic acid is negative) rather than hydrophobic. The result, hemoglobin C, does not form sickle fibers, though it is less soluble than normal hemoglobin and can form crystals inside red cells. People with one copy have no symptoms, and those with two usually have only mild anemia.[^13] The figure below lets you make each of these changes.
+Most single-base changes have smaller effects. Some are silent, because several codons can specify the same amino acid, so the protein is unchanged. Others swap in a similar amino acid with little effect on the protein. At the other extreme, a change that turns an amino-acid codon into a stop codon ends the chain early.[^21] What a base changes to matters as much as where it falls. At the sickle position itself, a different typo, GAG to AAG, puts in lysine, which is charged (positively, where glutamic acid is negative) rather than hydrophobic. The result, hemoglobin C, does not form sickle fibers, though it is less soluble than normal hemoglobin and can form crystals inside red cells. People with one copy have no symptoms, and those with two usually have only mild anemia.[^13] The figure below lets you make each of these changes.
 
 :::figure ch01-gene-to-protein
 title: From gene to protein
@@ -323,16 +319,16 @@ Almost every gene's protein-coding sequence begins with AUG (ATG in the DNA), wh
 
 Most human genes are interrupted: protein-coding stretches (exons) alternate with non-coding stretches (introns). The cell cuts the introns out of the RNA copy and splices the exons together before the message leaves the nucleus. It can splice the same gene in different ways, making several related proteins from one gene. The protein-coding sequences of all our genes add up to only a small fraction of the genome. The rest includes those interruptions, regulatory sequences that control when genes are expressed, and much whose role is still unclear.
 
-Single-base swaps are only one kind of mutation. Bases can also be inserted or deleted. Because the ribosome reads in fixed groups of three, adding or removing one base shifts the "reading frame" and scrambles every codon downstream. Such frameshifts usually destroy the protein's function. In cancer cells, they can also produce stretches of entirely new protein sequence that may be conspicuous to the immune system (Chapter 6).
+Single-base swaps are only one kind of mutation. Bases can also be inserted or deleted. Because the ribosome reads in fixed groups of three, adding or removing one base shifts the "reading frame" and scrambles every codon downstream. Such frameshifts usually destroy the protein's function. In cancer cells, they can also produce stretches of entirely new protein sequence that may be conspicuous to the immune system ([Chapter 6](06-cancer.html)).
 :::
-
-Cancer, as Chapter 6 explains, is driven by mutations that accumulate in a cell's DNA, and some of them change proteins in ways the immune system can, in principle, detect.
 
 :::clinic
 In December 2023, the US Food and Drug Administration approved the first gene therapies for sickle-cell disease.[^14] One of them, exagamglogene autotemcel (Casgevy), was the first medicine based on CRISPR gene editing to be approved in the US. Doctors collect the patient's own blood-forming stem cells, edit them in the lab, and return them after high-dose chemotherapy clears out the old ones.
 
-The edit does not correct the mutation. It restores production of fetal hemoglobin, a form the body largely stops making in infancy, which counters sickling. Chapter 10 describes the same approach (remove a patient's cells, modify them, return them) applied to immune cells that attack cancer.
+The edit does not correct the mutation. It restores production of fetal hemoglobin, a form the body largely stops making in infancy, which counters sickling. [Chapter 10](10-cell-therapy.html) describes the same approach (remove a patient's cells, modify them, return them) applied to immune cells that attack cancer.
 :::
+
+Cancer, as [Chapter 6](06-cancer.html) explains, is driven by mutations that accumulate in a cell's DNA, and some of them change proteins in ways the immune system can, in principle, detect.
 
 ## Receptors: how a cell feels its world
 
@@ -342,19 +338,17 @@ The outer end carries a binding site, a pocket or patch of surface shaped to fit
 
 The ligand does not need to enter the cell; only the signal crosses the membrane. And sensing is not all-or-nothing. A cell carries many copies of each receptor, often thousands, and responds to how many are occupied, and for how long.
 
-A molecule with nearly the right shape can occupy a receptor's binding site without activating it, blocking the natural ligand. Caffeine works largely this way: it occupies the brain's receptors for adenosine, a natural signal that dampens nerve activity.[^15] Several major cancer immunotherapies use the same blocking principle: they are antibodies that stop an immune receptor from binding its ligand (Chapter 8).
+A molecule with nearly the right shape can occupy a receptor's binding site without activating it, blocking the natural ligand. Caffeine works largely this way: it occupies the brain's receptors for adenosine, a natural signal that dampens nerve activity.[^15] Several major cancer immunotherapies use the same blocking principle: they are antibodies that stop an immune receptor from binding its ligand ([Chapter 8](08-checkpoints.html)).
 
-Immune cells carry many kinds of receptor. Some detect generic signs of trouble, such as molecules typical of bacteria; others, on T and B cells, are highly specific. Nearly everything in this guide comes down to receptors and what they bind.
+Immune cells carry many kinds of receptor. Some detect generic signs of trouble, such as molecules typical of bacteria; others, on T and B cells, are highly specific.
 
 ## How molecules bind
 
 A ligand fits a receptor when two things match: shape and chemistry. The two surfaces must nestle closely together, *and* their chemical features must complement each other, with a positive charge opposite a negative one or a hydrophobic patch against a hydrophobic patch. Each contact is a weak, reversible attraction, not a permanent chemical bond, but dozens of them across a well-matched surface add up to tight binding.[^16]
 
-The classic image for this is a lock and key, in which only a key of the right shape will turn. The image is too rigid: both partners often flex as they meet and mold to each other, a refinement called "induced fit."[^16] The strength with which two molecules bind is their {{affinity|affinity}}. High affinity means a tight, well-matched fit; low affinity means a loose one.
+The classic image for this is a lock and key, in which only a key of the right shape will turn. The image is too rigid: both partners often flex as they meet and mold to each other, a refinement called "induced fit."[^16]
 
-Unlike a key in a lock, **molecules never stay bound for good.** Buffeted by the surrounding water, even a well-matched pair eventually comes apart, or dissociates, and then rebinds or binds something else. Binding and dissociation alternate continually, and affinity sets the balance: the better the fit, the larger the share of time a pair spends bound. A better fit raises that share mainly by making each binding event last longer. The more contacts a pair shares, the less likely they are to all break at once; a poorly matched pair dissociates almost immediately.
-
-Affinity is usually measured as a {{dissociation-constant|dissociation constant}}, K<sub>D</sub>: the concentration of ligand at which half the receptors are occupied at any moment. The smaller the K<sub>D</sub>, the tighter the binding, because less ligand is needed to fill half the receptors.[^16]
+Unlike a key in a lock, **molecules never stay bound for good.** Buffeted by the surrounding water, even a well-matched pair eventually comes apart, or dissociates, and then rebinds or binds something else. Binding and dissociation alternate continually. The strength with which two molecules bind, their {{affinity|affinity}}, sets the balance: the better the fit, the higher the affinity and the larger the share of time a pair spends bound. A better fit raises that share mainly by making each binding event last longer. The more contacts a pair shares, the less likely they are to all break at once; a poorly matched pair dissociates almost immediately.
 
 Two consequences recur throughout this guide:
 
@@ -443,63 +437,61 @@ Molecular recognition happens by contact and depends on shape plus chemistry. Af
 :::
 
 :::deep-dive Affinity by the numbers
-When ligand is plentiful, the fraction of receptors occupied follows a simple rule: [L] / ([L] + K<sub>D</sub>), where [L] is the ligand concentration. Far below K<sub>D</sub>, doubling the ligand roughly doubles the occupancy. Far above it, the receptors are nearly full, and adding more changes little.[^16]
+Affinity is usually measured as a {{dissociation-constant|dissociation constant}}, K<sub>D</sub>: the concentration of ligand at which half the receptors are occupied at any moment. The smaller the K<sub>D</sub>, the tighter the binding, because less ligand is needed to fill half the receptors.[^16]
 
-Affinity combines two rates: how quickly partners find each other and bind (the on-rate) and how quickly they dissociate (the off-rate). K<sub>D</sub> is the off-rate divided by the on-rate. How long a pair stays together depends on the off-rate alone. Usually a tighter pair also stays together longer, which is the intuition in the main text. But two pairs with the same affinity can still behave differently, one meeting and parting quickly, the other slowly. That distinction matters for T cells (Chapter 4).
+When ligand molecules far outnumber the receptors, so that binding barely depletes the ligand, the fraction of receptors occupied follows a simple rule: [L] / ([L] + K<sub>D</sub>), where [L] is the concentration of free ligand. Far below K<sub>D</sub>, doubling the ligand roughly doubles the occupancy. Far above it, the receptors are nearly full, and adding more changes little.[^16]
+
+Affinity combines two rates: how quickly partners find each other and bind (the on-rate) and how quickly they dissociate (the off-rate). K<sub>D</sub> is the off-rate divided by the on-rate. How long a pair stays together depends on the off-rate alone. Usually a tighter pair also stays together longer, which is the intuition in the main text. But two pairs with the same affinity can still behave differently, one meeting and parting quickly, the other slowly. That distinction matters for T cells ([Chapter 4](04-presentation.html)).
 
 Immune receptors span a wide range. Antibodies made late in a strong immune response typically bind with K<sub>D</sub> values in the nanomolar range or below. (A nanomolar is a billionth of a mole per liter, and a mole is a fixed, enormous count of molecules, about 6 × 10<sup>23</sup>.) Researchers have proposed a practical ceiling near 0.1 nanomolar for antibodies made in the body. Beyond that point, a B cell can no longer tell a very good antibody from an even better one.[^17]
 
-The receptors of T cells are far weaker. Their K<sub>D</sub> is typically 1–100 micromolar, roughly a thousand to a million times weaker than a mature antibody. A single contact lasts from about a second to about a minute.[^18] How T cells nonetheless make precise decisions with such brief contacts is taken up in Chapter 4.
+The receptors of T cells are far weaker. Their K<sub>D</sub> is typically 1–100 micromolar (millionths of a mole per liter), roughly a thousand to a million times weaker than a mature antibody. A single contact lasts from about a second to about a minute.[^18] How T cells nonetheless make precise decisions with such brief contacts is taken up in Chapter 4.
 
-Tighter binding is not always better. In the laboratory, engineers have evolved T-cell receptors that bind with picomolar affinity, up to about a million times tighter than natural ones, but raising a receptor's affinity can also make it less selective.[^18] That trade-off matters for the engineered cell therapies of Chapter 10.
+Tighter binding is not always better. In the laboratory, engineers have evolved T-cell receptors that bind with picomolar affinity (K<sub>D</sub> in trillionths of a mole per liter), up to about a million times tighter than natural ones, but raising a receptor's affinity can also make it less selective.[^18] That trade-off matters for the engineered cell therapies of [Chapter 10](10-cell-therapy.html).
 
-Several weak binding sites can also add up to strong binding. An antibody has two identical arms. When one arm dissociates, the other may still be bound, and the free arm can bind again before the molecule drifts away. This combined strength, called {{avidity|avidity}}, can far exceed the affinity of either arm alone; Chapter 3 returns to it.[^16]
+Several weak binding sites can also add up to strong binding. An antibody has two identical arms. When one arm dissociates, the other may still be bound, and the free arm can bind again before the molecule drifts away. This combined strength, called {{avidity|avidity}}, can far exceed the affinity of either arm alone; [Chapter 3](03-adaptive.html) returns to it.[^16]
 :::
 
 ## What "self" means to a molecule
 
-Your body is built from proteins encoded by your own genes. Bacteria, viruses and fungi carry proteins, sugars and lipids in many shapes your body never makes. To the immune system, {{self|self}} means the collection of molecular shapes your own body makes, and "non-self" is everything else. Anything the immune system can specifically recognize is called an {{antigen|antigen}}. Usually that is a protein, or a fragment of one.
+Your body is built from proteins encoded by your own genes. Bacteria, viruses and fungi carry proteins, sugars and lipids in many shapes your body never makes. To the immune system, {{self|self}} means the collection of molecular shapes your own body makes, and "non-self" is everything else. Anything the immune system can specifically recognize, whether foreign or self, is called an {{antigen|antigen}}. Usually that is a protein, or a fragment of one.
 
-The immune system is not born knowing which shapes are self, and much of this guide follows from that. Its most specific receptors, on T cells and B cells, are generated partly at random (Chapter 3), so some of them inevitably fit your own molecules. The body has to *learn* to leave those shapes alone, mostly by eliminating or silencing self-reactive cells as they mature. This learned restraint is called {{tolerance|tolerance}} (Chapter 5). When it fails, the immune system attacks the body's own tissues, a condition called {{autoimmunity|autoimmunity}}; type 1 diabetes and multiple sclerosis are examples.
+The immune system's most specific cells, T cells and B cells, are not born knowing which shapes are self. Their receptors are generated partly at random ([Chapter 3](03-adaptive.html)), so some of them inevitably fit your own molecules. The body has to *learn* to leave those shapes alone, mostly by eliminating or silencing self-reactive cells as they mature. This learned restraint is called {{tolerance|tolerance}} ([Chapter 5](05-t-cells.html)). When it fails, the immune system attacks the body's own tissues, a condition called {{autoimmunity|autoimmunity}}; type 1 diabetes and multiple sclerosis are examples.
 
-Self also differs from person to person. Small differences in many proteins, especially in a family of "display" molecules described in Chapter 4, make each person's self unique. That is why an organ transplanted from anyone but an identical twin is attacked unless drugs suppress the recipient's immune system.
+Self also differs from person to person. Small differences in many proteins, especially in a family of "display" molecules described in [Chapter 4](04-presentation.html), make each person's self unique. That is why an organ transplanted from anyone but an identical twin is attacked unless drugs suppress the recipient's immune system.
 
-For the immune system's most specific cells, then, self is not a list stored anywhere but whatever they have learned to ignore. That makes the system adaptable, but it also means that anything that looks enough like self, including a cancer cell, may be ignored.
-
-:::key-idea
-To the immune system, "self" means the molecular shapes your body makes and has learned to tolerate. It is not stored as a list: the immune system's most specific cells have to learn it.
-:::
+For the immune system's most specific cells, then, self is not a list stored anywhere but whatever they have learned to ignore. Learning self in this way makes the system adaptable, but it also means that anything that looks enough like self, including a cancer cell, may be ignored.
 
 :::deep-dive Self, non-self, or danger?
 The idea that self must be learned rests largely on a 1953 experiment by Rupert Billingham, Leslie Brent and Peter Medawar. They injected unborn mice with cells from a different mouse strain. As adults, those mice accepted skin grafts from the donor strain that their immune systems would normally have rejected.[^19] Early exposure had taught their immune systems to treat foreign tissue as self. Medawar shared the 1960 Nobel Prize in Physiology or Medicine for this "acquired tolerance" with Macfarlane Burnet, who had predicted it.
 
-The self/non-self rule has many exceptions. We tolerate trillions of foreign bacteria in our gut (Chapter 5 shows how) and many kilograms of foreign food protein every year, and a pregnant woman tolerates a fetus that carries the father's genes. Meanwhile, the immune system routinely clears away our own dying cells, and in autoimmune disease it attacks healthy self. In 1994, the immunologist Polly Matzinger proposed that what triggers an immune response is not foreignness but danger: alarm signals released by damaged or stressed tissue.[^20]
+The self/non-self rule has many exceptions. We tolerate trillions of foreign bacteria in our gut ([Chapter 5](05-t-cells.html) shows how) and many kilograms of foreign food protein every year, and a pregnant woman tolerates a fetus that carries the father's genes. Meanwhile, the immune system routinely clears away our own dying cells, and in autoimmune disease it attacks healthy self. In 1994, the immunologist Polly Matzinger proposed that what triggers an immune response is not foreignness but danger: alarm signals released by damaged or stressed tissue.[^20]
 
-Most immunologists today hold a synthesis: whether the immune system attacks depends both on *what* it recognizes and on the *context*, such as infection, damage or inflammation. This requirement for two conditions returns in Chapter 4 as the immune system's "two-factor authentication." It is also central to cancer, which is mostly self and often grows without producing the kind of alarm that triggers an attack (Chapter 2).
+Most immunologists today hold a synthesis: whether the immune system attacks depends both on *what* it recognizes and on the *context*, such as infection, damage or inflammation. This requirement for two conditions returns in [Chapter 4](04-presentation.html) as the immune system's "two-factor authentication." It is also central to cancer, which is mostly self and often grows without producing the kind of alarm that triggers an attack ([Chapter 2](02-innate.html)).
 :::
 
 ## The cells of the immune system
 
 The immune system is a network of about 1.8 trillion cells, weighing about 1.2 kilograms (2.6 pounds) in an adult man.[^1]
 
-Almost all of them trace their ancestry to rare {{hematopoietic-stem-cell|blood-forming stem cells}} in the {{bone-marrow|bone marrow}}, the soft tissue inside bones. Many then mature or multiply elsewhere, and many tissue macrophages renew themselves on the spot. (Some, such as the brain's macrophages, descend from cells that settled in their tissues before birth.)[^16] Immunologists sort the cells into two branches.
+Almost all of them trace their ancestry to rare {{hematopoietic-stem-cell|blood-forming stem cells}} in the {{bone-marrow|bone marrow}}, the soft tissue inside bones, though many mature or multiply elsewhere.[^16] Immunologists sort the cells into two branches.
 
 The first branch, {{innate-immunity|innate immunity}}, acts within minutes to hours and recognizes broad categories of trouble rather than specific microbes.
 
 - {{neutrophil|Neutrophils}} are the most numerous immune cells, more than a third of the total.[^1] Short-lived and fast, they pour into infected tissue and engulf bacteria.
-- {{macrophage|Macrophages}} ("big eaters") live in nearly every tissue, clearing debris and microbes and raising the alarm. They are large: a tenth of immune cells by number, but nearly half by weight.[^1]
+- {{macrophage|Macrophages}} ("big eaters") live in nearly every tissue, clearing debris and microbes and raising the alarm. They are large: a tenth of immune cells by number, but nearly half by weight.[^1] Many renew themselves within their tissue, and some, such as the brain's, descend from cells that settled there before birth.[^16]
 - {{dendritic-cell|Dendritic cells}} sample the tissue around them and carry what they collect to the {{lymph-node|lymph nodes}}, where they activate T cells.
 - {{nk-cell|Natural killer (NK) cells}} kill body cells that are stressed, infected or abnormal.
 
 The second branch, {{adaptive-immunity|adaptive immunity}}, is slower to start but highly specific, and it remembers targets it has met before.
 
-- T cells, about a quarter of all immune cells,[^1] each carry a receptor tuned to one particular target. Some kill infected or cancerous cells; others coordinate the response.
+- T cells, about a quarter of all immune cells,[^1] each carry a receptor tuned to one particular target. Some, the {{cd8-t-cell|killer T cells}}, destroy infected or cancerous cells; others, the {{cd4-t-cell|helper T cells}}, coordinate the response.
 - B cells make antibodies. Once activated, some become {{plasma-cell|plasma cells}}, which secrete antibodies in large quantities. About 70% of plasma cells live in the wall of the gut.[^1]
 
 Most immune cells live outside the blood:[^1]
 
 - **About 40% are in the bone marrow**, mostly neutrophils held in reserve.
-- **About 39% are in the other lymphoid organs.** Lymph nodes are bean-sized organs, hundreds of them, along the vessels that drain {{lymph|lymph}} (the clear fluid that seeps out of tissues) back toward the blood. T and B cells pass through them, checking for the one shape their receptors fit, and move on. The {{spleen|spleen}} plays a similar role for the blood, which it filters. The {{thymus|thymus}}, behind the breastbone, is where T cells mature; the "T" stands for thymus.[^16]
+- **About 39% are in the other lymphoid organs**, where lymphocytes form, mature or gather: the lymph nodes, {{spleen|spleen}} and {{thymus|thymus}}. Lymph nodes are bean-sized organs, hundreds of them, along the vessels that drain {{lymph|lymph}} (the clear fluid that seeps out of tissues) back toward the blood. T and B cells pass through them, checking for the one shape their receptors fit, and move on. The spleen plays a similar role for the blood, which it filters. The thymus, behind the breastbone, is where T cells mature; the "T" stands for thymus.[^16]
 - **About 19% live in tissues** such as the skin, lungs, gut and liver.
 - **Only about 2% are in the blood** at any moment, mostly in transit between these sites.
 
@@ -609,16 +601,16 @@ alt: A unit chart of the roughly 1.8 trillion immune cells in an adult man, each
 :::
 
 :::clinic
-A routine blood test counts white blood cells per microliter of blood, typically several thousand. That is useful but limited: at any moment, only about 2% of your immune cells, and fewer than 2% of your T cells, are in circulation,[^1] so a blood count samples only the small fraction of the immune system that is in transit.
+A routine blood test counts white blood cells per microliter of blood, typically several thousand. Because only about 2% of your immune cells, and fewer than 2% of your T cells, are in circulation at any moment,[^1] the count samples just the small fraction of the immune system that is in transit.
 :::
 
 ## The problem ahead
 
 Among some 30 trillion cells that sense one another only through molecular contact, the immune system's job is a problem of **recognition**: telling self from non-self quickly and reliably, among countless possible shapes.
 
-The next four chapters explain how it does this, and a single flu infection shows the sequence. A flu virus infects the cells lining your airway. Within hours, infected cells release signaling proteins, and the fast, generic cells of the innate branch respond (Chapter 2). Over the next day or two, dendritic cells carry pieces of the virus to the nearest lymph node, where the rare T and B cells whose receptors happen to fit are found among millions and multiply into thousands of copies (Chapters 3 and 4).
+The next four chapters explain how it does this, and a single flu infection shows the sequence. A flu virus infects the cells lining your airway. Within hours, infected cells release signaling proteins, and the fast, generic cells of the innate branch respond ([Chapter 2](02-innate.html)). Over the next day or two, dendritic cells carry pieces of the virus to the nearest lymph node, where the rare T and B cells whose receptors happen to fit are found among millions and multiply into thousands of copies (Chapters 3 and 4).
 
-About a week in, killer T cells destroy infected cells, recognizing the virus fragments those cells display, while antibodies bind free virus; helper T cells coordinate both, and brakes keep the attack from overshooting (Chapter 5). Once the virus is gone, most of the expanded T and B cells die, and memory cells remain (Chapter 3). Throughout, the slow, specific branch joins in only after the fast one has raised the alarm. The end of Chapter 5 shows the whole sequence in one diagram.
+About a week in, killer T cells destroy infected cells, recognizing the virus fragments those cells display, while antibodies bind free virus; helper T cells coordinate both, and brakes keep the attack from overshooting ([Chapter 5](05-t-cells.html)). Once the virus is gone, most of the expanded T and B cells die, and memory cells remain ([Chapter 3](03-adaptive.html)). Throughout, the adaptive branch joins in only after the innate branch has raised the alarm. The end of Chapter 5 shows the whole sequence in one diagram.
 
 Cancer is the hardest case. A cancer cell is not an invader but one of your own cells, built from your own genes, with a scattering of mutations. To the immune system it is *altered self*: almost entirely familiar, different only in small details that may or may not be visible. Whether the immune system can detect those details, and how medicine can help it, is the subject of this guide.
 
@@ -633,7 +625,7 @@ Q: A single DNA base in a gene changes. What happens to the protein?
 - [ ] It always stops working, because every base in a gene counts — many changes are silent, and many amino-acid swaps barely matter.
 - [ ] Nothing, because one base out of billions is too small to matter — the sickle-cell change is a single base.
 - [x] It depends on which base changes and what it becomes — the protein may be unchanged, have one amino acid swapped, or be cut short.
-- [ ] The whole protein is rebuilt with a new sequence — a single-base swap usually changes at most one amino acid or ends the chain early; rarer changes that hit a start, stop or splicing signal can alter longer stretches.
+- [ ] The whole protein is rebuilt with a new sequence — a single-base swap usually changes at most one amino acid or ends the chain early; rarer changes to a start, stop or splicing signal can alter longer stretches.
 
 Q: A receptor's ligand fits only loosely (low affinity). How can the cell still get a strong signal?
 - [ ] It can't: loose-fitting ligands never bind, however many there are — they do bind, just less firmly; recognition is a matter of degree.
@@ -730,3 +722,4 @@ Q: To the immune system's most specific cells, what is "self"?
 18. Stone JD, Chervin AS, Kranz DM. T-cell receptor binding affinities and kinetics: impact on T-cell activity and specificity. *Immunology* 2009;126(2):165–176. doi:10.1111/j.1365-2567.2008.03015.x
 19. Billingham RE, Brent L, Medawar PB. 'Actively acquired tolerance' of foreign cells. *Nature* 1953;172(4379):603–606. doi:10.1038/172603a0
 20. Matzinger P. Tolerance, danger, and the extended family. *Annu Rev Immunol* 1994;12:991–1045. doi:10.1146/annurev.iy.12.040194.005015
+21. Mort M, Ivanov D, Cooper DN, Chuzhanova NA. A meta-analysis of nonsense mutations causing human genetic disease. *Hum Mutat* 2008;29(8):1037–1047. doi:10.1002/humu.20763

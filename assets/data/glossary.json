@@ -238,14 +238,6 @@
     "chapterTitle": "Immune Surveillance and Tumor Escape",
     "page": "07-escape.html"
   },
-  "apheresis": {
-    "term": "Leukapheresis",
-    "def": "A procedure lasting a few hours in which blood is drawn, passed through a machine that skims off white blood cells, and returned. It collects the starting material for a cell therapy.",
-    "chapter": "10",
-    "chapterLabel": "Chapter 10",
-    "chapterTitle": "Cell Therapies",
-    "page": "10-cell-therapy.html"
-  },
   "apoptosis": {
     "term": "Apoptosis",
     "def": "Programmed cell death, in which a cell dismantles itself into membrane-wrapped fragments that phagocytes engulf, without spilling its contents or causing inflammation.",
@@ -453,10 +445,10 @@
   "car-t": {
     "term": "CAR-T cell",
     "def": "A T cell, usually the patient’s own, genetically engineered to express a chimeric antigen receptor (CAR), a synthetic receptor that joins an antibody’s antigen-binding variable regions to T-cell signaling domains. Because the cells expand in the patient and can persist for years, they are called a “living drug”.",
-    "chapter": "interlude",
-    "chapterLabel": "Interlude",
-    "chapterTitle": "130 Years of Immunotherapy",
-    "page": "interlude-history.html",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
     "canonical": true
   },
   "carcinogen": {
@@ -521,10 +513,10 @@
   "cd4-t-cell": {
     "term": "Helper T cell (CD4 T cell)",
     "def": "A T cell whose CD4 co-receptor binds MHC class II, so it recognizes peptides presented by antigen-presenting cells. It coordinates immune responses, using cytokines and contact signals to help killer T cells, B cells and macrophages.",
-    "chapter": "04",
-    "chapterLabel": "Chapter 4",
-    "chapterTitle": "Antigen Presentation",
-    "page": "04-presentation.html",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
     "canonical": true
   },
   "cd40": {
@@ -546,10 +538,10 @@
   "cd8-t-cell": {
     "term": "Killer T cell (CD8 T cell)",
     "def": "A T cell whose CD8 co-receptor binds MHC class I, so it can inspect the peptides presented by nearly any cell in the body and, once activated, kill cells that present its target, such as infected or cancerous cells. Also called a cytotoxic T cell.",
-    "chapter": "04",
-    "chapterLabel": "Chapter 4",
-    "chapterTitle": "Antigen Presentation",
-    "page": "04-presentation.html",
+    "chapter": "01",
+    "chapterLabel": "Chapter 1",
+    "chapterTitle": "Cells, Proteins and Molecular Recognition",
+    "page": "01-cells.html",
     "canonical": true
   },
   "cdc": {
@@ -1594,6 +1586,14 @@
     "chapterTitle": "Cell Therapies",
     "page": "10-cell-therapy.html"
   },
+  "leukapheresis": {
+    "term": "Leukapheresis",
+    "def": "A procedure lasting a few hours in which blood is drawn, passed through a machine that skims off white blood cells, and returned. It collects the starting material for a cell therapy.",
+    "chapter": "10",
+    "chapterLabel": "Chapter 10",
+    "chapterTitle": "Cell Therapies",
+    "page": "10-cell-therapy.html"
+  },
   "leukemia": {
     "term": "Leukemia",
     "def": "A cancer of blood-forming cells that fills the bone marrow and blood. Acute lymphoblastic leukemia (ALL) arises from immature lymphocytes, often B-cell precursors.",
@@ -2520,7 +2520,7 @@
     "page": "07-escape.html"
   },
   "synnotch": {
-    "term": "SynNotch",
+    "term": "Synthetic Notch receptor (synNotch)",
     "def": "A synthetic receptor that, on binding one antigen, induces expression of a gene — for example the gene for a CAR against a second antigen. It is how a two-marker “AND” rule is built into a cell.",
     "chapter": "10",
     "chapterLabel": "Chapter 10",
@@ -2539,10 +2539,10 @@
   "t-cell-engager": {
     "term": "T-cell engager",
     "def": "A two-armed molecule, usually a bispecific antibody, that binds CD3 on a T cell with one arm and a target on a cancer cell with the other, physically bridging the two cells so that the T cell kills the cancer cell.",
-    "chapter": "interlude",
-    "chapterLabel": "Interlude",
-    "chapterTitle": "130 Years of Immunotherapy",
-    "page": "interlude-history.html",
+    "chapter": "07",
+    "chapterLabel": "Chapter 7",
+    "chapterTitle": "Immune Surveillance and Tumor Escape",
+    "page": "07-escape.html",
     "canonical": true
   },
   "tap-transporter": {

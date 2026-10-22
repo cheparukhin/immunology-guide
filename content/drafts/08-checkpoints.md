@@ -23,18 +23,16 @@ Two brakes matter here, both inhibitory receptors on T cells introduced in [Chap
 
 The brakes are essential: mice born without CTLA-4 die within weeks, their organs infiltrated by their own T cells. But they are not the main way a response ends. A response to an infection winds down chiefly because the pathogen is cleared (Chapter 5); a tumor persists, so the brakes and {{exhaustion|exhaustion}} are what hold the attack back.
 
-A {{checkpoint-inhibitor|checkpoint inhibitor}} gives T cells no new ability to recognize cancer. And a drug in the blood cannot release a brake only in the tumor; it releases it everywhere.
-
 ## Blocking the binding site
 
-Every checkpoint inhibitor approved in the United States is a {{monoclonal-antibody|monoclonal antibody}}: identical copies of one Y-shaped antibody, whose two arms (the {{fab|Fab arms}}) each end in the same binding site for a single target ([Chapter 3](03-adaptive.html)). (China has also approved {{bispecific-antibody|bispecific antibodies}} such as ivonescimab, which carry binding sites for two different targets and so block a checkpoint and a second target at once; see Chapter 12.)
+Every {{checkpoint-inhibitor|checkpoint inhibitor}} approved in the United States is a {{monoclonal-antibody|monoclonal antibody}}, made as identical copies of one Y-shaped antibody whose two arms (the {{fab|Fab arms}}) each end in the same binding site for a single target ([Chapter 3](03-adaptive.html)).
 
-An anti-PD-1 antibody binds the same patch of PD-1 that PD-L1 would otherwise bind. While the antibody is bound, PD-L1 cannot reach that site, and the inhibitory signal is never sent. These antibodies bind with high {{affinity|affinity}}, so each stays bound for a long time, and the body clears them slowly. The share of target molecules with drug bound is called {{receptor-occupancy|receptor occupancy}}; after one infusion, most of the target stays occupied for weeks, often two months or more.[^39]
+An anti-PD-1 antibody binds the same patch of PD-1 that PD-L1 would otherwise bind. While the antibody is bound, PD-L1 cannot reach that site, and the inhibitory signal is never sent. These antibodies bind with high {{affinity|affinity}}, so each stays bound for a long time, and the body clears them slowly. The share of target molecules with drug bound is called {{receptor-occupancy|receptor occupancy}}; after one infusion, most of the target stays occupied for weeks, often two months or more.[^39] Because the drug circulates in the blood, it releases the brake throughout the body, not only in the tumor.
 
-Four drugs come up most often in this chapter. Pembrolizumab and nivolumab (Opdivo) block PD-1 on T cells. Atezolizumab (Tecentriq) blocks PD-L1, on the tumor and the immune cells around it. Ipilimumab (Yervoy) blocks CTLA-4. Others work the same way (see the box below); by 2023, eleven checkpoint inhibitors had been approved in the United States for 20 types of advanced cancer, and more have followed.[^3]
+Pembrolizumab and nivolumab (Opdivo) block PD-1 on T cells, atezolizumab (Tecentriq) blocks PD-L1 on the tumor and the immune cells around it, and ipilimumab (Yervoy) blocks CTLA-4, also on T cells. Others work the same way; by 2023, eleven checkpoint inhibitors had been approved in the United States for 20 types of advanced cancer, and more have followed.[^3]
 
 :::key-idea
-A checkpoint inhibitor adds no activating signal of its own and gives T cells no new targets. It removes an inhibitory signal, so it can help only T cells whose receptors already recognize something on the cancer, including some that had not yet been activated.
+A checkpoint inhibitor adds no activating signal of its own and gives T cells no new targets. It removes an inhibitory signal, so it can help only T cells whose receptors already recognize something on the cancer, including matching T cells not yet primed in a lymph node.
 :::
 
 :::figure ch08-blockade
@@ -107,7 +105,9 @@ alt: A close-up of the gap between a killer T cell and a cancer cell. The T cell
 :::
 
 :::deep-dive Anatomy of a checkpoint drug
-All checkpoint inhibitors approved in the United States are IgG antibodies, the most common {{antibody-class|antibody class}} in blood; an anti-PD-1 antibody is several times larger than the part of PD-1 it binds. The main ones:
+All checkpoint inhibitors approved in the United States are IgG antibodies, the most common {{antibody-class|antibody class}} in blood. An anti-PD-1 antibody is several times larger than the part of PD-1 it binds. China has also approved {{bispecific-antibody|bispecific antibodies}} such as ivonescimab, which carry binding sites for two different targets and so block a checkpoint and a second target at once ([Chapter 12](12-frontier.html)).
+
+The main checkpoint inhibitors approved in the United States:
 
 | Brake blocked | Drugs (brand names) |
 |---|---|
@@ -116,7 +116,7 @@ All checkpoint inhibitors approved in the United States are IgG antibodies, the 
 | CTLA-4 | ipilimumab (Yervoy), tremelimumab (Imjudo) |
 | LAG-3 | relatlimab (sold with nivolumab as Opdualag) |
 
-**The Fc region.** An antibody's {{fc-region|Fc region}}, the constant stem of the Y, binds {{fc-receptor|Fc receptors}} on other immune cells, which can then destroy whatever the antibody is bound to (Chapter 3). An anti-PD-1 antibody that did this would deplete the very T cells it is meant to free. So the established PD-1 blockers — nivolumab, pembrolizumab, cemiplimab, dostarlimab — are built on the IgG4 subclass, whose Fc region triggers this destruction only weakly. Atezolizumab is an IgG1 antibody with an Fc region engineered not to trigger it,[^4] and so is the newer PD-1 blocker penpulimab.[^5] Ipilimumab (IgG1) and tremelimumab (IgG2), by contrast, have Fc regions that can bind Fc receptors, which matters for a later box on regulatory T cells.[^6]
+**The Fc region.** An antibody's {{fc-region|Fc region}}, the constant stem of the Y, binds {{fc-receptor|Fc receptors}} on other immune cells, which can then destroy whatever the antibody is bound to ([Chapter 3](03-adaptive.html)). An anti-PD-1 antibody that did this would deplete the very T cells it is meant to free. So the established PD-1 blockers — nivolumab, pembrolizumab, cemiplimab, dostarlimab — are built on the IgG4 subclass, whose Fc region triggers this destruction only weakly. Atezolizumab is an IgG1 antibody with an Fc region engineered not to trigger it,[^4] and so is the newer PD-1 blocker penpulimab.[^5] Ipilimumab (IgG1) and tremelimumab (IgG2), by contrast, have Fc regions that can bind Fc receptors,[^6] so they could also lead other immune cells to destroy the CTLA-4-rich regulatory T cells they coat.[^12]
 
 **Receptor or ligand.** Anti-PD-1 stops PD-1 from binding either of its ligands, PD-L1 or its relative PD-L2. Anti-PD-L1 leaves PD-L2 free, but also stops PD-L1 from binding one of the B7 molecules, CD80. Whether this matters in patients is unclear; there are few head-to-head trials.
 
@@ -125,18 +125,18 @@ All checkpoint inhibitors approved in the United States are IgG antibodies, the 
 
 ## Two brakes, two places
 
-**Anti-CTLA-4 acts mainly during priming.** In a lymph node, a {{dendritic-cell|dendritic cell}} presents peptides from tumor proteins to passing T cells. To be fully activated, a T cell also needs a second signal, {{costimulation|costimulation}}, which arrives when {{cd28|CD28}}, a receptor on the T cell, binds molecules called {{b7|B7}} on the dendritic cell. CTLA-4 binds B7 with higher affinity than CD28 does, and {{regulatory-t-cell|regulatory T cells}}, which suppress other immune cells, express a lot of it. Chapter 5 described this competition for B7 as limiting how large a response grows; clone by clone, it probably also raises the activation threshold, so only strong matches are activated. Blocking CTLA-4 makes the response larger and broader: weaker matches join in, and T cells from more {{clone|clones}} leave the node.
+**Anti-CTLA-4 acts mainly during priming.** In a lymph node, a {{dendritic-cell|dendritic cell}} presents peptides from tumor proteins to passing T cells. To be fully activated, a T cell also needs a second signal, {{costimulation|costimulation}}, which arrives when {{cd28|CD28}}, a receptor on the T cell, binds molecules called {{b7|B7}} on the dendritic cell. CTLA-4 binds B7 with higher affinity than CD28 does, and {{regulatory-t-cell|regulatory T cells}}, which suppress other immune cells, express a lot of it. [Chapter 5](05-t-cells.html) described this competition for B7 as limiting how large a response grows. It probably also raises the activation threshold for each clone: costimulation lowers the amount of receptor signal a T cell needs,[^51] so with less B7 free, only T cells whose receptors bind the presented peptide strongly are activated. Blocking CTLA-4 makes the response larger and broader: weaker matches join in, and T cells from more {{clone|clones}} leave the node.
 
 The broader response has a cost. {{negative-selection|Negative selection}} in the thymus removes T cells that react strongly to the body's own proteins but lets weakly self-reactive ones through (Chapter 5), and some of these are activated too, probably one reason ipilimumab causes more serious side effects than PD-1 blockers.
 
 **Anti-PD-1 and anti-PD-L1 act mainly in the tumor.** T cells that have been stimulated inside a tumor for weeks become exhausted: they express high levels of PD-1, divide little and kill poorly. As Chapter 5 described, blocking PD-1 mainly acts on a small reserve of {{stem-like-t-cell|stem-like T cells}} (marked by TCF1), which divide and differentiate into new killer cells; it does little to revive the most exhausted cells.
 
-That reserve also sits in the lymph nodes that drain the tumor, where PD-L1 on dendritic cells restrains T cells as they are primed; in mice, blocking PD-L1 in those nodes alone improved tumor control by supplying the tumor with stem-like cells.[^9] And when scientists tracked individual T-cell clones in patients before and after treatment, many clones that expanded in the tumor had not been detectable there before, suggesting that the tumor was being resupplied from elsewhere.[^10][^11] Their receptors fit the tumor; that they had been primed elsewhere is inferred rather than shown.
+That reserve also sits in the lymph nodes that drain the tumor, where PD-L1 on dendritic cells restrains T cells as they are primed; in mice, blocking PD-L1 in those nodes alone improved tumor control by supplying the tumor with stem-like cells.[^9] And when scientists tracked individual T-cell clones in patients before and after treatment, many of the expanded clones with the hallmarks of tumor-reactive cells had not been detected in the tumor before, which suggests that clones primed elsewhere were resupplying it.[^10][^11] Because anti-CTLA-4 acts chiefly at priming, while PD-1 blockade acts on the tumor and the reserve that resupplies it, the two drugs combine well.
 
 :::deep-dive Where do the responding T cells come from?
 For years the favored explanation was "reinvigoration": PD-1 blockade revives exhausted T cells already in the tumor. Newer evidence suggests that much of the response comes from elsewhere.
 
-First, as Chapter 5 described, the burst after PD-1 blockade comes mainly from the stem-like, TCF1-positive reserve, which sits largely in lymphoid tissue.[^13]
+First, as [Chapter 5](05-t-cells.html) described, the burst after PD-1 blockade comes mainly from the stem-like, TCF1-positive reserve, which sits largely in lymphoid tissue.[^13]
 
 Second, in 2019 a Stanford team sequenced the receptors of tens of thousands of single T cells (each clone's receptor sequence is unique) in skin cancers (basal-cell and squamous-cell carcinomas) sampled before and after anti-PD-1 treatment. The expanded clones with the hallmarks of tumor-reactive cells were mostly clones that had not been detected in the tumor beforehand. The team called this {{clonal-replacement|clonal replacement}}.[^10] (Biopsies sample only part of a tumor, so "not detected" is not quite "absent".)
 
@@ -144,8 +144,6 @@ Third, a study of 47 biopsies from 36 patients with lung cancer found a mixture 
 
 Together, these studies suggest that PD-1 blockade works less by reviving exhausted cells than by releasing a reserve, in the tumor, the lymph nodes and the blood, that produces new killer cells. The mix varies by cancer and by patient. They also suggest that lymph nodes, and a steady supply of new T cells, matter a great deal, an idea [Chapter 12](12-frontier.html) builds on.
 :::
-
-Because anti-CTLA-4 acts chiefly at priming and anti-PD-1 chiefly inside the tumor, the two drugs combine well.
 
 :::figure ch08-two-brakes
 title: Two brakes, two places
@@ -219,9 +217,9 @@ alt: Two side-by-side scenes. In a lymph node, CTLA-4 on a regulatory T cell bin
 :::
 
 :::deep-dive Does anti-CTLA-4 also deplete regulatory T cells?
-Regulatory T cells (Tregs) express more CTLA-4 than any other cell, especially inside tumors. That makes them a possible target for an anti-CTLA-4 antibody with an active Fc region: macrophages and NK cells, which carry Fc receptors, could bind antibody-coated Tregs and destroy them, removing a second, independent restraint.
+Regulatory T cells (Tregs) express more CTLA-4 than any other cell, especially inside tumors. That makes them a possible target for an anti-CTLA-4 antibody whose Fc region, the stem of the Y, is active: macrophages and NK cells, which carry Fc receptors, could bind antibody-coated Tregs and destroy them, removing a second, independent restraint.
 
-It does in mice: in animals engineered to carry human Fc receptors, antibodies built like ipilimumab and tremelimumab depleted Tregs inside tumors, and versions that bound Fc receptors more strongly worked better.[^12]
+Such depletion happens in mice: in animals engineered to carry human Fc receptors, antibodies built like ipilimumab and tremelimumab depleted Tregs inside tumors, and versions that bound Fc receptors more strongly worked better.[^12]
 
 In people, the evidence is mixed. Researchers compared tumors from patients with melanoma, prostate cancer and bladder cancer treated with ipilimumab against matched untreated tumors, and examined before-and-after biopsies from melanoma patients given tremelimumab. Both drugs drew more CD4 and CD8 T cells into the tumors, but Treg numbers did not fall.[^6] On the other hand, melanoma patients who had inherited a variant of an Fc receptor that binds the Fc region of IgG with higher affinity were more likely to respond to ipilimumab, at least when their tumors were inflamed.[^12] Neither finding settles whether Tregs disappear from human tumors; a biopsy captures one moment in one spot.
 
@@ -234,13 +232,15 @@ To judge a cancer treatment, doctors use a **survival curve**, which starts with
 
 In a trial published in 2011, patients with {{metastasis|metastatic}} melanoma given the standard chemotherapy, dacarbazine, had a median survival of 9.1 months, and only 12% were alive three years later.[^14]
 
-Ipilimumab was the first drug shown in {{randomized-trial|randomized trials}}, where chance decides who gets which treatment, to lengthen survival in advanced melanoma.[^15] The gain in the median was modest: about four months against a comparison vaccine in a 2010 trial of previously treated patients (10.0 vs 6.4 months),[^16] and two months when added to chemotherapy in the 2011 trial (11.2 vs 9.1).[^14] But when researchers pooled data on 1,861 patients treated with ipilimumab, the curve flattened from about year three at roughly one patient in five and stayed flat for as long as patients were followed, up to ten years.[^17] Oncologists call this flat stretch the **tail of the curve**.
+In {{randomized-trial|randomized trials}}, where chance decides who gets which treatment, ipilimumab was the first drug shown to lengthen survival in advanced melanoma.[^15] The gain in the median was modest: about four months against a comparison vaccine in a 2010 trial of previously treated patients (10.0 vs 6.4 months),[^16] and two months when added to chemotherapy in the 2011 trial (11.2 vs 9.1).[^14] But when researchers pooled data on 1,861 patients treated with ipilimumab, the curve flattened from about year three at roughly one patient in five and stayed flat for as long as patients were followed, up to ten years.[^17] Oncologists call this flat stretch the **tail of the curve**.
 
-The clearest data come from CheckMate 067, in which 945 people with untreated advanced melanoma were randomly assigned to ipilimumab, nivolumab or both in 2013–14, then followed for at least ten years.[^7] Median survival was 19.9 months with ipilimumab, 36.9 months with nivolumab and 71.9 months — six years — with the combination. At ten years, 19%, 37% and 43% of each group were alive. Part of the ipilimumab group's tail reflects later treatment: by year three, 43% of them had gone on to a PD-1 blocker.[^15]
+The clearest data come from CheckMate 067, in which 945 people with untreated advanced melanoma were randomly assigned to ipilimumab, nivolumab or both in 2013–14, then followed for at least ten years.[^7] Median survival was 19.9 months with ipilimumab, 36.9 months with nivolumab and 71.9 months — six years — with the combination. At ten years, 19%, 37% and 43% of each group were alive. The ipilimumab median is longer than in the earlier trials, which enrolled different patients years before, and part of that group's tail reflects later treatment: by year three, 43% of them had gone on to a PD-1 blocker.[^15]
 
 After year three the curves kept sloping down, but gently: about two percentage points a year, instead of fifteen or twenty early on. Some of those later deaths had nothing to do with melanoma; 52% of the combination group had not died of melanoma by year ten.[^7]
 
-Melanoma is the most favorable case. Even on the combination, only half of patients had confirmed tumor shrinkage (58% by a looser count), and nearly half died of melanoma within ten years. Nor was the trial designed to prove that the combination beats nivolumab alone; the difference favors it, but could be partly chance.[^7] Other cancers have tails too, usually lower. In a lung cancer trial of 305 patients whose tumors carried a lot of PD-L1, 32% of those started on pembrolizumab were alive after five years, against 16% started on chemotherapy, though two-thirds of the latter later received immunotherapy.[^18]
+Melanoma is the most favorable case. Even on the combination, only half of patients had confirmed tumor shrinkage (58% by a looser count), and nearly half died of melanoma within ten years. Nor was the trial designed to prove that the combination beats nivolumab alone; the difference favors it, but could be partly chance.[^7]
+
+Other cancers have tails too, usually lower. In a lung cancer trial of 305 patients whose tumors carried a lot of PD-L1, 32% of those started on pembrolizumab were alive after five years, against 16% started on chemotherapy, though two-thirds of the latter later received immunotherapy.[^18]
 
 :::figure ch08-tail
 title: The tail of the curve
@@ -335,9 +335,9 @@ Three numbers summarize a curve, and each hides something.
 
 Two cautions apply. Overall survival counts deaths from any cause; melanoma-specific survival counts only deaths from melanoma, and the gap grows once patients live long enough to die of something else. And curves from different trials, like the chemotherapy curve in the figure above, cannot be compared directly, because patients, eras and later treatments all differ.
 
-**The long tail in detail.** In CheckMate 067, reaching year three free of cancer growth was a strong predictor. About a third of patients on the combination and a quarter on nivolumab got that far, and 96–97% of them had not died of melanoma by year ten. Patients who stopped the combination during the first few months because of side effects did about as well as the group as a whole: 43% were alive at ten years. That is encouraging, but not proof that stopping early is harmless, since people who stop may differ from those who don't. And late relapses were rare: after year five, only eight patients in the whole trial saw their cancer start growing for the first time.[^7]
+**The long tail in detail.** In CheckMate 067, reaching year three free of cancer growth was a strong predictor. About a third of patients on the combination and a quarter on nivolumab got that far, and 96–97% of them had not died of melanoma by year ten. Late relapses were rare: after year five, only eight patients in the whole trial saw their cancer start growing for the first time. Patients who stopped the combination during the first few months because of side effects did about as well as the group as a whole: 43% were alive at ten years. That is encouraging, but not proof that stopping early is harmless, since people who stop may differ from those who don't.[^7]
 
-**Why there is a tail.** Drugs that kill dividing cells, or block one growth signal, select for resistant clones (Chapter 6), so their survival curves tend to keep falling. An immune response can adapt: new clones join, and memory cells persist. Whether a ten-year survivor is cured, or held in a long equilibrium like the one in Chapter 7, cannot yet be determined.
+**Why there is a tail.** Drugs that kill dividing cells, or block one growth signal, select for resistant clones ([Chapter 6](06-cancer.html)), so their survival curves tend to keep falling. An immune response can adapt: new clones join, and memory cells persist. Whether a ten-year survivor is cured, or held in a long equilibrium like the one in [Chapter 7](07-escape.html), cannot yet be determined.
 :::
 
 ## Who responds, and why
@@ -345,8 +345,8 @@ Two cautions apply. Overall survival counts deaths from any cause; melanoma-spec
 Checkpoint inhibitors first succeeded in melanoma and work best in a few other cancers because releasing a brake helps only if T cells recognize something in the tumor and can reach it (Chapters 6 and 7). (A patient "responds" when their tumors shrink substantially; the share who do is the {{objective-response-rate|response rate}}.)
 
 - **Cancers with many mutations.** Sun-damaged melanomas, lung cancers in smokers, bladder cancers and squamous-cell skin cancers carry many mutations, and so many {{neoantigen|neoantigens}}. The most extreme case is tumors that are {{msi-high|mismatch-repair deficient (MSI-high)}}, which cannot fix DNA copying errors ([Chapter 6](06-cancer.html)). In an early pembrolizumab trial, deficient tumors averaged 1,782 mutations, ordinary ones 73; 4 of 10 patients with deficient colorectal cancers responded, and none of 18 with ordinary ones.[^23]
-- **Cancers caused by viruses.** Most Merkel cell carcinomas (a rare, aggressive skin cancer), throat cancers caused by the human papillomavirus (HPV), and cervical cancers, nearly all of which HPV causes, present fragments of viral proteins, which are ready-made targets.
-- **Cancers with extra PD-L1 genes.** Hodgkin {{lymphoma|lymphoma}} cells often carry extra copies of the genes for PD-L1 and its relative PD-L2. In a small early nivolumab trial, 20 of 23 heavily pretreated patients responded;[^24] in two larger trials of PD-1 blockers, about 7 in 10 did.[^44][^45] Yet about four in five of these tumors express less {{mhc-class-i|MHC class I}} or none,[^42] and after nivolumab, complete remissions were associated with {{mhc-class-ii|MHC class II}} instead.[^43] Helper T cells or other cells may do much of the work (Chapter 12 describes another such case).
+- **Cancers caused by viruses.** Most Merkel cell carcinomas (a rare, aggressive skin cancer) are caused by a virus, and the human papillomavirus (HPV) causes some throat cancers and nearly all cervical cancers. Their cells present fragments of viral proteins, which are wholly foreign rather than altered versions of the body's own.
+- **Cancers with extra PD-L1 genes.** Hodgkin {{lymphoma|lymphoma}} cells often carry extra copies of the genes for PD-L1 and its relative PD-L2, and so make more of both ligands, which probably holds back the T cells around them through PD-1.[^24] In a small early nivolumab trial, 20 of 23 heavily pretreated patients responded;[^24] in two larger trials of PD-1 blockers, about 7 in 10 did.[^44][^45] Yet about four in five of these tumors express less {{mhc-class-i|MHC class I}} or none,[^42] and after nivolumab, complete remissions were associated with {{mhc-class-ii|MHC class II}} instead.[^43] Helper T cells or other cells may do much of the work ([Chapter 12](12-frontier.html) describes another such case).
 - **Exceptions.** Kidney cancer responds reasonably well despite modest mutation counts; mutations are only part of the explanation.
 
 At the other end are the {{cold-tumor|cold tumors}} of [Chapter 7](07-escape.html): pancreatic cancer, most colorectal cancers, prostate cancer and glioblastoma, the most common aggressive brain cancer. Few T cells are in them or can get in, and checkpoint inhibitors alone rarely shrink them. None has a checkpoint-inhibitor approval of its own, apart from the minority of tumors that are mismatch-repair deficient or carry very many mutations.
@@ -357,50 +357,21 @@ In 2023, about 57 of every 100 people in the United States with advanced cancer 
 
 Doctors would like a {{biomarker|biomarker}} that predicts who will benefit. Three are used in practice, and none predicts perfectly.
 
-**PD-L1 staining.** Pathologists stain a thin slice of tumor so that cells expressing PD-L1 turn brown — a technique called {{immunohistochemistry|immunohistochemistry}} — and count them. More PD-L1 means better odds in some cancers, notably lung cancer, where it guides treatment. But PD-L1-negative tumors can respond, labs use different staining kits and cut-offs, and PD-L1 varies across a tumor and over time. In CheckMate 067, patients with little PD-L1 still did well: on nivolumab alone, 43% of them had not died of melanoma after ten years, against 54% of those with more PD-L1.[^7] In a formal test, PD-L1 predicted three-year survival only slightly better than chance.[^15]
+**PD-L1 staining.** Pathologists stain a thin slice of tumor so that cells expressing PD-L1 turn brown — a technique called {{immunohistochemistry|immunohistochemistry}} — and count them. More PD-L1 means better odds in some cancers, notably lung cancer, where it guides treatment. But PD-L1-negative tumors can respond, labs use different staining kits and cut-offs, and PD-L1 varies across a tumor and over time. In CheckMate 067, patients with little PD-L1 still did well: counting only deaths from melanoma, ten-year survival on nivolumab alone was 43% for them, against 54% for those with more PD-L1.[^7] In the trial's statistical analysis, PD-L1 predicted three-year survival only slightly better than chance.[^15]
 
 **Mismatch-repair deficiency (MSI-high).** Such tumors often respond, whatever organ they arise in.[^23] In 2017 the US Food and Drug Administration (FDA) approved pembrolizumab for advanced solid tumors with this defect that had progressed after earlier treatment: the first {{tissue-agnostic|tissue-agnostic}} cancer drug approval, defined by biology rather than organ.
 
-**Tumor mutational burden.** In 2020, the FDA extended pembrolizumab, again after earlier treatment, to any advanced solid tumor with a high {{tumor-mutational-burden|tumor mutational burden}} (TMB): at least 10 mutations per million DNA bases (a megabase). The evidence came from a study without a comparison group, spanning ten cancer types, in which 29% of patients with high-TMB tumors responded, against 6% of the rest.[^8] A later analysis of more than 1,500 treated patients found the cut-off worked unevenly. In melanoma, lung and bladder cancers, about 40% of high-TMB tumors responded. In breast cancer, prostate cancer and gliomas, only about 15% did, somewhat fewer than low-TMB tumors of the same types.[^25]
+**Tumor mutational burden.** In 2020, the FDA extended pembrolizumab, again after earlier treatment, to any advanced solid tumor with a high {{tumor-mutational-burden|tumor mutational burden}} (TMB): at least 10 mutations per million DNA bases (a megabase). The evidence came from a study without a comparison group, spanning ten cancer types, in which 29% of patients with high-TMB tumors responded, against 6% of the rest.[^8] A later analysis of more than 1,500 treated patients found the cut-off worked unevenly. In melanoma, lung and bladder cancers, about 40% of high-TMB tumors responded. In breast cancer, prostate cancer and gliomas, only about 15% did, somewhat fewer than low-TMB tumors of the same types. In those three cancers, unlike the first three, tumors with more predicted neoantigens did not contain more killer T cells.[^25]
 
-One of the best clues is whether an attack is already under way — a "hot" tumor — and no test yet captures that reliably enough for routine use. Research tests come closer: an 18-gene "T-cell-inflamed" signature, built from genes induced by interferon-gamma, predicted benefit from pembrolizumab across nine cancer types,[^26] and Chapter 7's Immunoscore counts T cells directly.
+One of the best clues is whether an attack is already under way — a "hot" tumor — and no test yet captures that reliably enough for routine use. Research tests come closer: an 18-gene "T-cell-inflamed" signature, built from genes induced by interferon-gamma, predicted benefit from pembrolizumab across nine cancer types,[^26] and [Chapter 7](07-escape.html)'s Immunoscore counts T cells directly.
 
-But a T cell inside a tumor is not necessarily attacking it. Many are bystanders whose receptors recognize viruses from past infections, such as flu or Epstein–Barr virus.[^41] In colorectal and ovarian cancers, only about one killer T cell in ten recognized the patient's tumor, and in two of the four tumors tested, no tumor-reactive killer T cells were found.[^40]
-
-## More brakes, more partners, expensive lessons
-
-Adding ipilimumab to nivolumab, releasing two brakes at once, raises response rates in melanoma, and probably survival, at a steep price in side effects (below). The pair is also used, usually with less ipilimumab, in kidney, lung, MSI-high colorectal and other cancers.
-
-T cells carry other brakes, such as **{{lag-3|LAG-3}}**. In a trial of 714 people with untreated advanced melanoma, adding the anti-LAG-3 antibody relatlimab to nivolumab lengthened the median time before the cancer grew from 4.6 to 10.1 months, while severe side effects rose from 10% to 19%.[^21] People on the pair also tended to live longer, but that difference fell just short of statistical significance in the trial's planned analysis.[^22] The pair was approved in 2022.
-
-:::deep-dive Survival versus surrogate endpoints
-Overall survival is the measure that matters most, but it takes years and many patients to measure, especially when treatments work well. So trials often use earlier stand-ins, called surrogate endpoints:
-
-- **Progression-free survival:** time until the cancer grows or the patient dies.
-- **Recurrence-free (or disease-free) survival:** after surgery, time until the cancer comes back.
-- **Event-free survival:** when treatment starts before surgery, time until any of several setbacks — growth that prevents surgery, recurrence or death.
-- **Pathologic response:** how much living cancer a pathologist finds in tissue removed after treatment given before surgery ("complete" if none).
-
-Surrogates are faster and often support approvals. But a delay in cancer growth does not automatically mean longer life: in one review of trial-level analyses across oncology, more than half of the reported correlations between a surrogate endpoint and survival were weak.[^20] The relatlimab trial above is one example: the pair clearly delayed melanoma growth, but its survival gain fell just short of statistical significance.[^21][^22] Immunotherapy adds complications: slow responses and pseudoprogression can make early scans look worse than the final outcome, and a drug that lifts the tail may barely move a median. Chapters 11 and 12 report recurrence-free survival, event-free survival and pathologic responses; read them with these caveats in mind.
-:::
-
-Other add-ons have failed, and the failures are informative. **{{ido|IDO1}}** is an enzyme that some tumors use to suppress T cells ([Chapter 7](07-escape.html)): it degrades tryptophan, an amino acid T cells need. In early studies without a comparison group, the IDO1 blocker epacadostat plus pembrolizumab looked promising. Then, in 2018, a randomized trial in 706 melanoma patients found no benefit at all: the median time before the cancer progressed was 4.7 months with epacadostat and 4.9 months with a placebo.[^27]
-
-**{{tigit|TIGIT}}**, another brake, followed the same pattern: encouraging early results, then a large randomized trial in 521 people with lung cancer in which adding the anti-TIGIT antibody tiragolumab to atezolizumab did not significantly improve survival.[^28] Similar failures followed (see the box).
-
-These were costly lessons. Studies without a comparison group cannot show what an add-on contributes, because anti-PD-1 alone already works for some patients; small randomized trials can flatter a drug by chance; and blocking a brake helps only if that brake is what holds T cells back.
-
-:::deep-dive More add-ons that failed
-**LAG-3, again.** In May 2026, Regeneron reported that its anti-LAG-3 antibody fianlimab, added to the PD-1 blocker cemiplimab, did not significantly delay melanoma growth compared with pembrolizumab in a trial of 1,546 patients (median 11.5 vs 6.4 months; hazard ratio 0.85, not significant; company-reported).[^29]
-
-**TIGIT, again.** After further late-stage failures, Roche stopped developing tiragolumab in July 2025, some 5,000 patients into its program.[^30] In December 2025, one of the last large TIGIT trials, of domvanalimab in stomach and esophageal cancers, was stopped after a planned interim analysis showed no survival gain over nivolumab plus chemotherapy (company-reported).[^31]
-:::
+But a T cell inside a tumor is not necessarily attacking it. Many are bystanders whose receptors recognize viruses from past infections, such as flu or Epstein–Barr virus.[^41] In one study of colorectal and ovarian tumors, only about one killer T cell in ten recognized the patient's tumor, and in two of the four tumors tested, none did.[^40]
 
 ## The price of a released brake
 
 The brakes exist to protect healthy tissue, and releasing them lets T cells attack it. These {{immune-related-adverse-event|immune-related adverse events}} can affect almost any organ, most often the skin, gut, liver, lungs and endocrine (hormone-making) glands.[^32]
 
-Self-tolerance is built in layers, none of them complete (Chapter 5). Self-reactive T cells that escape the thymus are restrained in the rest of the body by other mechanisms, the last of which are the brakes. A checkpoint inhibitor weakens that last layer everywhere at once. Some of the freed T cells were self-reactive all along; others, aimed at the tumor, also recognize something in healthy tissue (see the box after the figure).
+Self-tolerance is built in layers, none of them complete ([Chapter 5](05-t-cells.html)). Self-reactive T cells that escape the thymus are restrained in the rest of the body by other mechanisms, the last of which are the brakes. A checkpoint inhibitor weakens that last layer everywhere at once. Some of the freed T cells are aimed at healthy tissue from the start; others are activated against the tumor and also recognize a protein in a healthy organ.
 
 A PD-1 blocker alone is the most common treatment. In CheckMate 067, 86% of patients on nivolumab had some treatment-related side effect, mostly mild, such as rash or itching. About one in five (21%) had a severe one — "grade 3 or 4," meaning severe (often needing hospital care) or life-threatening — against 28% on ipilimumab and 59% on the combination.[^15] Ipilimumab is more likely to inflame the gut and the pituitary gland; PD-1 blockers more often affect the thyroid.[^32][^33]
 
@@ -408,7 +379,7 @@ Most side effects appear in the first few months but can arise at any time, even
 
 Suppressing these side effects did not appear to weaken the attack on the cancer: in a later analysis of CheckMate 067, patients who needed immunosuppressive drugs in their first six months were no less likely to avoid death from melanoma over ten years than those who did not.[^7] At least one study suggests that very high steroid doses may reduce the benefit, so doctors try to use no more than needed.[^34]
 
-Most severe side effects in CheckMate 067 resolved within three to four weeks.[^15] The main exception is the endocrine glands, whose hormone-producing cells do not grow back once T cells destroy them. An underactive thyroid developed in about 7% of patients on PD-1 blockers and 13% on the combination; inflammation of the pituitary, the master gland at the base of the brain ({{hypophysitis|hypophysitis}}), in about 3% on ipilimumab and 6% on the combination, but under 1% on PD-1 blockers. Adrenal damage affected about 4% on the combination, and rarely T cells destroy the pancreas's insulin-making cells.[^33] Patients may then need thyroid hormone, {{cortisol|cortisol}} or insulin for life. Occasionally damage elsewhere lasts too, such as lung scarring after severe inflammation.[^32]
+Most severe side effects in CheckMate 067 resolved within three to four weeks.[^15] The main exception is the endocrine glands, whose hormone-producing cells do not grow back once T cells destroy them. The glands most often damaged are the thyroid, the pituitary (the master gland at the base of the brain, whose inflammation is called {{hypophysitis|hypophysitis}}) and the adrenal glands, each more often with the combination than with either drug alone; rarely, T cells destroy the pancreas's insulin-making cells.[^33] Patients may then need thyroid hormone, insulin or {{cortisol|cortisol}} for life. Cortisol, the main stress hormone, is made by the adrenal glands on instructions from the pituitary, so damage to either gland can stop its production. Occasionally damage elsewhere lasts too, such as lung scarring after severe inflammation.[^32]
 
 Deaths are rare. Pooled across trials, side effects proved fatal for about 1 in 270 patients on a PD-1 or PD-L1 blocker, 1 in 90 on anti-CTLA-4 and 1 in 80 on the combination.[^32] The most dangerous is inflammation of the heart muscle, {{myocarditis|myocarditis}}. In the manufacturer's safety records, severe cases were reported in about 1 in 1,700 patients on nivolumab and 1 in 370 on the combination,[^35] and nearly half of reported cases have been fatal.[^32]
 
@@ -500,22 +471,16 @@ Damaging an organ takes more than a missing brake. The person's HLA molecules mu
 
 **Spillover from the tumor.** Some side effects spill over from the attack on the tumor. In two patients who died of heart inflammation on nivolumab plus ipilimumab, the same T-cell clones turned up in tumor, heart and skeletal muscle.[^35]
 
-**The gut's reliance on CTLA-4.** The gut is exposed to trillions of bacteria, and keeping it free of inflammation depends on regulatory T cells and their CTLA-4 (Chapter 5), which may be why colitis is ipilimumab's hallmark. People born with one faulty copy of the CTLA-4 gene have poorly functioning regulatory T cells, and 59% of those who fall ill have gut problems.[^49][^50]
+**The gut's reliance on CTLA-4.** The gut is exposed to trillions of bacteria, and keeping it free of inflammation depends on regulatory T cells and their CTLA-4 ([Chapter 5](05-t-cells.html)), which may be why colitis is ipilimumab's hallmark. People born with one faulty copy of the CTLA-4 gene have poorly functioning regulatory T cells, and 59% of those who fall ill have gut problems.[^49][^50]
 
-**Benefit and side effects together.** In the lung study, patients with any of the tested autoantibodies also went longer before their cancer grew.[^47] As with the vitiligo described in Chapter 6, benefit and side effects often go together, though neither guarantees the other.
-:::
-
-:::clinic
-**What treatment looks like.** For most patients, checkpoint therapy is an infusion every few weeks, for up to about two years,[^8] or, increasingly, an injection under the skin that takes a few minutes, approved in the United States for nivolumab in December 2024 and for pembrolizumab in September 2025.[^4] The first scans may show little change, and side effects can appear months later, even after treatment ends.[^32]
+**Benefit and side effects together.** In the lung study, patients with any of the tested autoantibodies also went longer before their cancer grew.[^47] As with the vitiligo described in [Chapter 6](06-cancer.html), benefit and side effects often go together, though neither guarantees the other.
 :::
 
 ## How responses unfold
 
-Checkpoint inhibitors often act slowly, because the responding T-cell population has to expand first; a first scan after two or three months may show little change.
+Checkpoint inhibitors often act slowly, because the responding T-cell population has to expand first; a first scan after two or three months may show little change. Occasionally a tumor looks bigger on a scan before it shrinks, a pattern called {{pseudoprogression|pseudoprogression}}. It is uncommon, but it is why doctors sometimes continue treatment through an ambiguous first scan. A more controversial pattern, {{hyperprogression|hyperprogression}}, describes tumors that seem to accelerate after treatment starts; whether the drugs cause it is still debated.
 
-Occasionally a tumor looks bigger on a scan before it shrinks, a pattern called {{pseudoprogression|pseudoprogression}}. It is uncommon, but it is why doctors sometimes continue treatment through an ambiguous first scan. A more controversial pattern, {{hyperprogression|hyperprogression}}, describes tumors that seem to accelerate after treatment starts; whether the drugs cause it is still debated (see the box).
-
-Once a tumor responds, the response often lasts for years after the last infusion, probably because the drug leaves behind an expanded population of T cells, including long-lived {{memory-cell|memory cells}}.
+Treatment usually continues for up to about two years.[^8] Once a tumor responds, the response often lasts for years after the last infusion, probably because the drug leaves behind an expanded population of T cells, including long-lived {{memory-cell|memory cells}}.
 
 :::deep-dive Pseudoprogression and hyperprogression
 The standard rules for judging a cancer treatment, called RECIST, declare "progression" when the summed size of the measured tumors grows by at least 20% over its smallest earlier value, or when new tumors appear. These rules were designed in the chemotherapy era and fit immunotherapy poorly; they also count only shrinkage, though long-lasting stable disease can be a benefit too.
@@ -525,13 +490,46 @@ In **pseudoprogression**, tumors look bigger on a scan, because T cells and flui
 **Hyperprogression** is the opposite worry: a sudden acceleration of growth after treatment starts. In the same study, 13.8% of patients met its definition, compared with 5.1% of 59 patients given chemotherapy, and they did badly, with a median survival of 3.4 months.[^38] But definitions vary between studies, most studies look back at past records, and aggressive cancers sometimes speed up on their own. Whether checkpoint inhibitors cause hyperprogression, and in whom, remains open.
 :::
 
+:::clinic
+**What treatment looks like.** For most patients, checkpoint therapy is an infusion every few weeks or, increasingly, an injection under the skin that takes a few minutes, approved in the United States for nivolumab in December 2024 and for pembrolizumab in September 2025.[^4]
+:::
+
+## More brakes, more partners, expensive lessons
+
+Adding ipilimumab to nivolumab, releasing two brakes at once, raises response rates in melanoma, and probably survival, at a steep price in side effects. The pair is also used, usually with less ipilimumab, in kidney, lung, MSI-high colorectal and other cancers.
+
+T cells carry other brakes, such as **{{lag-3|LAG-3}}**. In a trial of 714 people with untreated advanced melanoma, adding the anti-LAG-3 antibody relatlimab to nivolumab lengthened the median time before the cancer grew from 4.6 to 10.1 months, while severe side effects rose from 10% to 19%.[^21] People on the pair also tended to live longer, but that difference fell just short of statistical significance in the trial's planned analysis.[^22] The pair was approved in 2022.
+
+:::deep-dive Survival versus surrogate endpoints
+Overall survival is the measure that matters most, but it takes years and many patients to measure, especially when treatments work well. So trials often use earlier stand-ins, called surrogate endpoints:
+
+- **Progression-free survival:** time until the cancer grows or the patient dies.
+- **Recurrence-free (or disease-free) survival:** after surgery, time until the cancer comes back.
+- **Event-free survival:** when treatment starts before surgery, time until any of several setbacks — growth that prevents surgery, recurrence or death.
+- **Pathologic response:** how much living cancer a pathologist finds in tissue removed after treatment given before surgery ("complete" if none).
+
+Surrogates are faster and often support approvals. But a delay in cancer growth does not automatically mean longer life: in one review of trial-level analyses across oncology, more than half of the reported correlations between a surrogate endpoint and survival were weak.[^20] The relatlimab trial above is one example: the pair clearly delayed melanoma growth, but its survival gain fell just short of statistical significance.[^21][^22] Immunotherapy adds complications: slow responses and pseudoprogression can make early scans look worse than the final outcome, and a drug that lifts the tail may barely move a median. Chapters 11 and 12 report recurrence-free survival, event-free survival and pathologic responses; read them with these caveats in mind.
+:::
+
+Other add-ons have failed, and the failures are informative. **{{ido|IDO1}}** is an enzyme that some tumors use to suppress T cells ([Chapter 7](07-escape.html)): it degrades tryptophan, an amino acid T cells need. In early studies without a comparison group, the IDO1 blocker epacadostat plus pembrolizumab looked promising. Then, in 2018, a randomized trial in 706 melanoma patients found no benefit at all: the median time before the cancer progressed was 4.7 months with epacadostat and 4.9 months with a placebo.[^27]
+
+**{{tigit|TIGIT}}**, another brake, followed the same pattern: encouraging early results, then a large randomized trial in 521 people with lung cancer in which adding the anti-TIGIT antibody tiragolumab to atezolizumab did not significantly improve survival.[^28] Similar failures followed.
+
+These were costly lessons. Studies without a comparison group cannot show what an add-on contributes, because anti-PD-1 alone already works for some patients; small randomized trials can flatter a drug by chance; and blocking a brake helps only if that brake is what holds T cells back.
+
+:::deep-dive More add-ons that failed
+**LAG-3, again.** In May 2026, Regeneron reported that its anti-LAG-3 antibody fianlimab, added to the PD-1 blocker cemiplimab, did not significantly delay melanoma growth compared with pembrolizumab in a trial of 1,546 patients (company-reported). The medians were far apart, 11.5 vs 6.4 months, but the hazard ratio, which compares the whole curves rather than their midpoints, was 0.85 and not significant.[^29]
+
+**TIGIT, again.** After further late-stage failures, Roche stopped developing tiragolumab in July 2025, some 5,000 patients into its program.[^30] In December 2025, one of the last large TIGIT trials, of domvanalimab in stomach and esophageal cancers, was stopped after a planned interim analysis showed no survival gain over nivolumab plus chemotherapy (company-reported).[^31]
+:::
+
 ## From last resort to first move
 
-Checkpoint inhibitors were first used as a last resort. Today they are often the first treatment, and are increasingly given after surgery ({{adjuvant-therapy|adjuvant therapy}}) in melanoma, lung, kidney and other cancers, and before it ({{neoadjuvant-therapy|neoadjuvant therapy}}), while the tumor and its antigens are still in place to stimulate the immune response. [Chapter 12](12-frontier.html) explores why that timing may matter.
+Checkpoint inhibitors were first used as a last resort. Today they are often the first treatment for advanced cancer, and are increasingly used at earlier stages, when the tumor can still be removed: after surgery ({{adjuvant-therapy|adjuvant therapy}}) in melanoma, lung, kidney and other cancers, and before surgery ({{neoadjuvant-therapy|neoadjuvant therapy}}), while the tumor and its antigens are still in place to stimulate the immune response. [Chapter 12](12-frontier.html) explores why that timing may matter.
 
 Whatever part pembrolizumab played in Jimmy Carter's recovery, it gave his T cells no new targets. Any T cells able to recognize his melanoma were already in his body, either active or still {{naive-t-cell|naive}} (not yet activated); the drug could only remove a restraint on them.
 
-For most patients, whose tumors T cells do not recognize or cannot reach, treatment has to direct the immune system at a target. Chapter 9 begins with the most versatile tools for that: antibodies that bind the cancer cell itself rather than a receptor on a T cell.
+For most patients, whose tumors T cells do not recognize or cannot reach, treatment has to direct the immune system at a target. [Chapter 9](09-antibodies.html) begins with the most versatile tools for that: antibodies that bind the cancer cell itself rather than a receptor on a T cell.
 
 :::quiz
 Q: Jimmy Carter's melanoma disappeared after treatment that included pembrolizumab. What does the drug itself do?
@@ -544,7 +542,7 @@ Q: In CheckMate 067, median survival on nivolumab plus ipilimumab was 71.9 month
 - [ ] Most patients on the combination were cured of their melanoma — No: more than half of the patients had died by ten years, many of them of melanoma.
 - [x] Half were alive at about six years; a sizable minority, a decade on — Right: the median marks the halfway point, and the ten-year figure describes the long tail.
 
-Q: Ipilimumab causes more severe gut and pituitary inflammation than nivolumab. Which explanation fits this chapter best?
+Q: Ipilimumab causes severe side effects, such as gut and pituitary inflammation, more often than nivolumab. Which explanation fits this chapter best?
 - [ ] It is chemically more toxic to the gut and the pituitary gland than nivolumab is — No: the damage is immune-mediated (mainly T cells attacking healthy tissue), not direct chemical toxicity.
 - [x] It releases the brake during priming in lymph nodes, so more T cells are activated — Right: broadening the response also lets through T cells that react weakly to healthy tissue, and these can attack the body's own organs.
 - [ ] It blocks PD-1 directly on gut and pituitary cells, inflaming them — No: ipilimumab blocks CTLA-4, and PD-1 sits on T cells.
@@ -671,3 +669,4 @@ Q: Why do most pancreatic cancers and ordinary (mismatch-repair-proficient) colo
 48. Keir ME, Liang SC, Guleria I, et al. Tissue expression of PD-L1 mediates peripheral T cell tolerance. *J Exp Med* 2006;203(4):883–895. doi:10.1084/jem.20051776
 49. Schubert D, Bode C, Kenefeck R, et al. Autosomal dominant immune dysregulation syndrome in humans with CTLA4 mutations. *Nat Med* 2014;20(12):1410–1416. doi:10.1038/nm.3746
 50. Schwab C, Gabrysch A, Olbrich P, et al. Phenotype, penetrance, and treatment of 133 cytotoxic T-lymphocyte antigen 4–insufficient subjects. *J Allergy Clin Immunol* 2018;142(6):1932–1946. doi:10.1016/j.jaci.2018.02.055
+51. Viola A, Lanzavecchia A. T cell activation determined by T cell receptor number and tunable thresholds. *Science* 1996;273(5271):104–106. doi:10.1126/science.273.5271.104

@@ -17,7 +17,7 @@ In 2020 a coronavirus new to every human immune system repeated the test worldwi
 
 ## The impossible problem
 
-{{innate-immunity|Innate immunity}} (Chapter 2) relies on receptors encoded directly in your genes, which recognize broad danger patterns that {{pathogen|pathogens}} (disease-causing microbes, such as viruses and bacteria) find hard to change. These receptors cannot tell one strain of flu from another, and they do not learn.
+{{innate-immunity|Innate immunity}} ([Chapter 2](02-innate.html)) relies on receptors encoded directly in your genes, which recognize broad molecular signatures that {{pathogen|pathogens}} find hard to change. These receptors cannot tell one strain of flu from another, and they do not learn.
 
 Recognizing a *particular* virus takes a receptor that fits *its* surface, and that surface keeps changing: microbes can alter their coats within months, while the human genome changes only over many generations. Flu changes its surface so steadily that its vaccine is updated every year [^3].
 
@@ -29,47 +29,47 @@ In fact the body makes an enormous collection of different receptors *in advance
 
 ## Two kinds of lymphocyte
 
-Adaptive immunity depends on two kinds of {{lymphocyte|lymphocytes}}, small white blood cells that travel in blood and lymph and gather in the {{lymph-node|lymph nodes}} and {{spleen|spleen}}. (The NK cells of Chapter 2 are innate lymphocytes.)
+Adaptive immunity depends on two kinds of {{lymphocyte|lymphocytes}}, small white blood cells that travel in blood and lymph and gather in the {{lymph-node|lymph nodes}} and {{spleen|spleen}}. (The NK cells of [Chapter 2](02-innate.html) are innate lymphocytes.)
 
 {{t-cell|T cells}} are named for the {{thymus|thymus}}, the small organ behind the breastbone where they mature. {{b-cell|B cells}} were named for the bursa of Fabricius, an organ in birds where they were first found; in people they mature in the {{bone-marrow|bone marrow}}, which happens to start with B as well.
 
-Each B cell carries many copies of a {{bcr|B-cell receptor}}, which is an antibody anchored to the cell. B cells recognize intact shapes, such as a patch on a virus coat or one of Landsteiner's chemicals, and once activated they secrete their antibody in large quantities.
+Each B cell carries many copies of a {{bcr|B-cell receptor}}, which is an antibody anchored to the cell. B cells recognize intact shapes, such as a patch on a virus coat or one of Landsteiner's chemicals, and once activated they secrete free copies of that antibody in large quantities.
 
-Each T cell carries many copies of a {{tcr|T-cell receptor}}, which never leaves the cell. T cells kill infected cells and coordinate other immune cells, and, as the last section explains, they recognize targets differently.
+Each T cell carries many copies of a {{tcr|T-cell receptor}}, which never leaves the cell. Of the two main kinds from [Chapter 1](01-cells.html), {{cd8-t-cell|killer T cells}} destroy infected cells and {{cd4-t-cell|helper T cells}} coordinate other immune cells. Unlike a B-cell receptor, a T-cell receptor recognizes short fragments of proteins, called {{peptide|peptides}}, that cells display on their surface in {{mhc|MHC molecules}}, such as the class I "shop window" of Chapter 2.
 
-Anything a B- or T-cell receptor can recognize is an {{antigen|antigen}}; the exact patch it binds, often a dozen or so amino acids, is an {{epitope|epitope}}.
+Anything a B- or T-cell receptor can recognize is an {{antigen|antigen}}; the exact patch it binds (on a protein, often a dozen or so amino acids) is an {{epitope|epitope}}.
 
 **As a rule, each lymphocyte carries just one kind of receptor**, so it recognizes a narrow range of epitopes and ignores nearly everything else.
 
 ## Shuffling the deck
 
-An antibody is a Y-shaped protein made of four chains: two identical long {{heavy-chain|heavy chains}} and two identical short {{light-chain|light chains}}. Each chain begins with a **{{variable-region|variable region}}**, whose amino-acid sequence differs from one antibody to the next. The rest of the chain is its **{{constant-region|constant region}}**, which comes in only a few standard types. At the end of each arm of the Y, the variable regions of one heavy and one light chain together form an antigen-binding site, the part that binds the target; the stem of the Y is built from heavy-chain constant regions alone. Making a new antibody means making new variable regions.
+An antibody is a Y-shaped protein made of four chains: two identical long {{heavy-chain|heavy chains}}, each running from the base of the stem to the tip of one arm, and two identical short {{light-chain|light chains}}, one alongside the heavy chain in each arm. Each chain begins with a **{{variable-region|variable region}}**, whose amino-acid sequence differs from one antibody to the next. The rest of the chain is its **{{constant-region|constant region}}**, which comes in only a few standard types. At the end of each arm of the Y, the variable regions of one heavy and one light chain together form an antigen-binding site, the part that binds the target. Making a new antibody means making new variable regions.
 
 In 1976 Nobumichi Hozumi and Susumu Tonegawa found that the DNA encoding the variable region of an antibody chain and the DNA encoding its constant region lie far apart in mouse embryo cells, but had been brought together in a tumor of antibody-secreting cells, where every cell makes the same antibody [^6]. Lymphocytes, it turned out, cut and rejoin their own DNA as they mature, a discovery that won Tonegawa the 1987 Nobel Prize.
 
-For the variable region of the heavy chain, your DNA holds not one complete gene but rows of {{gene-segment|gene segments}}, alternative versions in three families: about 40 working **V** (variable) segments, 23 **D** (diversity) segments and 6 **J** (joining) segments [^7]. In each young B cell, a pair of enzymes, {{rag|RAG1 and RAG2}}, binds beside one D segment and one J segment and cuts the DNA at both; the stretch between them is removed, and the cell's DNA-repair enzymes join the cut ends. The same process then brings in one V. This cutting and joining is called {{vdj-recombination|V(D)J recombination}}.
+For the variable region of the heavy chain, your DNA holds not one complete gene but rows of {{gene-segment|gene segments}}, alternative versions in three families: about 40 working **V** (variable) segments, 23 **D** (diversity) segments and 6 **J** (joining) segments [^7]. In each young B cell, a pair of enzymes, {{rag|RAG1 and RAG2}}, binds beside one D segment and one J segment and cuts the DNA at both; the stretch between them is removed, and the cell's DNA-repair enzymes join the cut ends. The same process then brings in one V, and the finished variable-region DNA ends up close to the constant-region DNA. This cutting and joining is called {{vdj-recombination|V(D)J recombination}}.
 
-The choices alone give about 40 × 23 × 6 ≈ 5,500 different heavy chains. The light chain is assembled the same way from V and J segments only, which is why the D in V(D)J is in parentheses; with two families of light chain to draw on, that gives roughly 325 combinations. Pairing any heavy chain with any light chain gives nearly 2 million antibodies from fewer than 200 gene segments.
+The choices alone give about 40 × 23 × 6 ≈ 5,500 different heavy chains. The light chain is assembled the same way from V and J segments only, which is why the D in V(D)J is in parentheses; with two types of light chain to draw on, that gives roughly 325 combinations. Pairing any heavy chain with any light chain gives nearly 2 million antibodies from fewer than 200 gene segments.
 
-The joins are imprecise. At each junction between two segments, a few nucleotides (DNA letters) are trimmed from the cut ends, and an enzyme adds a few random nucleotides that were never in your genome [^8]. This {{junctional-diversity|junctional diversity}} falls at the center of the antigen-binding site, where it often makes the closest contact with the target.
+The joins are imprecise. At each junction between two segments, a few nucleotides (DNA letters) are trimmed from the cut ends, and an enzyme adds a few random nucleotides copied from no template, so the junction's sequence was not inherited [^8]. This {{junctional-diversity|junctional diversity}} falls at the center of the antigen-binding site, where it often makes the closest contact with the target.
+
+Each junction can come out in thousands of different ways, depending on how many nucleotides are trimmed and added, and which. A heavy chain has two junctions and a light chain one, so roughly a few thousand cubed, times 2 million segment combinations, gives a number with fifteen or more zeros.
+
+A T-cell receptor has two protein chains, built the same way from their own segments, and the classic estimate is about 10¹⁵ possible T-cell receptors: a million billion [^9]. Antibodies can be more varied still, because B cells keep mutating their receptor genes after assembling them: one study sequenced antibody heavy-chain genes from the blood of ten people and, assuming each heavy chain pairs at random with a light chain, estimated the possible variety of their antibodies at 10¹⁶ to 10¹⁸ [^10].
+
+The process is wasteful. A gene is read in three-nucleotide {{codon|codons}}, so a join whose net change in length is not a multiple of three shifts the reading frame, the grouping of every later nucleotide into codons. Since trimming and adding are random, roughly two joins in three do this, and the gene then encodes no working protein. Each cell has two copies of these genes, one from each parent ([Chapter 1](01-cells.html)). A cell that fails on one copy tries again on the other; if it runs out of attempts, it dies.
+
+Once a cell succeeds, it stops rearranging that chain, so every receptor it carries is identical. The change is permanent and passes to every descendant of the cell, which later allows a useful receptor to be multiplied. It never happens in eggs or sperm: you inherit the gene segments, not the finished receptors, so every person builds a personal set of receptors, a {{repertoire|repertoire}}, from scratch.
 
 :::deep-dive Inside the cut
 Each V, D and J segment is flanked by a short DNA signal called a recombination signal sequence: a 7-nucleotide motif and a 9-nucleotide motif separated by a spacer of either 12 or 23 nucleotides. RAG1 and RAG2 bring two signal sequences together and cut only a pair in which one has a 12-nucleotide spacer and the other a 23-nucleotide spacer, the "12/23 rule" [^8]. In the heavy-chain locus, V and J segments both carry 23-nucleotide spacers while D segments carry 12-nucleotide ones, which is why a heavy chain cannot skip its D.
 
-RAG cuts the DNA in a way that seals the cut end of each gene segment into a hairpin. Another enzyme, Artemis, then reopens the hairpin, often off-center, which can leave a few extra nucleotides that mirror the adjacent sequence (P nucleotides, for palindromic). The enzyme TdT (terminal deoxynucleotidyl transferase) adds nucleotides that are not copied from any template (N nucleotides), and non-homologous end joining, a general pathway that cells use to repair broken DNA, joins the pieces [^8]. The resulting junction encodes a loop called {{cdr3|CDR3}} (complementarity-determining region 3), the most variable part of the receptor, which sits at the center of its antigen-binding site. The cut-out DNA between the segments, with its signal sequences joined neatly end to end, is usually lost from the cell.
+RAG cuts the DNA in a way that seals the cut end of each gene segment into a hairpin. Another enzyme, Artemis, then reopens the hairpin, often off-center, which can leave a few extra nucleotides that mirror the adjacent sequence (P nucleotides, for palindromic). The enzyme TdT (terminal deoxynucleotidyl transferase) adds nucleotides that are not copied from any template (N nucleotides), and non-homologous end joining, a general pathway that cells use to repair broken DNA, joins the pieces [^8]. The resulting junction encodes a loop called {{cdr3|CDR3}} (complementarity-determining region 3; CDR1 and CDR2 lie within the V segment itself), the most variable part of the receptor, which sits at the center of its antigen-binding site. The cut-out DNA between the segments, with its signal sequences joined neatly end to end, is usually lost from the cell.
 
 The chemistry of the RAG cut resembles that of transposases, the enzymes that transposons ("jumping genes") use to move around genomes, and RAG proteins can move DNA in the same way in the test tube. Many researchers think the whole system began as a transposon that our distant ancestors domesticated [^8].
 
 Deliberately breaking {{chromosome|chromosomes}} is risky. Mistakes in V(D)J recombination can place a cancer-promoting gene next to the strong DNA control regions that drive antibody production, and some lymphomas and leukemias carry chromosome rearrangements traced to such mistakes [^8].
 :::
-
-Each junction can come out in thousands of different ways, depending on how many nucleotides are trimmed and added, and which. A heavy chain has two junctions and a light chain one, so roughly a few thousand cubed, times 2 million segment combinations, gives a number with fifteen or more zeros.
-
-T-cell receptors are built the same way from their own segments, and the classic estimate is about 10¹⁵ possible T-cell receptors: a million billion [^9]. Antibodies are more varied still, because B cells keep mutating their receptor genes after assembling them: one study estimated that the antibodies circulating in a group of ten people could span 10¹⁶ to 10¹⁸ versions [^10].
-
-The process is wasteful. DNA is read in three-nucleotide {{codon|codons}}, and the number of nucleotides trimmed and added at each junction is random, so roughly two joins in three shift the gene out of its reading frame, and it then encodes no working protein. Each cell has two copies of these genes, one from each parent (Chapter 1). A cell that fails on one copy tries again on the other; if it runs out of attempts, it dies.
-
-Once a cell succeeds, it stops rearranging that chain, so every receptor it carries is identical. The change is permanent and passes to every descendant of the cell, which later allows a useful receptor to be multiplied. It never happens in eggs or sperm: you inherit the gene segments, not the finished receptors, so every person builds a personal set of receptors, a {{repertoire|repertoire}}, from scratch.
 
 :::figure ch03-vdj
 title: Shuffle the deck
@@ -129,7 +129,7 @@ spec: |
 steps:
   1. Every young B cell starts with the same inherited DNA: rows of alternative V, D and J gene segments, far more pieces than one receptor needs.
   2. The RAG enzymes pick one D and one J at random and cut out the DNA between them; DNA-repair enzymes join the ends. The removed DNA is gone from this cell for good.
-  3. At the junction, a few nucleotides (DNA letters) are trimmed away and a few random new ones are added. These added nucleotides exist nowhere in your genome.
+  3. At the junction, a few nucleotides (DNA letters) are trimmed away and a few random ones are added, copied from no template. The junction's sequence was not inherited.
   4. The same cut, trim and add brings in one V segment. The cell now has a heavy-chain gene that has probably never existed before.
   5. About two out of three joins throw the gene out of its three-nucleotide reading frame. The cell then tries again on the copy it inherited from its other parent; if that fails too, it dies.
   6. A successful cell builds its light chain the same way, from one V and one J, and displays many copies of a single receptor. Every cell it gives rise to inherits that receptor.
@@ -146,6 +146,14 @@ The result is a library of receptors, each made at random and carried by its own
 
 So each person carries a random sample. By sequencing receptor genes from blood and estimating statistically how many versions went unseen, researchers put a young adult's T cells at no fewer than 100 million (10⁸) different versions of one of the receptor's two protein chains, a lower bound rather than a count [^11]. One mathematical model puts the true number of distinct receptors nearer 10 billion (10¹⁰) [^9]. Either figure is a small fraction of what is possible, and no two people carry the same collection.
 
+A sample can still cover the range of infections a person meets, for three reasons.
+
+- **Each receptor fits many targets.** Recognition is a matter of degree, the {{cross-reactivity|cross-reactivity}} of [Chapter 1](01-cells.html). One T-cell receptor studied in detail was estimated to respond to more than a million different protein fragments, strongly to a few and weakly to most. Ten-amino-acid fragments built from 20 kinds of amino acid come in 20¹⁰ (about ten trillion) versions, though, so even this receptor responds to only about one in ten million of them [^12].
+- **Each pathogen offers many targets.** A virus is coated in proteins, each with many patches, and the immune system needs to match only some of them.
+- **The fit improves during an infection.** Activated B cells introduce small random mutations into the DNA encoding their variable regions, a process called {{somatic-hypermutation|somatic hypermutation}}, and the daughter cells whose antibodies bind more tightly are selected (T-cell receptors are fixed once made). The invader still instructs nothing; it only selects. The resulting rise in binding strength is called {{affinity-maturation|affinity maturation}}.
+
+The cost of sampling is that the cells matching any one target are rare. In mice, only about 1 in 200,000 never-activated killer T cells recognized one particular viral fragment: roughly 100 to 200 cells in the whole animal, carrying a variety of different receptors that all fit [^13][^14].
+
 :::deep-dive Counting the library
 A person's receptor genes can be sequenced only from a blood sample, so researchers estimate how many receptors went unseen with "missing species" statistics borrowed from ecologists counting rare animals.
 
@@ -153,18 +161,10 @@ Using these methods, Qi and colleagues estimated a minimum of about 100 million 
 
 Lythe and colleagues modeled how T-cell clones arise in the thymus and slowly die out. They estimated that a human body may hold about one distinct receptor for every ten naive T cells, on the order of 10¹⁰, with an average clone of around ten cells over its lifetime [^9]. That is one model's result, higher than every sequencing-based estimate. The figures of 10⁷ to 10⁸ quoted in many textbooks are best read as sequencing-based minimums.
 
-For antibodies, Briney and colleagues sequenced almost 3 billion antibody heavy-chain genes from ten people. Each person's repertoire was largely unique, yet a small set of near-identical heavy chains, with the same gene segments and junctions, turned up in everyone. Their 10¹⁶ to 10¹⁸ figure is an estimate of the variety circulating across the whole group, including changes B cells make after selection, and it assumes heavy and light chains pair at random [^10]. They also noted that the total information in all the rearranged receptor genes of one person exceeds the size of the human genome by more than four orders of magnitude [^10].
+For antibodies, Briney and colleagues sequenced almost 3 billion antibody heavy-chain genes from ten people. Each person's repertoire was largely unique, yet a small set of near-identical heavy chains, with the same gene segments and junctions, turned up in everyone. Their 10¹⁶ to 10¹⁸ figure is an estimate of the possible variety across the whole group, including changes B cells make after selection; the light chains' contribution was estimated from a separate, smaller set of paired sequences [^10]. They also noted that the total information in all the rearranged receptor genes of one person exceeds the size of the human genome by more than four orders of magnitude [^10].
 
-Cross-reactivity is what makes a finite sample work. In Wooldridge's study, a single T-cell receptor from a person with type 1 diabetes was estimated to recognize more than a million different ten-amino-acid peptides. One of them, differing from the natural target at 7 of 10 positions, stimulated the cell more than 100 times more strongly than the natural target did [^12]. So the receptor that responds to an infection is probably the best fit available in your library, rarely the best possible one. The same flexibility helps explain how a receptor raised against a microbe can occasionally attack the body's own tissue.
+The receptor that recognized more than a million fragments, studied by Wooldridge and colleagues, came from a person with type 1 diabetes. One of the peptides it recognized, differing from the natural target at 7 of 10 positions, stimulated the cell more than 100 times more strongly than the natural target did [^12]. So the receptor that responds to an infection is probably the best fit available in your library, rarely the best possible one. The same flexibility helps explain how a receptor raised against a microbe can occasionally attack the body's own tissue.
 :::
-
-A sample can still cover the range of infections a person meets, for three reasons.
-
-- **Each receptor fits many targets.** Recognition is a matter of degree, the {{cross-reactivity|cross-reactivity}} of Chapter 1. One T-cell receptor studied in detail was estimated to respond to more than a million different protein fragments, strongly to a few and weakly to most. Ten-amino-acid fragments come in about ten trillion versions, though, so even this receptor responds to only about one in ten million of them [^12].
-- **Each pathogen offers many targets.** A virus is coated in proteins, each with many patches, and the immune system needs to match only some of them.
-- **The fit improves during an infection.** Activated B cells introduce small random mutations into the DNA encoding their variable regions, a process called {{somatic-hypermutation|somatic hypermutation}}, and the daughter cells whose antibodies bind more tightly are selected (T-cell receptors are fixed once made). The invader still instructs nothing; it only selects (see the Go deeper box on affinity maturation).
-
-The cost of sampling is that the cells matching any one target are rare. In mice, only about 1 in 200,000 never-activated killer T cells recognized one particular viral fragment: roughly 100 to 200 cells in the whole animal, carrying a variety of different receptors that all fit [^13][^14].
 
 :::figure ch03-numbers
 title: How big is the library?
@@ -193,7 +193,7 @@ spec: |
 steps:
   1. For an antibody's heavy chain, your genome holds about 40 V, 23 D and 6 J segments: around 70 pieces. On this scale, each step up is ten times the one below.
   2. Your whole genome has fewer than 20,000 protein-coding genes. Giving every possible receptor its own gene was never an option.
-  3. Choosing one V, one D and one J, and pairing the result with a light chain built the same way, gives roughly 1.8 million combinations.
+  3. Choosing one V, one D and one J for an antibody's heavy chain, and pairing it with a light chain built the same way, gives roughly 1.8 million combinations.
   4. Nucleotides trimmed and added at random at the junctions multiply that many times over. T cells build their receptors the same way, and the classic estimate is about 10¹⁵ possible T-cell receptors: a million billion.
   5. No body could hold them all: an adult has a few hundred billion T cells; 10¹⁵ is over 2,000 times more, and that many T cells would weigh about 500 kilograms.
   6. So each person carries a random sample: at least 100 million different T-cell receptors by sequencing-based estimates, which are minimums, and perhaps ten billion by one model. It works because each receptor can recognize many related targets.
@@ -210,17 +210,17 @@ alt: A vertical logarithmic ladder comparing numbers. About 70 gene segments for
 
 ## Clonal selection
 
-In 1957 the Australian virologist Frank Macfarlane Burnet, building on an idea from the immunologist Niels Jerne, set out the theory in a short paper [^15]. If every lymphocyte carries a different, ready-made receptor, an invader need not teach the immune system anything; it only has to *find* the cells that already fit it, and those cells multiply. Burnet called this {{clonal-selection|clonal selection}}. A {{clone|clone}} here is a family of cells descended from one ancestor, all inheriting its receptor.
+In 1957 the Australian virologist Frank Macfarlane Burnet, building on an idea from the immunologist Niels Jerne, set out this selection theory in a short paper [^15]. If every lymphocyte carries a different, ready-made receptor, an invader need not teach the immune system anything; the cells that already fit it are selected and multiply. Burnet called this {{clonal-selection|clonal selection}}. A {{clone|clone}} here is a family of cells descended from one ancestor, all inheriting its receptor.
 
-The process resembles natural selection on a timescale of days, except that all the variety exists before the pathogen appears. It has four stages.
+The process resembles natural selection on a timescale of days, except that the starting variety exists before the pathogen appears. It has four stages.
 
-**Selection.** {{naive-lymphocyte|Naive lymphocytes}}, which have never met their target, circulate constantly through the lymph nodes. During an infection, pieces of the microbe arrive there, carried in with the lymph or by {{dendritic-cell|dendritic cells}} (Chapter 2). A lymphocyte whose receptor binds those pieces firmly enough, and which gets a second signal confirming that the threat is real, activates. For a T cell, the dendritic cell supplies it (the two-factor authentication of Chapter 4); most B cells get theirs from a helper T cell (Chapter 5).
+**Selection.** {{naive-lymphocyte|Naive lymphocytes}}, which have never met their target, circulate constantly through the lymph nodes. During an infection, pieces of the microbe arrive there, carried in with the lymph or by {{dendritic-cell|dendritic cells}} ([Chapter 2](02-innate.html)). A lymphocyte whose receptor binds those pieces firmly enough, and which gets a second signal confirming that the threat is real, activates. For a T cell, the dendritic cell supplies that signal (the two-factor authentication of [Chapter 4](04-presentation.html)); most B cells get theirs from a helper T cell ([Chapter 5](05-t-cells.html)).
 
 **Expansion.** The activated cell divides, and its daughters divide, many times over. This is {{clonal-expansion|clonal expansion}}. In mice infected with a virus, the 100 to 200 killer T cells that recognized one viral fragment divided more than 14 times in a week, together reaching about 10 million cells, or tens of thousands of descendants for every starting cell [^13].
 
 **Action.** Most of the new cells become {{effector-cell|effector cells}}. T cells kill infected cells or direct other immune cells (Chapter 5). B cells become {{plasma-cell|plasma cells}}, which secrete large amounts of their antibody into the blood.
 
-**Contraction and memory.** Once the infection is cleared, most of the expanded population dies by programmed cell death, or {{apoptosis|apoptosis}}: in the same mouse study, about 95% of it. The surviving 5% became {{memory-cell|memory cells}}, about 500,000 of them, more than 1,000 times as many as the matching cells the mouse started with [^13].
+**Contraction and memory.** Once the infection is cleared, most of the expanded population, about 95% of it in the same mouse study, dies by programmed cell death, or {{apoptosis|apoptosis}}. The surviving 5% became {{memory-cell|memory cells}}, about 500,000 of them, more than 1,000 times as many as the matching cells the mouse started with [^13].
 
 All this takes time: a first adaptive response needs one to two weeks to reach full strength [^13][^16], and in the meantime the innate immune system has to contain the infection.
 
@@ -276,7 +276,7 @@ steps:
   3. The selected cells divide again and again, a process called clonal expansion. In mice, the hundred or so killer T cells that recognized one viral fragment became about ten million in a week; B cells multiply the same way.
   4. Many of the new B cells become plasma cells that secrete large amounts of antibody into the blood. Within about two weeks, the virus is cleared.
   5. With the threat gone, about 95% of the expanded cells die. The survivors become memory cells, still far more numerous than the handful that started.
-  6. Months or years later, pathogen A returns. Memory cells respond within days, faster and stronger, and it is often cleared before it can make you feel ill. This is what a vaccine sets up.
+  6. Months or years later, pathogen A returns. Memory cells respond within days, faster and stronger, and the pathogen is often cleared before it can make you feel ill. This is what a vaccine sets up.
   7. A different pathogen gets no head start: its own rare matching cells must be found and multiplied from scratch. Memory is specific.
 alt: A step-by-step simulation of a lymph node full of lymphocytes, each with a different receptor, next to a two-panel chart. When a pathogen arrives, only the few matching cells respond; they multiply enormously (in a measured mouse example, from about 150 killer T cells to about ten million in a week), produce antibodies that clear the infection, and then about 95 percent die, leaving a large pool of memory cells. A second exposure to the same pathogen produces a faster, larger antibody response that clears the infection before it causes illness; a different pathogen starts a slow first response from scratch.
 :::
@@ -287,64 +287,66 @@ In the spring of 1846, measles reached the remote Faroe Islands for the first ti
 
 Many elderly islanders had lived through the previous epidemic in 1781. As far as Panum could find, not one of those who had had measles then fell ill a second time; he saw 98 of them himself. Age alone gave no protection: elderly people who had escaped measles in 1781 caught it in 1846 [^17].
 
-Clonal selection explains what Panum saw. After an infection, the body keeps far more matching cells than it started with. Some plasma cells also settle in the bone marrow, where they can keep secreting antibody for decades [^16]. One study estimated that antibody levels against measles fall so slowly that their half-life, the time to drop by half, exceeds 200 years [^18].
+Clonal selection explains what Panum saw. An infection leaves two lasting layers of protection. Some plasma cells settle in the bone marrow, where they can keep secreting antibody for decades [^16]; one study estimated that antibody levels against measles fall so slowly that their half-life, the time to drop by half, exceeds 200 years [^18]. The body also keeps far more matching memory B and T cells than it started with. These stay at rest until their target returns; then, if the standing antibody has not stopped it, they multiply into a fresh wave of plasma cells and effector cells.
 
 Memory cells are also easier to activate than naive ones. In mouse studies, memory T cells responded to smaller amounts of their target, relied less on the confirming second signal, and acted within a day, without first going through many rounds of division [^22][^23]. Some memory T cells stay in the tissue where the pathogen last entered, ready if it returns [^24]. The strict checks on a naive cell guard against starting a response by mistake; a memory cell has already passed them once.
-
-:::deep-dive Where memory lives
-**Two layers of antibody memory.** Long-lived plasma cells, mostly in the bone marrow, secrete antibody continuously, and they are a selected group: in one mouse study, only B cells whose receptors had come to bind the target more tightly went on to become plasma cells [^25]. Memory B cells make no antibody until their target returns, and they are more varied. After mice recovered from West Nile virus, their plasma cells' antibodies were directed at one important epitope on the virus and barely blocked a variant mutated there, while many memory B cells recognized both versions [^26].
-
-**Three kinds of T-cell memory.** Central memory T cells circulate through the lymph nodes and, when reactivated, multiply to rebuild a large population. Effector memory T cells travel in the blood, ready to enter inflamed tissue and act at once [^27]. Tissue-resident memory T cells settle where an infection once entered, in places such as the skin, lungs and gut, and stay there; taken together, they may be the most numerous memory T cells of all [^24].
-
-**A cancer connection.** Killer T cells with tissue-resident features turn up inside many tumors. In lung cancer, and in early triple-negative breast cancer (an aggressive type), patients whose tumors were rich in them tended to live longer [^30][^31].
-:::
 
 More memory cells, each easier to activate, make the difference between a {{primary-response|primary response}} and a {{secondary-response|secondary response}}. On first exposure, antibody levels take about two weeks to rise [^16]. On a second exposure, memory B cells raise antibodies to protective levels within three to four days [^16], usually to higher levels than before and with higher-affinity antibodies, often clearing the pathogen before you notice you were infected.
 
 A {{vaccine|vaccine}} exposes the immune system to a harmless version or piece of a pathogen, so the slow primary response happens without the disease. When the real virus or bacterium arrives, it meets a secondary response.
 
-Protection lasts longer against some infections than others (see Go deeper). Flu keeps changing its surface proteins, so last year's antibodies bind this year's virus less well [^3].
+Protection lasts longer against some infections than others. Flu keeps changing its surface proteins, so last year's antibodies bind this year's virus less well [^3].
 
 :::deep-dive How long does memory last, and can you borrow it?
 Memory varies widely by pathogen. Following 45 adults for up to 26 years, Amanna and colleagues estimated antibody half-lives of about 50 years for chickenpox virus and more than 200 years for measles and mumps, effectively lifelong. Antibodies against the toxins of tetanus and diphtheria, induced by vaccines made from inactivated toxins, waned faster, with half-lives of about 11 and 19 years [^18]. Some countries recommend adult tetanus boosters, while others consider five or six childhood doses enough for life [^16].
 
 Vaccine studies give similar time scales. After smallpox vaccination, antibody levels held steady for up to 75 years, while T-cell memory faded slowly, losing half its strength every 8 to 15 years [^28]. Memory killer T cells made by the yellow fever vaccine divide less than once a year, yet a decade later they can still respond quickly [^29].
 
-Memory also takes time to act: memory B cells need three to four days to raise antibodies to protective levels, which is enough against infections with a long incubation period. Against bacteria that can cause severe disease within hours or days, such as some causes of meningitis, people can fall ill despite having immune memory; against these, what counts is antibody already circulating in the blood [^16].
+The three to four days that memory B cells need to raise antibodies to protective levels are enough against infections with a long incubation period. Against bacteria that can cause severe disease within hours or days, such as some causes of meningitis, people can fall ill despite having immune memory; against these, what counts is antibody already circulating in the blood [^16].
 
-Antibodies can also be borrowed. During pregnancy, a mother's antibodies of one class, IgG (see the next section), cross the placenta and protect her newborn. Their half-life is about 30 to 40 days, so the protection fades over the first two to three months [^16]. Infusions of antibodies made outside the body can protect against some infections in the same way [^16]. Borrowed antibodies give immediate protection but no memory, because the recipient's own lymphocytes never went through selection. The same holds for antibody drugs, which usually have to be given repeatedly (Chapter 9).
+Antibodies can also be borrowed. During pregnancy, a mother's antibodies of one class, IgG (see the next section), cross the placenta and protect her newborn. Their half-life is about 30 to 40 days, so the protection fades over the first two to three months [^16]. Infusions of antibodies made outside the body can protect against some infections in the same way [^16]. Borrowed antibodies give immediate protection but no memory, because the recipient's own lymphocytes never went through selection. The same holds for antibody drugs, which usually have to be given repeatedly ([Chapter 9](09-antibodies.html)).
+:::
+
+:::deep-dive Where memory lives
+**Two layers of antibody memory.** Long-lived plasma cells are a selected group: in one mouse study, only B cells whose receptors had come to bind the target more tightly went on to become plasma cells [^25]. Memory B cells are more varied. After mice recovered from West Nile virus, their plasma cells' antibodies were directed at one important epitope on the virus and barely blocked a variant mutated there, while many memory B cells recognized both versions [^26].
+
+**Three kinds of T-cell memory.** Central memory T cells circulate through the lymph nodes and, when reactivated, multiply to rebuild a large population. Effector memory T cells travel in the blood, ready to enter inflamed tissue and act at once [^27]. Tissue-resident memory T cells settle where an infection once entered, in places such as the skin, lungs and gut, and stay there; taken together, they may be the most numerous memory T cells of all [^24].
+
+**A cancer connection.** Killer T cells with tissue-resident features turn up inside many tumors. In lung cancer, and in early triple-negative breast cancer (an aggressive type), patients whose tumors were rich in them tended to live longer [^30][^31].
 :::
 
 ## Antibodies: one molecule, four jobs
 
-An antibody is a B-cell receptor that a plasma cell secretes into the blood and tissue fluid. The two identical arms of the Y are its {{fab|Fab arms}} (Fab stands for "fragment, antigen-binding"), and each carries an antigen-binding site for the epitope, so one antibody can bind two copies of its target at once. This is the {{avidity|avidity}} of Chapter 1: when one arm dissociates from the target, the other is still bound, so a two-armed antibody binds far more strongly than either arm alone. IgM, an early-response antibody built from five Ys with ten antigen-binding sites, depends on this most: each site binds with low affinity, but the ten together bind strongly. The stem of the Y, formed by the lower parts of the two heavy chains' constant regions, is the {{fc-region|Fc region}}, and it is essentially the same in every antibody of a given class or subclass, whatever the Fab arms bind. **The variable regions determine what the antibody binds; the Fc region determines what the rest of the immune system does about it.**
+An antibody is a B-cell receptor that a plasma cell secretes into the blood and tissue fluid. The two identical arms of the Y are its {{fab|Fab arms}} (Fab stands for "fragment, antigen-binding"), and each carries an antigen-binding site for the epitope, so one antibody can bind two copies of its target at once. When one arm dissociates from the target, the other is still bound, so a two-armed antibody binds far more strongly than either arm alone. This combined strength is called {{avidity|avidity}} ([Chapter 1](01-cells.html)).
 
-Antibodies come in five {{antibody-class|classes}}, or isotypes (IgG, IgA, IgM, IgE and IgD), which share the same kind of variable regions but differ in the constant regions of their heavy chains, and so in their Fc regions. An activated B cell can change the class of antibody it makes, for example from IgM to IgG, while keeping the same variable regions, a process called {{class-switching|class switching}}. IgG, the most common in blood, is the basis of most antibody drugs, and its four subclasses recruit the rest of the immune system with different strength, which drug designers exploit (Chapters 8 and 9).
+The stem of the Y, formed by the lower parts of the two heavy chains' constant regions, is the {{fc-region|Fc region}} (Fc stands for "fragment, crystallizable"). **The variable regions determine what the antibody binds; the Fc region determines what the rest of the immune system does about it.**
 
-:::deep-dive Affinity maturation and class switching
-Unlike T cells, B cells keep changing their receptors after selection. Activated B cells with help from a specialized kind of helper T cell gather in temporary structures inside lymph nodes and the spleen called {{germinal-center|germinal centers}} [^21].
-
-There, an enzyme called AID drives somatic hypermutation, introducing mutations into the DNA encoding the antibody's variable regions. Most mutations lower the receptor's affinity or make no difference, and a few raise it. B cells whose receptors bind more tightly capture more antigen, present more of it to helper T cells and receive more survival signals; the rest die. Repeated rounds of mutation and selection gradually raise the antibodies' affinity [^21]. This {{affinity-maturation|affinity maturation}} is Darwinian selection inside a single lymph node, over a period of weeks.
-
-Dependence on help also helps stop this process from producing self-reactive B cells. A B cell whose mutated receptor now prefers one of the body's own proteins to the foreign antigen collects too little of that antigen to present to its helper, and loses its survival signal [^32].
-
-AID also initiates class switching. The B cell cuts out the stretch of DNA holding its current heavy-chain constant-region gene, which brings a different constant-region gene next to its variable-region gene. The antibody changes class, for example from IgM to IgG, IgA or IgE, while its variable regions, and so what it binds, stay exactly the same.
-
-Each class has its own functions, set by its Fc region [^33]. IgM, the early-response antibody, is good at triggering complement. IgG, the main antibody of blood and tissues, recruits phagocytes and NK cells, and it is the class that crosses the placenta. IgA acts at the body's linings: it is exported across the walls of the gut and airways and into breast milk, it is made by most of the gut wall's plasma cells (Chapter 1), and it works mainly by neutralizing rather than by triggering complement [^33][^34]. IgE binds to {{mast-cell|mast cells}}, preparing them to respond to parasitic worms, and is the antibody behind allergies. What IgD does is still unclear.
-
-Which class a B cell switches to is determined largely by {{cytokine|cytokines}}, signaling proteins released by its helper T cell and other nearby cells [^35]. The helper T cells that respond to worms (Chapter 5) push B cells toward IgE, while signals common in the gut lining push them toward IgA. As a result, the antibody's class, and so its Fc region, tends to suit both the threat and the location.
-
-The B cells selected in the germinal center become long-lived plasma cells and memory B cells [^21], which is one reason a second response produces higher-affinity antibodies than the first. A T cell's receptor, by contrast, never mutates after the cell leaves the thymus. That limitation matters in Chapter 10, where T-cell receptors are redesigned in the lab.
-:::
+Antibodies come in five {{antibody-class|classes}}, or isotypes (IgG, IgA, IgM, IgE and IgD; Ig stands for immunoglobulin, another name for antibody), which share the same kind of variable regions but differ in the constant regions of their heavy chains, and so in their Fc regions. Within a class or subclass, the Fc region is essentially the same whatever the Fab arms bind. IgM, an early-response antibody built from five Ys with ten antigen-binding sites, depends on avidity most: each site binds with low affinity, but the ten together bind strongly. An activated B cell can change the class of antibody it makes, for example from IgM to IgG, while keeping the same variable regions, a process called {{class-switching|class switching}}. IgG, the most common in blood, is the basis of most antibody drugs, and its four subclasses recruit the rest of the immune system with different strength, which drug designers exploit (Chapters 8 and 9).
 
 Antibodies do four main jobs [^19]:
 
 1. **{{neutralization|Neutralization}}.** By coating the proteins a virus uses to attach to cells, or the active part of a toxin, antibodies block them. This is the only one of the four jobs that antibodies do on their own.
-2. **{{opsonization|Opsonization}}.** Phagocytes such as macrophages and neutrophils (Chapter 2) carry {{fc-receptor|Fc receptors}} that bind the Fc region of antibodies. A microbe coated in antibodies, Fc regions pointing outward, becomes far easier for them to bind and engulf (phagocytosis).
-3. **Complement activation.** Antibodies clustered on a surface trigger the {{complement|complement}} cascade from Chapter 2: blood proteins that coat the target, opsonizing it, and can form pores in bacterial membranes.
-4. **Antibody-dependent cellular cytotoxicity ({{adcc|ADCC}}).** {{nk-cell|Natural killer (NK) cells}} also carry Fc receptors. When they bind the Fc regions of antibodies attached to an infected cell, they kill it.
+2. **{{opsonization|Opsonization}}.** Phagocytes such as macrophages and neutrophils ([Chapter 2](02-innate.html)) carry {{fc-receptor|Fc receptors}} that bind the Fc region of antibodies. A microbe coated in antibodies, Fc regions pointing outward, becomes far easier for them to bind and engulf (phagocytosis).
+3. **Complement activation.** Antibodies clustered on a surface trigger the {{complement|complement}} cascade from Chapter 2, whose first protein binds their Fc regions. These blood proteins coat the target, opsonizing it, and can form pores in bacterial membranes.
+4. **Antibody-dependent cellular cytotoxicity ({{adcc|ADCC}}).** {{nk-cell|Natural killer (NK) cells}} also carry Fc receptors. When they bind the Fc regions of antibodies attached to viral proteins on an infected cell's surface, they kill the cell.
 
 In the last three jobs, the antibody acts as an adapter, connecting a specific target to a general-purpose way of destroying it.
+
+:::deep-dive Affinity maturation and class switching
+Unlike T cells, B cells keep changing their receptors after selection. Activated B cells with help from a specialized kind of helper T cell gather in temporary structures inside lymph nodes and the spleen called {{germinal-center|germinal centers}} [^21].
+
+There, an enzyme called AID drives somatic hypermutation, introducing mutations into the DNA encoding the antibody's variable regions. Most mutations lower the receptor's affinity or make no difference, and a few raise it. B cells whose receptors bind more tightly capture more antigen, display more fragments of it to helper T cells and receive more survival signals; the rest die. Repeated rounds of mutation and selection gradually raise the antibodies' affinity [^21]. This affinity maturation is Darwinian selection inside a single lymph node, over a period of weeks.
+
+Dependence on help also helps stop this process from producing self-reactive B cells. A B cell whose mutated receptor now prefers one of the body's own proteins to the foreign antigen collects too little of that antigen to display to its helper, and loses its survival signal [^32].
+
+AID also initiates class switching. The B cell cuts out the stretch of DNA holding its current heavy-chain constant-region gene, which brings a different constant-region gene next to its variable-region gene. The antibody changes class, for example from IgM to IgG, IgA or IgE.
+
+Each class has its own functions, set by its Fc region [^33]. IgM, the early-response antibody, is good at triggering complement. IgG, the main antibody of blood and tissues, recruits phagocytes and NK cells, and it is the class that crosses the placenta. IgA acts at the body's linings: it is exported across the walls of the gut and airways and into breast milk, it is made by most of the gut wall's plasma cells ([Chapter 1](01-cells.html)), and it works mainly by neutralizing rather than by triggering complement [^33][^34]. IgE binds to {{mast-cell|mast cells}}, preparing them to respond to parasitic worms, and is the antibody behind allergies. What IgD does is still unclear.
+
+Which class a B cell switches to is determined largely by {{cytokine|cytokines}}, signaling proteins released by its helper T cell and other nearby cells [^35]. The helper T cells that respond to worms ([Chapter 5](05-t-cells.html)) push B cells toward IgE, while signals common in the gut lining push them toward IgA. As a result, the antibody's class, and so its Fc region, tends to suit both the threat and the location.
+
+The B cells selected in the germinal center become long-lived plasma cells and memory B cells [^21], which is one reason a second response produces higher-affinity antibodies than the first. A T cell's receptor, by contrast, never mutates after the cell leaves the thymus. That limitation matters in [Chapter 10](10-cell-therapy.html), where T-cell receptors are redesigned in the lab.
+:::
 
 :::figure ch03-antibody
 title: One molecule, four jobs
@@ -395,24 +397,24 @@ alt: An interactive antibody. In anatomy mode, a Y-shaped molecule shows two ide
 :::
 
 :::clinic
-Most antibody drugs in Chapters 8 and 9 are built on this design. A {{monoclonal-antibody|monoclonal antibody}} is a single kind of antibody, mass-produced; the name comes from the first ones, which were made by a single clone of antibody-making cells, and it is why the generic names of most antibody drugs approved so far end in "-mab". The variable regions are chosen to bind one target, often a protein on a cancer cell. The Fc region may recruit NK cells, macrophages or complement; other antibody drugs block a signal the cancer needs, or a brake on T cells (Chapter 8).
+Most antibody drugs in Chapters 8 and 9 are built on this design. A {{monoclonal-antibody|monoclonal antibody}} is a single kind of antibody, mass-produced; the name comes from the first ones, which were made by a single clone of antibody-making cells, and it is why the generic names of most antibody drugs approved so far end in "-mab". The variable regions are chosen to bind one target, often a protein on a cancer cell. Some of these drugs use the Fc region to recruit NK cells, macrophages or complement; others work like neutralization, blocking a signal the cancer needs or a brake on T cells ([Chapter 8](08-checkpoints.html)).
 :::
 
 ## The price of randomness
 
 A process that can produce a receptor for almost any shape will also produce receptors for *your own* molecules — your insulin, the sheaths around your nerves, your DNA — and often does. When researchers isolated and tested antibodies from very young human B cells, still in the bone marrow, 55 to 75% of them reacted with the body's own molecules. Most of these self-reactive cells were removed at two quality-control steps before the B cells matured, yet about one in five mature B cells still reacted [^20].
 
-A second safeguard usually keeps those cells inactive. To make strong, lasting antibodies, a B cell needs a go-ahead from a helper T cell that recognizes part of the same target, and helpers that react to the body's own proteins are mostly removed in the thymus (Chapter 5) [^32].
+A second safeguard usually keeps those cells inactive. To make strong, lasting antibodies, a B cell needs signals from a helper T cell that recognizes part of the same target, and helpers that react to the body's own proteins are mostly removed in the thymus ([Chapter 5](05-t-cells.html)) [^32].
 
-The body's ability to leave its own tissues alone is called {{tolerance|tolerance}}. When it fails, the result is {{autoimmunity|autoimmune disease}}, such as type 1 diabetes or lupus.
+This restraint toward the body's own tissues is the {{tolerance|tolerance}} of [Chapter 1](01-cells.html). When it fails, the result is {{autoimmunity|autoimmune disease}}, such as type 1 diabetes or lupus.
 
 For cancer, this safety system is a problem. A cancer cell is built from the body's own molecules, so the same rules that stop lymphocytes from attacking your organs also make cancer hard to recognize.
 
 ## What T cells see
 
-T cells rearrange their receptor genes the same way and go through the same selection, expansion and memory, but their receptor recognizes a different kind of target. Antibodies bind intact shapes, and only on the outside of things. A typical T-cell receptor cannot bind a free-floating virus, toxin or chemical at all. It recognizes short fragments of proteins, called {{peptide|peptides}}, that cells display on their surface in {{mhc|MHC molecules}}, such as the class I "shop window" of Chapter 2. Each T cell carries one receptor specificity and responds only to displayed fragments that match it.
+T cells rearrange their receptor genes the same way and go through the same selection, expansion and memory, but their receptor recognizes a different kind of target. Antibodies bind intact shapes, and only on the outside of things, such as a virus particle or the viral proteins on an infected cell's surface. A typical T-cell receptor cannot bind a free-floating virus, toxin or chemical at all; it binds only peptides held in MHC molecules on a cell's surface.
 
-Because MHC molecules display pieces of the proteins a cell is making *inside*, T cells can detect what is happening within a cell: whether it is infected, or turning cancerous. Chapter 4 explains how a cell puts samples of its contents on display, and how one rare T cell finds, among billions of cells, the display that matches its receptor.
+Because MHC molecules display pieces of the proteins a cell is making *inside*, including proteins that never reach its surface, T cells can detect what is happening within a cell: whether it is infected, or turning cancerous. [Chapter 4](04-presentation.html) explains how a cell puts samples of its contents on display, and how one rare T cell finds, among billions of cells, the display that matches its receptor.
 
 :::quiz
 Q: Where does the enormous variety of antibody and T-cell receptors come from?
@@ -436,7 +438,7 @@ Q: You were vaccinated against a virus years ago and now meet the real thing. Wh
 Q: An antibody drug's variable regions bind a protein on cancer cells, and it works mainly by recruiting NK cells. Which part of the antibody do the NK cells bind?
 - [ ] The variable regions — they are already bound to the protein on the cancer cell.
 - [x] The Fc region — NK cells' Fc receptors bind it and trigger killing (ADCC).
-- [ ] The hinge — it lets the Fab arms flex; Fc receptors bind mainly the Fc region below it.
+- [ ] The light chains — they lie in the Fab arms; the Fc region is built from heavy chains.
 - [ ] The cancer protein itself — then the drug would add nothing; the NK cell needs the antibody's Fc region to bind.
 :::
 
