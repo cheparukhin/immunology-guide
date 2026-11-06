@@ -679,7 +679,7 @@ spec: |
   else to 50%, and shows its card (verbatim):
   - Hiding: "Hiding. Some cancer cells stop displaying MHC class I, so killer T cells cannot see them. NK cells, which look for missing MHC, can still catch some of them."
   - Brakes: "Brakes. Cancer cells and macrophages display PD-L1, which dampens T cells carrying PD-1. Much of it appears only after T cells arrive and release interferon-gamma, so brakes are often a sign that an attack was underway."
-  - Corrupt guards: "Corrupt guards. Regulatory T cells, myeloid-derived suppressor cells and wound-healing macrophages calm the immune response. They are doing their normal jobs; the tumor exploits them."
+  - Corrupt guards: "Corrupt guards. Regulatory T cells, myeloid-derived suppressor cells (MDSCs) and wound-healing macrophages calm the immune response. Regulatory T cells and wound-healing macrophages are doing their normal jobs; MDSCs are immature white blood cells that the bone marrow releases in large numbers during cancer. The tumor exploits them all."
   - Walls: "Walls. Cancer-associated fibroblasts lay down dense collagen, and TGF-β helps keep T cells out. In excluded tumors, T cells pile up at these walls."
   - Poisoned air: "Poisoned air. Low oxygen, lactic acid, adenosine and TGF-β make the tumor a hostile place for T cells."
   Under the chips, one line of small text: "The sixth escape route, going deaf, happens inside cancer cells and can't be

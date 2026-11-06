@@ -68,10 +68,12 @@ spec: |
   - Pairs are dynamic (`life:[2, 4]` s): each separates and re-forms at random, so at any moment most, not all, are
     paired. A capped molecule can never pair. Antibodies, once docked, stay put.
 
-  GAUGE (shared `activity-meter`, gauge mode, tag "Illustrative"). Three zones, low to high: "alert", "multiplying",
-  "killing". No drug: the needle sits in "alert". Either drug (with the neoantigen displayed): it rises to "killing".
-  Neoantigen not displayed: it falls to the bottom, whatever the drug. Tween changes over ~0.8 s.
-  At "killing", show granules gathering toward the contact (`polarize`) and, after ~1 s, the cancer-cell membrane
+  GAUGE (shared `activity-meter`, gauge mode, tag "Illustrative"). Three zones, low to high: "resting", "held back",
+  "attacking", with a "needed to kill" mark where "attacking" starts. Killing needs less TCR signal than proliferation,
+  so the scale names no division zone. No drug: the needle sits in "held back". Either drug (with the neoantigen
+  displayed): it rises past the mark into "attacking". Neoantigen not displayed: it falls to "resting", whatever the
+  drug. Tween changes over ~0.8 s.
+  In "attacking", show granules gathering toward the contact (`polarize`) and, after ~1 s, the cancer-cell membrane
   segment under the contact begins to bleb (`setDying` partial, held at ~0.3; the cell is mostly off-stage, so no full
   death animation). Nothing flashes. Never show any killing step when the neoantigen is not displayed.
 
@@ -79,15 +81,16 @@ spec: |
   1. Segmented control "Drug": None · Anti-PD-1 · Anti-PD-L1. Choosing a drug makes antibodies drift in from the side
      edges and dock one by one over ~1.5 s: onto PD-1 (T-cell side) for anti-PD-1, onto PD-L1 (cancer-cell side) for
      anti-PD-L1. Switching drugs undocks the old antibodies (they drift out) and docks the new ones.
-  2. Toggle "Cancer cell displays its neoantigen": On (default) / Off. Off removes the MHC cups from the cancer-cell
-     surface entirely (a shuttered window is absent cups, never empty cups — §4 rule 3). No "+" discs are made, and the
-     "−" discs have nothing to damp.
+  2. Toggle "Cancer cell displays its neoantigen": On (default) / Off. Off swaps the neoantigen in the MHC cup for a
+     self peptide: the cup stays, because the cell still displays its own peptides (absent cups, §4 rule 3, are for a
+     cell that loses MHC class I). The TCR finds nothing to recognize, no "+" discs are made, and the "−" discs have
+     nothing to damp.
 
   CAPTIONS (reader-facing, verbatim; show the matching one in an ARIA live region under the stage):
   - None, displayed: "The T cell recognizes the cancer cell, but every PD-1–PD-L1 handshake sends a stop signal, holding the attack below the level needed to kill."
   - Anti-PD-1, displayed: "Antibodies cover PD-1 on the T cell, so PD-L1 has nothing to grab. With the brake silenced, the recognition signal gets through, and the T cell attacks."
   - Anti-PD-L1, displayed: "This time the antibodies cover PD-L1 on the cancer cell. The handshake is blocked from the other side, with the same result."
-  - Any drug, not displayed: "With no neoantigen on display, there is nothing to unleash. Releasing the brake cannot help a T cell that cannot see the cancer."
+  - Any drug, not displayed: "With no neoantigen on display, blocking the brake changes nothing: releasing it cannot help a T cell that cannot recognize the cancer."
   - None, not displayed: "This cancer cell has stopped displaying its neoantigen. The T cell has no reason to attack, brake or no brake."
 
   SCIENTIFIC GUARDRAILS. Anti-PD-1 binds only PD-1 (on the T cell). Anti-PD-L1 binds only PD-L1 — in this scene, on the
@@ -97,7 +100,8 @@ spec: |
   the cancer cell. No "accelerator" artwork here (that belongs to CD28).
 
   MOBILE (<600 px). Portrait viewBox: T-cell band at top, cancer band at bottom, the TCR–MHC pair plus 2 PD-1–PD-L1
-  pairs. The gauge becomes a horizontal bar under the stage with the same three zones and its "Illustrative" tag.
+  pairs. The gauge becomes a horizontal bar under the stage with the same three zones and the "needed to kill" mark
+  (the stage's "Illustrative" tag covers it).
   Controls stack full width. Labels ≥14 px.
 
   REDUCED MOTION. No pulses or drifting: show static "+" and "−" discs, dock antibodies instantly, jump the gauge.

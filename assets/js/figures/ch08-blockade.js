@@ -5,8 +5,11 @@
 // cup; PD-1 (T cell only) meets PD-L1 (cancer cell) in four handshakes that come and go. Signal
 // discs show the arithmetic: green "+" discs rise from the TCR toward the activity gauge, crimson
 // "−" discs from every engaged PD-1 converge on the same point and damp them. A drug antibody
-// (gold, white outline) caps PD-1 or PD-L1, the "−" stream stops, and the gauge climbs to
-// "killing" — but only while the neoantigen is on display.
+// (gold, white outline) caps PD-1 or PD-L1, the "−" stream stops, and the gauge climbs past the
+// "needed to kill" mark into "attacking" — but only while the neoantigen is on display.
+//
+// Without the neoantigen, the MHC cup stays and holds a self peptide (setDisplay's peptide mode):
+// the cell still displays its own peptides; only the one the T cell recognizes is gone.
 //
 // Shared kits: synapse.js (scene, engage, cap, setDisplay), activity-meter.js (gauge on wide
 // stages, a horizontal bar on phones), art signalIcon/tones. FIGURE-AUDIT §4 rules 3, 5, 6, 7, 9,
@@ -22,16 +25,19 @@ const CAPTIONS = {
   noneOn: 'The T cell recognizes the cancer cell, but every PD-1–PD-L1 contact sends an inhibitory (brake) signal, holding the attack below the level needed to kill.',
   pd1On: 'Antibodies bind PD-1 on the T cell, so PD-L1 cannot bind it. With the brake blocked, the recognition signal gets through, and the T cell attacks.',
   pdl1On: 'This time the antibodies bind PD-L1 on the cancer cell. The contact is blocked from the other side, with the same result.',
-  drugOff: 'With no neoantigen on display, the drug has no effect: releasing the brake cannot help a T cell that cannot recognize the cancer.',
+  drugOff: 'With no neoantigen on display, blocking the brake changes nothing: releasing it cannot help a T cell that cannot recognize the cancer.',
   noneOff: 'This cancer cell has stopped displaying its neoantigen. The T cell has no reason to attack, brake or no brake.',
 };
 const captionFor = (s) => (s.shown
   ? (s.drug === 'none' ? CAPTIONS.noneOn : s.drug === 'pd1' ? CAPTIONS.pd1On : CAPTIONS.pdl1On)
   : (s.drug === 'none' ? CAPTIONS.noneOff : CAPTIONS.drugOff));
 
-// Gauge: three zones low → high. The needle drops BELOW "alert" when nothing is recognized.
-const ZONES = [{ from: 0.08, to: 0.4, label: 'alert' }, { from: 0.4, to: 0.7, label: 'multiplying' }, { from: 0.7, to: 1, label: 'killing' }];
-const gaugeValue = (s) => (!s.shown ? 0 : s.drug === 'none' ? 0.24 : 0.9);
+// Gauge: three zones low → high, with the level needed to kill where "attacking" starts. Killing
+// needs less TCR signal than proliferation, so the scale names no division zone (the proliferative
+// burst belongs to the stem-like reserve of Figure 8.2, not to this cell).
+const KILL = 0.7;
+const ZONES = [{ from: 0, to: 0.18, label: 'resting' }, { from: 0.18, to: KILL, label: 'held back' }, { from: KILL, to: 1, label: 'attacking' }];
+const gaugeValue = (s) => (!s.shown ? 0.04 : s.drug === 'none' ? 0.4 : 0.9);
 const wantsKill = (s) => s.shown && s.drug !== 'none';     // never a killing step without displayed neoantigen
 
 const LAYOUTS = {
@@ -40,7 +46,7 @@ const LAYOUTS = {
   wide: {
     vb: [960, 540], size: 72, cx: 420, gapY: 300, width: 1120, depth: 230,
     pd1X: [130, -130, 262, -262], disc: 18, intY: 92, ab: 0.9,
-    meter: { mode: 'gauge', x: 708, y: 84, width: 184, tag: null },
+    meter: { mode: 'gauge', x: 690, y: 84, width: 184, tag: null },
     granules: { n: 14, x0: -190, x1: 190, y0: 58, y1: 186, r: [3.6, 5.4] },
     tLabel: [28, 44], cLabel: [28, 516],
     pdLabel: { k: 1, top: [28, 46], bottom: [28, -30] },
@@ -49,7 +55,7 @@ const LAYOUTS = {
   compact: {
     vb: [400, 560], size: 56, cx: 200, gapY: 262, width: 520, depth: 150,
     pd1X: [124, -124], disc: 16, intY: 76, ab: 0.9,
-    meter: { mode: 'segments', x: 24, y: 470, width: 352, count: 10, tag: 'Illustrative' },
+    meter: { mode: 'segments', x: 24, y: 470, width: 352, count: 10, tag: null },   // the stage carries "Illustrative"
     granules: { n: 9, x0: -130, x1: 130, y0: 58, y1: 160, r: [3, 4.6] },
     tLabel: [20, 36], cLabel: [20, 430],
     pdLabel: { k: 1, top: [22, 40], bottom: [22, -26] },
@@ -168,7 +174,7 @@ export default function mount(fig, ctx) {
     const tl = gsap.timeline({ paused: true });
     let abs = [];
     if (s.shown) S.engage('tcr-mhc', true, { tl, duration: 0.01 });
-    else S.setDisplay(false, { tl, duration: 0.01 });
+    else S.setDisplay(false, { tl, duration: 0.01, peptide: true });
     if (pd) {
       if (s.drug === 'none') S.engage('pd1-pdl1', true, { tl, duration: 0.01, stagger: 0 });
       else abs = capAll(S, capSide(s.drug), { tl, duration: 0.01, stagger: 0 });
@@ -236,10 +242,10 @@ export default function mount(fig, ctx) {
     // meter
     V.meterLayer = ctx.svg('g', { class: 'bk-meter' }, svg);
     if (L.meter.mode === 'gauge') {
-      V.meter = meter(V.meterLayer, { mode: 'gauge', x: L.meter.x, y: L.meter.y, width: L.meter.width, tag: null, zones: ZONES, values: gaugeValue(state) });
+      V.meter = meter(V.meterLayer, { mode: 'gauge', x: L.meter.x, y: L.meter.y, width: L.meter.width, tag: null, zones: ZONES, threshold: { at: KILL, label: 'needed to kill' }, values: gaugeValue(state) });
       ctx.svg('text', { class: 'bk-meter-title t-mid', x: pivotOf()[0], y: pivotOf()[1] + 28, text: 'T-cell activity' }, V.meterLayer);
     } else {
-      V.meter = meter(V.meterLayer, { mode: 'segments', x: L.meter.x, y: L.meter.y, width: L.meter.width, count: L.meter.count, title: 'T-cell activity', tag: 'Illustrative', zones: ZONES.map((z) => ({ ...z })), values: gaugeValue(state) });
+      V.meter = meter(V.meterLayer, { mode: 'segments', x: L.meter.x, y: L.meter.y, width: L.meter.width, count: L.meter.count, title: 'T-cell activity', tag: L.meter.tag, zones: ZONES.map((z) => ({ ...z })), threshold: { at: KILL, label: 'needed to kill' }, values: gaugeValue(state) });
     }
 
     // labels
@@ -580,11 +586,11 @@ export default function mount(fig, ctx) {
     if (prev.shown !== state.shown) {
       const S = V.scene;
       if (!state.shown) {
-        S.setDisplay(false, { tl, pos: 0, duration: 0.9 });
+        S.setDisplay(false, { tl, pos: 0, duration: 0.9, peptide: true });
         tl.call(() => { model.tcr = false; }, null, 0.05);
         gaugeAt = 0.2;
       } else {
-        S.setDisplay(true, { tl, pos: 0, duration: 0.9 });
+        S.setDisplay(true, { tl, pos: 0, duration: 0.9, peptide: true });
         S.engage('tcr-mhc', true, { tl, pos: 0.75, duration: 0.9 });
         tl.call(() => { model.tcr = true; }, null, 1.45);
         gaugeAt = 1.3;

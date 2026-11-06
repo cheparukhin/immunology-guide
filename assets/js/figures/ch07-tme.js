@@ -40,7 +40,7 @@ const angDiff = (a, b) => Math.abs(((((b - a) % 360) + 540) % 360) - 180);
 const CHIPS = [
   { value: 'hiding', label: 'Hiding', card: 'Some cancer cells stop displaying MHC class I, so killer T cells cannot detect them. NK cells, which detect missing MHC class I, can still kill some of them.' },
   { value: 'brakes', label: 'Brakes', card: 'Cancer cells and macrophages express PD-L1, which inhibits T cells that express PD-1. Much of it appears only after T cells arrive and secrete interferon-gamma, so brakes are often a sign that an attack was underway.' },
-  { value: 'guards', label: 'Suppressor cells', card: 'Regulatory T cells, myeloid-derived suppressor cells and wound-healing macrophages suppress the immune response. They are doing their normal jobs; the tumor exploits them.' },
+  { value: 'guards', label: 'Suppressor cells', card: 'Regulatory T cells, myeloid-derived suppressor cells (MDSCs) and wound-healing macrophages suppress the immune response. Regulatory T cells and wound-healing macrophages are doing their normal jobs; MDSCs are immature white blood cells that the bone marrow releases in large numbers during cancer. The tumor exploits them all.' },
   { value: 'walls', label: 'Barriers', card: 'Cancer-associated fibroblasts deposit dense collagen, and TGF-β helps keep T cells out. In excluded tumors, T cells pile up at these barriers.' },
   { value: 'air', label: 'Suppressive molecules', card: 'Low oxygen, lactic acid, adenosine and TGF-β make the tumor a hostile place for T cells.' },
 ];

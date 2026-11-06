@@ -277,9 +277,25 @@ export function synapseScene(parent, opts = {}) {
     if (P.S) P.S.icon.setAttribute('transform', `scale(${f(Math.max(0.01, E.back(seg(e, 0.55, 1))))})`);
     if (P.J) P.J.g.setAttribute('opacity', f(e < 0.6 ? 0 : E.out(seg(e, 0.6, 1)) * 0.85));
   }
-  function writeDisplay(P, d) {
+  function writeDisplay(P, d, peptide = false) {
+    if (peptide && P.selfPep) {   // the foreign peptide gives way to a self one; the cup stays
+      P.pep.setAttribute('opacity', f(E.inOut(d)));
+      P.selfPep.setAttribute('opacity', f(1 - E.inOut(d)));
+      return;
+    }
     P.B.disp.setAttribute('transform', `translate(0 ${f((1 - d) * size * 0.7)})`);
     P.B.disp.setAttribute('opacity', f(E.inOut(d)));
+  }
+  // a self peptide under the foreign one, hidden until setDisplay(…, { peptide: true }) swaps it in
+  function selfPeptide(P) {
+    if (P.selfPep !== undefined) return;
+    const pep = P.bottom.querySelector('[data-part="peptide"]');
+    const own = pep && mhc1({ size, stage, peptide: 'self' }).querySelector('[data-part="peptide"]');
+    P.selfPep = own || null;
+    if (!own) return;
+    own.setAttribute('opacity', '0');
+    pep.before(own);
+    P.pep = pep;
   }
   all.forEach((P) => writeDisplay(P, 1));
 
@@ -315,9 +331,12 @@ export function synapseScene(parent, opts = {}) {
   }
 
   // ---------- display (MHC shop windows)
-  function setDisplay(on, { tl, pos, duration = 0.9 } = {}) {
+  // Default: the windows sink away (MHC loss). peptide: true: only the foreign peptide goes, swapped
+  // for a self peptide, and the MHC stays (a cell that stops displaying a neoantigen still shows its own).
+  function setDisplay(on, { tl, pos, duration = 0.9, peptide = false } = {}) {
     return timed(tl, pos, (sub) => {
       const list = pick('tcr-mhc');
+      if (peptide) list.forEach(selfPeptide);
       const d1 = on ? 1 : 0;
       const off = !on ? list.filter((P) => P.plan.e > 0) : [];
       if (!on && off.length) {
@@ -326,7 +345,7 @@ export function synapseScene(parent, opts = {}) {
         off.forEach((P) => { P.plan.e = 0; });
       }
       const from = list.map((P) => P.plan.shown);
-      drive(sub, (p) => list.forEach((P, k) => writeDisplay(P, lerp(from[k], d1, E.inOut(p)))), { duration, pos: !on && off.length ? duration * 0.35 : 0 });
+      drive(sub, (p) => list.forEach((P, k) => writeDisplay(P, lerp(from[k], d1, E.inOut(p)), peptide)), { duration, pos: !on && off.length ? duration * 0.35 : 0 });
       list.forEach((P) => { P.plan.shown = d1; });
       return {};
     });

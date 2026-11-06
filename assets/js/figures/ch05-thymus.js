@@ -1,11 +1,16 @@
 // ch05-thymus — Figure 5.1 "The thymus exam" (build task F12).
 //
 // One idea in stages: a three-zone GRIP DIAL decides every thymocyte's fate.
-//   Steps 1–4  one candidate at a time in the cortex (stepper, cell-actions grammar).
+//   Steps 1–4  one candidate at a time in the cortex (stepper, cell-actions grammar). Steps 2–3 are
+//              read on epithelial cells; step 4's deletion on a dendritic cell, since in the cortex
+//              bone-marrow-derived cells do most of the deleting and epithelial cells delete poorly.
 //   Step 5     the medulla opens: AIRE-switched-on cells show organ proteins; a CD4 cell
 //              that grips insulin hard is deleted.
-//   Step 6     the scene makes room for a tally; the reader runs 1,000 candidates (400 on
-//              phones) on canvas (≤ 20 foreground cells, the rest dots) and can switch AIRE off.
+//   Step 6     the scene makes room for a tally; the reader runs 1,000 candidates at every width
+//              on canvas (≤ 20 foreground cells, the rest dots) and can switch AIRE off.
+//
+// Precursors enter at the cortex–medulla junction (the "From bone marrow" arrow points at it) and
+// move out into the cortex, where they build their receptors.
 //
 // Two layouts drawn from one description (re-layout, not shrink):
 //   wide    960×620  cortex left → medulla right; dial band above the cells.
@@ -42,8 +47,10 @@ const LAYOUTS = {
     name: 'wide', W: 960, H: 620, N: 1000, release: 22, speed: 120,
     rT: 15, key: 11, cup: 14, rRun: 10,
     shift: { entry: 68, chead: 68, crow: 68, junc: 68, mhead: 68, mrow: 68, exit: 68 },
-    entry: { dir: 'h', x0: 2, x1: 56, y: 270, l1: [10, 222], l2: [10, 240] },
-    spawn: [-16, 338], staging: [118, 346],
+    // precursors enter from blood vessels at the cortex–medulla junction, then move out into the
+    // cortex (staging) to build their receptors
+    entry: { dir: 'v', x: 512, y0: 4, y1: 56, l1: [500, 22], l2: [500, 40], anchor: 'end' },
+    spawn: [510, 142], arrive: [], staging: [118, 346],
     chead: { x: 82, y: 22, sub2: true },
     mhead: { x: 540, y: 22 },
     tec: { r: 82, body: 30, cups: 7 },
@@ -67,16 +74,16 @@ const LAYOUTS = {
       title: [222, 505], sub: [222, 524], counters: { y: 566, xs: [222, 408, 566], stacked: false }, msg: [222, 605],
     },
     run: {
-      spawn: [-12, 270], spread: 10, exitTo: [1000, 300], exitAt: (a, W) => a.x > W - 4,
+      spawn: [506, 270], spread: 150, exitTo: [1000, 300], exitAt: (a, W) => a.x > W - 4,
       cortex: (x, y) => x < 498 && x > 60 && y > 150 && y < 470,
     },
   },
   compact: {
-    name: 'compact', W: 400, H: 712, N: 400, release: 16, speed: 85,
+    name: 'compact', W: 400, H: 712, N: 1000, release: 22, speed: 85,
     rT: 12, key: 9, cup: 12, rRun: 9,
     shift: { entry: 0, chead: 0, crow: 124, junc: 124, mhead: 124, mrow: 272, exit: 272 },
-    entry: { dir: 'v', x: 26, y0: 0, y1: 40, l1: [40, 17], l2: [40, 35] },
-    spawn: [26, -16], staging: [66, 150],
+    entry: { dir: 'path', zone: 'junc', d: 'M8 -80V220Q8 236 24 236M15 229L24 236L15 243', l1: [18, 17], l2: [18, 35] },
+    spawn: [26, 360], arrive: [[12, 300], [14, 200]], staging: [66, 150],
     chead: { x: 16, y: 62, sub2: false },
     mhead: { x: 16, y: 254 },
     tec: { r: 58, body: 24, cups: 8 },
@@ -100,7 +107,7 @@ const LAYOUTS = {
       title: [16, 512], sub: [16, 530], counters: { y: 650, xs: [16, 146, 276], stacked: true }, msg: [16, 702],
     },
     run: {
-      spawn: [26, -12], spread: 8, exitTo: [372, 470], exitAt: (a) => a.y > 426,
+      spawn: [200, 236], spread: 180, exitTo: [372, 470], exitAt: (a) => a.y > 426,
       cortex: (x, y) => y > 92 && y < 226 && x > 8 && x < 392,
     },
   },
@@ -197,10 +204,33 @@ function thymicCell(ctx, { kind, r, body, seed, cup, dockAngle = -90, cups = 8, 
   return { g, dock, glow, nucleus: { x: ncx, y: ncy }, rb };
 }
 
-/** Arrow (entry / exit). */
-function arrow(ctx, parent, { dir, x0, x1, y, x, y0, y1 }) {
+/**
+ * Cortical dendritic cell, step 4's presenting cell: in the cortex, bone-marrow-derived cells like
+ * it do most of the deleting; epithelial cells delete poorly. The library's dendritic cell plus one
+ * MHC class I "dock" cup where its body faces straight up, read the same way as an epithelial dock.
+ */
+function cortexDC(ctx, { r, seed, cup }) {
+  const g = ctx.svg('g', { class: 'th-dc' });
+  const art = ART.dendriticCell({ state: 'immature', r, seed, stage: 'dark', peptide: 'self' });
+  g.append(art);
+  let dock = { x: 0, y: -r * 0.42 }, best = Infinity;
+  for (const p of ART.cellInfo(art)?.outline || []) {
+    const [x, y] = Array.isArray(p) ? p : [p.x, p.y];
+    const rr = Math.hypot(x, y);
+    if (Math.abs(Math.atan2(y, x) / DEG + 90) < 14 && rr < best) { best = rr; dock = { x, y }; }
+  }
+  const dockCup = ART.mhc1({ size: cup, peptide: 'self', stage: 'dark', detail: 'high' });
+  dockCup.setAttribute('transform', `translate(${f2(dock.x)} ${f2(dock.y)})`);
+  g.append(dockCup);
+  return { g, dock };
+}
+
+/** Arrow (entry / exit): horizontal, vertical, or a given path with its head. */
+function arrow(ctx, parent, { dir, x0, x1, y, x, y0, y1, d }) {
   const g = ctx.svg('g', null, parent);
-  if (dir === 'h') {
+  if (dir === 'path') {
+    ctx.svg('path', { class: 'th-arrow', d }, g);
+  } else if (dir === 'h') {
     ctx.svg('path', { class: 'th-arrow', d: `M${x0} ${y}H${x1}M${x1 - 9} ${y - 7}L${x1} ${y}L${x1 - 9} ${y + 7}` }, g);
   } else {
     ctx.svg('path', { class: 'th-arrow', d: `M${x} ${y0}V${y1}M${x - 7} ${y1 - 9}L${x} ${y1}L${x + 7} ${y1 - 9}` }, g);
@@ -319,10 +349,12 @@ export default async function mount(fig, ctx) {
     S('path', { class: 'th-junction', d: L.junction }, E.zones.junc);
 
     // entry
+    // entry: precursors arrive at the cortex–medulla junction (the arrow points at it)
     E.zones.entry = zoneG('entry');
-    arrow(ctx, E.zones.entry, L.entry);
-    S('text', { class: 't-label t-halo', x: L.entry.l1[0], y: L.entry.l1[1], text: 'From bone marrow' }, E.zones.entry);
-    S('text', { class: 't-small t-halo', x: L.entry.l2[0], y: L.entry.l2[1], text: 'no receptor yet' }, E.zones.entry);
+    arrow(ctx, E.zones[L.entry.zone || 'entry'], L.entry);
+    const ea = L.entry.anchor || 'start';
+    S('text', { class: 't-label t-halo', x: L.entry.l1[0], y: L.entry.l1[1], 'text-anchor': ea, text: 'From bone marrow' }, E.zones.entry);
+    S('text', { class: 't-small t-halo', x: L.entry.l2[0], y: L.entry.l2[1], 'text-anchor': ea, text: 'no receptor yet' }, E.zones.entry);
 
     // cortex header
     E.zones.chead = zoneG('chead');
@@ -330,15 +362,16 @@ export default async function mount(fig, ctx) {
     S('text', { class: 't-small', x: L.chead.x, y: L.chead.y + 19, text: 'Test 1, positive selection: can it bind MHC?' }, E.zones.chead);
     if (L.chead.sub2) S('text', { class: 't-small t-muted', x: L.chead.x, y: L.chead.y + 36, text: 'plus a first round of Test 2' }, E.zones.chead);
 
-    // cortex row: three net-like supporting cells
+    // cortex row: two net-like supporting (epithelial) cells, then a dendritic cell (step 4)
     E.zones.crow = zoneG('crow');
-    E.tecs = L.tecs.map(([x, y], i) => {
-      const t = thymicCell(ctx, { kind: 'cortex', r: L.tec.r, body: L.tec.body, seed: 11 + i * 7, cup: L.cup, cups: L.tec.cups, dockAngle: -90 });
+    const place = (t, [x, y]) => {
       t.g.setAttribute('transform', `translate(${x} ${y})`);
       E.zones.crow.append(t.g);
       const [ax, ay] = abs('crow', [x, y]);
       return { ...t, x, y, ax, ay, dockAbs: { x: ax + t.dock.x, y: ay + t.dock.y } };
-    });
+    };
+    E.tecs = L.tecs.slice(0, 2).map((pos, i) => place(thymicCell(ctx, { kind: 'cortex', r: L.tec.r, body: L.tec.body, seed: 11 + i * 7, cup: L.cup, cups: L.tec.cups, dockAngle: -90 }), pos));
+    E.cdc = place(cortexDC(ctx, { r: L.dc.r, seed: 9, cup: L.cup }), L.tecs[2]);
 
     // medulla header (hidden until step 5)
     E.zones.mhead = zoneG('mhead');
@@ -477,6 +510,10 @@ export default async function mount(fig, ctx) {
       E.tecLab = L.name === 'wide'
         ? textLabel(ctx, E.actors, { x: 34, y: tA.ay + 112, text: 'Epithelial cell', cls: 't-small t-halo', leader: [tA.ax - 22, tA.ay + 22] })
         : null;
+      const c = E.cdc;   // step 4: name the cell that presents the self peptide
+      E.cdcLab = L.name === 'wide'
+        ? textLabel(ctx, E.actors, { x: c.ax, y: c.ay + L.dc.r + 24, text: 'Dendritic cell', anchor: 'middle', cls: 't-small t-halo' })
+        : textLabel(ctx, E.actors, { x: c.ax - 10, y: c.ay + L.dc.r + 20, text: 'Dendritic cell', anchor: 'end', cls: 't-small t-halo', leader: [c.ax - 14, c.ay + L.dc.r * 0.55] });
     }
 
     // ✕ badges for deletions (absolute, attached to T3 / T4 dock positions later)
@@ -638,7 +675,7 @@ export default async function mount(fig, ctx) {
     const g = S('g', null, svg);
     gsap.set(g, { opacity: 0 });
     // Polish (units): the counters are running totals of the whole run, so the waffle says what one
-    // dot is worth instead of "every 100" (1,000 candidates → 1 dot = 10; phones: 400 → 1 dot = 4).
+    // dot is worth instead of "every 100" (1,000 candidates → 1 dot = 10).
     S('text', { class: 't-label', x: T.title[0], y: T.title[1], text: `Fate of ${fmt(L.N)} thymocytes · 1 dot = ${L.N / 100}` }, g);
     S('text', { class: 't-small', x: T.sub[0], y: T.sub[1], text: 'Illustrative proportions based on mouse studies' }, g);
     const gr = T.grid;
@@ -709,7 +746,8 @@ export default async function mount(fig, ctx) {
 
   function buildSteps() {
     const E = el;
-    const [A, B, Cc] = E.tecs;
+    const [A, B] = E.tecs;
+    const Cc = E.cdc;
     const [M1, , M3] = E.meds;
     const wide = L.name === 'wide';
     const deathDur = 2.0;          // spec: the cell dims over ~2 s
@@ -754,9 +792,9 @@ export default async function mount(fig, ctx) {
       // 1 · a thymocyte arrives and builds its random receptor
       {
         enter(tl) {
-          move(tl, E.T1, { x: stg[0], y: stg[1], opacity: 1, duration: 1.7, pos: 0 });
-          show(tl, E.thyLab, 1.1);
-          buildReceptor(tl, E.T1, 1.8, 1.6);
+          move(tl, E.T1, { x: stg[0], y: stg[1], via: L.arrive, opacity: 1, duration: 2.2, pos: 0 });
+          show(tl, E.thyLab, 1.6);
+          buildReceptor(tl, E.T1, 2.3, 1.6);
         },
       },
       // 2 · exam one: no grip → death by neglect, macrophage tidies up
@@ -779,8 +817,8 @@ export default async function mount(fig, ctx) {
           hideDial(tl, E.dialC, chips.A, null, 0);
           if (wide) hide(tl, E.tecLab, 0);
           move(tl, E.macC, { x: E.macHome.c[0], y: E.macHome.c[1], duration: 2, pos: 0.2 });
-          move(tl, E.T2, { x: stg[0], y: stg[1], opacity: 1, duration: 1.4, pos: 0 });
-          const t = buildReceptor(tl, E.T2, 1.3, 0.9);
+          move(tl, E.T2, { x: stg[0], y: stg[1], via: L.arrive, opacity: 1, duration: 1.9, pos: 0 });
+          const t = buildReceptor(tl, E.T2, 1.8, 0.9);
           move(tl, E.T2, { x: pB[0], y: pB[1], via: [[lerp(stg[0], pB[0], 0.5), Math.min(stg[1], pB[1]) - 18]], duration: 1.5, pos: t });
           const r = reading(tl, E.dialC, { x: pB[0], dockY: pB[1], value: 0.5, chip: chips.B, pos: t + 1.45 });
           recognize(tl, E.T2, { x: pB[0], y: contactY(B), angle: 90 }, { color: THY, radius: L.rT * 0.62, badge: true, hold: true, layer: recB, pos: r.read - 0.3 });
@@ -799,8 +837,9 @@ export default async function mount(fig, ctx) {
           hideDial(tl, E.dialC, chips.B, E.step3.leader, 0);
           hide(tl, recB, 0);
           move(tl, E.T2, { x: park[0], y: park[1], duration: 2.2, pos: 0.2 });
-          move(tl, E.T3, { x: stg[0], y: stg[1], opacity: 1, duration: 1.3, pos: 0.1 });
-          const t = buildReceptor(tl, E.T3, 1.3, 0.9);
+          move(tl, E.T3, { x: stg[0], y: stg[1], via: L.arrive, opacity: 1, duration: 1.9, pos: 0.1 });
+          const t = buildReceptor(tl, E.T3, 1.9, 0.9);
+          show(tl, E.cdcLab, t);
           move(tl, E.T3, { x: pC[0], y: pC[1], via: [[lerp(stg[0], pC[0], 0.45), Math.min(stg[1], pC[1]) - 30]], duration: 1.5, pos: t });
           const r = reading(tl, E.dialC, { x: pC[0], dockY: pC[1], value: 0.88, chip: chips.C, pos: t + 1.45 });
           recognize(tl, E.T3, { x: pC[0], y: contactY(Cc), angle: 90 }, { color: THY, radius: L.rT * 0.7, badge: false, layer: recC, pos: r.read - 0.3 });
@@ -819,6 +858,7 @@ export default async function mount(fig, ctx) {
         enter(tl) {
           hideDial(tl, E.dialC, chips.C, null, 0);
           hide(tl, recC, 0);
+          hide(tl, E.cdcLab, 0);
           tl.to(E.mrowIn, { opacity: 1, duration: 1.1 }, 0.1);
           tl.to(E.exitIn, { opacity: 1, duration: 1.1 }, 0.1);
           move(tl, E.macM, { opacity: 1, duration: 1.1, pos: 0.1 });

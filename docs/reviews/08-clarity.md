@@ -95,7 +95,7 @@ The Jimmy Carter opening is a strong hook, and it states the chapter's paradox c
 **15. Figure `ch08-blockade` carries a side lesson and an invented gauge.**
 - Locations: l.80-84, l.86-95, captions l.99-104.
 - Problems: the "Amount of drug" slider and caption D teach dosing, which is peripheral to the one idea in the goal. The gauge shows invented numbers (30%, 60%, 85%, V = S × (1 − 0.7P)) with only a "Not to scale" note, and no "illustrative" label. The tick labels "makes signals / divides / kills" are unclear. Caption A ("The attack stalls below the level needed to kill") overstates: Chapter 7 showed T cells are active where PD-L1 appears.
-- Fix: delete the slider and caption D (keep the drug selector and the neoantigen toggle: three drug states, two display states). Add a corner label "Illustrative". Relabel the ticks "alert", "multiplying", "killing". Caption A: "…every PD-1–PD-L1 handshake sends a stop signal, holding the attack below the level needed to kill."
+- Fix: delete the slider and caption D (keep the drug selector and the neoantigen toggle: three drug states, two display states). Add a corner label "Illustrative". Relabel the scale in three zones, "resting", "held back" and "attacking", with a "needed to kill" mark where "attacking" starts. Killing needs less TCR signal than proliferation, so a "multiplying" zone below "killing" would put the two in the wrong order; the proliferative burst belongs to the stem-like reserve (Figure 8.2), not to this cell. Caption A: "…every PD-1–PD-L1 contact sends an inhibitory (brake) signal, holding the attack below the level needed to kill."
 
 **16. Figure `ch08-two-brakes` is overloaded.**
 - Locations: l.149-215.

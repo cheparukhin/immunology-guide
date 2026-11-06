@@ -72,7 +72,7 @@ function drive(tl, render, { duration, ease: e, pos }) {
 export function meter(parent, opts = {}) {
   const {
     mode = 'ledger', orient = 'h', segments = [], zones = [], count = 5, title = '', net = 'Net effect',
-    tag = 'Illustrative', x = 0, y = 0, values,
+    tag = 'Illustrative', x = 0, y = 0, values, threshold = null,
   } = opts;
   const ctxText = !title && parent && !(typeof SVGElement !== 'undefined' && parent instanceof SVGElement) ? (parent.previousElementSibling?.textContent || '') : '';
   const toneColor = TONES[opts.tone] || opts.color || TONES[guessTone(title || opts.label || ctxText)];
@@ -234,6 +234,12 @@ export function meter(parent, opts = {}) {
       return node('text', { class: 't-caps', x: lx, y: ly, 'text-anchor': anchor, 'dominant-baseline': 'central', text: z.label, style: 'fill: var(--fg-3)' }, host);
     });
     const fill = node('path', { d: arc(180, 180.01, R), style: `fill: none; stroke: ${toneColor}; stroke-opacity: 0.95; stroke-width: 14` }, host);
+    if (threshold) {
+      // a marked level (e.g. "needed to kill"): a tick across the band and a word outside it
+      const a = toA(threshold.at), c = Math.cos(a * DEG), s = Math.sin(a * DEG);
+      node('line', { x1: cx + c * (R - 11), y1: cy + s * (R - 11), x2: cx + c * (R + 12), y2: cy + s * (R + 12), style: 'stroke: var(--fg); stroke-width: 1.6; stroke-linecap: round' }, host);
+      node('text', { class: 't-small', x: cx + c * (R + 18), y: cy + s * (R + 18), 'text-anchor': c < -0.35 ? 'end' : c > 0.35 ? 'start' : 'middle', 'dominant-baseline': 'central', text: threshold.label, style: 'fill: var(--fg-2)' }, host);
+    }
     const needle = node('g', { transform: `translate(${f(cx)} ${f(cy)}) rotate(180)` }, host);
     node('path', { d: `M0 -2.6L${f(R * 0.86)} 0L0 2.6Z`, style: 'fill: var(--fg)' }, needle);
     node('circle', { cx, cy, r: 6, style: 'fill: var(--fg); stroke: var(--halo); stroke-width: 2' }, host);
@@ -277,6 +283,12 @@ export function meter(parent, opts = {}) {
         blocks.push({ r: fillR, x: bx, w: bw });
       }
       H = by + bh + (named ? 24 : 6);
+      if (threshold) {
+        // a marked level: a tick through the row and its word in the header row (pass tag: null)
+        const tx = clamp01((threshold.at - domain[0]) / (domain[1] - domain[0])) * W;
+        node('line', { x1: tx, x2: tx, y1: by - 5, y2: by + bh + 5, style: 'stroke: var(--fg); stroke-width: 1.6; stroke-linecap: round' }, host);
+        node('text', { class: 't-small', x: tx, y: 12, 'text-anchor': 'middle', text: threshold.label, style: 'fill: var(--fg-2)' }, host);
+      }
       if (zones.length && !named) {
         zones.forEach((z) => node('text', { class: 't-caps', x: (z.from + z.to) / 2 * W, y: H + 12, 'text-anchor': 'middle', text: z.label, style: 'fill: var(--fg-3)' }, host));
         H += 20;

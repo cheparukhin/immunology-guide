@@ -16,6 +16,7 @@ meter(parent, {
   orient = 'h',               // 'h' | 'v' (ledger and segments)
   segments = [],              // ledger rows / named segment blocks: [{ id, label, sign: '+' | '-' | null }]
   zones = [],                 // bands along the net/value axis: [{ from, to, label }]
+  threshold = null,           // gauge and horizontal plain segments: a marked level, { at, label } (e.g. "needed to kill")
   domain,                     // value axis: ledger net [-1, 1]; gauge and segments [0, 1]
   count = 5,                  // 'segments' without named segments: number of blocks
   title = '',                 // small caps heading (1–4 words)
@@ -35,8 +36,8 @@ meter(parent, {
 
 * **`parent`**: an SVG element (the meter is drawn as a `<g>` in that frame, using the figure's `.t-*` text classes, so text stays ≥ 13 px) or an HTML element (the meter makes its own `<svg>`, 1 unit = 1 CSS px).
 * **ledger**: one row per segment: sign disc, label, and a bar from a center line: `'+'` segments push right, `'-'` segments pull left. The summary row shows the net (Σ sign × value, clamped to `domain`) as a needle over the labeled `zones`.
-* **gauge**: a half dial; `zones` are labeled arcs, the needle shows the value. Pass `segments` to show the + / − contributors as small discs under the dial (optional).
-* **segments**: a row (or column) of blocks; named `segments` light individually (`values[id]` 0..1), otherwise `count` blocks fill up to the value.
+* **gauge**: a half dial; `zones` are labeled arcs, the needle shows the value. Pass `segments` to show the + / − contributors as small discs under the dial (optional). A `threshold` is a tick across the band with its word outside the dial.
+* **segments**: a row (or column) of blocks; named `segments` light individually (`values[id]` 0..1), otherwise `count` blocks fill up to the value. A `threshold` (horizontal row, plain blocks) is a tick through the row with its word in the header row, so pass `tag: null` there.
 
 ### `set(values, { duration = 0.8, ease = 'so.inOut', tl, pos })`
 * ledger / named segments: `{ [id]: 0..1, net? }` (net defaults to the signed sum; give it explicitly to decouple).
