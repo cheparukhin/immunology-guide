@@ -49,7 +49,7 @@ const LAYOUTS = {
     shift: { entry: 68, chead: 68, crow: 68, junc: 68, mhead: 68, mrow: 68, exit: 68 },
     // precursors enter from blood vessels at the cortex–medulla junction, then move out into the
     // cortex (staging) to build their receptors
-    entry: { dir: 'v', x: 512, y0: 4, y1: 56, l1: [500, 22], l2: [500, 40], anchor: 'end' },
+    entry: { dir: 'v', x: 512, y0: 4, y1: 56, l1: [500, 22], anchor: 'end' },   // one line: the cortex subtitle shares row 2
     spawn: [510, 142], arrive: [], staging: [118, 346],
     chead: { x: 82, y: 22, sub2: true },
     mhead: { x: 540, y: 22 },
@@ -354,7 +354,7 @@ export default async function mount(fig, ctx) {
     arrow(ctx, E.zones[L.entry.zone || 'entry'], L.entry);
     const ea = L.entry.anchor || 'start';
     S('text', { class: 't-label t-halo', x: L.entry.l1[0], y: L.entry.l1[1], 'text-anchor': ea, text: 'From bone marrow' }, E.zones.entry);
-    S('text', { class: 't-small t-halo', x: L.entry.l2[0], y: L.entry.l2[1], 'text-anchor': ea, text: 'no receptor yet' }, E.zones.entry);
+    if (L.entry.l2) S('text', { class: 't-small t-halo', x: L.entry.l2[0], y: L.entry.l2[1], 'text-anchor': ea, text: 'no receptor yet' }, E.zones.entry);
 
     // cortex header
     E.zones.chead = zoneG('chead');
@@ -512,7 +512,7 @@ export default async function mount(fig, ctx) {
         : null;
       const c = E.cdc;   // step 4: name the cell that presents the self peptide
       E.cdcLab = L.name === 'wide'
-        ? textLabel(ctx, E.actors, { x: c.ax, y: c.ay + L.dc.r + 24, text: 'Dendritic cell', anchor: 'middle', cls: 't-small t-halo' })
+        ? textLabel(ctx, E.actors, { x: c.ax, y: c.ay + L.dc.r + 69, text: 'Dendritic cell', anchor: 'middle', cls: 't-small t-halo', leader: [c.ax, c.ay + L.dc.r * 0.62] })   // a row below the macrophage's label
         : textLabel(ctx, E.actors, { x: c.ax - 10, y: c.ay + L.dc.r + 20, text: 'Dendritic cell', anchor: 'end', cls: 't-small t-halo', leader: [c.ax - 14, c.ay + L.dc.r * 0.55] });
     }
 
@@ -967,7 +967,10 @@ export default async function mount(fig, ctx) {
     const [sx, sy] = L.run.spawn;
     const sp = L.run.spread;
     const g = geo();
-    const tec = g.tecs[Math.floor(R() * 3)];
+    // positive selection (and neglect) is read on the epithelial cells; a cortical deletion on any
+    // cortical cell, the dendritic cell (third) included
+    const pool = p.code === 'DC' ? g.tecs : g.tecs.slice(0, 2);
+    const tec = pool[Math.floor(R() * pool.length)];
     let tgt = targetAround(tec, R, 10, L.tec.r - L.tec.body - 4);
     for (let k = 0; k < 6 && !L.run.cortex(tgt[0], tgt[1]); k++) tgt = targetAround(tec, R, 10, L.tec.r - L.tec.body - 4);
     const fg = (p.i % 11 === 0) && run.fg < 13;

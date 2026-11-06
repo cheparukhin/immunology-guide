@@ -46,7 +46,7 @@ const LAYOUTS = {
   wide: {
     vb: [960, 540], size: 72, cx: 420, gapY: 300, width: 1120, depth: 230,
     pd1X: [130, -130, 262, -262], disc: 18, intY: 92, ab: 0.9,
-    meter: { mode: 'gauge', x: 690, y: 84, width: 184, tag: null },
+    meter: { mode: 'gauge', x: 664, y: 84, width: 184, tag: null },   // "attacking" fits at a 600 px stage
     granules: { n: 14, x0: -190, x1: 190, y0: 58, y1: 186, r: [3.6, 5.4] },
     tLabel: [28, 44], cLabel: [28, 516],
     pdLabel: { k: 1, top: [28, 46], bottom: [28, -30] },
